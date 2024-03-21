@@ -6,7 +6,7 @@ Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 
 * Thiago Branco de Oliveira
 * Nome completo do aluno 2
-* Nome completo do aluno 3
+* João Vitor Ferreira Jacinto
 * Nome completo do aluno 4
 
 ## Professores responsáveis
