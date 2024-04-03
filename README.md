@@ -1,4 +1,4 @@
-# Nome do projeto
+# Gerador de Receitas
 
 Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 
@@ -7,7 +7,7 @@ Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 * Thiago Branco de Oliveira
 * Diogo Gouvêa Bastos Braga
 * João Vitor Ferreira Jacinto
-* Nome completo do aluno 4
+* João Gabriel Noleto de Figueiredo
 
 ## Professores responsáveis
 
