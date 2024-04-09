@@ -20,19 +20,11 @@ Esta seção traz explicações breves sobre o conjunto de artefatos que precisa
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-**Links Úteis**:
-
-- [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-- [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-- [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+O cerne da questão reside no fato de que uma parte significativa da população não tem o conhecimento necessário para preparar refeições simples e práticas com os ingredientes à mão, ou não sabem onde aprender receitas novas (como uma espécie de “hobbie”). Isso os leva a recorrer frequentemente a aplicativos de entrega de comida, resultando em gastos adicionais. Dessa forma, o problema está presente no contexto diário 
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+O objetivo do nosso projeto é proporcionar ao usuário um app web que consiga ajudá-lo a cozinhar algo prático, simples e saboroso utilizando os ingredientes disponíveis para evitar gastos extras com apps de delivery. 
 
 **Links Úteis**:
 
@@ -40,9 +32,7 @@ Aqui você deve descrever os objetivos do trabalho indicando que o objetivo gera
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Em uma sociedade onde uma grande parte da população carece de habilidades culinárias, resultando em gastos excessivos com serviços de entrega de alimentos, o projeto “KitchenCompanion” surge como uma solução vantajosa tanto para a saúde financeira quanto física dos indivíduos. O nosso app promove a economia ao incentivar o uso de ingredientes já disponíveis, reduzindo assim o desperdício de alimentos. 
 
 **Links Úteis**:
 
@@ -50,18 +40,17 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+O público-alvo do nosso aplicativo vai desde as pessoas que gostam de cozinhar em casa até aquelas que precisam cozinhar em casa (por algum outro motivo), mas com frequência se sentem perdidas sobre o que preparar com os ingredientes disponíveis. Isso em sua maior parte, é composto por pessoas que não têm tempo de olhar receitas difíceis e pessoas leigas, que não sabem por onde começar.
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164224207/8126686d-63a2-4512-9d39-8d9898521ea9)
+
+
 
 Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
-
-**Links Úteis**:
-
-- [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-- [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
 
 ## Personas
 
 Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
+Persona 1 -  
 
 **Links Úteis**:
 
@@ -97,30 +86,27 @@ Lembre-se que cada requisito deve corresponder à uma e somente uma característ
 
 ## User Flow
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+[User-Flow](https://www.figma.com/file/ZNHwYf0uQvqoMS3YTv3oi0/Kitchen-Companion?type=design&node-id=26%3A45&mode=design&t=rUFez5oaggbkA7Aw-1)
 
-**Links Úteis**:
-
-- [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-- [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-- [Top 25 User Flow Tools &amp; Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164224207/ba138624-f90c-4fbd-b757-7cf35426847b)
 
 ## Wireframes
 
-Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
+[Wireframe](https://www.figma.com/file/ZNHwYf0uQvqoMS3YTv3oi0/Kitchen-Companion?type=design&node-id=0%3A1&mode=design&t=wkK34SY5DbemPRkl-1)
 
-**Links Úteis**:
-
-- [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-- [Figma](https://www.figma.com/)
-- [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-- [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164224207/16668b51-e58a-4761-a1a3-54e1bf090296)
 
 ## Gestão de Projetos
 
  Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
 
 Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+
+Ferramentas Empregadas:
+User Flow, Wireframe e Protótipo: Figma
+Rastreamento do projeto/ Rastreamento do código: Github
+Rastreamento de tarefas e "Kanban": Microsoft To-do
+
 
 **Links Úteis**:
 
