@@ -103,9 +103,9 @@ Lembre-se que cada requisito deve corresponder à uma e somente uma característ
 Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
 
 Ferramentas Empregadas:
-User Flow, Wireframe e Protótipo: Figma
-Rastreamento do projeto/ Rastreamento do código: Github
-Rastreamento de tarefas e "Kanban": Microsoft To-do
+- User Flow, Wireframe e Protótipo: Figma
+- Rastreamento do projeto/ Rastreamento do código: Github
+- Rastreamento de tarefas e "Kanban": Microsoft To-do
 
 
 **Links Úteis**:
