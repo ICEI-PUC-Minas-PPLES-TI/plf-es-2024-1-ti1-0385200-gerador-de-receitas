@@ -8,6 +8,7 @@
 * Diogo Gouvêa Bastos Braga
 * João Vitor Ferreira Jacinto
 * João Gabriel Noleto de Figueiredo
+* Miguel Augusto de Paula
 
 ## Professores responsáveis
 
