@@ -131,7 +131,7 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 - **Proposta de Valor:** Uma plataforma online que gera receitas personalizadas com base nos ingredientes disponíveis para os usuários, promovendo economia, redução de desperdício e uma alimentação mais saudável.
 
 - **Benefícios para o Usuário:** Economia de dinheiro, redução do desperdício de alimentos, descoberta de novas receitas, melhoria das habilidades culinárias e qualidade de vida.
-- 
+  
 - **Valor para a Organização:** Os usuários fornecem feedback valioso que pode ser usado para melhorar o aplicativo. Eles também podem promover o aplicativo para outros, aumentando a base de usuários, entre outras coisas.
 
 **5. Mural de Possibilidades**
