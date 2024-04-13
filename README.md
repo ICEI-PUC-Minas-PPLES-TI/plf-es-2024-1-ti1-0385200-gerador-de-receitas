@@ -9,6 +9,7 @@
 * João Vitor Ferreira Jacinto
 * João Gabriel Noleto de Figueiredo
 * Miguel Augusto de Paula
+* Matheus Neves Fortini Duarte
 
 ## Professores responsáveis
 
