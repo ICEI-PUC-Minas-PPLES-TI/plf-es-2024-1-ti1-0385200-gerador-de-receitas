@@ -12,8 +12,8 @@
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Michelle Hanne Soares de Andrade
+* Gabriel Barbosa da Fonseca
 
 ## Instruções de utilização
 
