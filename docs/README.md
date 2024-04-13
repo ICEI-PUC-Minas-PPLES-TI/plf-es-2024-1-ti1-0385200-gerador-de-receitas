@@ -20,9 +20,9 @@ Nosso projeto tem como objetivo principal auxiliar pessoas na arte da culinária
 
 ## Informações Gerais
 
-**Projeto:** KitchenCompanion
-**Repositório GitHub:** [Template Trabalho Interdisciplinar - Gerador de Receitas](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas)
-**Membros da equipe:**
+- **Projeto:** KitchenCompanion
+- **Repositório GitHub:** [Template Trabalho Interdisciplinar - Gerador de Receitas](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas)
+- **Membros da equipe:**
 
 - Thiago Branco de Oliveira
 - Diogo Gouvêa Bastos Braga
