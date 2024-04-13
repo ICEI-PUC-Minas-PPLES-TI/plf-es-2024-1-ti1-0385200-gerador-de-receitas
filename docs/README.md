@@ -67,7 +67,7 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 ## Processo de Design Thinking
 
-**1. Matriz CSD (Certezas, Suposições, Dúvidas)**
+**1. Matriz CSD**
 
 - **Certezas:** 
 
