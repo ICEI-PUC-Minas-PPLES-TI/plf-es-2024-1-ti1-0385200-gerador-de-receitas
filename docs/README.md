@@ -18,13 +18,26 @@ O template para o site é estruturado e permite que a equipe evolua a documenta�
 
 Nosso projeto tem como objetivo principal auxiliar pessoas na arte da culinária, fornecendo orientações para cozinhar de maneira simples, fácil, prática e eficiente, mesmo com ingredientes limitados ou reaproveitando os que já estão disponíveis em casa. Além disso, buscamos ajudar aqueles que precisam economizar dinheiro na compra de ingredientes para a preparação de alimentos e reduzir o desperdício de alimentos no dia a dia.
 
+## Informações Gerais
+
+**Projeto:** KitchenCompanion
+**Repositório GitHub:** [Template Trabalho Interdisciplinar - Gerador de Receitas](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas)
+**Membros da equipe:**
+
+- Thiago Branco de Oliveira
+- Diogo Gouvêa Bastos Braga
+- João Vitor Ferreira Jacinto
+- João Gabriel Noleto de Figueiredo
+- Miguel Augusto de Paula
+- Matheus Neves Fortini Duarte
+
 # Contexto
 
 ## Problema
 
 Muitas pessoas frequentemente enfrentam dificuldades ao cozinhar com poucos ingredientes ou ao encontrar maneiras de reutilizar os ingredientes ou alimentos que já possuem, resultando em desperdício e gastos desnecessários. Essa preocupação com os gastos tornou-se comum, pois muitos buscam economizar nas despesas com alimentos, mas raramente conseguem. Isso ocorre porque grande parte da população não possui o conhecimento necessário para preparar refeições simples, práticas, rápidas e básicas, ou não sabem por onde ou como aprender novas receitas. Assim, muitas vezes acabam recorrendo a aplicativos e serviços de entrega de comida (delivery), resultando em gastos desnecessários e prejudicando a própria saúde aos poucos, uma vez que a maioria dos deliveries não oferece comidas muito saudáveis. E, mesmo quando oferecem, não é tão comum que as pessoas peçam comidas "100%" saudáveis. A mesma situação ocorre quando vão às compras, muitas vezes as pessoas gastam muito dinheiro desnecessariamente com alimentos que não são saudáveis e que normalmente não precisam ser preparados para serem consumidos. Quanto ao desperdício de alimentos, além de ser, infelizmente, algo comum, também se tornou um problema sério, conforme apontado por uma pesquisa da Organização das Nações Unidas (ONU) em 2021. Esse tipo de descarte é o terceiro maior emissor de CO2 no mundo, contribuindo com aproximadamente 10% das emissões globais de gases de efeito estufa. Portanto, o desperdício de alimentos também é uma questão ambiental crucial, e nosso projeto busca mitigar todos esses problemas.
 
-## Objetivos
+## Objetivo
 
 Nosso projeto visa criar uma plataforma online (app/site web) que possa sugerir e gerar receitas com base nos ingredientes disponíveis para os usuários. Assim, auxiliando-os na preparação de pratos práticos, simples, básicos, rápidos, e o mais importante: saborosos e saudáveis. Além disso, a plataforma também oferecerá dicas extras sobre economia na cozinha, substituição de ingredientes, conservação de alimentos, reutilização saudável de alimentos, planejamento de refeições e muito mais. Dessa forma, não apenas ajudaremos os usuários a economizar dinheiro e reduzir o desperdício, mas também promoveremos uma maior conscientização ambiental, responsabilidade e uma melhor qualidade de vida através de uma alimentação mais saudável.
 
@@ -50,70 +63,180 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 **Aprendizes de culinária**: Pessoas que estão aprendendo a cozinhar e querem experimentar novas receitas ou pessoas que querem elevar o nível e desafiar suas próprias habilidades culinárias podem usar nosso site para encontrar receitas adequadas ao seu nível de habilidade e aos ingredientes que têm disponíveis no momento.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
+# Concepção (Design Thinking)
+
+## Processo de Design Thinking
+
+**1. Matriz CSD (Certezas, Suposições, Dúvidas)**
+
+- **Certezas:** 
+
+**1.** O aplicativo será uma plataforma online que gera receitas com base nos ingredientes disponíveis para os usuários.
+**2.** O público-alvo inclui estudantes, profissionais, famílias, pessoas que vivem sozinhas, idosos, pessoas com restrições dietéticas e aprendizes de culinária.
+**3.** As pessoas têm acesso limitado a ingredientes.
+**4.** As pessoas querem receitas rápidas e simples.
+**5.** Muitas pessoas carecem de habilidades culinárias, resultando em gastos excessivos com serviços de entrega de alimentos.
+
+- **Suposições:** 
+
+**1.** Os usuários terão algum conhecimento básico de culinária. 
+**2.** Os usuários estarão dispostos a experimentar novas receitas.
+**3.** As pessoas têm um orçamento específico para gastar com ingredientes.
+**4.** As pessoas têm uma quantidade específica de utensílios de cozinha em casa.
+**5.** As pessoas têm uma quantidade específica de tempo para cozinhar.
+
+- **Dúvidas:** 
+
+**1.** Como os usuários interagirão com o aplicativo? 
+**2.** Quais recursos adicionais os usuários gostariam de ver no aplicativo?
+**3.** Eles não têm criatividade.
+**4.** Eles não sabem cozinhar muito bem.
+
+**2. Mapa de Stakeholders**
+
+- **Usuários:** 
+
+**1.** Estudantes;
+**2.** Profissionais; 
+**3.** Famílias;
+**4.** Pessoas que vivem sozinhas;
+**5.** Idosos; 
+**6.** Pessoas com restrições dietéticas;
+**7.** Aprendizes de culinária.
+
+- **Desenvolvedores:**
+
+**1.** Thiago Branco de Oliveira.
+**2.** Diogo Gouvêa Bastos Braga.
+**3.** João Vitor Ferreira Jacinto.
+**4.** João Gabriel Noleto de Figueiredo.
+**5.** Miguel Augusto de Paula.
+**6.** Matheus Neves Fortini Duarte.
+
+- **Parceiros:** 
+
+**1.** Blogs de culinária e chefs online;
+**2.** Empresas de alimentos e bebidas;
+**3.** Nutricionistas e dietistas;
+**4.** Organizações sem fins lucrativos focadas em sustentabilidade alimentar.
+
+**3. Diagrama de Personas**
+
+- Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personalidade, sonhos e objetivos com o aplicativo.
+  
+- (Detalhamento no próximo tópico: Especificações do Projeto/Personas)
+
+**4. Mapa da Proposta de Valor**
+
+- **Proposta de Valor:** Uma plataforma online que gera receitas personalizadas com base nos ingredientes disponíveis para os usuários, promovendo economia, redução de desperdício e uma alimentação mais saudável.
+
+- **Benefícios para o Usuário:** Economia de dinheiro, redução do desperdício de alimentos, descoberta de novas receitas, melhoria das habilidades culinárias e qualidade de vida.
+
+**5. Mural de Possibilidades**
+
+- **Possibilidade 1:** Integração com redes sociais para compartilhar receitas.
+- **Possibilidade 2:** Uma seção de comentários onde os usuários podem compartilhar suas experiências com as receitas.
+- **Possibilidade 3:** A capacidade de salvar receitas favoritas para acesso fácil no futuro.
+
+**6. Mapa de Priorização**
+
+- **Alta Prioridade:** 
+
+**1.** Desenvolvimento do gerador de receitas
+**2.** Funcionalidade de cadastro e login
+**3.** Visualização de receita em tela cheia.
+
+- **Média Prioridade:** 
+
+**1.** Funcionalidade de favoritar receitas
+**2.** Visualização de histórico de receitas.
+
+- **Baixa Prioridade:** 
+
+**1.** Lista de ingredientes recomendados para compra
+**2.** Integração com redes sociais
+**3.** Seção de comentários.
+
+# Especificações do Projeto
 
 ## Personas
 
-Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
-- Persona Tony
-![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164224207/a2d734bf-b687-45f5-baa1-d309a6d6c7f1)
+**1. Persona: Ana**
 
-- Persona Ana 
-![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164224207/39f12d0d-2957-4ad1-a59b-c8d1a6285898)
+- **Idade:** 40 anos
+- **Hobby:** Assistir filmes e séries
+- **Trabalho:** Médica
+- **Personalidade:** Focada e esforçada
+- **Sonhos:** Ser uma médica de renome
+- **Objetivos com o aplicativo:** Ana é uma médica ocupada que valoriza seu tempo. Ela está interessada em aprender a cozinhar refeições rápidas e saudáveis após um longo dia de trabalho. Ela também está procurando maneiras de economizar dinheiro ao maximizar o uso dos ingredientes que já tem em casa.
+
+**2. Persona: Tony**
+
+- **Idade:** 22 anos
+- **Hobby:** Jogar videogames e ler
+- **Trabalho:** Estudante universitário
+- **Personalidade:** Curioso, determinado e prático
+- **Sonhos:** Se formar e morar fora do Brasil
+- **Objetivos com o aplicativo:** Tony é um estudante que busca cozinhar algo rápido e saboroso com os recursos acessíveis. Ele está interessado em aprender a cozinhar e encontrar receitas fáceis e rápidas que podem ser preparadas depois de chegar em casa da universidade.
+
+**3. Persona: Laura**
+
+- **Idade:** 34 anos
+- **Hobby:** Esportes e fotografia
+- **Trabalho:** Fotógrafa freelancer
+- **Personalidade:** Criativa, aventureira e consciente sobre saúde
+- **Sonhos:** Viajar pelo mundo e documentar suas experiências através da fotografia
+- **Objetivos com o aplicativo:** Laura é uma fotógrafa freelancer que passa muito tempo viajando para diferentes locais para seu trabalho. Ela está procurando maneiras de preparar refeições saudáveis e simples em qualquer lugar que esteja. Ela também está interessada em experimentar receitas de diferentes culturas.
+
+**4. Persona: Roberto**
+
+- **Idade:** 70 anos
+- **Hobby:** Pescar e jardinagem
+- **Trabalho:** Aposentado
+- **Personalidade:** Calmo, metódico e consciente sobre saúde
+- **Sonhos:** Aprender novas habilidades culinárias e preparar refeições saudáveis para seus netos
+- **Objetivos com o aplicativo:** Roberto é um idoso que gosta de cozinhar para sua família. Ele está procurando por receitas simples e nutritivas que são fáceis de preparar. Ele também está interessado em aprender sobre substituição de ingredientes para acomodar suas necessidades dietéticas específicas. Além disso, ele gostaria de planejar suas refeições semanais e criar uma lista de compras eficiente.
 
 
 ## Histórias de Usuários
 
-Como um entusiasta da culinária,
-Eu quero inserir os ingredientes que tenho em casa,
-Para que o aplicativo me sugira receitas que eu possa preparar com eles.
+**Como um estudante universitário com orçamento limitado**, eu gostaria de encontrar receitas rápidas e econômicas, para que eu possa preparar refeições saudáveis e saborosas sem gastar muito tempo ou dinheiro.
 
-Como uma pessoa com restrições alimentares,
-Eu quero filtrar receitas por tipo de dieta (vegana, sem glúten, etc.),
-Para que eu possa encontrar receitas que atendam às minhas necessidades nutricionais.
+**Como um profissional ocupado**, eu gostaria de acessar receitas que possam ser preparadas com antecedência, para que eu possa ter refeições prontas para consumir durante a semana de trabalho.
 
-Como um planejador de refeições,
-Eu quero que o aplicativo crie uma lista de compras com base na receita escolhida,
-Para que eu possa comprar os ingredientes que faltam de forma eficiente.
+**Como pai/mãe de uma família grande**, eu gostaria de encontrar receitas que sejam versáteis e agradem a todos, para que eu possa preparar uma única refeição que satisfaça as preferências de toda a família.
 
-Como alguém que vive sozinho,
-Eu quero receitas que sejam adequadas para porções individuais,
-Para evitar desperdício e ter a quantidade certa de comida para uma refeição.
+**Como alguém que vive sozinho**, eu gostaria de encontrar receitas que sejam adequadas para porções individuais, para evitar o desperdício e preparar a quantidade certa de comida para uma refeição.
 
-Como pai/mãe de uma família grande,
-Eu quero receitas que sejam versáteis e agradem a todos,
-Para que eu possa preparar uma única refeição que satisfaça as preferências de toda a família.
+**Como um idoso**, eu gostaria de encontrar receitas simples e nutritivas que são fáceis de preparar, para atender às minhas necessidades dietéticas específicas e evitar a preparação de refeições complexas.
 
-Como um profissional ocupado,
-Eu quero acessar receitas que possam ser preparadas com antecedência,
-Para que eu possa ter refeições prontas para consumir durante a semana de trabalho.
+**Como uma pessoa com restrições dietéticas**, eu gostaria de filtrar receitas por tipo de dieta (como vegana, sem glúten, etc.), para que eu possa encontrar receitas que atendam às minhas necessidades nutricionais específicas.
 
-Como estudante universitário com orçamento limitado,
-Eu quero encontrar receitas rápidas e econômicas,
-Para que eu possa preparar refeições saudáveis e saborosas sem gastar muito tempo ou dinheiro.
-
+**Como um aprendiz de culinária**, eu gostaria de usar o aplicativo para encontrar receitas adequadas ao meu nível de habilidade e aos ingredientes que tenho disponíveis no momento, para que eu possa experimentar novas receitas e desafiar minhas próprias habilidades culinárias.
 
 ## Requisitos
 
 **Requisitos Funcionais:**
 
-- O usuário acessa uma receita gerada por I.A
-- O usuário pode se cadastrar e fazer login
-- O usuário pode ver a receita em tela cheia
-- O usuário pode favoritar as receitas
-- O usuário pode ver seu histórico de receitas
-- O usuário pode ver suas receitas favoritas
-- O usuário acessa uma lista de ingredientes recomendados para compra com base na receita gerada anteriormente pela I.A
+- O usuário deve ser capaz de acessar uma receita gerada por I.A.
+- O sistema deve permitir que o usuário se cadastre e faça login.
+- O usuário deve ser capaz de visualizar a receita em tela cheia.
+- O sistema deve permitir que o usuário favorite as receitas.
+- O usuário deve ser capaz de visualizar seu histórico de receitas.
+- O usuário deve ser capaz de visualizar suas receitas favoritas.
+- O sistema deve fornecer ao usuário uma lista de ingredientes recomendados para compra com base na receita gerada anteriormente pela I.A.
 
 **Requisitos Não-Funcionais:**
 
-- Compatível com chrome e Mozilla
-- Feito em HTML, CSS e JS
-- Usa a API do chatgpt
-- Design responsivo
-- Gera receitas com ingredientes disponíveis/selecionados
+- O sistema deve ser compatível com os navegadores Chrome e Mozilla.
+- O sistema deve ser desenvolvido usando HTML, CSS e JS.
+- O sistema deve utilizar a API do chatgpt.
+- O design do sistema deve ser responsivo, adaptando-se a diferentes tamanhos de tela.
+- O sistema deve ser capaz de gerar receitas com base nos ingredientes disponíveis/selecionados pelo usuário.
 
-## User Flow
+# Projeto de Interface
+
+## User/Screen Flow e Protótipo interativo
 
 [User-Flow](https://www.figma.com/file/ZNHwYf0uQvqoMS3YTv3oi0/Kitchen-Companion?type=design&node-id=26%3A45&mode=design&t=rUFez5oaggbkA7Aw-1)
 
@@ -125,26 +248,24 @@ Para que eu possa preparar refeições saudáveis e saborosas sem gastar muito t
 
 ![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164224207/16668b51-e58a-4761-a1a3-54e1bf090296)
 
-## Gestão de Projetos
-
-Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
-
-Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+# Metodologia
 
 ## Ferramentas
 
-- Figma (User Flow, Wireframe e Protótipo)
-- Github (Rastreamento da documentação e projeto)
+- **Figma:** Utilizado para a criação do User Flow, Wireframe e Protótipo.
+- **Github:** Empregado para o rastreamento da documentação e do progresso do projeto.
 
 ## Gestão do Projeto
-- Microsoft To-Do (Rastreamento e divisão de tarefas/papéis)
-Para criar um "flow" de trabalho efetivo, foi necessário fazer o tracking das tarefas com um aplicativo fácil de usar, que no caso, foi o "microsoft to-do". Lá foi possível atribuir tarefas aos membros do grupo, e quando cada um terminava seu afazer, marcava como concluído. Simples e efetivo.
 
-## Atribuição de Tarefas na Sprint 1
-- João Gabriel Noleto: Criação da lista de tarefas no microsoft To-do e Documentação; Criação do mapa de stakeholders e parte do design thinking.
-- João Vitor Ferreira Jacinto: Criação das histórias de usuário e "retoque" na documentação.
-- Diogo Gouvêa Bastos Braga: Criação da apresentação em powerpoint do grupo
-- Thiago Branco de Oliveira: Criação do userflow, protótipo, wireframes, repositório e parte do design thinking
-- Matheus Neves Fortini Duarte: Auxílio na documentação, criação do mapa de stakeholders e parte do design thinking
-- Miguel Augusto de Paula: Auxílio na documentação
+- **Microsoft To-Do:** Utilizado para o rastreamento e a divisão de tarefas/papéis. Para criar um fluxo de trabalho efetivo, foi necessário fazer o acompanhamento das tarefas com este aplicativo fácil de usar. Nele, foi possível atribuir tarefas aos membros do grupo e, quando cada um terminava seu afazer, marcava como concluído. Uma solução simples e efetiva.
 
+## Controle de Versão
+
+**Atribuição de Tarefas na Sprint 1:**
+
+- **Thiago Branco de Oliveira:** Encarregado da criação do userflow, protótipo, wireframes, repositório e parte do design thinking.
+- **Diogo Gouvêa Bastos Braga:** Responsável pela criação da apresentação em PowerPoint do grupo.
+- **João Vitor Ferreira Jacinto:** Encarregado da criação das histórias de usuário e do aprimoramento da documentação.
+- **João Gabriel Noleto de Figueiredo:** Responsável pela criação da lista de tarefas no Microsoft To-do e pela documentação; também contribuiu para a criação do mapa de stakeholders e parte do design thinking.
+- **Miguel Augusto de Paula:** Contribuiu com auxílio na documentação.
+- **Matheus Neves Fortini Duarte:** Auxiliou na documentação, na criação do mapa de stakeholders e na parte do design thinking.
