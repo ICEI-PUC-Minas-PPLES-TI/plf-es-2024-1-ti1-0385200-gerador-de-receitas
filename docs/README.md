@@ -24,12 +24,12 @@ Nosso projeto tem como objetivo principal auxiliar pessoas na arte da culinária
 - **Repositório GitHub:** [Template Trabalho Interdisciplinar - Gerador de Receitas](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas)
 - **Membros da equipe:**
 
-- Thiago Branco de Oliveira
-- Diogo Gouvêa Bastos Braga
-- João Vitor Ferreira Jacinto
-- João Gabriel Noleto de Figueiredo
-- Miguel Augusto de Paula
-- Matheus Neves Fortini Duarte
+1. Thiago Branco de Oliveira
+2. Diogo Gouvêa Bastos Braga
+3. João Vitor Ferreira Jacinto
+4. João Gabriel Noleto de Figueiredo
+5. Miguel Augusto de Paula
+6. Matheus Neves Fortini Duarte
 
 # Contexto
 
