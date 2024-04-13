@@ -124,7 +124,7 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 - Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personalidade, sonhos e objetivos com o aplicativo.
   
-- (Detalhamento no próximo tópico: Especificações do Projeto/Personas)
+- (Detalhamento no próximo tópico: "Especificações do Projeto/Personas")
 
 **4. Mapa da Proposta de Valor**
 
