@@ -8,6 +8,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    background-color: #F3EBE2;
+}
+
 nav{
     width: 100%;
     display: flex;
@@ -31,27 +35,60 @@ nav{
     margin-top: 2.5%;
     margin-left: 10%;
 }
-.container{
+.container-mainzinho{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    border: 2px solid black;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    border: 2px solid #F0C798;
+    border-radius: 10px;
+    margin-top: 1%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: whitesmoke;
 }
 #Subtitulopag{
-    border-bottom: 2px solid black;
-    grid-column: 2/8;
+    border-bottom: 2px solid #F0C798;
+    grid-column: 2/9;
     grid-row: 3/4;
 }
 #Subtitulopag > p{
+    margin-top: 1%;
     font-size: x-large;
     font-family: 'Roboto', sans-serif;
 }
+#subsubtitulo{
+    grid-row: 4/5;
+    grid-column: 2/5;
+}
 #containergen{
-    grid-row: 5/8;
-    grid-column: 2/8;
-    border: 2px solid grey;
-    border-radius: 5%;
+    background-color: #F3EBE2;
+    grid-row: 5/10;
+    grid-column: 2/9;
+    border-radius: 10px;
 }
 #prompter{
     width: 100%;
+    padding: 0.5% 1%;
+    background-color: #F3EBE2;
+}
+#botao{
+    grid-row: 11/13;
+    grid-column: 5/7;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #F18F01, #CA7700);
+}
+#titulo{
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid #F0C798;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#recebaseupedido{
+    grid-row: 16/17;
+    grid-column: 2/9;
+    border-bottom: 2px solid #F0C798;
 }
