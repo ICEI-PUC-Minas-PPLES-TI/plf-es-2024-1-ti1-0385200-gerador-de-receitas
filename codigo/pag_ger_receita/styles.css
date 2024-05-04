@@ -73,7 +73,7 @@ nav{
     background-color: #F3EBE2;
 }
 #botao{
-    grid-row: 11/13;
+    grid-row: 12/13;
     grid-column: 5/7;
     width: 100px;
     height: 30px;
@@ -88,7 +88,7 @@ nav{
     margin-right: 10%;
 }
 #recebaseupedido{
-    grid-row: 16/17;
+    grid-row: 15/17;
     grid-column: 2/9;
     border-bottom: 2px solid #F0C798;
 }
