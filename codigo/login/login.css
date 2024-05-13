@@ -50,10 +50,14 @@ main {
   gap: 40px;
 }
 
+.botoes-nao-geracao {
+  display: flex;
+}
+
 .barra-de-pesquisa input {
   font-size: 16px;
   color: rgba(46, 14, 2, 0.5);
-  width: 600px;
+  width: 500px;
   height: 40px;
   border-radius: 10px;
   position: relative;
@@ -81,6 +85,10 @@ main {
   font-weight: 700;
   font-size: 20px;
   padding: 0 12px;
+}
+
+.retangulo-cadastro-off {
+  background: transparent;
 }
 
 .botao-header {
