@@ -7,6 +7,15 @@
     <title>KitchenCompanion</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script type="module" src="genscript.js"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+      </script>
+    
 </head>
 
 <body>
@@ -42,15 +51,39 @@
             <div id="containergen">
                 <input type="text" placeholder="Escreva o seu pedido aqui.." name="gerar" id="prompter">
             </div>
-            <input type="button" value="Gerar Receita" id="botao">
+            <button type="button" id="botao">Gerar Receita</button>
             <div id="recebaseupedido">
                 <h3>Receita Gerada</h3>
             </div>
+            <textarea id="pedidorecebido">OIIIII BRENZY</textarea>
         </div>
     </main>
     <footer>
-
+        <div class="footer">
+            <div class="footer-info container">
+                <div class="footer-info1">
+                    <div class="footer-logo">
+                        <img src="./logobranco.png" alt="logo alternativo">
+                    </div>
+                    <a href="">Meu Perfil</a>
+                    <a href="">Gerar Receita</a>
+                </div>
+                <div class="footer-info2">
+                    <a href="">Quem Somos</a>
+                    <a href="">Termos de Uso</a>
+                    <a href="">Privacidade</a>
+                    <a href="">Contato</a>
+                </div>
+            </div>
+            <div class="footer-socials container">
+                <a href="" class="fb-icone"><img src="./facebook-c1.png" alt="link para facebook"></a>
+                <a href="" class="insta-logo"><img src="./instagram-c1.png" alt="link para instagram"></a>
+                <a href="" class="x-icone"><img src="./twitter-c1.png" alt="link para x"></a>
+            </div>
+            <p>Kitchen Companion ©. Todos os direitos reservados.</p>
+        </div>
     </footer>
+
 </body>
 
 </html>
