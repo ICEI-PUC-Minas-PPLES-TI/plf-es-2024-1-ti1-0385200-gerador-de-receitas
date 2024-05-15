@@ -115,7 +115,7 @@ header{
 }
 #containergen{
     background-color: #F3EBE2;
-    grid-row: 5/10;
+    grid-row: 5/7;
     grid-column: 2/9;
     border-radius: 10px;
 }
@@ -125,7 +125,7 @@ header{
     background-color: #F3EBE2;
 }
 #botao{
-    grid-row: 12/13;
+    grid-row: 9/11;
     grid-column: 5/7;
     width: 100px;
     height: 30px;
@@ -140,7 +140,7 @@ header{
     margin-right: 10%;
 }
 #recebaseupedido{
-    grid-row: 15/17;
+    grid-row: 12/14;
     grid-column: 2/9;
     border-bottom: 2px solid #F0C798;
 }
@@ -209,6 +209,6 @@ header{
 }
 
 #pedidorecebido{
-  grid-row: 18/20;
+  grid-row: 14/20;
   grid-column: 2/9;
 }
