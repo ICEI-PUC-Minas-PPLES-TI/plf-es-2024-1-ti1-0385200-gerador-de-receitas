@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="PT-BR">
 
 <head>
@@ -38,15 +39,18 @@
             <div class="caixa-main conteudo-principal">
                 <div class="conteudo-info">
                     <h2>Suas informações de Cadastro</h2>
-                    <p>Nome completo</p>
-                    <input type="text" placeholder="Seu nome completo" class="main-form">
-                    <p>E-mail</p>
-                    <input type="text" placeholder="Seu email" class="main-form">
-                    <p>Senha</p>
-                    <input type="text" placeholder="Sua senha" class="main-form">
-                    <div class="container-botao">
-                        <button class="botao">Cadastrar</button>
-                    </div>
+                    <div id="msg"></div> <!-- Adicionado para mensagens -->
+                    <form id="form-cadastro">
+                        <p>Nome completo</p>
+                        <input type="text" placeholder="Seu nome completo" id="inputNome" class="main-form" required>
+                        <p>E-mail</p>
+                        <input type="email" placeholder="Seu email" id="inputEmail" class="main-form" required>
+                        <p>Senha</p>
+                        <input type="password" placeholder="Sua senha" id="inputSenha" class="main-form" required>
+                        <div class="container-botao">
+                            <button type="button" class="botao" id="btnCadastrar">Cadastrar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -81,6 +85,37 @@
         </div>
     </footer>
 
+    <script src="./app.js"></script>
+    <script>
+        function cadastrarUsuario() {
+            // Obtem os valores dos campos do formulário
+            let nome = document.getElementById('inputNome').value;
+            let email = document.getElementById('inputEmail').value;
+            let senha = document.getElementById('inputSenha').value;
+
+            // Cria um objeto com os dados do usuário
+            let usuario = {
+                nome: nome,
+                email: email,
+                senha: senha
+            };
+
+            // Envia os dados para o servidor
+            createUser(usuario, function (response) {
+                if (response.success) {
+                    alert("Usuário cadastrado com sucesso!");
+                    document.getElementById('form-cadastro').reset();
+                } else {
+                    alert("Erro ao cadastrar usuário: " + response.message);
+                }
+            });
+        }
+
+        document.getElementById('btnCadastrar').addEventListener('click', function (event) {
+            event.preventDefault();
+            cadastrarUsuario();
+        });
+    </script>
 </body>
 
 </html>
