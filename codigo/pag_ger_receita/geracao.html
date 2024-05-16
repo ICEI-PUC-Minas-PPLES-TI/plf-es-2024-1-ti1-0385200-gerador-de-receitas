@@ -13,22 +13,28 @@
 
 <body>
     <header>
-        <div id="logo">
-        <a href="#"><img src="logo.png" alt="A logo do kitchencompanion"></a>
-        </div>
-        <div class="search">
-            <div class="barra-de-pesquisa">
-                <span><img src="./busca 1.png" alt=""></span>
-                <input type="text" placeholder="Pesquise uma receita...">
+        <div class="header">
+            <div class="flex container">
+                <div>
+                    <img src="./logo.png" alt="logo do KitchenCompanion">
+                </div>
+                <div class="barra-de-pesquisa">
+                    <span><img src="./busca 1.png" alt=""></span>
+                    <input type="text" placeholder="Pesquise uma receita...">
+                </div>
+                <div class="header-botoes">
+                    <div class="botoes-nao-geracao">
+                        <div class="retangulo-cadastro">
+                            <a href="">Login</a>
+                        </div>
+                        <div class="retangulo-cadastro retangulo-cadastro-off">
+                            <a href="">Cadastre-se</a>
+                        </div>
+                    </div>
+                    <button class="botao-header">Gerar Receita</button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="header-botoes">
-        <div class="retangulo-cadastro">
-            <a href="">Login</a>
-        </div>
-        <button class="botao-header">Gerar Receita</button>
-    </div>
     </header>
     <main>
         <div id="titulo">
@@ -48,7 +54,7 @@
             <div id="recebaseupedido">
                 <h3>Receita Gerada</h3>
             </div>
-            <textarea id="pedidorecebido">A receita aparecerá aqui</textarea>
+            <textarea id="pedidorecebido" placeholder="a sua receita aparecerá aqui"></textarea>
         </div>
     </main>
     <footer>

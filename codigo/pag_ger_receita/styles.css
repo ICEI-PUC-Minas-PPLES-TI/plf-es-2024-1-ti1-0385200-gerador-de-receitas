@@ -24,13 +24,13 @@
 }
 
 body{
-    background-color: #F3EBE2;
+    background-color: var(--gelo);
 }
 
 header{
     width: 100%;
     display: flex;
-    background-color: #DD224E;
+    background-color: var(--vermelho);
     background: var(--linear-vermelho);
     justify-content: space-between;
 }
@@ -41,22 +41,6 @@ header{
     gap: 40px;
   }
 
-.barra-de-pesquisa input {
-    font-size: 16px;
-    color: rgba(46, 14, 2, 0.5);
-    width: 600px;
-    height: 40px;
-    border-radius: 10px;
-    position: relative;
-    padding-left: 60px;
-  }
-  
-  .barra-de-pesquisa span {
-    position: absolute;
-    z-index: 5;
-    margin-top: 7px;
-    margin-left: 20px;
-  }
   .botao-header {
     color: var(--marrom);
     font-weight: 700;
@@ -73,7 +57,7 @@ header{
 
   .retangulo-cadastro {
     display: flex;
-    background: var(--vermelho);
+    background: transparent;
     height: 88px;
     align-items: center;
     justify-content: center;
@@ -91,16 +75,16 @@ header{
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(20, 1fr);
-    border: 2px solid #F0C798;
+    border: 2px solid var(--creme);
     border-radius: 10px;
     margin-top: 1%;
     margin-bottom: 10%;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: whitesmoke;
+    background-color: var(--gelo);
 }
 #Subtitulopag{
-    border-bottom: 2px solid #F0C798;
+    border-bottom: 2px solid var(--creme);
     grid-column: 2/9;
     grid-row: 3/4;
 }
@@ -114,7 +98,7 @@ header{
     grid-column: 2/5;
 }
 #containergen{
-    background-color: #F3EBE2;
+    background-color: var(--branco);
     grid-row: 5/7;
     grid-column: 2/9;
     border-radius: 10px;
@@ -122,7 +106,7 @@ header{
 #prompter{
     width: 100%;
     padding: 0.5% 1%;
-    background-color: #F3EBE2;
+    background-color: var(--branco);
 }
 #botao{
     grid-row: 9/11;
@@ -130,11 +114,11 @@ header{
     width: 100px;
     height: 30px;
     border-radius: 10px;
-    background: linear-gradient(to bottom, #F18F01, #CA7700);
+    background: var(--linear-amarelo);
 }
 #titulo{
     font-family: var(--font-family);
-    border-bottom: 2px solid #F0C798;
+    border-bottom: 2px solid var(--creme);
     margin-top: 2%;
     margin-left: 10%;
     margin-right: 10%;
@@ -142,7 +126,7 @@ header{
 #recebaseupedido{
     grid-row: 12/14;
     grid-column: 2/9;
-    border-bottom: 2px solid #F0C798;
+    border-bottom: 2px solid var(--creme);
 }
 .container-detalhe {
   display: flex;
@@ -211,4 +195,97 @@ header{
 #pedidorecebido{
   grid-row: 14/20;
   grid-column: 2/9;
+}
+
+.botoes-nao-geracao {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.barra-de-pesquisa input {
+  font-size: 16px;
+  color: rgba(46, 14, 2, 0.5);
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+  position: relative;
+  padding-left: 60px;
+}
+
+.barra-de-pesquisa span {
+  position: absolute;
+  z-index: 5;
+  margin-top: 7px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 821px) {
+  header{
+    width: 100%;
+    display: flex;
+    background-color: var(--vermelho);
+    background: var(--linear-vermelho);
+    justify-content: space-between;
+}
+
+.header-botoes {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .botao-header {
+    color: var(--marrom);
+    font-weight: 700;
+    font-size: 20px;
+    background: var(--linear-amarelo);
+    border-radius: 12px;
+    padding: 10px 20px;
+  }
+  
+  .botao-header:hover {
+    background: var(--amarelo-escuro);
+    cursor: pointer;
+  }
+
+  .retangulo-cadastro {
+    display: flex;
+    background: transparent;
+    height: 88px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .retangulo-cadastro a {
+    text-decoration: none;
+    color: var(--gelo);
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0 12px;
+  }
+
+  .barra-de-pesquisa input {
+    font-size: 16px;
+    color: rgba(46, 14, 2, 0.5);
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    padding-left: 60px;
+  }
+  
+  .barra-de-pesquisa span {
+    position: absolute;
+    z-index: 5;
+    margin-top: 7px;
+    margin-left: 20px;
+  }
 }
