@@ -1,0 +1,31 @@
+{
+    "receitas_recomendadas": [{
+        "id": 1,
+        "nome": "Macararrao c/ molho Pesto",
+        "imagem": "espaguete.jpg",
+        "descricao": "Deliciosa receita de macarrão (tipo de sua preferência) com molho pesto, com adição de tomate-cereja ou outros itens de sua preferência."
+    },
+    {
+        "id": 2,
+        "nome": "Hamburguer",
+        "imagem": "hamburguer.jpg",
+        "descricao": "Suculento hambúrguer de carne bovina acompanhado por brócolis cozidos no vapor ou outros itens de sua preferência."
+    },
+
+    {
+        "id": 3,
+        "nome": "Framboesa",
+        "imagem": "framboesa.webp",
+        "descricao": "Bolo saboroso de framboesa com recheio de iogurte grego e geleia de frutas vermelhas. Substitua ingredientes e faça do seu jeito!"
+    },
+
+    {
+        "id": 4,
+        "nome": "Torrada c/ Ovos",
+        "imagem": "torrada.jpg",
+        "descricao": "Torradas crocantes com uma generosa camada de creme de abacate acompanhadas por ovos cozidos. Você decide a consistência da gema"
+      } 
+        ]
+      }
+      
+        
