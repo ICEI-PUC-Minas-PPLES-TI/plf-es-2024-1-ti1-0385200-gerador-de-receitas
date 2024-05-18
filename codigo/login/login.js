@@ -78,7 +78,7 @@ function atualizarHeader() {
     btnLoginHeader.textContent = "Login";
     btnLoginHeader.removeEventListener("click", handleLogoff);
     userHeader.textContent = "Cadastre-se";
-    userHeader.href = "cadastro.html";
+    userHeader.href = "../cadastro/cadastro.html";
   }
 }
 
