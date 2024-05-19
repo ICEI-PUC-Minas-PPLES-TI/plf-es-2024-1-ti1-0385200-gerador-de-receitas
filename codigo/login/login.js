@@ -2,6 +2,11 @@
 const apiUrl =
   "https://32dd9aa6-c33f-4c38-b8bc-feeaa6f8e2e1-00-a8zd99e1pw34.kirk.replit.dev/usuarios";
 
+function toggleMenu() {
+  const menu = document.getElementById("nav");
+  menu.classList.toggle("active");
+}
+
 function displayMessage(mensagem, isError = true) {
   const msg = document.getElementById("msg");
   msg.innerHTML =
@@ -89,3 +94,7 @@ document.getElementById("btnLogin").addEventListener("click", function (event) {
 
 // Atualizar o header ao carregar a página
 document.addEventListener("DOMContentLoaded", atualizarHeader);
+
+const btnMobile = document.getElementById("btn-mobile");
+
+btnMobile.addEventListener("click", toggleMenu);

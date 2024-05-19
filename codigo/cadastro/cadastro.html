@@ -11,15 +11,18 @@
 <body>
     <header>
         <div class="header">
-            <div class="flex container">
+            <div class="flex container" id="nav">
                 <div>
                     <img src="../login/logo.png" alt="logo do KitchenCompanion">
                 </div>
-                <div class="barra-de-pesquisa">
-                    <span><img src="../login/busca 1.png" alt=""></span>
-                    <input type="text" placeholder="Pesquise uma receita...">
-                </div>
-                <div class="header-botoes">
+                <button id="btn-mobile">Menu
+                    <span id="hamburguer"></span>
+                </button>
+                <div class="header-botoes" id="menu">
+                    <div class="barra-de-pesquisa">
+                        <span><img src="../login/busca 1.png" alt=""></span>
+                        <input type="text" placeholder="Pesquise uma receita...">
+                    </div>
                     <div class="botoes-nao-geracao">
                         <div class="retangulo-cadastro retangulo-cadastro-off">
                             <a href="../login/login.html">Login</a>
@@ -28,7 +31,9 @@
                             <a href="./cadastro.html">Cadastre-se</a>
                         </div>
                     </div>
-                    <button class="botao-header">Gerar Receita</button>
+                    <div id="botao-geracao">
+                        <button class="botao-header">Gerar Receita</button>
+                    </div>
                 </div>
             </div>
         </div>

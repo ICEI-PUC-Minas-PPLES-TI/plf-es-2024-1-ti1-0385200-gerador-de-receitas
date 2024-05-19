@@ -54,6 +54,10 @@ main {
   display: flex;
 }
 
+#btn-mobile {
+  display: none;
+}
+
 .barra-de-pesquisa input {
   font-size: 16px;
   color: rgba(46, 14, 2, 0.5);
@@ -330,4 +334,96 @@ main {
 }
 
 @media (max-width: 900px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex {
+    display: flex;
+    gap: 80px;
+  }
+
+  #btn-mobile {
+    display: flex;
+    color: var(--gelo);
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  #hamburguer {
+    display: block;
+    border-top: 2px solid var(--gelo);
+    width: 20px;
+  }
+
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: var(--gelo);
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .header-botoes {
+    display: none;
+  }
+
+  #menu {
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    top: 88px;
+    height: calc(100vh - 88px);
+    background-color: rgba(46, 14, 2, 0.5);
+    z-index: 1000;
+  }
+
+  #nav.active #menu,
+  #nav.active #menu .botoes-nao-geracao {
+    display: block;
+  }
+
+  .botoes-nao-geracao,
+  .retangulo-cadastro {
+    background: transparent;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  #botao-geracao button {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .barra-de-pesquisa input {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .barra-de-pesquisa img {
+    visibility: hidden;
+  }
+
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
 }
