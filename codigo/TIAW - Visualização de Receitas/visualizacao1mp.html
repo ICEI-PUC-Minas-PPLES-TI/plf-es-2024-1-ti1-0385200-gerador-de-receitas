@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizualização das Receitas - Macarrão ao Pesto</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="visualizacao.css">
+
+    <script src="visualizacao1mp.js"></script>
+
+    <script src="coracao.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- header da página (parte de cima da página) -->
+
+    <header>
+        <div class="header">
+            <div class="flex container">
+                <div>
+                    <img src="./logo.png" alt="logo do KitchenCompanion">
+                </div>
+                <div class="barra-de-pesquisa">
+                    <span><img src="./busca 1.png" alt=""></span>
+                    <input type="text" placeholder="Pesquise uma receita...">
+                </div>
+                <div class="header-botoes">
+                    <div class="botoes-nao-geracao">
+                        <div class="retangulo-cadastro retangulo-cadastro-off">
+                            <a href="">Login</a>
+                        </div>
+                        <div class="retangulo-cadastro retangulo-cadastro-off">
+                            <a href="">Cadastre-se</a>
+                        </div>
+                    </div>
+                    <button class="botao-header">Gerar Receita</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- corpo/main da página (parte do meio da página) -->
+
+    <main>
+        <div class="conteudo-principal">
+
+            <h1>Receitas Recomendadas</h1>
+
+            <div class="caixa-main conteudo-principal">
+                <img id="imagemMacarrãoPesto" src="" alt="Imagem do Macarrão ao Pesto">
+            </div>
+
+            <div class="container-botao">
+
+                <button class="botao">
+                    <h2>Massa</h2>
+                </button>
+                <button class="botao">
+                    <h2>Vegano</h2>
+                </button>
+                <button class="botao-coracao" onclick="toggleHeart(this)"><i class="far fa-heart"></i></button>
+            </div>
+
+            <div class="conteudo-info">
+
+                <h2 id="nomeMacarrãoPesto"></h2>
+                <p id="informacoesMacarrãoPesto" class="text"></p>
+
+                <div class="container-detalhe">
+                    <img src="./detalhe ~.png" alt="detalhe da página">
+                </div>
+
+                <h2>Ingredientes</h2>
+                <p id="ingredientesMacarrãoPesto" class="text"></p>
+
+                <div class="container-detalhe">
+                    <img src="./detalhe ~.png" alt="detalhe da página">
+                </div>
+
+                <h2>Modo de Preparo</h2>
+                <p id="preparoMacarrãoPesto" class="text"></p>
+
+                <div class="container-detalhe">
+                    <img src="./detalhe ~.png" alt="detalhe da página">
+                </div>
+
+                <h2>Dicas</h2>
+                <p id="dicasMacarrãoPesto" class="text"></p>
+
+                <div class="container-detalhe">
+                    <img src="./detalhe ~.png" alt="detalhe da página">
+                </div>
+
+                <h2>Tempo de Preparo</h2>
+                <p id="tempopreparoMacarrãoPesto" class="text"></p>
+
+                <div class="container-detalhe">
+                    <img src="./detalhe ~.png" alt="detalhe da página">
+                </div>
+
+                <h2>Porções</h2>
+                <p id="porcoesMacarrãoPesto" class="text"></p>
+
+                <div class="container-detalhe">
+                    <img src="./detalhe ~.png" alt="detalhe da página">
+                </div>
+
+                <h2>Valor Nutricional</h2>
+                <p id="valornutricionalMacarrãoPesto" class="text"></p>
+
+                <div class="container-detalhe">
+                    <img src="./detalhe ~.png" alt="detalhe da página">
+                </div>
+
+                <h2>Dificuldade</h2>
+                <p id="dificuldadeMacarrãoPesto" class="text"></p>
+
+                <div class="container-detalhe">
+                    <img src="./detalhe ~.png" alt="detalhe da página">
+                </div>
+
+                <h2>Recado</h2>
+                <p id="recadoMacarrãoPesto" class="text"></p>
+
+                <br><br><br><br>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- footer da página (parte de baixo da página) -->
+
+    <footer>
+        <div class="footer">
+            <div class="footer-info container">
+                <div class="footer-info1">
+                    <div class="footer-logo">
+                        <img src="./logobranco.png" alt="logo alternativo">
+                    </div>
+                    <a href="">Meu Perfil</a>
+                    <a href="">Gerar Receita</a>
+                </div>
+                <div class="footer-info2">
+                    <a href="">Quem Somos</a>
+                    <a href="">Termos de Uso</a>
+                    <a href="">Privacidade</a>
+                    <a href="">Contato</a>
+                </div>
+            </div>
+            <div class="footer-socials container">
+                <a href="" class="fb-icone"><img src="./facebook-c1.png" alt="link para facebook"></a>
+                <a href="" class="insta-logo"><img src="./instagram-c1.png" alt="link para instagram"></a>
+                <a href="" class="x-icone"><img src="./twitter-c1.png" alt="link para x"></a>
+            </div>
+            <p>Kitchen Companion ©. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
