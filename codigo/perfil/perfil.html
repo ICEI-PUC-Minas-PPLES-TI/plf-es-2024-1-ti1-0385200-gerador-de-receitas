@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../login/login.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="flex container" id="nav">
+                <div>
+                    <img src="../login/logo.png" alt="logo do KitchenCompanion">
+                </div>
+                <button id="btn-mobile">Menu
+                    <span id="hamburguer"></span>
+                </button>
+                <div class="header-botoes" id="menu">
+                    <div class="barra-de-pesquisa">
+                        <span><img src="./busca 1.png" alt=""></span>
+                        <input type="text" placeholder="Pesquise uma receita...">
+                    </div>
+                    <div class="botoes-nao-geracao">
+                        <div class="retangulo-cadastro">
+                            <a href="#" id="btnLoginHeader">Login</a>
+                        </div>
+                        <div class="retangulo-cadastro retangulo-cadastro-off">
+                            <a href="../cadastro/cadastro.html" id="userHeader">Cadastre-se</a>
+                        </div>
+                    </div>
+                    <div id="botao-geracao">
+                        <button class="botao-header">Gerar Receita</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="conteudo-principal">
+            <h1>Login</h1>
+            <div class="caixa-main conteudo-principal">
+                <div class="conteudo-info">
+                    <h2>Suas informações de Entrada</h2>
+                    <div id="msg"></div> <!-- Adicionado para mensagens -->
+                    <form id="form-login">
+                        <p>E-mail</p>
+                        <input type="email" placeholder="Seu email" id="loginEmail" class="main-form" required>
+                        <p>Senha</p>
+                        <input type="password" placeholder="Sua senha" id="loginSenha" class="main-form" required>
+                        <div class="container-botao">
+                            <button type="button" class="botao" id="btnLogin">Entrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-detalhe">
+            <img src="./detalhe ~.png" alt="detalhe da página">
+        </div>
+        <aside>
+            <ul>
+                <li>Configurações</li>
+                <li>Histórico</li>
+                <li>Favoritas</li>
+                <li>Logout</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-info container">
+                <div class="footer-info1">
+                    <div class="footer-logo">
+                        <img src="./logobranco.png" alt="logo alternativo">
+                    </div>
+                    <a href="">Meu Perfil</a>
+                    <a href="">Gerar Receita</a>
+                </div>
+                <div class="footer-info2">
+                    <a href="">Quem Somos</a>
+                    <a href="">Termos de Uso</a>
+                    <a href="">Privacidade</a>
+                    <a href="">Contato</a>
+                </div>
+            </div>
+            <div class="footer-socials container">
+                <a href="" class="social-icone"><img src="./facebook-c1.png" alt="link para facebook"></a>
+                <a href="" class="social-icone"><img src="./instagram-c1.png" alt="link para instagram"></a>
+                <a href="" class="social-icone"><img src="./twitter-c1.png" alt="link para x"></a>
+            </div>
+            <p>Kitchen Companion ©. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="login.js"></script>
+</body>
+
+</html>
