@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "title": "Buscas por produtos veganos disparam em 50%",
+        "summary": "Nos últimos anos, houve um aumento significativo no número de pessoas que optaram por trazer o veganismo para além da gastronomia, a estética. Não se sabe a quantidade exata da população vegana, mas...",
+        "date": "2023-01-12",
+        "image": "assets/img/Rectangle36.png",
+        "link": "LINK PARA A NOTICIA"
+    },
+    {
+        "id": 2,
+        "title": "Preço da carne bovina tem queda de 13%",
+        "summary": "Produto ficou 13% mais em conta, segundo a inflação oficial. Mas os valores vêm caindo mais intensamente no campo do que nas prateleiras dos supermercados.",
+        "date": "2023-02-02",
+        "image": "assets/img/Rectangle29.png",
+        "link": "LINK PARA A NOTICIA"
+    },
+    {
+        "id": 3,
+        "title": "Ovos: Um Super Alimento para a Saúde",
+        "summary": "Os ovos são considerados um dos alimentos mais completos e nutritivos disponíveis para consumo humano. Rico em proteínas de alta qualidade, vitaminas, minerais e",
+        "date": "2023-03-02",
+        "image": "assets/img/Rectangle30.png",
+        "link": "LINK PARA A NOTICIA"
+    },
+    {
+        "id": 4,
+        "title": "Entenda como insetos são usados para transformar restos de comida em ração e adubo para agropecuária",
+        "summary": "Projeto foi um dos escolhidos de iniciativa vai percorrer 18 países em busca de exemplos de sustentabilidade.",
+        "date": "2024-04-01",
+        "image": "assets/img/Rectangle31.png",
+        "link": "LINK PARA A NOTICIA"
+    },
+    {
+        "id": 5,
+        "title": "Pesquisadores desenvolvem robô capaz de provar comida e dar feedback",
+        "summary": "Pesquisadores da Universidade de Cambridge estão desenvolvendo um robô que prova a comida.",
+        "date": "2024-05-02",
+        "image": "assets/img/Rectangle32.png",
+        "link": "LINK PARA A NOTICIA"
+    },
+    {
+        "id": 6,
+        "title": "Festival Gastronômico ‘Sabores da Floresta’ marca comemorações do aniversário de Alta Floresta",
+        "summary": "A sétima edição do 'Festival Gastronômico' de Alta Floresta será em comemoração ao aniversário do município que completa 48 anos no próximo",
+        "date": "2024-06-01",
+        "image": "assets/img/Rectangle33.png",
+        "link": "LINK PARA A NOTICIA"
+    },
+    {
+        "id": 7,
+        "title": "Queda na locomoção e falhas no sistema imune: estudo mostra como agrotóxicos afetam abelhas nativas",
+        "summary": "Insetos apresentam alterações podem levar ao enfraquecimento das colmeias, comprometendo polinização e a produção de alimentos..",
+        "date": "2024-07-03",
+        "image": "assets/img/Rectangle34.png",
+        "link": "LINK PARA A NOTICIA"
+    }
+    
+]
