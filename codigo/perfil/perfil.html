@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
-    <link rel="stylesheet" href="../login/login.css">
+    <link rel="stylesheet" href="./perfil.css">
 </head>
 
 <body>
@@ -20,16 +20,11 @@
                 </button>
                 <div class="header-botoes" id="menu">
                     <div class="barra-de-pesquisa">
-                        <span><img src="./busca 1.png" alt=""></span>
+                        <span><img src="../login/busca 1.png" alt=""></span>
                         <input type="text" placeholder="Pesquise uma receita...">
                     </div>
-                    <div class="botoes-nao-geracao">
-                        <div class="retangulo-cadastro">
-                            <a href="#" id="btnLoginHeader">Login</a>
-                        </div>
-                        <div class="retangulo-cadastro retangulo-cadastro-off">
-                            <a href="../cadastro/cadastro.html" id="userHeader">Cadastre-se</a>
-                        </div>
+                    <div class="botoes-nao-geracao" id="userGreeting">
+                        <!-- Conteúdo dinâmico baseado no estado de login -->
                     </div>
                     <div id="botao-geracao">
                         <button class="botao-header">Gerar Receita</button>
@@ -39,35 +34,41 @@
         </div>
     </header>
     <main>
-        <div class="conteudo-principal">
-            <h1>Login</h1>
-            <div class="caixa-main conteudo-principal">
-                <div class="conteudo-info">
-                    <h2>Suas informações de Entrada</h2>
-                    <div id="msg"></div> <!-- Adicionado para mensagens -->
-                    <form id="form-login">
-                        <p>E-mail</p>
-                        <input type="email" placeholder="Seu email" id="loginEmail" class="main-form" required>
-                        <p>Senha</p>
-                        <input type="password" placeholder="Sua senha" id="loginSenha" class="main-form" required>
-                        <div class="container-botao">
-                            <button type="button" class="botao" id="btnLogin">Entrar</button>
-                        </div>
-                    </form>
+        <div class="grid">
+            <aside>
+                <ul>
+                    <li class="selecionado"><a href="#">Configurações</a></li>
+                    <li><a href="#">Histórico</a></li>
+                    <li><a href="#">Favoritas</a></li>
+                    <li><a href="#" id="logoutButton">Logout</a></li>
+                </ul>
+            </aside>
+            <div class="conteudo-principal">
+                <h1>Meu Perfil</h1>
+                <div class="caixa-main">
+                    <div class="conteudo-info">
+                        <h2>Configurações</h2>
+                        <div id="msg"></div> <!-- Adicionado para mensagens -->
+                        <form id="form-perfil">
+                            <p>Nome</p>
+                            <input type="text" placeholder="Seu nome completo" id="inputNome" class="main-form" required>
+                            <p>E-mail</p>
+                            <input type="email" placeholder="Seu email" id="loginEmail" class="main-form" required>
+                            <p>Nova Senha</p>
+                            <input type="password" placeholder="Sua nova senha" id="loginSenha" class="main-form" required>
+                            <p>Senha Atual</p>
+                            <input type="password" placeholder="Sua senha atual" id="currentSenha" class="main-form" required>
+                            <div class="container-botao">
+                                <button type="button" class="botao" id="btnUpdate">Editar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="container-detalhe">
+                    <img src="../login/detalhe ~.png" alt="detalhe da página">
                 </div>
             </div>
         </div>
-        <div class="container-detalhe">
-            <img src="./detalhe ~.png" alt="detalhe da página">
-        </div>
-        <aside>
-            <ul>
-                <li>Configurações</li>
-                <li>Histórico</li>
-                <li>Favoritas</li>
-                <li>Logout</li>
-            </ul>
-        </aside>
     </main>
 
     <footer>
@@ -75,7 +76,7 @@
             <div class="footer-info container">
                 <div class="footer-info1">
                     <div class="footer-logo">
-                        <img src="./logobranco.png" alt="logo alternativo">
+                        <img src="../login/logobranco.png" alt="logo alternativo">
                     </div>
                     <a href="">Meu Perfil</a>
                     <a href="">Gerar Receita</a>
@@ -88,14 +89,15 @@
                 </div>
             </div>
             <div class="footer-socials container">
-                <a href="" class="social-icone"><img src="./facebook-c1.png" alt="link para facebook"></a>
-                <a href="" class="social-icone"><img src="./instagram-c1.png" alt="link para instagram"></a>
-                <a href="" class="social-icone"><img src="./twitter-c1.png" alt="link para x"></a>
+                <a href="" class="social-icone"><img src="../login/facebook-c1.png" alt="link para facebook"></a>
+                <a href="" class="social-icone"><img src="../login/instagram-c1.png" alt="link para instagram"></a>
+                <a href="" class="social-icone"><img src="../login/twitter-c1.png" alt="link para x"></a>
             </div>
             <p>Kitchen Companion ©. Todos os direitos reservados.</p>
         </div>
     </footer>
-    <script src="login.js"></script>
+    <script src="../login/login.js"></script>
+    <script src="./perfil.js"></script>
 </body>
 
 </html>
