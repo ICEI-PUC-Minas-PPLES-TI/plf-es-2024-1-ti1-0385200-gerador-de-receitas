@@ -1,0 +1,605 @@
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* "header" padrão do html: inicio */
+
+:root {
+    --vermelho: #f12b5a;
+    --amarelo: #f18f01;
+    --gelo: #f3ebe2;
+    --marrom: #2e0e02;
+    --creme: #f0c798;
+    --marrom-claro: #663f30;
+    --amarelo-escuro: #ca7700;
+    --vermelho-escuro: #c81f47;
+    --branco: #fff;
+    --linear-vermelho: linear-gradient(#f12b5a, #c81f47);
+    --linear-amarelo: linear-gradient(#f18f01, #ca7700);
+    --font-family: "Roboto", sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: var(--font-family);
+  }
+  
+  main {
+    background: var(--gelo);
+  }
+  
+  .container {
+    max-width: 1200px;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  
+  .header {
+    background: var(--linear-vermelho);
+    height: 88px;
+  }
+  
+  .header-botoes {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .botoes-nao-geracao {
+    display: flex;
+  }
+  
+  .barra-de-pesquisa input {
+    font-size: 16px;
+    color: rgba(46, 14, 2, 0.5);
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+    padding-left: 60px;
+  }
+  
+  .barra-de-pesquisa span {
+    position: absolute;
+    z-index: 5;
+    margin-top: 7px;
+    margin-left: 20px;
+  }
+  
+  .retangulo-cadastro {
+    display: flex;
+    background: var(--vermelho);
+    height: 88px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .retangulo-cadastro a {
+    text-decoration: none;
+    color: var(--gelo);
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0 12px;
+  }
+  
+  .retangulo-cadastro-off {
+    background: transparent;
+  }
+  
+  .botao-header {
+    color: var(--marrom);
+    font-weight: 700;
+    font-size: 20px;
+    background: var(--linear-amarelo);
+    border-radius: 12px;
+    padding: 10px 20px;
+  }
+  
+  .botao-header:hover {
+    background: var(--amarelo-escuro);
+    cursor: pointer;
+  }
+  
+  /* "header" padrão do html: fim */
+  
+  /* ---------------------------------------------------------------------------------------------------------- */
+  
+  /* ---------------------------------------------------------------------------------------------------------- */
+  
+  /* "main" do html: inicio */
+  
+  .conteudo-principal {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* titulo 1 */
+  
+  .conteudo-principal h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 5px;
+    color: var(--marrom);
+    border-bottom: 2px solid var(--creme);
+  }
+  
+  /* tudo relacionado aos cards/carrossel */
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px;
+  }
+  
+  .wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    z-index: 10;
+    color: #c81f47;
+  }
+  
+  .wrapper i:hover {
+    color: #fff;
+    background: #c81f47;
+  }
+  
+  .wrapper i:active {
+    transform: translateY(-50%) scale(0.85);
+    background: #f12b5a;
+  }
+  
+  .wrapper i:first-child {
+    left: -22px;
+  }
+  
+  .wrapper i:last-child {
+    right: -22px;
+  }
+  
+  .wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding-bottom: 20px;
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 350px;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f0c798;
+    transition: box-shadow 0.2s;
+
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center; 
+    min-height: 400px; 
+  }
+  
+  .carousel .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel .card .img {
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 4px solid #c81f47;
+    margin-top: 10px; 
+  }
+  
+  .card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-content {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+  }
+  
+  .card-content h2 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .card-content p {
+    color: #333;
+    font-size: 16px;
+    white-space: pre-wrap;
+    text-align: center;
+  }
+  
+  .container-botao {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  
+  .botao {
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: var(--vermelho);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--gelo);
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-right: center;
+  }
+  
+  .botao:hover {
+    background: var(--vermelho-escuro);
+    cursor: pointer;
+  }
+  
+  /* detalhe/imagem "~" entre os topicos */
+  
+  .container-detalhe {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container-detalhe img {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  /* "main" do html: fim */
+  
+  /* ---------------------------------------------------------------------------------------------------------- */
+  
+  /* ---------------------------------------------------------------------------------------------------------- */
+  
+  /* "footer" do html: inicio */
+  
+  .footer {
+    background: var(--marrom);
+  }
+  
+  .footer-info {
+    padding-top: 84px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--marrom-claro);
+  }
+  
+  .footer-info1 a:first-of-type {
+    margin-left: 40px;
+  }
+  
+  .footer-info1,
+  .footer-info2 {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+  }
+  
+  .footer-info1 a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--gelo);
+  }
+  
+  .footer-info2 a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--gelo);
+  }
+  
+  .footer-socials {
+    padding-top: 44px;
+    padding-bottom: 120px;
+    display: flex;
+    margin: 0 auto;
+    gap: 60px;
+  }
+  
+  .footer p {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--marrom-claro);
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  /* "footer" do html: fim */
+  
+  /* ---------------------------------------------------------------------------------------------------------- */
+  
+  /* ---------------------------------------------------------------------------------------------------------- */
+  
+  /* responsividade do site: inicio */
+  
+  @media (max-width: 1200px) {
+    .container {
+      padding: 0 20px;
+    }
+  
+    .flex {
+      gap: 20px;
+    }
+  
+    .header-botoes {
+      gap: 20px;
+    }
+  
+    .barra-de-pesquisa input {
+      width: 250px;
+    }
+  
+    .conteudo-principal {
+      padding: 0 20px;
+    }
+  
+    .conteudo-principal h1 {
+      font-size: 32px;
+      padding-top: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .conteudo-info h2 {
+      font-size: 28px;
+      padding-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .botao {
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+  
+    .container-detalhe img {
+      padding-top: 30px;
+      padding-bottom: 60px;
+    }
+  
+    .footer-info {
+      padding-top: 42px;
+      padding-bottom: 10px;
+    }
+  
+    .footer-info1 a:first-of-type {
+      margin-left: 0;
+    }
+  
+    .footer-info1 {
+      align-items: flex-start;
+    }
+  
+    .footer-info1,
+    .footer-info2 {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .footer-info2 {
+      align-items: flex-end;
+    }
+  
+    .footer-socials {
+      padding-top: 22px;
+      padding-bottom: 60px;
+      gap: 30px;
+    }
+  
+    .social-icone img {
+      width: 40px;
+      height: auto;
+    }
+  
+    .header img {
+      max-width: 80%;
+    }
+  
+    .barra-de-pesquisa input {
+      width: 150px;
+    }
+  
+    .caixa-main {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin: 0 auto 20px;
+    }
+  
+    #imagemMacarrãoPesto {
+      width: 100%;
+      height: auto;
+    }
+  
+    #imagemHambúrguerLegumes {
+      width: 100%;
+      height: auto;
+    }
+  
+    #imagemBoloFramboesa {
+      width: 100%;
+      height: auto;
+    }
+  
+    #imagemTorradasOvo {
+      width: 100%;
+      height: auto;
+    }
+  
+    .botao-coracao {
+      position: relative;
+      top: auto;
+      right: auto;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .header {
+      display: flex;
+      align-items: center;
+    }
+  
+    .flex {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .header-botoes {
+      display: none;
+    }
+  
+    .barra-de-pesquisa input {
+      width: 100%;
+      margin: 0px 0;
+    }
+  
+    .conteudo-principal h1 {
+      font-size: 28px;
+      padding-top: 10px;
+      margin-bottom: 5px;
+    }
+  
+    .conteudo-info h2 {
+      font-size: 24px;
+      padding-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .botao {
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+  
+    .caixa-main {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  
+    #imagemMacarrãoPesto {
+      width: 100%;
+      height: auto;
+    }
+  
+    #imagemHambúrguerLegumes {
+      width: 100%;
+      height: auto;
+    }
+  
+    #imagemBoloFramboesa {
+      width: 100%;
+      height: auto;
+    }
+  
+    #imagemTorradasOvo {
+      width: 100%;
+      height: auto;
+    }
+  
+    .botao-coracao {
+      position: relative;
+      top: auto;
+      right: auto;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+  
+    .footer-info {
+      padding-top: 21px;
+      padding-bottom: 5px;
+    }
+  
+    .footer-socials {
+      padding-top: 11px;
+      padding-bottom: 30px;
+      gap: 15px;
+    }
+  }
+  
+  /* responsividade do site:: fim */
+  
+  /* ---------------------------------------------------------------------------------------------------------- */
+
