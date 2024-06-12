@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Notícias</title>
+    <link rel="stylesheet" href="../css/cad_news.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="flex container">
+                <div class="logomarca">
+                    <img src="../img/logo.png" alt="logo do KitchenCompanion">
+                </div>
+                <div class="barra-de-pesquisa">
+                    <span><img src="../img/busca.png" alt=""></span>
+                    <input type="text" placeholder="Pesquise uma notícia...">
+                </div>
+                <div class="header-botoes">
+                    <div class="retangulo-cadastro retangulo-cadastro-off">
+                        <a href="#">Login</a>
+                    </div>
+                    <div class="retangulo-cadastro retangulo-cadastro-off">
+                        <a href="#">Cadastre-se</a>
+                    </div>
+                    <button class="botao-header">Gerar Receita</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <form id="newsForm" class="caixa-main">
+                <h1>Cadastro de Notícias</h1>
+                <label for="title">Título da Notícia</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="summary">Texto da Notícia</label>
+                <textarea id="summary" name="summary" rows="4" required></textarea>
+
+                <label for="date">Data da Publicação</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="image">Imagem da Notícia</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+
+                <button type="submit" id="btnCadastrar">Cadastrar Notícia</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-info container">
+                <div class="footer-info1">
+                    <div class="footer-logo">
+                        <img src="../img/logobranco.png" alt="logo alternativo">
+                    </div>
+                    <a href="#">Meu Perfil</a>
+                    <a href="#">Gerar Receita</a>
+                </div>
+                <div class="footer-info2">
+                    <a href="#">Quem Somos</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Privacidade</a>
+                    <a href="#">Contato</a>
+                </div>
+            </div>
+            <div class="footer-socials container">
+                <a href="#" class="fb-icone"><img src="../img/facebook-c1.png" alt="link para facebook"></a>
+                <a href="#" class="insta-logo"><img src="../img/instagram-c1.png" alt="link para instagram"></a>
+                <a href="#" class="x-icone"><img src="../img/twitter-c1.png" alt="link para x"></a>
+            </div>
+            <p>Kitchen Companion ©. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/cad_news.js"></script>
+</body>
+
+</html>
