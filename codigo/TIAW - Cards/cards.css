@@ -1,0 +1,696 @@
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* "header" padrão do html: inicio */
+
+:root {
+  --vermelho: #f12b5a;
+  --amarelo: #f18f01;
+  --gelo: #f3ebe2;
+  --marrom: #2e0e02;
+  --creme: #f0c798;
+  --marrom-claro: #663f30;
+  --amarelo-escuro: #ca7700;
+  --vermelho-escuro: #c81f47;
+  --branco: #fff;
+  --linear-vermelho: linear-gradient(#f12b5a, #c81f47);
+  --linear-amarelo: linear-gradient(#f18f01, #ca7700);
+  --font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: var(--font-family);
+}
+
+main {
+  background: var(--gelo);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.header {
+  background: var(--linear-vermelho);
+  height: 88px;
+}
+
+.header-botoes {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.botoes-nao-geracao {
+  display: flex;
+}
+
+.barra-de-pesquisa input {
+  font-size: 16px;
+  color: rgba(46, 14, 2, 0.5);
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+  position: relative;
+  padding-left: 60px;
+}
+
+.barra-de-pesquisa span {
+  position: absolute;
+  z-index: 5;
+  margin-top: 7px;
+  margin-left: 20px;
+}
+
+.retangulo-cadastro {
+  display: flex;
+  background: var(--vermelho);
+  height: 88px;
+  align-items: center;
+  justify-content: center;
+}
+
+.retangulo-cadastro a {
+  text-decoration: none;
+  color: var(--gelo);
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0 12px;
+}
+
+.retangulo-cadastro-off {
+  background: transparent;
+}
+
+.botao-header {
+  color: var(--marrom);
+  font-weight: 700;
+  font-size: 20px;
+  background: var(--linear-amarelo);
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+
+.botao-header:hover {
+  background: var(--amarelo-escuro);
+  cursor: pointer;
+}
+
+/* "header" padrão do html: fim */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* "main" do html: inicio */
+
+.conteudo-principal {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* título 1 */
+
+.conteudo-principal h1 {
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 5px;
+  color: var(--marrom);
+  border-bottom: 2px solid var(--creme);
+}
+
+/* todos os cards */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* card principal */
+
+.card-principal {
+  display: flex;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 2px solid var(--creme);
+  position: relative; 
+  cursor: pointer;
+}
+
+.cards .card-principal:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cards .card-image {
+  width: 50%;
+  height: 50%; /* altura total disponível do card */
+  object-fit: contain; /* adapta a imagem dentro do espaço sem distorcer */
+  object-position: center; /* centraliza a imagem dentro do espaço */
+} 
+
+.card-content {
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* botões no card principal */
+
+.container-botao-um {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  position: absolute; 
+  top: 140px; 
+  left: 20px; 
+}
+
+.botao-um {
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: var(--vermelho);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--gelo);
+  cursor: pointer;
+}
+
+.botao-um:hover {
+  background: var(--vermelho-escuro);
+}
+
+/* botão de coração no card principal */
+
+.botao-coracao-um {
+  background: none;
+  border: none;
+  position: absolute; 
+  top: 20px; 
+  right: 20px; 
+  padding: 0;
+  cursor: pointer;
+}
+
+.botao-coracao-um i {
+  font-size: 30px;
+  color: var(--vermelho);
+}
+
+.botao-coracao-um:hover i {
+  color: var(--vermelho-escuro);
+}
+
+/* título e texto no card principal */
+
+.card-title-um {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 20px 0;
+  color: var(--marrom);
+  position: absolute; 
+  top: 180px; 
+  left: 20px; 
+}
+
+.card-text-um {
+  font-size: 16px;
+  color: #333;
+  white-space: pre-wrap;
+  margin-bottom: 20px;
+  position: absolute; 
+  top: 250px; 
+  left: 20px; 
+  right: 20px; 
+}
+
+/* 3 cards menores */
+
+.cards-menores {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.card-menor {
+  flex: 1 1 calc(33.333% - 20px);
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 32%;
+
+  border: 2px solid var(--creme);
+  position: relative; 
+
+  display: none; /* oculta todos os cards menores por padrão */
+
+  margin-bottom: 20px; /* espaçamento entre os cards menores */
+}
+
+.card-menor .card-image {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  object-position: center; /* centraliza a imagem */
+  border-radius: 10px 10px 0 0;
+  flex-shrink: 0;
+}
+
+.card-menor .card-content {
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  position: relative;
+}
+
+.cards-menores .card-menor:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* botões nos cards menores */
+
+.container-botao-dois {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  position: absolute; 
+  top: 40px; 
+  left: 20px; 
+}
+
+.botao-dois {
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: var(--vermelho);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--gelo);
+  cursor: pointer;
+}
+
+.botao-dois:hover {
+  background: var(--vermelho-escuro);
+}
+
+/* botão de coração nos cards menores */
+
+.botao-coracao-dois {
+  background: none;
+  border: none;
+  position: absolute; 
+  top: 20px; 
+  right: -60px; 
+  padding: 0;
+  cursor: pointer;
+}
+
+.botao-coracao-dois i {
+  font-size: 30px;
+  color: var(--vermelho);
+}
+
+.botao-coracao-dois:hover i {
+  color: var(--vermelho-escuro);
+}
+
+/* título e texto nos cards menores */
+
+.card-title-dois {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 20px 0;
+  color: var(--marrom);
+  position: absolute; 
+  top: 80px; 
+  left: 20px;
+  right: -40px;
+}
+
+.card-text-dois {
+  font-size: 16px;
+  color: #333;
+  white-space: pre-wrap;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 150px; 
+  left: 20px; 
+  right: -20px; 
+}
+
+/* botão carregar mais */
+
+.container-botao-carregar {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.botao-carregar {
+  border-radius: 10px;
+  padding: 15px 150px;
+  background: var(--gelo);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--vermelho-escuro);
+  cursor: pointer;
+  border: none;
+  border: 2px solid var(--vermelho-escuro);
+}
+
+.botao-carregar:hover {
+  color: var(--gelo);
+  background: var(--vermelho-escuro);
+}
+
+/* mais sobre o botão carregar mais */
+
+.card-menor.exibido {
+  display: flex; 
+}
+
+.card-menor:nth-child(-n+3) {
+  display: flex; /* exibe os três primeiros cards menores */
+}
+    
+/* detalhe/imagem "~" entre os topicos */
+  
+.container-detalhe {
+  display: flex;
+  justify-content: center;
+}
+  
+.container-detalhe img {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* "main" do html: fim */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* "footer" do html: inicio */
+
+.footer {
+  background: var(--marrom);
+}
+
+.footer-info {
+  padding-top: 84px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--marrom-claro);
+}
+
+.footer-info1 a:first-of-type {
+  margin-left: 40px;
+}
+
+.footer-info1,
+.footer-info2 {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+}
+
+.footer-info1 a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--gelo);
+}
+
+.footer-info2 a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--gelo);
+}
+
+.footer-socials {
+  padding-top: 44px;
+  padding-bottom: 120px;
+  display: flex;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--marrom-claro);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* "footer" do html: fim */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* responsividade do site: inicio */
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .flex {
+    gap: 20px;
+  }
+
+  .header-botoes {
+    gap: 20px;
+  }
+
+  .barra-de-pesquisa input {
+    width: 250px;
+  }
+
+  .conteudo-principal {
+    padding: 0 20px;
+  }
+
+  .conteudo-principal h1 {
+    font-size: 32px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .conteudo-info h2 {
+    font-size: 28px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .botao {
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  .container-detalhe img {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .footer-info {
+    padding-top: 42px;
+    padding-bottom: 10px;
+  }
+
+  .footer-info1 a:first-of-type {
+    margin-left: 0;
+  }
+
+  .footer-info1 {
+    align-items: flex-start;
+  }
+
+  .footer-info1,
+  .footer-info2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-info2 {
+    align-items: flex-end;
+  }
+
+  .footer-socials {
+    padding-top: 22px;
+    padding-bottom: 60px;
+    gap: 30px;
+  }
+
+  .social-icone img {
+    width: 40px;
+    height: auto;
+  }
+
+  .header img {
+    max-width: 80%;
+  }
+
+  .barra-de-pesquisa input {
+    width: 150px;
+  }
+
+  .caixa-main {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+
+  #imagemMacarrãoPesto {
+    width: 100%;
+    height: auto;
+  }
+
+  #imagemHambúrguerLegumes {
+    width: 100%;
+    height: auto;
+  }
+
+  #imagemBoloFramboesa {
+    width: 100%;
+    height: auto;
+  }
+
+  #imagemTorradasOvo {
+    width: 100%;
+    height: auto;
+  }
+
+  .botao-coracao {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex {
+    display: flex;
+    gap: 20px;
+  }
+
+  .header-botoes {
+    display: none;
+  }
+
+  .barra-de-pesquisa input {
+    width: 100%;
+    margin: 0px 0;
+  }
+
+  .conteudo-principal h1 {
+    font-size: 28px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .conteudo-info h2 {
+    font-size: 24px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .botao {
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .caixa-main {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #imagemMacarrãoPesto {
+    width: 100%;
+    height: auto;
+  }
+
+  #imagemHambúrguerLegumes {
+    width: 100%;
+    height: auto;
+  }
+
+  #imagemBoloFramboesa {
+    width: 100%;
+    height: auto;
+  }
+
+  #imagemTorradasOvo {
+    width: 100%;
+    height: auto;
+  }
+
+  .botao-coracao {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .footer-info {
+    padding-top: 21px;
+    padding-bottom: 5px;
+  }
+
+  .footer-socials {
+    padding-top: 11px;
+    padding-bottom: 30px;
+    gap: 15px;
+  }
+}
+
+/* responsividade do site:: fim */
+
+/* ---------------------------------------------------------------------------------------------------------- */
