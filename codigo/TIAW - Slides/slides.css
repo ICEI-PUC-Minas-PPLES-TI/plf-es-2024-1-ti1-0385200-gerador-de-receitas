@@ -1,0 +1,502 @@
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* "header" padrão do html: inicio */
+
+:root {
+  --vermelho: #f12b5a;
+  --amarelo: #f18f01;
+  --gelo: #f3ebe2;
+  --marrom: #2e0e02;
+  --creme: #f0c798;
+  --marrom-claro: #663f30;
+  --amarelo-escuro: #ca7700;
+  --vermelho-escuro: #c81f47;
+  --branco: #fff;
+  --linear-vermelho: linear-gradient(#f12b5a, #c81f47);
+  --linear-amarelo: linear-gradient(#f18f01, #ca7700);
+  --font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: var(--font-family);
+}
+
+main {
+  background: var(--gelo);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.header {
+  background: var(--linear-vermelho);
+  height: 88px;
+}
+
+.header-botoes {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.botoes-nao-geracao {
+  display: flex;
+}
+
+.barra-de-pesquisa input {
+  font-size: 16px;
+  color: rgba(46, 14, 2, 0.5);
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+  position: relative;
+  padding-left: 60px;
+}
+
+.barra-de-pesquisa span {
+  position: absolute;
+  z-index: 5;
+  margin-top: 7px;
+  margin-left: 20px;
+}
+
+.retangulo-cadastro {
+  display: flex;
+  background: var(--vermelho);
+  height: 88px;
+  align-items: center;
+  justify-content: center;
+}
+
+.retangulo-cadastro a {
+  text-decoration: none;
+  color: var(--gelo);
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0 12px;
+}
+
+.retangulo-cadastro-off {
+  background: transparent;
+}
+
+.botao-header {
+  color: var(--marrom);
+  font-weight: 700;
+  font-size: 20px;
+  background: var(--linear-amarelo);
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+
+.botao-header:hover {
+  background: var(--amarelo-escuro);
+  cursor: pointer;
+}
+
+/* "header" padrão do html: fim */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* "main" do html: inicio */
+
+.conteudo-principal {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  padding-top: 80px;
+}
+
+.carousel {
+  position: relative;
+  width: calc(100% - 4px);
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 2px solid var(--creme);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.carousel-content {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.carousel-imagem {
+  position: relative;
+  width: 100%;
+  height: 400px; /* altura fixa do carrossel */
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block; /* para não ter espaços em branco */
+  object-position: center center;
+  box-sizing: border-box;
+  max-width: 1200px;
+}
+
+.carousel-textos {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.carousel-textos h2 {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.carousel-textos p {
+  line-height: 1.4;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 18px;
+  white-space: pre-wrap;
+  text-align: center;
+}
+
+.carousel i {
+  top: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  z-index: 10;
+  color: #c81f47;
+}
+
+.carousel i:hover {
+  color: #fff;
+}
+
+.carousel i:active {
+  transform: translateY(-50%) scale(0.85);
+  color: #f12b5a;
+}
+
+.carousel i:first-child {
+  left: 20px;
+}
+
+.carousel i:last-child {
+  right: 20px;
+}
+
+/* "main" do html: fim */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* "footer" do html: inicio */
+
+.footer {
+  background: var(--marrom);
+}
+
+.footer-info {
+  padding-top: 84px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--marrom-claro);
+}
+
+.footer-info1 a:first-of-type {
+  margin-left: 40px;
+}
+
+.footer-info1,
+.footer-info2 {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+}
+
+.footer-info1 a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--gelo);
+}
+
+.footer-info2 a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--gelo);
+}
+
+.footer-socials {
+  padding-top: 44px;
+  padding-bottom: 120px;
+  display: flex;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--marrom-claro);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* "footer" do html: fim */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* responsividade do site: inicio */
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .flex {
+    gap: 20px;
+  }
+
+  .header-botoes {
+    gap: 20px;
+  }
+
+  .barra-de-pesquisa input {
+    width: 250px;
+  }
+
+  .conteudo-principal {
+    padding: 0 20px;
+  }
+
+  .conteudo-principal h1 {
+    font-size: 32px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .conteudo-info h2 {
+    font-size: 28px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .botao {
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  .container-detalhe img {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .footer-info {
+    padding-top: 42px;
+    padding-bottom: 10px;
+  }
+
+  .footer-info1 a:first-of-type {
+    margin-left: 0;
+  }
+
+  .footer-info1 {
+    align-items: flex-start;
+  }
+
+  .footer-info1,
+  .footer-info2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-info2 {
+    align-items: flex-end;
+  }
+
+  .footer-socials {
+    padding-top: 22px;
+    padding-bottom: 60px;
+    gap: 30px;
+  }
+
+  .social-icone img {
+    width: 40px;
+    height: auto;
+  }
+
+  .header img {
+    max-width: 80%;
+  }
+
+  .barra-de-pesquisa input {
+    width: 150px;
+  }
+
+  .caixa-main {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+
+  #imagemMacarrãoPesto {
+    width: 100%;
+    height: auto;
+  }
+
+  #imagemHambúrguerLegumes {
+    width: 100%;
+    height: auto;
+  }
+
+  #imagemBoloFramboesa {
+    width: 100%;
+    height: auto;
+  }
+
+  #imagemTorradasOvo {
+    width: 100%;
+    height: auto;
+  }
+
+  .botao-coracao {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex {
+    display: flex;
+    gap: 20px;
+  }
+
+  .header-botoes {
+    display: none;
+  }
+
+  .barra-de-pesquisa input {
+    width: 100%;
+    margin: 0px 0;
+  }
+
+  .conteudo-principal h1 {
+    font-size: 28px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .conteudo-info h2 {
+    font-size: 24px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .botao {
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .caixa-main {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #imagemMacarrãoPesto {
+    width: 100%;
+    height: auto;
+  }
+
+  #imagemHambúrguerLegumes {
+    width: 100%;
+    height: auto;
+  }
+
+  #imagemBoloFramboesa {
+    width: 100%;
+    height: auto;
+  }
+
+  #imagemTorradasOvo {
+    width: 100%;
+    height: auto;
+  }
+
+  .botao-coracao {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .footer-info {
+    padding-top: 21px;
+    padding-bottom: 5px;
+  }
+
+  .footer-socials {
+    padding-top: 11px;
+    padding-bottom: 30px;
+    gap: 15px;
+  }
+}
+
+/* responsividade do site:: fim */
+
+/* ---------------------------------------------------------------------------------------------------------- */
