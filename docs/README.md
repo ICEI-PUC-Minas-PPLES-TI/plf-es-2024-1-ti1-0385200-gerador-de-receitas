@@ -403,8 +403,8 @@ Seção de comentários
 - Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
 - escrever aqui
 - escrever aqui
-
-()
+  
+![visualizar receita](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/74a998e1-8ce9-4d65-943c-b4cdc0c657fe)
 
 **Funcionalidade 5 -** Geração de Receita
 **Estrutura de Dados:** JSON - receitas (exemplo)
@@ -426,7 +426,8 @@ Seção de comentários
 - escrever aqui
 - escrever aqui
 
-()
+![gerar receita](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/c2f0acec-513e-41b2-a7f1-f58eb730ea7a)
+
 
 ## Estruturas de Dados
 
