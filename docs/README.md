@@ -163,13 +163,22 @@ Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona
 
 ![Proposta de Valor](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/119761586/2a5979f9-dbef-4204-aa71-c35706c65ddb)
 
-- **Proposta de Valor:** Uma plataforma online que gera receitas personalizadas com base nos ingredientes disponíveis para os usuários, promovendo economia, redução de desperdício e uma alimentação mais saudável.
+- **Proposta de Valor:** 
 
-- **Benefícios para o Usuário:** Economia de dinheiro, redução do desperdício de alimentos, descoberta de novas receitas, melhoria das habilidades culinárias e qualidade de vida.
+Uma plataforma online que gera receitas personalizadas com base nos ingredientes disponíveis para os usuários, promovendo economia, redução de desperdício e uma alimentação mais saudável.
 
-- **Valor para a Organização:** Os usuários fornecem feedback valioso que pode ser usado para melhorar o aplicativo. Eles também podem promover o aplicativo para outros, aumentando a base de usuários, entre outras coisas.
+
+- **Benefícios para o Usuário:** 
+
+Economia de dinheiro, redução do desperdício de alimentos, descoberta de novas receitas, melhoria das habilidades culinárias e qualidade de vida.
+
+- **Valor para a Organização:** 
+
+Os usuários fornecem feedback valioso que pode ser usado para melhorar o aplicativo. Eles também podem promover o aplicativo para outros, aumentando a base de usuários, entre outras coisas. 
 
 **5. Mural de Possibilidades**
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/119761586/895a989e-dc23-4ace-8eff-c1a3e1c428fb)
 
 - **Possibilidade 1:** Integração com redes sociais para compartilhar receitas
 - **Possibilidade 2:** Uma seção de comentários onde os usuários podem compartilhar suas experiências com as receitas
