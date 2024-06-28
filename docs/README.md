@@ -578,6 +578,222 @@ Como aprendiz de culinária, eu gostaria de usar o aplicativo para encontrar rec
 }
 
 # Módulos e APIs
+-Funções do Arquivo app.js
+
+    Função displayMessage
+    Função emailJaCadastrado
+    Função createUser
+    Função cadastrarUsuario
+    Função atualizarInterfaceUsuario
+    Função logoffUsuario
+    Eventos de Interface
+
+Função displayMessage
+
+Descrição: Exibe uma mensagem na tela dentro de um elemento HTML com o ID msg.
+
+Parâmetros:
+
+    mensagem (string): A mensagem a ser exibida.
+    isError (boolean, opcional): Define se a mensagem é de erro (true) ou sucesso (false). O padrão é true.
+
+Exemplo de Uso:
+
+displayMessage("Usuário cadastrado com sucesso!", false);
+
+Código:
+
+function displayMessage(mensagem, isError = true) {
+  const msg = document.getElementById("msg");
+  msg.innerHTML =
+    '<div class="' +
+    (isError ? "alert-error" : "alert-success") +
+    '">' +
+    mensagem +
+    "</div>";
+}
+
+Função emailJaCadastrado
+
+Descrição: Verifica se um e-mail já está cadastrado no servidor.
+
+Parâmetros:
+
+    email (string): O e-mail a ser verificado.
+    callback (function): Função de retorno que recebe um booleano indicando se o e-mail já está cadastrado.
+
+Exemplo de Uso:
+
+
+emailJaCadastrado("teste@exemplo.com", function(jaCadastrado) {
+  if (jaCadastrado) {
+    // Lógica para e-mail já cadastrado
+  }
+});
+
+Código:
+
+function emailJaCadastrado(email, callback) {
+  fetch("http://localhost:3000/usuarios?email=" + encodeURIComponent(email))
+    .then((response) => response.json())
+    .then((data) => {
+      callback(data.length > 0);
+    })
+    .catch((error) => {
+      console.error("Erro ao verificar e-mail:", error);
+      callback(false);
+    });
+}
+
+Função createUser
+
+Descrição: Cadastra um novo usuário no servidor.
+
+Parâmetros:
+
+    usuario (object): Objeto contendo os dados do usuário a ser cadastrado.
+    callback (function): Função de retorno que recebe um objeto com a resposta da operação de cadastro.
+
+Exemplo de Uso:
+
+
+createUser({ nome: "João", email: "joao@exemplo.com", senha: "123456" }, function(response) {
+  if (response.success) {
+    // Lógica para cadastro bem-sucedido
+  }
+});
+
+Código:
+
+function createUser(usuario, callback) {
+  fetch("http://localhost:3000/usuarios", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(usuario),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      callback({ success: true, data: data });
+    })
+    .catch((error) => {
+      console.error("Erro ao cadastrar usuário:", error);
+      callback({ success: false, message: error.message });
+    });
+}
+
+Função cadastrarUsuario
+
+Descrição: Função principal para realizar o cadastro de um usuário.
+
+Código:
+
+function cadastrarUsuario() {
+  // Obtem os valores dos campos do formulário
+  let nome = document.getElementById("inputNome").value.trim();
+  let email = document.getElementById("inputEmail").value.trim();
+  let senha = document.getElementById("inputSenha").value.trim();
+
+  // Verifica se todos os campos estão preenchidos
+  if (!nome || !email || !senha) {
+    displayMessage("Por favor, preencha todos os campos.", true);
+    return;
+  }
+
+  // Verifica se o e-mail já está cadastrado
+  emailJaCadastrado(email, (jaCadastrado) => {
+    if (jaCadastrado) {
+      displayMessage(
+        "E-mail já cadastrado. Por favor, use outro e-mail.",
+        true
+      );
+    } else {
+      // Cria um objeto com os dados do usuário
+      let usuario = {
+        nome: nome,
+        email: email,
+        senha: senha,
+        historico: [],
+        favoritos: [],
+      };
+
+      // Envia os dados para o servidor
+      createUser(usuario, function (response) {
+        if (response.success) {
+          // Salva o estado de logado no localStorage
+          localStorage.setItem(
+            "usuarioLogado",
+            JSON.stringify({ nome: usuario.nome, email: usuario.email })
+          );
+          displayMessage("Usuário cadastrado com sucesso!", false);
+          document.getElementById("form-cadastro").reset();
+          atualizarInterfaceUsuario();
+          // Redireciona para a página de perfil
+          window.location.href = "../main/index.html";
+        } else {
+          displayMessage(
+            "Erro ao cadastrar usuário: " + response.message,
+            true
+          );
+        }
+      });
+    }
+  });
+}
+
+Função atualizarInterfaceUsuario
+
+Descrição: Atualiza a interface do usuário logado.
+
+Código:
+
+function atualizarInterfaceUsuario() {
+  const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+  const usuarioNome = document.getElementById("usuarioNome");
+  const logoff = document.getElementById("logoff");
+
+  if (usuarioLogado) {
+    usuarioNome.innerText = usuarioLogado.nome;
+    usuarioNome.href = "javascript:void(0);";
+    logoff.style.display = "block";
+  } else {
+    usuarioNome.innerText = "Login";
+    usuarioNome.href = "../login/login.html";
+    logoff.style.display = "none";
+  }
+}
+
+Função logoffUsuario
+
+Descrição: Desloga o usuário, removendo seus dados do localStorage.
+
+Código:
+
+function logoffUsuario() {
+  localStorage.removeItem("usuarioLogado");
+  atualizarInterfaceUsuario();
+}
+
+Eventos de Interface
+
+Descrição: Eventos relacionados à interface do usuário.
+
+Código:
+
+// Adiciona o evento de clique ao botão de cadastro
+document
+  .getElementById("btnCadastrar")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    cadastrarUsuario();
+  });
+
+// Atualiza a interface do usuário ao carregar a página
+document.addEventListener("DOMContentLoaded", function () {
+  atualizarInterfaceUsuario();
+});
+
 -Funções do Arquivo login.js
 
     Constante apiUrl
