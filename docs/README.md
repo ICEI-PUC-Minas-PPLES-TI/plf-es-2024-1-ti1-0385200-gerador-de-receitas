@@ -18,7 +18,7 @@ O template para o site é estruturado e permite que a equipe evolua a documenta�
 
 # Introdução
 
-Nosso projeto tem como objetivo principal auxiliar pessoas na arte da culinária, fornecendo orientações para cozinhar de maneira simples, fácil, prática e eficiente, mesmo com ingredientes limitados ou reaproveitando os que já estão disponíveis em casa. Além disso, buscamos ajudar aqueles que precisam economizar dinheiro na compra de ingredientes para a preparação de alimentos e reduzir o desperdício de alimentos no dia a dia.
+O projeto tem como objetivo principal auxiliar pessoas na arte da culinária, fornecendo orientações para cozinhar de maneira simples, fácil, prática e eficiente, mesmo com ingredientes limitados ou reaproveitando os que já estão disponíveis em casa. Além disso, buscamos ajudar aqueles que precisam economizar dinheiro na compra de ingredientes para a preparação de alimentos e reduzir o desperdício de alimentos no dia a dia. Pretendemos criar uma comunidade culinária onde todos, independentemente de suas habilidades culinárias, possam aprender e compartilhar conhecimentos e experiências na cozinha.
 
 ## Informações Gerais
 
@@ -37,35 +37,37 @@ Nosso projeto tem como objetivo principal auxiliar pessoas na arte da culinária
 
 ## Problema
 
-Muitas pessoas frequentemente enfrentam dificuldades ao cozinhar com poucos ingredientes ou ao encontrar maneiras de reutilizar os ingredientes ou alimentos que já possuem, resultando em desperdício e gastos desnecessários. Essa preocupação com os gastos tornou-se comum, pois muitos buscam economizar nas despesas com alimentos, mas raramente conseguem. Isso ocorre porque uma porção da populção não possui o conhecimento necessário para preparar refeições simples, práticas, rápidas e básicas, ou não sabe por onde ou como aprender novas receitas. Assim, muitas vezes acabam recorrendo a aplicativos e serviços de entrega de comida (delivery), resultando em gastos desnecessários e prejudicando a própria saúde aos poucos, uma vez que a maioria dos deliveries não oferece comidas muito saudáveis. E, mesmo quando oferecem, não é tão comum que as pessoas peçam comidas "100%" saudáveis.
-
-A mesma situação ocorre quando vão às compras; muitas vezes as pessoas gastam muito dinheiro desnecessariamente com alimentos que não são saudáveis e que normalmente não precisam ser preparados para serem consumidos. Quanto ao desperdício de alimentos, além de ser, infelizmente, algo comum, também se tornou um problema sério, conforme apontado por uma pesquisa da Organização das Nações Unidas (ONU) em 2021. Esse tipo de descarte é o terceiro maior emissor de CO2 no mundo, contribuindo com aproximadamente 10% das emissões globais de gases de efeito estufa. Portanto, o desperdício de alimentos também é uma questão ambiental crucial, e nosso projeto busca mitigar todos esses problemas.
+Primeiramente, muitas pessoas frequentemente enfrentam dificuldades ao cozinhar com poucos ingredientes ou ao encontrar maneiras de reutilizar os ingredientes ou alimentos que já possuem, resultando em desperdício e gastos desnecessários. Logo, essa preocupação com os gastos tornou-se comum, pois muitos buscam economizar nas despesas com alimentos, mas raramente conseguem. Isso ocorre porque grande parte da população não possui o conhecimento necessário para preparar refeições simples, práticas, rápidas e básicas, ou não sabem por onde ou como aprender novas receitas. Assim, muitas vezes acabam recorrendo a aplicativos e serviços de entrega de comida (delivery), resultando em gastos desnecessários e prejudicando a própria saúde aos poucos, uma vez que a maioria das deliveries não oferecem comidas muito saudáveis. E mesmo quando oferecem, não é tão comum que as pessoas peçam comidas realmente saudáveis. 
+Em segunda ordem, a mesma situação ocorre quando vão às compras,ou seja, muitas vezes as pessoas gastam muito dinheiro desnecessariamente com alimentos que não são saudáveis e que normalmente não precisam ser preparados para serem consumidos. 
+Também, quanto ao desperdício de alimentos, além de ser infelizmente algo comum, também se tornou um problema sério, conforme apontado por uma pesquisa da Organização das Nações Unidas (ONU) em 2021. Esse tipo de descarte é o terceiro maior emissor de CO2 no mundo, contribuindo com aproximadamente 10% das emissões globais de gases de efeito estufa. 
+Concluindo, o desperdício de alimentos também é uma questão ambiental crucial, e nosso projeto busca mitigar todos os problemas citados com base em uma solução de software.
 
 ## Objetivo
 
-Nosso projeto visa criar uma plataforma online (app/site web) que possa sugerir e gerar receitas com base nos ingredientes disponíveis para os usuários, auxiliando-os na preparação de pratos práticos, simples, básicos, rápidos e, o mais importante: saborosos e saudáveis. Além disso, a plataforma também oferecerá dicas extras sobre economia na cozinha, substituição de ingredientes, conservação de alimentos, reutilização saudável de alimentos, planejamento de refeições e muito mais. Dessa forma, não apenas ajudaremos os usuários a economizar dinheiro e reduzir o desperdício, mas também promoveremos uma maior conscientização ambiental, responsabilidade e uma melhor qualidade de vida através de uma alimentação mais saudável.
+Certamente, o objetivo do projeto visa criar uma plataforma online (app/site web) que possa sugerir e gerar receitas com base nos ingredientes disponíveis para os usuários. Assim, auxiliando-os na preparação de pratos práticos, simples, básicos, rápidos, e o mais importante: saborosos e saudáveis. Além disso, a plataforma também oferecerá dicas extras sobre economia na cozinha, substituição de ingredientes, conservação de alimentos, reutilização saudável de alimentos, planejamento de refeições e muito mais. Dessa forma, não apenas ajudaremos os usuários a economizar dinheiro e reduzir o desperdício, mas também promovemos uma maior conscientização ambiental, responsabilidade e uma melhor qualidade de vida através de uma alimentação mais saudável.
 
 ## Justificativa
 
-A criação do nosso projeto "KitchenCompanion" baseia-se na crescente necessidade de conscientização e responsabilidade sobre a economia doméstica/alimentar, sustentabilidade e a falta de habilidades culinárias por parte da maioria das pessoas. Com o aumento dos preços dos alimentos e a preocupação crescente com o impacto ambiental do desperdício de alimentos, torna-se cada vez mais importante encontrar maneiras de maximizar o uso dos ingredientes disponíveis para preparar as refeições e minimizar o desperdício e os gastos. Além disso, como já mencionado, muitas pessoas têm dificuldade em encontrar receitas que possam ser feitas com ingredientes simples (ou baratos) que já possuem (ou não) em casa. Nossa plataforma pode resolver esses problemas, fornecendo aos usuários soluções vantajosas e receitas personalizadas com base nos ingredientes que já possuem (ou que sejam acessíveis), além de dicas sobre como economizar dinheiro e reduzir o desperdício na cozinha.
+A criação do nosso projeto “KitchenCompanion” baseia-se na crescente necessidade de conscientização e responsabilidade sobre a economia doméstica/alimentar, sustentabilidade e a falta de habilidades culinárias por parte da maioria das pessoas. Com base no aumento dos preços dos alimentos e a preocupação crescente com o impacto ambiental do desperdício de alimentos, torna-se cada vez mais importante encontrar maneiras de maximizar o uso dos ingredientes disponíveis para preparar as refeições e minimizar o desperdício e os gastos. Além disso, como já mencionado, muitas pessoas têm dificuldade em encontrar receitas que possam ser feitas com ingredientes simples (ou baratos) que já possuem (ou não) em casa. 
+Portanto, a plataforma tem o intuito de resolver esses problemas, fornecendo aos usuários soluções vantajosas e receitas personalizadas com base nos ingredientes que já possuem (ou que sejam acessíveis), além de dicas sobre como economizar dinheiro e reduzir o desperdício na cozinha. Também buscamos fomentar uma cultura de culinária sustentável e acessível, onde todos possam desfrutar de refeições saudáveis e saborosas sem comprometer o orçamento ou o meio ambiente.
 
 ## Público-alvo
 
 Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de forma eficiente e econômica é universal. No entanto, identificamos alguns grupos específicos que podem se beneficiar particularmente da nossa plataforma. Para cada um desses grupos, apresentamos brevemente as razões pelas quais nossa plataforma pode ser especialmente útil para eles:
 
-**Estudantes:** Muitos estudantes, principalmente universitários ou aqueles que já estão estagiando e não possuem muito tempo, ou "não param em casa", vivem com um orçamento "apertado" e podem não ter muita experiência em cozinhar.
+Estudantes: Muitos estudantes, principalmente universitários ou aqueles que já estão estagiando e não possuem muito tempo, ou "não param em casa", vivem com um orçamento “apertado” e podem não ter muita experiência em cozinhar. 
 
-**Profissionais:** Não muito diferente dos estudantes, profissionais que trabalham em tempo integral podem ter pouca experiência e pouco tempo para planejar e preparar suas refeições.
+Profissionais: Não muito diferente dos estudantes, profissionais que trabalham em tempo integral podem ter pouca experiência e pouco tempo para planejar e preparar suas refeições. 
 
-**Famílias:** As famílias, especialmente as grandes, podem achar difícil cozinhar refeições que agradem a todos sem gastar muito dinheiro ou desperdiçar ingredientes/comida.
+Famílias: As famílias, especialmente as grandes, podem achar difícil cozinhar refeições que agradem a todos sem gastar muito dinheiro ou desperdiçar ingredientes/comida. 
 
-**Pessoas que vivem sozinhas:** Cozinhar para uma ou várias pessoas pode ser difícil, mas cozinhar para si mesmo pode ser ainda mais desafiador.
+Pessoas que vivem sozinhas: Cozinhar para uma ou várias pessoas pode ser difícil, mas cozinhar para si mesmo pode ser ainda mais desafiador. 
 
-**Idosos:** Pessoas idosas podem ter necessidades dietéticas específicas ou podem ter dificuldade em preparar refeições mais complexas.
+Idosos: Pessoas idosas podem ter necessidades dietéticas específicas ou podem ter dificuldade em preparar refeições mais complexas. 
 
-**Pessoas com restrições dietéticas:** Pessoas com alergias alimentares, intolerâncias ou que seguem dietas específicas (como veganismo, vegetarianismo, dieta sem glúten, entre outras) podem achar difícil encontrar receitas que atendam às suas necessidades.
+Pessoas com restrições dietéticas: Pessoas com alergias alimentares, intolerâncias ou que seguem dietas específicas (como veganismo, vegetarianismo, dieta sem glúten, entre outras) podem achar difícil encontrar receitas que atendam às suas necessidades. 
 
-**Aprendizes de culinária:** Pessoas que estão aprendendo a cozinhar e querem experimentar novas receitas ou pessoas que querem elevar o nível e desafiar suas próprias habilidades culinárias podem usar nosso site para encontrar receitas adequadas ao seu nível de habilidade e aos ingredientes que têm disponíveis no momento.
+Aprendizes de culinária: Pessoas que estão aprendendo a cozinhar e querem experimentar novas receitas ou pessoas que querem elevar o nível e desafiar suas próprias habilidades culinárias podem usar nosso site para encontrar receitas adequadas ao seu nível de habilidade e aos ingredientes que têm disponíveis no momento.
 
 ---
 
@@ -74,6 +76,8 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 ## Processo de Design Thinking
 
 **1. Matriz CSD (Certezas, Suposições, Dúvidas)**
+
+(![Matriz de Alinhamento](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/119761586/50f53889-6c11-4c6c-9f97-38ab5733bfc5))
 
 **Certezas:**
 
