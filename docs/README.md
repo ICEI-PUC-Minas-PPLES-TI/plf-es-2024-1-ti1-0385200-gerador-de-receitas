@@ -1381,7 +1381,52 @@ function displayMessage(mensagem, isError = true) {
   }
 }
 
-6-
+6-Funções do Arquivo coracao.js
+
+    Variável isLiked
+    Função toggleHeart
+
+Variável isLiked
+
+Descrição: Variável booleana que indica se o item foi curtido (liked) ou não. Inicialmente definida como false.
+
+Código:
+
+let isLiked = false;
+
+Função toggleHeart
+
+Descrição: Alterna o estado de curtido (liked) de um item ao clicar no botão de coração, mudando a aparência do ícone.
+
+Parâmetros:
+
+    button (HTMLElement): O botão de coração que foi clicado.
+
+Funcionamento:
+
+    Alterna o valor da variável isLiked.
+    Seleciona o ícone de coração dentro do botão.
+    Alterna a classe fas do ícone de coração para indicar se está curtido ou não.
+    Muda a cor do ícone de coração.
+
+Exemplo de Uso:
+
+const heartButton = document.getElementById('heartButton');
+heartButton.addEventListener('click', () => {
+  toggleHeart(heartButton);
+});
+
+Código:
+
+
+function toggleHeart(button) {
+  isLiked = !isLiked;
+  const heartIcon = button.querySelector('i');
+  heartIcon.classList.toggle('fas');
+  heartIcon.style.color = isLiked ? 'var(--vermelho)' : 'var(--vermelho)';
+}
+
+7-
 
 # FAQ
 
