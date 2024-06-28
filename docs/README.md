@@ -338,11 +338,7 @@ Seção de comentários
 - Se tentar se cadastrar sem preencher todos os campos, você receberá uma mensagem de erro indicando que deve preencher todos os campos.
 - Se tentar se cadastrar com um e-mail já existente no banco de dados JSON, você também receberá uma mensagem de erro informando que o e-mail já foi cadastrado.
 
-![cadastro](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/e2a6648b-91bd-43d5-8e08-d53e5aa39f51)
-![editar perfil](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/c80050ab-b1af-4202-98cd-c1a8fd15f2ea)
-![favorito](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/00560bd2-902f-4bc1-8600-b2a6646afe6e)
-![historico](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/ffc13a95-76b3-4965-9f98-2f2da94a2b8c)
-![login](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/63849534-76eb-4ae5-af37-4fbce0d30232)
+![telacadastro](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/e2a6648b-91bd-43d5-8e08-d53e5aa39f51)
 
 **Funcionalidade 2 -** Login
 **Estrutura de Dados:** JSON - usuarios (exemplo)
@@ -364,7 +360,7 @@ Seção de comentários
 - escrever aqui
 - escrever aqui
 
-()
+![telalogin](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/63849534-76eb-4ae5-af37-4fbce0d30232)
 
 **Funcionalidade 3 -** Editar Perfil do Usuário
 **Estrutura de Dados:** JSON - usuarios (exemplo)
@@ -386,7 +382,7 @@ Seção de comentários
 - escrever aqui
 - escrever aqui
 
-()
+![telaeditarperfil](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/c80050ab-b1af-4202-98cd-c1a8fd15f2ea)
 
 **Funcionalidade 4 -** Vizualização da Receita
 **Estrutura de Dados:** JSON - receitas (exemplo)
