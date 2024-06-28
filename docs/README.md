@@ -126,7 +126,7 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 **3. Diagrama de Personas**
 
-- Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personalidade, sonhos e objetivos com o aplicativo. (Detalhamento no próximo tópico)
+Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personalidade, sonhos e objetivos com o aplicativo. (Detalhamento no próximo tópico)
 
 **4. Mapa da Proposta de Valor**
 
@@ -169,57 +169,57 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 **1. Persona: Ana**
 
-- **Idade:** 40 anos
-- **Hobby:** Assistir filmes e séries
-- **Trabalho:** Médica
-- **Personalidade:** Focada e esforçada
-- **Sonhos:** Ser uma médica de renome
-- **Objetivos com o aplicativo:** Ana é uma médica ocupada que valoriza seu tempo. Ela está interessada em aprender a cozinhar refeições rápidas e saudáveis após um longo dia de trabalho. Ela também está procurando maneiras de economizar dinheiro ao maximizar o uso dos ingredientes que já tem em casa.
+- Idade: 40 anos
+- Hobby: Assistir filmes e séries
+- Trabalho: Médica
+- Personalidade: Focada e esforçada
+- Sonhos: Ser uma médica de renome
+- Objetivos com o aplicativo: Ana é uma médica ocupada que valoriza seu tempo. Ela está interessada em aprender a cozinhar refeições rápidas e saudáveis após um longo dia de trabalho. Ela também está procurando maneiras de economizar dinheiro ao maximizar o uso dos ingredientes que já tem em casa.
 
 **2. Persona: Tony**
 
-- **Idade:** 22 anos
-- **Hobby:** Jogar videogames e ler
-- **Trabalho:** Estudante universitário
-- **Personalidade:** Curioso, determinado e prático
-- **Sonhos:** Se formar e morar fora do Brasil
-- **Objetivos com o aplicativo:** Tony é um estudante que busca cozinhar algo rápido e saboroso com os recursos acessíveis. Ele está interessado em aprender a cozinhar e encontrar receitas fáceis e rápidas que podem ser preparadas depois de chegar em casa da universidade.
+- Idade: 22 anos
+- Hobby: Jogar videogames e ler
+- Trabalho: Estudante universitário
+- Personalidade: Curioso, determinado e prático
+- Sonhos: Se formar e morar fora do Brasil
+- Objetivos com o aplicativo: Tony é um estudante que busca cozinhar algo rápido e saboroso com os recursos acessíveis. Ele está interessado em aprender a cozinhar e encontrar receitas fáceis e rápidas que podem ser preparadas depois de chegar em casa da universidade.
 
 **3. Persona: Laura**
 
-- **Idade:** 34 anos
-- **Hobby:** Esportes e fotografia
-- **Trabalho:** Fotógrafa freelancer
-- **Personalidade:** Criativa, aventureira e consciente sobre saúde
-- **Sonhos:** Viajar pelo mundo e documentar suas experiências através da fotografia
-- **Objetivos com o aplicativo:** Laura é uma fotógrafa freelancer que passa muito tempo viajando para diferentes locais para seu trabalho. Ela está procurando maneiras de preparar refeições saudáveis e simples em qualquer lugar que esteja. Ela também está interessada em experimentar receitas de diferentes culturas.
+- Idade: 34 anos
+- Hobby: Esportes e fotografia
+- Trabalho: Fotógrafa freelancer
+- Personalidade: Criativa, aventureira e consciente sobre saúde
+- Sonhos: Viajar pelo mundo e documentar suas experiências através da fotografia
+- Objetivos com o aplicativo: Laura é uma fotógrafa freelancer que passa muito tempo viajando para diferentes locais para seu trabalho. Ela está procurando maneiras de preparar refeições saudáveis e simples em qualquer lugar que esteja. Ela também está interessada em experimentar receitas de diferentes culturas.
 
 **4. Persona: Roberto**
 
-- **Idade:** 70 anos
-- **Hobby:** Pescar e jardinagem
-- **Trabalho:** Aposentado
-- **Personalidade:** Calmo, metódico e consciente sobre saúde
-- **Sonhos:** Aprender novas habilidades culinárias e preparar refeições saudáveis para seus netos
-- **Objetivos com o aplicativo:** Roberto é um idoso que gosta de cozinhar para sua família. Ele está procurando por receitas simples e nutritivas que são fáceis de preparar. Ele também está interessado em aprender sobre substituição de ingredientes para acomodar suas necessidades dietéticas específicas. Além disso, ele gostaria de planejar suas refeições semanais e criar uma lista de compras eficiente.
+- Idade: 70 anos
+- Hobby: Pescar e jardinagem
+- Trabalho: Aposentado
+- Personalidade: Calmo, metódico e consciente sobre saúde
+- Sonhos: Aprender novas habilidades culinárias e preparar refeições saudáveis para seus netos
+- Objetivos com o aplicativo: Roberto é um idoso que gosta de cozinhar para sua família. Ele está procurando por receitas simples e nutritivas que sejam fáceis de preparar. Ele também está interessado em aprender sobre substituição de ingredientes para acomodar suas necessidades dietéticas específicas. Além disso, ele gostaria de planejar suas refeições semanais e criar uma lista de compras eficiente.
 
 ---
 
 ## Histórias de Usuários
 
-**Como um estudante universitário com orçamento limitado**, eu gostaria de encontrar receitas rápidas e econômicas, para que eu possa preparar refeições saudáveis e saborosas sem gastar muito tempo ou dinheiro.
+**Como um estudante universitário com orçamento limitado,** eu gostaria de encontrar receitas rápidas e econômicas para que eu possa preparar refeições saudáveis e saborosas sem gastar muito tempo ou dinheiro.
 
-**Como um profissional ocupado**, eu gostaria de acessar receitas que possam ser preparadas com antecedência, para que eu possa ter refeições prontas para consumir durante a semana de trabalho.
+**Como um profissional ocupado,** eu gostaria de acessar receitas que possam ser preparadas com antecedência, para que eu possa ter refeições prontas para consumir durante a semana de trabalho.
 
-**Como pai/mãe de uma família grande**, eu gostaria de encontrar receitas que sejam versáteis e agradem a todos, para que eu possa preparar uma única refeição que satisfaça as preferências de toda a família.
+**Como pai/mãe de uma família grande,** eu gostaria de encontrar receitas que sejam versáteis e agradem a todos, para que eu possa preparar uma única refeição que satisfaça as preferências de toda a família.
 
-**Como alguém que vive sozinho**, eu gostaria de encontrar receitas que sejam adequadas para porções individuais, para evitar o desperdício e preparar a quantidade certa de comida para uma refeição.
+**Como alguém que vive sozinho,** eu gostaria de encontrar receitas que sejam adequadas para porções individuais, para evitar o desperdício e preparar a quantidade certa de comida para uma refeição.
 
-**Como um idoso**, eu gostaria de encontrar receitas simples e nutritivas que são fáceis de preparar, para atender às minhas necessidades dietéticas específicas e evitar a preparação de refeições complexas.
+**Como um idoso,** eu gostaria de encontrar receitas simples e nutritivas que sejam fáceis de preparar, para atender às minhas necessidades dietéticas específicas e evitar a preparação de refeições complexas.
 
-**Como uma pessoa com restrições dietéticas**, eu gostaria de filtrar receitas por tipo de dieta (como vegana, sem glúten, etc.), para que eu possa encontrar receitas que atendam às minhas necessidades nutricionais específicas.
+**Como uma pessoa com restrições dietéticas,** eu gostaria de filtrar receitas por tipo de dieta (como vegana, sem glúten, etc.), para que eu possa encontrar receitas que atendam às minhas necessidades nutricionais específicas.
 
-**Como um aprendiz de culinária**, eu gostaria de usar o aplicativo para encontrar receitas adequadas ao meu nível de habilidade e aos ingredientes que tenho disponíveis no momento, para que eu possa experimentar novas receitas e desafiar minhas próprias habilidades culinárias.
+**Como um aprendiz de culinária,** eu gostaria de usar o aplicativo para encontrar receitas adequadas ao meu nível de habilidade e aos ingredientes que tenho disponíveis no momento, para que eu possa experimentar novas receitas e desafiar minhas próprias habilidades culinárias.
 
 ---
 
