@@ -186,21 +186,28 @@ Os usuários fornecem feedback valioso que pode ser usado para melhorar o aplica
 
 **6. Mapa de Priorização**
 
+![Mapa de prioridade](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/119761586/f39941cc-dc6d-4c33-a04b-6c82243e188f)
+
 **Alta Prioridade:**
 
 - Desenvolvimento do gerador de receitas
+
 - Funcionalidade de cadastro e login
+
 - Visualização de receita em tela cheia
 
 **Média Prioridade:**
 
 - Funcionalidade de favoritar receitas
+
 - Visualização de histórico de receitas
 
 **Baixa Prioridade:**
 
 - Lista de ingredientes recomendados para compra
+
 - Integração com redes sociais
+
 - Seção de comentários
 
 ---
@@ -208,6 +215,8 @@ Os usuários fornecem feedback valioso que pode ser usado para melhorar o aplica
 # Especificações do Projeto
 
 ## Personas
+
+Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personalidade, sonhos e objetivos com o aplicativo. 
 
 **1. Persona: Ana**
 
@@ -249,19 +258,19 @@ Os usuários fornecem feedback valioso que pode ser usado para melhorar o aplica
 
 ## Histórias de Usuários
 
-**Como um estudante universitário com orçamento limitado,** eu gostaria de encontrar receitas rápidas e econômicas para que eu possa preparar refeições saudáveis e saborosas sem gastar muito tempo ou dinheiro.
+Como um estudante universitário com orçamento limitado, eu gostaria de encontrar receitas rápidas e econômicas, para que eu possa preparar refeições saudáveis e saborosas sem gastar muito tempo ou dinheiro. 
 
-**Como um profissional ocupado,** eu gostaria de acessar receitas que possam ser preparadas com antecedência, para que eu possa ter refeições prontas para consumir durante a semana de trabalho.
+Como um profissional ocupado, eu gostaria de acessar receitas que possam ser preparadas com antecedência, para que eu possa ter refeições prontas para consumir durante a semana de trabalho. 
 
-**Como pai/mãe de uma família grande,** eu gostaria de encontrar receitas que sejam versáteis e agradem a todos, para que eu possa preparar uma única refeição que satisfaça as preferências de toda a família.
+Como pai/mãe de uma família grande, eu gostaria de encontrar receitas que sejam versáteis e agradam a todos, para que eu possa preparar uma única refeição que satisfaça as preferências de toda a família.
 
-**Como alguém que vive sozinho,** eu gostaria de encontrar receitas que sejam adequadas para porções individuais, para evitar o desperdício e preparar a quantidade certa de comida para uma refeição.
+Como alguém que vive sozinho, eu gostaria de encontrar receitas que sejam adequadas para porções individuais, para evitar o desperdício e preparar a quantidade certa de comida para uma refeição.
 
-**Como um idoso,** eu gostaria de encontrar receitas simples e nutritivas que sejam fáceis de preparar, para atender às minhas necessidades dietéticas específicas e evitar a preparação de refeições complexas.
+Como um idoso, eu gostaria de encontrar receitas simples e nutritivas que são fáceis de preparar, para atender às minhas necessidades dietéticas específicas e evitar a preparação de refeições complexas.
 
-**Como uma pessoa com restrições dietéticas,** eu gostaria de filtrar receitas por tipo de dieta (como vegana, sem glúten, etc.), para que eu possa encontrar receitas que atendam às minhas necessidades nutricionais específicas.
+Como uma pessoa com restrições dietéticas, eu gostaria de filtrar receitas por tipo de dieta (como vegana, sem glúten, etc.), para que eu possa encontrar receitas que atendam às minhas necessidades nutricionais específicas.
 
-**Como um aprendiz de culinária,** eu gostaria de usar o aplicativo para encontrar receitas adequadas ao meu nível de habilidade e aos ingredientes que tenho disponíveis no momento, para que eu possa experimentar novas receitas e desafiar minhas próprias habilidades culinárias.
+Como aprendiz de culinária, eu gostaria de usar o aplicativo para encontrar receitas adequadas ao meu nível de habilidade e aos ingredientes que tenho disponíveis no momento, para que eu possa experimentar novas receitas e desafiar minhas próprias habilidades culinárias.
 
 ---
 
@@ -269,19 +278,30 @@ Os usuários fornecem feedback valioso que pode ser usado para melhorar o aplica
 
 **Requisitos Funcionais:**
 
-- O usuário deve ser capaz de acessar uma receita gerada por um banco de dados.
-- O sistema deve permitir que o usuário se cadastre e faça login.
-- O usuário deve ser capaz de visualizar a receita em tela cheia.
-- O sistema deve permitir que o usuário favorite as receitas.
-- O usuário deve ser capaz de visualizar seu histórico de receitas.
-- O usuário deve ser capaz de visualizar suas receitas favoritas.
+- O usuário deve ser capaz de acessar uma receita gerada pelo banco de dados.
+ 
+- O sistema deve permitir que o usuário se cadastre e faça login. 
+
+- O usuário deve ser capaz de visualizar a receita em tela cheia. 
+
+- O sistema deve permitir que o usuário favorite as receitas. 
+
+- O usuário deve ser capaz de visualizar seu histórico de receitas. 
+
+- O usuário deve ser capaz de visualizar suas receitas favoritas. 
+
 
 **Requisitos Não-Funcionais:**
 
-- O sistema deve ser compatível com os navegadores Chrome e Mozilla.
-- O sistema deve ser desenvolvido usando HTML, CSS e JS.
-- O sistema deve utilizar o JSON Server para acessar o banco de dados.
-- O design do sistema deve ser responsivo, adaptando-se a diferentes tamanhos de tela.
+
+- O sistema deve ser compatível com os navegadores Chrome e Mozilla. 
+
+- O sistema deve ser desenvolvido usando HTML, CSS e JS. 
+
+- O sistema utilizará um banco de dados JSON server para gerar uma receita.
+
+- O design do sistema deve ser responsivo, adaptando-se a diferentes tamanhos de tela. 
+
 - O sistema deve ser capaz de gerar receitas com base nos ingredientes disponíveis/selecionados pelo usuário.
 
 ---
@@ -307,14 +327,21 @@ Os usuários fornecem feedback valioso que pode ser usado para melhorar o aplica
 ## Ferramentas
 
 - **Figma:** Utilizado para a criação do User Flow, Wireframe e Protótipo.
+  
 - **Github:** Empregado para o rastreamento da documentação e do progresso do projeto.
+  
 - **Visual Studio Code:** Utilizado para a criação dos códigos HTML, CSS, JS e estrutura JSON em LocalStorage/SessionStorage e Document Object Model (DOM).
+
 - **Replit:** Utilizado para a criação do JSON Server e estrutura geral JSON.
 
 ## Gestão do Projeto
 
 - **Microsoft To-Do:** Utilizado para o rastreamento e a divisão de tarefas/papéis. Para criar um fluxo de trabalho efetivo, foi necessário fazer o acompanhamento das tarefas com este aplicativo fácil de usar. Nele, foi possível atribuir tarefas aos membros do grupo e, quando cada um terminava seu afazer, marcava como concluído. Uma solução simples e efetiva.
+
+![To-Do](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/119761586/0b035ce0-5421-48e2-910a-d961dc778969)
+
 - **Discord:** Utilizado para reuniões semanais, correção dos códigos e implementações de algumas funcionalidades do site. Por meio de ligações, a plataforma permite a vizualização da tela de outros dispositivos em tempo real, facilitando a identificação e correção de problemas durante o desenvolvimentro dos códigos de cada parte das páginas do site, consequentemente auxiliando e sanando as dificuldades dos membros do time em relação a determinados assuntos durante o projeto.
+
 - **WhatsApp:** Utilizado apenas para avisos e comunicados de caráter urgente e relevante para todos os membros do time. O aplicativo provou ser eficaz ao garantir que todos os membros se mantenham atualizados de forma rápida e eficiente.
 
 ## Controle de Versão
