@@ -2009,13 +2009,6 @@ function moveSlide(direction) {
 11-Funções do Arquivo cardslider.js
 
     Função Anônima para DOMContentLoaded
-    Função setCardPerView
-    Função cloneCards
-    Função dragStart
-    Função dragging
-    Função dragStop
-    Função infiniteScroll
-    Função autoPlay
 
 Função Anônima para DOMContentLoaded
 
@@ -2162,7 +2155,199 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", setCardPerView);
 });
 
-12-
+12-Funções do Arquivo logicacardslider.js
+
+    Função setCardPerView
+    Função cloneCards
+    Função dragStart
+    Função dragging
+    Função dragStop
+    Função infiniteScroll
+    Função autoPlay
+
+Função setCardPerView
+
+Descrição: Define o número de cartões visíveis por vez no carrossel e clona os cartões para criar o efeito de rolagem infinita.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Calcula o número de cartões visíveis com base na largura do carrossel e na largura de um cartão.
+    Chama a função cloneCards para clonar os cartões e criar o efeito de rolagem infinita.
+
+Código:
+
+const setCardPerView = () => {
+  cardPerView = Math.round(carousel.offsetWidth / carousel.querySelector(".cardgeracao").offsetWidth);
+  cloneCards();
+};
+
+Função cloneCards
+
+Descrição: Clona os cartões no carrossel para criar um efeito de rolagem infinita.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Clona todos os cartões atuais e os adiciona ao final do carrossel.
+    Clona os últimos cartões e os adiciona ao início do carrossel.
+    Define a posição inicial do carrossel para o início dos cartões clonados.
+
+Código:
+
+const cloneCards = () => {
+  const carouselChildren = [...carousel.children];
+  carousel.innerHTML = ''; 
+  carouselChildren.forEach(card => {
+    carousel.insertAdjacentHTML("beforeend", card.outerHTML); 
+  });
+  carouselChildren.slice(-cardPerView).reverse().forEach(card => {
+    carousel.insertAdjacentHTML("afterbegin", card.outerHTML); 
+  });
+  carouselChildren.slice(0, cardPerView).forEach(card => {
+    carousel.insertAdjacentHTML("beforeend", card.outerHTML); 
+  });
+  carousel.classList.add("no-transition");
+  carousel.scrollLeft = carousel.offsetWidth;
+  carousel.classList.remove("no-transition");
+};
+
+Função dragStart
+
+Descrição: Inicia o arrasto do carrossel.
+
+Parâmetros:
+
+    e (Event): Evento de mouse ou toque.
+
+Funcionamento:
+
+    Define o estado de arrasto como verdadeiro.
+    Armazena a posição inicial do arrasto e a posição de rolagem do carrossel.
+
+Código:
+
+const dragStart = (e) => {
+  isDragging = true;
+  carousel.classList.add("dragging");
+
+  startX = e.pageX || e.touches[0].pageX;
+  startScrollLeft = carousel.scrollLeft;
+};
+
+Função dragging
+
+Descrição: Executa o arrasto do carrossel.
+
+Parâmetros:
+
+    e (Event): Evento de mouse ou toque.
+
+Funcionamento:
+
+    Calcula a nova posição de rolagem do carrossel com base no movimento do mouse ou toque.
+    Atualiza a posição de rolagem do carrossel.
+
+Código:
+
+const dragging = (e) => {
+  if (!isDragging) return; 
+
+  const x = e.pageX || e.touches[0].pageX;
+  carousel.scrollLeft = startScrollLeft - (x - startX);
+};
+
+Função dragStop
+
+Descrição: Finaliza o arrasto do carrossel.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Define o estado de arrasto como falso.
+    Remove a classe de arrasto do carrossel.
+
+Código:
+
+const dragStop = () => {
+  isDragging = false;
+  carousel.classList.remove("dragging");
+};
+
+Função infiniteScroll
+
+Descrição: Cria um efeito de rolagem infinita no carrossel.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Verifica se o carrossel está na posição inicial ou final.
+    Se estiver na posição inicial, move para o final dos cartões clonados.
+    Se estiver na posição final, move para o início dos cartões clonados.
+    Reinicia o autoplay se não estiver em modo de arrasto.
+
+Código:
+
+const infiniteScroll = () => {
+  if (carousel.scrollLeft === 0) {
+    carousel.classList.add("no-transition");
+    carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+    carousel.classList.remove("no-transition");
+  } else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+    carousel.classList.add("no-transition");
+    carousel.scrollLeft = carousel.offsetWidth;
+    carousel.classList.remove("no-transition");
+  }
+  clearTimeout(timeoutId);
+  if (!wrapper.matches(":hover")) autoPlay();
+};
+
+Função autoPlay
+
+Descrição: Define o autoplay do carrossel para rolar automaticamente a cada 2,5 segundos.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Verifica se o autoplay está habilitado e a largura da janela.
+    Define um timeout para rolar o carrossel após 2,5 segundos.
+
+Código:
+
+const autoPlay = () => {
+  if (window.innerWidth < 800 || !isAutoPlay) return;
+  timeoutId = setTimeout(() => carousel.scrollLeft += carousel.querySelector(".cardgeracao").offsetWidth, 2500);
+};
+
+Eventos de Arrasto e Rolagem
+
+Descrição: Adiciona eventos de arrasto, toque, e rolagem infinita ao carrossel.
+
+Código:
+
+javascript
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("touchstart", dragStart);
+
+document.addEventListener("mousemove", dragging);
+carousel.addEventListener("touchmove", dragging);
+
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("touchend", dragStop);
+
+carousel.addEventListener("scroll", infiniteScroll);
+wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+wrapper.addEventListener("mouseleave", autoPlay);
+
+window.addEventListener('resize', setCardPerView);
+
+13-
 
 # FAQ
 
