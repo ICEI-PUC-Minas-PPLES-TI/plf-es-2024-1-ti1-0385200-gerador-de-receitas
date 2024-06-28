@@ -382,8 +382,11 @@ Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona
 - **Instruções de acesso e uso:** 
 
 - Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
-- escrever aqui
-- escrever aqui
+- Aqui o usuário pode editar seu perfil, mundando seu nome, seu email ou sua senha, contanto que digite sua senha anterior. Caso tenha sucesso, suas informações serão modificadas com sucesso e atualizadas no banco de dados json.
+- Caso o usuário digite sua senha anterior errada, ele terá sua requisição de mudança negada e receberá uma mensagem acusando senha errada e as informações permanecem inalteradas no json.
+- Caso o usuário deixe de preencher algum campo do form, ele receberá um aviso para que preencha todos os campos.
+- Caso alguma falha no acesso ao json aconteça, uma mensagem erro específica de erro ao carregar informações será exibida.
+- Aos professores: Também podem optar por usar um usuário pré-cadastrado para testes, como o mencionado acima (Login: leon@mail, Senha:1212) para realizar mais testes. Caso algum erro inesperado aconteça, basta dar logoff e logar novamente.
 
 ![telaeditarperfil](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/c80050ab-b1af-4202-98cd-c1a8fd15f2ea)
 
