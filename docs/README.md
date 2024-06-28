@@ -331,7 +331,7 @@ Seção de comentários
     }
 }
 
-**Instruções de acesso e uso:** 
+- **Instruções de acesso e uso:** 
 
 - Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
 - Na tela de cadastro, você pode registrar um novo usuário para ter acesso às funcionalidades de perfil digitando seu nome, e-mail e senha. Com o cadastro bem-sucedido, você será redirecionado para a página principal.
@@ -340,8 +340,8 @@ Seção de comentários
 
 ![telacadastro](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/e2a6648b-91bd-43d5-8e08-d53e5aa39f51)
 
-**Funcionalidade 2 -** Login
-**Estrutura de Dados:** JSON - usuarios (exemplo)
+- **Funcionalidade 2 -** Login
+- **Estrutura de Dados:** JSON - usuarios (exemplo)
 
 "usuarios": [
     {
@@ -354,7 +354,7 @@ Seção de comentários
     }
 }
 
-**Instruções de acesso e uso:** 
+- **Instruções de acesso e uso:** 
 
 - Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
 - escrever aqui
@@ -362,8 +362,8 @@ Seção de comentários
 
 ![telalogin](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/63849534-76eb-4ae5-af37-4fbce0d30232)
 
-**Funcionalidade 3 -** Editar Perfil do Usuário
-**Estrutura de Dados:** JSON - usuarios (exemplo)
+- **Funcionalidade 3 -** Editar Perfil do Usuário
+- **Estrutura de Dados:** JSON - usuarios (exemplo)
 
 "usuarios": [
     {
@@ -376,7 +376,7 @@ Seção de comentários
     }
 }
 
-**Instruções de acesso e uso:** 
+- **Instruções de acesso e uso:** 
 
 - Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
 - escrever aqui
@@ -384,8 +384,8 @@ Seção de comentários
 
 ![telaeditarperfil](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/c80050ab-b1af-4202-98cd-c1a8fd15f2ea)
 
-**Funcionalidade 4 -** Geração de Receita
-**Estrutura de Dados:** JSON - receitas (exemplo)
+- **Funcionalidade 4 -** Geração de Receita
+- **Estrutura de Dados:** JSON - receitas (exemplo)
 
 "receitas:" [
 {
@@ -398,7 +398,7 @@ Seção de comentários
     }
 }
 
-**Instruções de acesso e uso:** 
+- **Instruções de acesso e uso:** 
 
 - Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
 - escrever aqui
@@ -406,8 +406,8 @@ Seção de comentários
 
 ![gerar receita](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/c2f0acec-513e-41b2-a7f1-f58eb730ea7a)
 
-**Funcionalidade 5 -** Vizualização da Receita
-**Estrutura de Dados:** JSON - receitas (exemplo)
+- **Funcionalidade 5 -** Vizualização da Receita
+- **Estrutura de Dados:** JSON - receitas (exemplo)
 
 "receitas": [
 {
@@ -420,7 +420,7 @@ Seção de comentários
     }
 }
 
-**Instruções de acesso e uso:** 
+- **Instruções de acesso e uso:** 
 
 - Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
 - escrever aqui
@@ -430,13 +430,11 @@ Seção de comentários
 
 ## Estruturas de Dados
 
-Estrutura de Dados - usuarios
-Usado para Cadastro, Login e Editar Perfil do Usuário
+**Estrutura de Dados - usuarios** 
+- Usado para Cadastro, Login e Editar Perfil do Usuário
 
-Estrutura de Dados - receitas
-Usado para Visualização de Receitas e Geração de Receitas
-
-(colocar imagem aqui)
+** Estrutura de Dados - receitas** 
+- Usado para Visualização de Receitas e Geração de Receitas
 
 # Módulos e APIs
 
@@ -444,7 +442,23 @@ Usado para Visualização de Receitas e Geração de Receitas
 
 # FAQ
 
-(perguntas e respostas comuns associadas ao projeto; escrever aqui depois)
+**Pergunta:** “Como as receitas são geradas?”
+**Resposta:** Utilizando o banco de dados original do KitchenCompanion.
+
+**Pergunta:** “Como gerar a receita?”
+**Resposta:** Acesse a página inicial e clique em "Gerar uma receita" no menu superior. Depois, escolha, com base nos seus ingredientes disponíveis, uma proteína, um carboidrato e um vegetal. Então, clique em "Gerar receita" e será possível visualizar o nome e o modo de preparo em uma página exclusiva para isso.
+
+**Pergunta:** “Posso me cadastrar na página?”
+**Resposta:** Sim, além disso, cadastrar-se na página oferece uma experiência mais rica, pois aumenta a possibilidade de interações com as receitas do usuário.
+
+**Pergunta:** “Após ter feito o login, posso editar meus dados?”
+**Resposta:** Sim, após fazer o login, é possível editar seus dados na página de perfil do usuário, em "Configurações". Dessa forma, é possível alterar o nome, e-mail e senha cadastrados.
+
+**Pergunta:** “As receitas que gerei ficam salvas em algum lugar?”
+**Resposta:** Sim, se o usuário estiver cadastrado na página, ao gerar uma receita e clicar em "Visualizar", as receitas ficam salvas na parte de "Histórico".
+
+**Pergunta:** “Existe uma maneira de guardar as receitas?”
+**Resposta:** Sim, é possível favoritar uma receita para acessá-la mais rapidamente quando necessário. Estas receitas ficam salvas na página de "Favoritos" no perfil do usuário.
 
 # Referências Bibliográficas
 
