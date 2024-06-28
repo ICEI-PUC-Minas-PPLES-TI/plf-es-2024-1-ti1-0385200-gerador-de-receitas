@@ -231,7 +231,6 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 - O sistema deve permitir que o usuário favorite as receitas.
 - O usuário deve ser capaz de visualizar seu histórico de receitas.
 - O usuário deve ser capaz de visualizar suas receitas favoritas.
-- O sistema deve fornecer ao usuário uma lista de ingredientes recomendados para compra com base na receita gerada anteriormente pela I.A.
 
 **Requisitos Não-Funcionais:**
 
