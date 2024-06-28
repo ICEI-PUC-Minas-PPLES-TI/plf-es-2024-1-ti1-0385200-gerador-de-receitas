@@ -267,7 +267,6 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 - **Github:** Empregado para o rastreamento da documentação e do progresso do projeto.
 - **Visual Studio Code:** Utilizado para a criação dos códigos HTML, CSS, JS e estrutura JSON em LocalStorage/SessionStorage e Document Object Model (DOM).
 - **Replit:** Utilizado para a criação do JSON Server e estrutura geral JSON.
-- **Vercel:** Utilizado para a hospedagem do site.
 
 ## Gestão do Projeto
 
