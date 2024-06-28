@@ -433,7 +433,7 @@ Seção de comentários
 **Estrutura de Dados - usuarios** 
 - Usado para Cadastro, Login e Editar Perfil do Usuário
 
-** Estrutura de Dados - receitas** 
+**Estrutura de Dados - receitas** 
 - Usado para Visualização de Receitas e Geração de Receitas
 
 # Módulos e APIs
