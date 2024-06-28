@@ -390,7 +390,51 @@ Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona
 
 ![telaeditarperfil](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/c80050ab-b1af-4202-98cd-c1a8fd15f2ea)
 
-- **Funcionalidade 4 -** Geração de Receita
+- **Funcionalidade 4 -** Vizualização do histórico da Receita
+- **Estrutura de Dados:** JSON - receitas (exemplo)
+
+"receitas": [
+{
+      "nome": "Carne bovina com feijão e cenoura",
+      "proteina": "bovina",
+      "carboidrato": "feijao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com feijão e cenoura preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 17
+    }
+}
+
+- **Instruções de acesso e uso:** 
+
+- Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
+- escrever aqui
+- escrever aqui
+
+![historico](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/e14ea461-090f-4c8a-bcb9-82d5e199dfbd)
+
+- **Funcionalidade 5 -** Vizualização de favoritos da Receita
+- **Estrutura de Dados:** JSON - receitas (exemplo)
+
+"receitas": [
+{
+      "nome": "Carne bovina com feijão e cenoura",
+      "proteina": "bovina",
+      "carboidrato": "feijao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com feijão e cenoura preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 17
+    }
+}
+
+- **Instruções de acesso e uso:** 
+
+- Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
+- escrever aqui
+- escrever aqui
+
+![favorito](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/fa2ab15b-2767-4b2b-8de8-7ffcb9286a43)
+
+- **Funcionalidade 6 -** Geração de Receita
 - **Estrutura de Dados:** JSON - receitas (exemplo)
 
 "receitas:" [
@@ -412,7 +456,7 @@ Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona
 
 ![gerar receita](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/c2f0acec-513e-41b2-a7f1-f58eb730ea7a)
 
-- **Funcionalidade 5 -** Vizualização da Receita
+- **Funcionalidade 7 -** Vizualização da Receita
 - **Estrutura de Dados:** JSON - receitas (exemplo)
 
 "receitas": [
