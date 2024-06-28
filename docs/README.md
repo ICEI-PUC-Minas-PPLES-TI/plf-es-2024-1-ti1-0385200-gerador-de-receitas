@@ -552,8 +552,30 @@ Como aprendiz de culinária, eu gostaria de usar o aplicativo para encontrar rec
 **Estrutura de Dados - usuarios** 
 - Usado para Cadastro, Login e Editar Perfil do Usuário
 
+- "usuarios": [
+    {
+      "nome": "Sauron",
+      "email": "mail.com",
+      "senha": "123",
+      "historico": [12],
+      "favoritos": [],
+      "id": 5
+    }
+}
+
 **Estrutura de Dados - receitas** 
 - Usado para Visualização de Receitas e Geração de Receitas
+
+- "receitas:" [
+{
+      "nome": "Carne bovina com arroz e cebola",
+      "proteina": "bovina",
+      "carboidrato": "arroz",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com arroz e cebola preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 7
+    }
+}
 
 # Módulos e APIs
 
