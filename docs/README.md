@@ -357,8 +357,11 @@ Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona
 - **Instruções de acesso e uso:** 
 
 - Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
-- escrever aqui
-- escrever aqui
+- Na tela de login o usuário pode digitar um email e senha previamente cadastrados na tela de cadastro para ter acesso às demais funcionalidades de perfil. Ao obter um login bem sucedido ele será direcionado para a main page.
+- Se o login não for bem sucedido por motivos de senha ou email errados, o usuário recebe uma mensagem o avisando sobre o ocorrido.
+- Se acontecer algum problema com acesso ao json server, o usuário também receberá uma mensagem de erro respectiva.
+- O usuário também recebe mensagem de erro ao tentar logar deixando algum campo em branco no form de login.
+- Aos professores: Também podem optar por usar um usuário pré-cadastrado para testes, como o mencionado acima (Login: Sauron, Senha:123) para realizar mais testes.
 
 ![telalogin](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/63849534-76eb-4ae5-af37-4fbce0d30232)
 
