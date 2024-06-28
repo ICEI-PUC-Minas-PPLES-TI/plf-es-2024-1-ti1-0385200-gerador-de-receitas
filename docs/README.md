@@ -794,6 +794,81 @@ document.addEventListener("DOMContentLoaded", function () {
   atualizarInterfaceUsuario();
 });
 
+-Funções do Arquivo api.js
+
+    Função fetchReceitas
+    Função saveHistorico
+
+Função fetchReceitas
+
+Descrição: Busca as receitas do servidor.
+
+Retorno: Retorna uma promessa que resolve para os dados das receitas em formato JSON.
+
+Exemplo de Uso:
+
+fetchReceitas()
+  .then(receitas => {
+    console.log(receitas);
+  })
+  .catch(error => {
+    console.error("Erro:", error);
+  });
+
+Código:
+
+async function fetchReceitas() {
+  const response = await fetch("http://localhost:3000/receitas");
+  if (!response.ok) {
+    throw new Error("Erro ao buscar receitas");
+  }
+  return response.json();
+}
+
+Função saveHistorico
+
+Descrição: Salva o histórico de receitas visualizadas de um usuário no servidor.
+
+Parâmetros:
+
+    usuarioId (string): O ID do usuário.
+    receitaId (string): O ID da receita a ser adicionada ao histórico do usuário.
+
+Exemplo de Uso:
+
+saveHistorico("usuario123", "receita456")
+  .then(() => {
+    console.log("Histórico salvo com sucesso");
+  })
+  .catch(error => {
+    console.error("Erro:", error);
+  });
+
+Código:
+
+async function saveHistorico(usuarioId, receitaId) {
+  const response = await fetch(`http://localhost:3000/usuarios/${usuarioId}`);
+  if (!response.ok) {
+    throw new Error("Erro ao buscar usuário");
+  }
+  const usuario = await response.json();
+  const historicoAtualizado = [...usuario.historico, receitaId];
+
+  const updateResponse = await fetch(
+    `http://localhost:3000/usuarios/${usuarioId}`,
+    {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ historico: historicoAtualizado }),
+    }
+  );
+  if (!updateResponse.ok) {
+    throw new Error("Erro ao salvar histórico");
+  }
+}
+
 -Funções do Arquivo login.js
 
     Constante apiUrl
