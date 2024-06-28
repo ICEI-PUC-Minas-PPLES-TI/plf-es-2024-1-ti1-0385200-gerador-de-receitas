@@ -78,88 +78,88 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 **Certezas:**
 
 - O aplicativo será uma plataforma online que gera receitas com base nos ingredientes disponíveis para os usuários.
-O público-alvo inclui estudantes, profissionais, famílias, pessoas que vivem sozinhas, idosos, pessoas com restrições dietéticas e aprendizes de culinária.
-As pessoas têm acesso limitado a ingredientes.
-As pessoas querem receitas rápidas e simples.
-Muitas pessoas carecem de habilidades culinárias, resultando em gastos excessivos com serviços de entrega de alimentos.
+- O público-alvo inclui estudantes, profissionais, famílias, pessoas que vivem sozinhas, idosos, pessoas com restrições dietéticas e aprendizes de culinária.
+- As pessoas têm acesso limitado a ingredientes.
+- As pessoas querem receitas rápidas e simples.
+- Muitas pessoas carecem de habilidades culinárias, resultando em gastos excessivos com serviços de entrega de alimentos.
 
 **Suposições:**
 
-Os usuários terão algum conhecimento básico de culinária.
-Os usuários estarão dispostos a experimentar novas receitas.
-As pessoas têm um orçamento específico para gastar com ingredientes.
-As pessoas têm uma quantidade específica de utensílios de cozinha em casa.
-As pessoas têm uma quantidade específica de tempo para cozinhar.
+- Os usuários terão algum conhecimento básico de culinária.
+- Os usuários estarão dispostos a experimentar novas receitas.
+- As pessoas têm um orçamento específico para gastar com ingredientes.
+- As pessoas têm uma quantidade específica de utensílios de cozinha em casa.
+- As pessoas têm uma quantidade específica de tempo para cozinhar.
 
 **Dúvidas:**
 
-Como os usuários interagirão com o aplicativo?
-Quais recursos adicionais os usuários gostariam de ver no aplicativo?
-Eles não têm criatividade.
-Eles não sabem cozinhar muito bem.
+- Como os usuários interagirão com o aplicativo?
+- Quais recursos adicionais os usuários gostariam de ver no aplicativo?
+- Eles não têm criatividade.
+- Eles não sabem cozinhar muito bem.
 
 **2. Mapa de Stakeholders**
 
 **Usuários:**
 
-Estudantes
-Profissionais
-Famílias
-Pessoas que vivem sozinhas
-Idosos
-Pessoas com restrições dietéticas
-Aprendizes de culinária
+- Estudantes
+- Profissionais
+- Famílias
+- Pessoas que vivem sozinhas
+- Idosos
+- Pessoas com restrições dietéticas
+- Aprendizes de culinária
 
 **Desenvolvedores:**
 
-Thiago Branco de Oliveira
-Diogo Gouvêa Bastos Braga
-João Vitor Ferreira Jacinto
-Miguel Augusto de Paula
+- Thiago Branco de Oliveira
+- Diogo Gouvêa Bastos Braga
+- João Vitor Ferreira Jacinto
+- Miguel Augusto de Paula
 
 **Parceiros:**
 
-Blogs de culinária e chefs online
-Empresas de alimentos e bebidas
-Nutricionistas e dietistas
-Organizações sem fins lucrativos focadas em sustentabilidade alimentar
+- Blogs de culinária e chefs online
+- Empresas de alimentos e bebidas
+- Nutricionistas e dietistas
+- Organizações sem fins lucrativos focadas em sustentabilidade alimentar
 
 **3. Diagrama de Personas**
 
-Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personalidade, sonhos e objetivos com o aplicativo. (Detalhamento no próximo tópico)
+- Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personalidade, sonhos e objetivos com o aplicativo. (Detalhamento no próximo tópico)
 
 **4. Mapa da Proposta de Valor**
 
-Proposta de Valor: Uma plataforma online que gera receitas personalizadas com base nos ingredientes disponíveis para os usuários, promovendo economia, redução de desperdício e uma alimentação mais saudável.
+- **Proposta de Valor:** Uma plataforma online que gera receitas personalizadas com base nos ingredientes disponíveis para os usuários, promovendo economia, redução de desperdício e uma alimentação mais saudável.
 
-Benefícios para o Usuário: Economia de dinheiro, redução do desperdício de alimentos, descoberta de novas receitas, melhoria das habilidades culinárias e qualidade de vida.
+- **Benefícios para o Usuário:** Economia de dinheiro, redução do desperdício de alimentos, descoberta de novas receitas, melhoria das habilidades culinárias e qualidade de vida.
 
-Valor para a Organização: Os usuários fornecem feedback valioso que pode ser usado para melhorar o aplicativo. Eles também podem promover o aplicativo para outros, aumentando a base de usuários, entre outras coisas.
+- **Valor para a Organização:** Os usuários fornecem feedback valioso que pode ser usado para melhorar o aplicativo. Eles também podem promover o aplicativo para outros, aumentando a base de usuários, entre outras coisas.
 
 **5. Mural de Possibilidades**
 
-Possibilidade 1: Integração com redes sociais para compartilhar receitas
-Possibilidade 2: Uma seção de comentários onde os usuários podem compartilhar suas experiências com as receitas
-Possibilidade 3: A capacidade de salvar receitas favoritas para acesso fácil no futuro
+- **Possibilidade 1:** Integração com redes sociais para compartilhar receitas
+- **Possibilidade 2:** Uma seção de comentários onde os usuários podem compartilhar suas experiências com as receitas
+- **Possibilidade 3:** A capacidade de salvar receitas favoritas para acesso fácil no futuro
 
 **6. Mapa de Priorização**
 
 **Alta Prioridade:**
 
-Desenvolvimento do gerador de receitas
-Funcionalidade de cadastro e login
-Visualização de receita em tela cheia
+- Desenvolvimento do gerador de receitas
+- Funcionalidade de cadastro e login
+- Visualização de receita em tela cheia
 
 **Média Prioridade:**
 
-Funcionalidade de favoritar receitas
-Visualização de histórico de receitas
+- Funcionalidade de favoritar receitas
+- Visualização de histórico de receitas
 
 **Baixa Prioridade:**
 
-Lista de ingredientes recomendados para compra
-Integração com redes sociais
-Seção de comentários
+- Lista de ingredientes recomendados para compra
+- Integração com redes sociais
+- Seção de comentários
 
 ---
 
