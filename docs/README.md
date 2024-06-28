@@ -578,7 +578,7 @@ Como aprendiz de culinária, eu gostaria de usar o aplicativo para encontrar rec
 }
 
 # Módulos e APIs
--Funções do Arquivo app.js
+1-Funções do Arquivo app.js
 
     Função displayMessage
     Função emailJaCadastrado
@@ -794,7 +794,9 @@ document.addEventListener("DOMContentLoaded", function () {
   atualizarInterfaceUsuario();
 });
 
--Funções do Arquivo api.js
+
+
+2-Funções do Arquivo api.js
 
     Função fetchReceitas
     Função saveHistorico
@@ -869,7 +871,9 @@ async function saveHistorico(usuarioId, receitaId) {
   }
 }
 
--Funções do Arquivo login.js
+
+
+3-Funções do Arquivo login.js
 
     Constante apiUrl
     Função toggleMenu
