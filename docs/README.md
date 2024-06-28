@@ -2347,7 +2347,397 @@ wrapper.addEventListener("mouseleave", autoPlay);
 
 window.addEventListener('resize', setCardPerView);
 
-13-
+13-Funções do Arquivo logicaslides.js
+
+    Função Anônima para DOMContentLoaded
+    Função moveSlides
+    Função nextSlide
+    Função prevSlide
+    Função startAutoplay
+    Função pauseAutoplay
+    Eventos de Navegação
+    Eventos de Arrasto
+    Eventos de Autoplay
+
+Função Anônima para DOMContentLoaded
+
+Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Inicializa o carrossel de slides, define os eventos de navegação, arrasto e autoplay.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Seleciona os elementos do carrossel e define variáveis para controle do carrossel.
+    Define as funções para mover os slides, iniciar e pausar o autoplay.
+    Adiciona eventos de clique nos botões de navegação.
+    Adiciona eventos de teclado para navegação.
+    Adiciona eventos de arrasto e toque para navegação.
+    Inicia o autoplay ao carregar a página.
+
+Código:
+
+document.addEventListener('DOMContentLoaded', function () {
+  const carousel = document.querySelector('.carousel');
+  const carouselContent = document.querySelector('.carousel-content');
+  const slides = document.querySelectorAll('.carousel-imagem');
+  const prevButton = document.getElementById('carousel-left');
+  const nextButton = document.getElementById('carousel-right');
+
+  const slideWidth = slides[0].offsetWidth;
+  const totalSlides = slides.length;
+  let currentIndex = 0;
+  let startDragX = 0;
+  let moveDragX = 0;
+  let isDragging = false;
+  let autoplayInterval = null; 
+
+  const moveSlides = () => {
+    carouselContent.style.transition = 'transform 0.5s ease';
+    carouselContent.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  };
+
+  const nextSlide = () => {
+    if (currentIndex === totalSlides - 1) {
+      currentIndex = 0; 
+    } else {
+      currentIndex++;
+    }
+    moveSlides();
+  };
+
+  const prevSlide = () => {
+    if (currentIndex === 0) {
+      currentIndex = totalSlides - 1;
+    } else {
+      currentIndex--;
+    }
+    moveSlides();
+  };
+
+  const startAutoplay = () => {
+    if (!autoplayInterval) {
+      autoplayInterval = setInterval(nextSlide, 2500);
+    }
+  };
+
+  const pauseAutoplay = () => {
+    clearInterval(autoplayInterval);
+    autoplayInterval = null;
+  };
+
+  nextButton.addEventListener('click', () => {
+    nextSlide();
+    pauseAutoplay();
+    startAutoplay(); 
+  });
+
+  prevButton.addEventListener('click', () => {
+    prevSlide();
+    pauseAutoplay();
+    startAutoplay(); 
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      prevSlide();
+      pauseAutoplay();
+      startAutoplay(); 
+    } else if (e.key === 'ArrowRight') {
+      nextSlide();
+      pauseAutoplay();
+      startAutoplay(); 
+    }
+  });
+
+  carousel.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startDragX = e.clientX;
+    pauseAutoplay();
+    e.preventDefault();
+  });
+
+  carousel.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+      moveDragX = e.clientX;
+      const diffX = moveDragX - startDragX;
+      const threshold = slideWidth / 3; 
+
+      if (Math.abs(diffX) > threshold) {
+        if (diffX > 0) {
+          prevSlide();
+        } else {
+          nextSlide();
+        }
+        startDragX = moveDragX;
+      }
+    }
+  });
+
+  carousel.addEventListener('mouseup', () => {
+    isDragging = false;
+    startAutoplay(); 
+  });
+
+  carousel.addEventListener('mouseleave', () => {
+    if (isDragging) {
+      isDragging = false;
+      startAutoplay();
+    }
+  });
+
+  carousel.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    startDragX = e.touches[0].clientX;
+    pauseAutoplay();
+  });
+
+  carousel.addEventListener('touchmove', (e) => {
+    if (isDragging) {
+      moveDragX = e.touches[0].clientX;
+      const diffX = moveDragX - startDragX;
+      const threshold = slideWidth / 3; 
+
+      if (Math.abs(diffX) > threshold) {
+        if (diffX > 0) {
+          prevSlide();
+        } else {
+          nextSlide();
+        }
+        startDragX = moveDragX;
+      }
+    }
+  });
+
+  carousel.addEventListener('touchend', () => {
+    isDragging = false;
+    startAutoplay(); 
+  });
+
+  startAutoplay();
+
+  carousel.addEventListener('mouseenter', () => {
+    pauseAutoplay();
+  });
+
+  carousel.addEventListener('mouseleave', () => {
+    startAutoplay();
+  });
+});
+
+Função moveSlides
+
+Descrição: Move os slides no carrossel com uma transição suave.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Define a transição CSS do conteúdo do carrossel.
+    Transforma a posição do conteúdo do carrossel com base no índice do slide atual.
+
+Código:
+
+const moveSlides = () => {
+  carouselContent.style.transition = 'transform 0.5s ease';
+  carouselContent.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+};
+
+Função nextSlide
+
+Descrição: Move para o próximo slide no carrossel.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Incrementa o índice do slide atual ou redefine para 0 se estiver no último slide.
+    Chama moveSlides para mover os slides.
+
+Código:
+
+const nextSlide = () => {
+  if (currentIndex === totalSlides - 1) {
+    currentIndex = 0; 
+  } else {
+    currentIndex++;
+  }
+  moveSlides();
+};
+
+Função prevSlide
+
+Descrição: Move para o slide anterior no carrossel.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Decrementa o índice do slide atual ou redefine para o último slide se estiver no primeiro.
+    Chama moveSlides para mover os slides.
+
+Código:
+
+const prevSlide = () => {
+  if (currentIndex === 0) {
+    currentIndex = totalSlides - 1;
+  } else {
+    currentIndex--;
+  }
+  moveSlides();
+};
+
+Função startAutoplay
+
+Descrição: Inicia o autoplay do carrossel para mover automaticamente os slides a cada 2,5 segundos.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Verifica se o autoplay não está ativo.
+    Define um intervalo para chamar nextSlide a cada 2,5 segundos.
+
+Código:
+
+const startAutoplay = () => {
+  if (!autoplayInterval) {
+    autoplayInterval = setInterval(nextSlide, 2500);
+  }
+};
+
+Função pauseAutoplay
+
+Descrição: Pausa o autoplay do carrossel.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Limpa o intervalo do autoplay.
+    Redefine a variável do intervalo do autoplay para null.
+
+Código:
+
+const pauseAutoplay = () => {
+  clearInterval(autoplayInterval);
+  autoplayInterval = null;
+};
+
+Eventos de Navegação
+
+Descrição: Adiciona eventos de clique nos botões de navegação e de teclado para mover os slides.
+
+Código:
+
+nextButton.addEventListener('click', () => {
+  nextSlide();
+  pauseAutoplay();
+  startAutoplay(); 
+});
+
+prevButton.addEventListener('click', () => {
+  prevSlide();
+  pauseAutoplay();
+  startAutoplay(); 
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowLeft') {
+    prevSlide();
+    pauseAutoplay();
+    startAutoplay(); 
+  } else if (e.key === 'ArrowRight') {
+    nextSlide();
+    pauseAutoplay();
+    startAutoplay(); 
+  }
+});
+
+Eventos de Arrasto
+
+Descrição: Adiciona eventos de arrasto e toque para navegação no carrossel.
+
+Código:
+
+carousel.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startDragX = e.clientX;
+  pauseAutoplay();
+  e.preventDefault();
+});
+
+carousel.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    moveDragX = e.clientX;
+    const diffX = moveDragX - startDragX;
+    const threshold = slideWidth / 3; 
+
+    if (Math.abs(diffX) > threshold) {
+      if (diffX > 0) {
+        prevSlide();
+      } else {
+        nextSlide();
+      }
+      startDragX = moveDragX;
+    }
+  }
+});
+
+carousel.addEventListener('mouseup', () => {
+  isDragging = false;
+  startAutoplay(); 
+});
+
+carousel.addEventListener('mouseleave', () => {
+  if (isDragging) {
+    isDragging = false;
+    startAutoplay();
+  }
+});
+
+carousel.addEventListener('touchstart', (e) => {
+  isDragging = true;
+  startDragX = e.touches[0].clientX;
+  pauseAutoplay();
+});
+
+carousel.addEventListener('touchmove', (e) => {
+  if (isDragging) {
+    moveDragX = e.touches[0].clientX;
+    const diffX = moveDragX - startDragX;
+    const threshold = slideWidth / 3; 
+
+    if (Math.abs(diffX) > threshold) {
+      if (diffX > 0) {
+        prevSlide();
+      } else {
+        nextSlide();
+      }
+      startDragX = moveDragX;
+    }
+  }
+});
+
+carousel.addEventListener('touchend', () => {
+  isDragging = false;
+  startAutoplay(); 
+});
+
+Eventos de Autoplay
+
+Descrição: Adiciona eventos para iniciar e pausar o autoplay ao passar o mouse sobre o carrossel.
+
+Código:
+
+carousel.addEventListener('mouseenter', () => {
+  pauseAutoplay();
+});
+
+carousel.addEventListener('mouseleave', () => {
+  startAutoplay();
+});
+
+14-
 
 # FAQ
 
