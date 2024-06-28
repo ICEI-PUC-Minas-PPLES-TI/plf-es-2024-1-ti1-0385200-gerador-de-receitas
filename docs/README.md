@@ -1832,54 +1832,337 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-10-Funções do Arquivo index.js
+10-Funções do Arquivo slides.js
 
     Função Anônima para DOMContentLoaded
+    Função createSlideElements
+    Função updateTitleAndDescription
+    Função moveSlide
 
 Função Anônima para DOMContentLoaded
 
-Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Verifica se o usuário está logado e atualiza a interface de acordo.
+Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Inicializa o carrossel de slides, cria os elementos dos slides, define os títulos e descrições, e adiciona listeners aos botões de navegação do carrossel.
 
 Parâmetros: Nenhum.
 
 Funcionamento:
 
-    Obtém os dados do usuário logado do localStorage.
-    Atualiza a interface para exibir uma saudação personalizada e um botão de logout se o usuário estiver logado.
-    Exibe opções de login e cadastro se o usuário não estiver logado.
-    Adiciona um listener ao botão de logout para remover o estado de login e recarregar a página.
+    Seleciona os elementos do carrossel e define os dados dos slides.
+    Inicializa o índice do slide atual.
+    Cria os elementos dos slides chamando createSlideElements.
+    Atualiza o título e a descrição chamando updateTitleAndDescription.
+    Adiciona listeners aos botões de navegação para mover os slides chamando moveSlide.
 
 Código:
 
-document.addEventListener("DOMContentLoaded", () => {
-  const user = JSON.parse(localStorage.getItem("usuarioLogado"));
+document.addEventListener('DOMContentLoaded', function () {
+  const carouselContent = document.querySelector('.carousel-content');
+  const carouselTitle = document.getElementById('carousel-title');
+  const carouselDescription = document.getElementById('carousel-description');
 
-  const userGreeting = document.getElementById("userGreeting");
-  const logoutButton = document.createElement("a");
-  logoutButton.href = "#";
-  logoutButton.innerText = "Logout";
-  logoutButton.addEventListener("click", (event) => {
-    event.preventDefault();
-    localStorage.removeItem("usuarioLogado");
-    window.location.reload();
-  });
+  const slidesData = {
+    "slides": [
+      {
+        "id": 1,
+        "foto": "ASSETS/img/logo.png",
+        "nome": "Kitchen Companion",
+        "informacoes": "Bem-vindos ao site que vai salvar a sua fome!"
+      },
+      {
+        "id": 2,
+        "foto": "ASSETS/img/Rectangle 26.png",
+        "nome": "Venha conhecer o nosso time!",
+        "informacoes": "Apresentamos aqui o nosso site e seus desenvolvedores.",
+        "link": "../PAGES/sobre/aboutpage.html"
+      },
+      {
+        "id": 3,
+        "foto": "ASSETS/img/Rectangle29.png",
+        "nome": "Confira as últimas Notícias!",
+        "informacoes": "Jornal dos Alimentos: tudo o que você precisa saber está aqui!",
+        "link": "../PAGES/noticia/news.html"
+      }
+    ]
+  };
 
-  if (user) {
-    userGreeting.innerHTML = `<span>Olá, ${user.nome}</span>`;
-    userGreeting.appendChild(logoutButton);
-  } else {
-    userGreeting.innerHTML = `
-            <div class="retangulo-cadastro retangulo-cadastro-off">
-                <a href="PAGES/sessao/login.html">Login</a>
-            </div>
-            <div class="retangulo-cadastro retangulo-cadastro-off">
-                <a href="PAGES/sessao/cadastro.html">Cadastre-se</a>
-            </div>
-        `;
+  let currentSlideIndex = 0;
+
+  createSlideElements();
+  updateTitleAndDescription();
+
+  document.getElementById('carousel-left').addEventListener('click', () => moveSlide(-1));
+  document.getElementById('carousel-right').addEventListener('click', () => moveSlide(1));
+
+  function createSlideElements() {
+    slidesData.slides.forEach((slide, index) => {
+      const slideElement = document.createElement('div');
+      slideElement.classList.add('carousel-imagem');
+
+      const imagem = document.createElement('img');
+      imagem.src = slide.foto;
+      imagem.alt = slide.nome;
+
+      if (slide.link) {
+        imagem.addEventListener('click', () => {
+          window.location.href = slide.link;
+        });
+      }
+
+      slideElement.appendChild(imagem);
+      carouselContent.appendChild(slideElement);
+    });
+  }
+
+  function updateTitleAndDescription() {
+    const currentSlide = slidesData.slides[currentSlideIndex];
+    carouselTitle.textContent = currentSlide.nome;
+    carouselDescription.textContent = currentSlide.informacoes;
+  }
+
+  function moveSlide(direction) {
+    currentSlideIndex = (currentSlideIndex + direction + slidesData.slides.length) % slidesData.slides.length;
+    const offset = -currentSlideIndex * 100;
+    carouselContent.style.transform = `translateX(${offset}%)`;
+    updateTitleAndDescription();
   }
 });
 
-11-
+Função createSlideElements
+
+Descrição: Cria os elementos dos slides e os adiciona ao contêiner do carrossel.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Itera sobre os dados dos slides (slidesData.slides).
+    Cria um elemento div para cada slide e adiciona a classe carousel-imagem.
+    Cria um elemento img para a imagem do slide e define seus atributos src e alt.
+    Se o slide tiver um link, adiciona um listener de clique à imagem para redirecionar para o link.
+    Adiciona a imagem ao elemento do slide e o slide ao contêiner do carrossel.
+
+Código:
+
+function createSlideElements() {
+  slidesData.slides.forEach((slide, index) => {
+    const slideElement = document.createElement('div');
+    slideElement.classList.add('carousel-imagem');
+
+    const imagem = document.createElement('img');
+    imagem.src = slide.foto;
+    imagem.alt = slide.nome;
+
+    if (slide.link) {
+      imagem.addEventListener('click', () => {
+        window.location.href = slide.link;
+      });
+    }
+
+    slideElement.appendChild(imagem);
+    carouselContent.appendChild(slideElement);
+  });
+}
+
+Função updateTitleAndDescription
+
+Descrição: Atualiza o título e a descrição do slide atual na interface.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Obtém o slide atual usando currentSlideIndex.
+    Define o texto do título (carouselTitle) e da descrição (carouselDescription) com os dados do slide atual.
+
+Código:
+
+function updateTitleAndDescription() {
+  const currentSlide = slidesData.slides[currentSlideIndex];
+  carouselTitle.textContent = currentSlide.nome;
+  carouselDescription.textContent = currentSlide.informacoes;
+}
+
+Função moveSlide
+
+Descrição: Move o carrossel para o slide anterior ou próximo, dependendo da direção fornecida.
+
+Parâmetros:
+
+    direction (number): Direção do movimento do slide. Valores possíveis: -1 (anterior) e 1 (próximo).
+
+Funcionamento:
+
+    Calcula o novo índice do slide atual com base na direção e no número total de slides.
+    Define o deslocamento (offset) para mover o carrossel.
+    Atualiza a transformação CSS do contêiner do carrossel para mover os slides.
+    Atualiza o título e a descrição chamando updateTitleAndDescription.
+
+Código:
+
+function moveSlide(direction) {
+  currentSlideIndex = (currentSlideIndex + direction + slidesData.slides.length) % slidesData.slides.length;
+  const offset = -currentSlideIndex * 100;
+  carouselContent.style.transform = `translateX(${offset}%)`;
+  updateTitleAndDescription();
+}
+
+11-Funções do Arquivo cardslider.js
+
+    Função Anônima para DOMContentLoaded
+    Função setCardPerView
+    Função cloneCards
+    Função dragStart
+    Função dragging
+    Função dragStop
+    Função infiniteScroll
+    Função autoPlay
+
+Função Anônima para DOMContentLoaded
+
+Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Inicializa o carrossel de cartões, define o número de cartões visíveis por vez, clona os cartões para um efeito de rolagem infinita, e adiciona eventos de arrastar e soltar.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Define os dados dos cartões.
+    Inicializa o carrossel com os cartões fornecidos.
+    Adiciona eventos de arrastar e soltar ao carrossel.
+    Adiciona eventos de clique aos botões de navegação.
+    Adiciona o comportamento de rolagem infinita e autoplay.
+
+Código:
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cardData = {
+    "cardnocarrossel": [
+      { "id": 1, "foto": "https://img.freepik.com/fotos-premium/maca-vermelha-em-fundo-branco_253984-5689.jpg", "nome": "Maçã 🍎", "informacoes": "Conheça os benefícios da Maça na sua Dieta!.","link":"https://www.tuasaude.com/beneficios-da-maca-para-a-saude/" },
+      { "id": 2, "foto": "https://img.freepik.com/fotos-premium/banana-no-fundo-branco_88281-24.jpg", "nome": "Banana 🍌", "informacoes": "Conheça os benefícios da Banana na sua Dieta!.","link":"https://www.tuasaude.com/beneficios-da-banana/" },
+      { "id": 3, "foto": "https://img.freepik.com/fotos-premium/fruta-laranja-e-fatia-isoladas-em-fundo-branco-com-tracado-de-recorte_106885-3368.jpg", "nome": "Laranja 🍊", "informacoes": "Conheça os benefícios da Laranja na sua Dieta!.","link":"https://www.tuasaude.com/beneficios-da-laranja/" },
+      { "id": 4, "foto": "https://img.freepik.com/fotos-premium/cenouras-e-fatias-cortadas-de-cenoura-isoladas-em-fundo-branco_264757-214.jpg", "nome": "Cenoura 🥕", "informacoes": "Conheça os benefícios da Cenoura na sua Dieta!.","link":"https://www.tuasaude.com/beneficios-da-cenoura/" },
+      { "id": 5, "foto": "https://img.freepik.com/fotos-premium/abobrinha-verde-fresca-isolada-no-fundo-branco_62856-4909.jpg", "nome": "Abobrinha 🥒", "informacoes": "Conheça os benefícios da Abobrinha na sua Dieta!.","link":"https://www.tuasaude.com/abobrinha/" },
+      { "id": 6, "foto": "https://img.freepik.com/fotos-premium/varios-tuberculos-de-batata-jovem-encontram-se-sobre-um-fundo-branco-as-batatas-sao-cortadas-em-pedacos-isolado_414617-662.jpg", "nome": "Batata 🥔", "informacoes": "Conheça os benefícios da Batata na sua Dieta!.","link":"https://www.tuasaude.com/batata/" },
+      { "id": 7, "foto": "https://img.freepik.com/fotos-premium/brocolis-isolado-em-um-fundo-branco_120872-31309.jpg", "nome": "Brócolis 🥦", "informacoes": "Conheça os benefícios do Brócolis na sua Dieta!.","link":"https://www.tuasaude.com/7-boas-razoes-para-comer-brocolis/" },
+      { "id": 8, "foto": "https://img.freepik.com/fotos-premium/pimentao-colorido-isolado-no-fundo-branco_696838-1401.jpg", "nome": "Pimentão 🌶️", "informacoes": "Conheça os benefícios do Pimentão na sua Dieta!.","link":"https://www.tuasaude.com/pimentao/" },
+      { "id": 9, "foto": "https://img.freepik.com/fotos-premium/um-monte-de-espinafre-em-um-fundo-branco_901003-47391.jpg", "nome": "Espinafre 🥬", "informacoes": "Conheça os benefícios do Espinafre na sua Dieta!.","link":"https://www.tuasaude.com/beneficios-do-espinafre/" },
+      { "id": 10, "foto": "https://img.freepik.com/fotos-premium/alface-de-carvalho-verde-sobre-fundo-branco_319514-3347.jpg", "nome": "Alface 🥬", "informacoes": "Conheça os benefícios do Alface na sua Dieta!.","link":"https://www.tuasaude.com/beneficios-da-alface/" },
+      { "id": 11, "foto": "https://img.freepik.com/fotos-premium/um-monte-de-couve-em-um-fundo-branco_265515-9347.jpg", "nome": "Couve 🥬", "informacoes": "Conheça os benefícios da Couve na sua Dieta!.","link":"https://www.tuasaude.com/couve/" },
+      { "id": 12, "foto": "https://img.freepik.com/fotos-premium/rucula-isolada-no-fundo-branco-um-monte-de-rucula-foto-de-alta-qualidade_311158-7342.jpg", "nome": "Rúcula 🥬", "informacoes": "Conheça os benefícios da Rúcula na sua Dieta!.","link":"https://www.tuasaude.com/beneficios-da-rucula/" }
+    ]
+  };
+
+  const wrapper = document.querySelector(".wrappergeracao");
+  const carousel = document.querySelector(".carouselgeracao");
+  const arrowBtns = document.querySelectorAll(".wrappergeracao i");
+  let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+  let cardPerView;
+
+  const setCardPerView = () => {
+    cardPerView = Math.round(carousel.offsetWidth / carousel.querySelector(".cardgeracao").offsetWidth);
+    cloneCards();
+  };
+
+  const cloneCards = () => {
+    const carouselChildren = [...carousel.children];
+    carousel.innerHTML = '';
+    carouselChildren.forEach(card => {
+      carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+    });
+    carouselChildren.slice(-cardPerView).reverse().forEach(card => {
+      carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+    });
+    carouselChildren.slice(0, cardPerView).forEach(card => {
+      carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+    });
+    carousel.classList.add("no-transitiongeracao");
+    carousel.scrollLeft = carousel.offsetWidth;
+    carousel.classList.remove("no-transitiongeracao");
+  };
+
+  arrowBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const firstCardWidth = carousel.querySelector(".cardgeracao").offsetWidth;
+      carousel.scrollLeft += btn.id === "left" ? -firstCardWidth * cardPerView : firstCardWidth * cardPerView;
+    });
+  });
+
+  const dragStart = (e) => {
+    isDragging = true;
+    carousel.classList.add("dragginggeracao");
+    startX = e.pageX || e.touches[0].pageX;
+    startScrollLeft = carousel.scrollLeft;
+  };
+
+  const dragging = (e) => {
+    if (!isDragging) return;
+    const x = e.pageX || e.touches[0].pageX;
+    carousel.scrollLeft = startScrollLeft - (x - startX);
+  };
+
+  const dragStop = () => {
+    isDragging = false;
+    carousel.classList.remove("dragginggeracao");
+  };
+
+  const infiniteScroll = () => {
+    if (carousel.scrollLeft === 0) {
+      carousel.classList.add("no-transitiongeracao");
+      carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+      carousel.classList.remove("no-transitiongeracao");
+    } else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+      carousel.classList.add("no-transitiongeracao");
+      carousel.scrollLeft = carousel.offsetWidth;
+      carousel.classList.remove("no-transitiongeracao");
+    }
+    clearTimeout(timeoutId);
+    if (!wrapper.matches(":hover")) autoPlay();
+  };
+
+  const autoPlay = () => {
+    if (window.innerWidth < 800 || !isAutoPlay) return;
+    timeoutId = setTimeout(() => carousel.scrollLeft += carousel.querySelector(".cardgeracao").offsetWidth, 2500);
+  };
+
+  autoPlay();
+
+  carousel.addEventListener("mousedown", dragStart);
+  carousel.addEventListener("touchstart", dragStart);
+
+  document.addEventListener("mousemove", dragging);
+  carousel.addEventListener("touchmove", dragging);
+
+  document.addEventListener("mouseup", dragStop);
+  carousel.addEventListener("touchend", dragStop);
+
+  carousel.addEventListener("scroll", infiniteScroll);
+  wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+  wrapper.addEventListener("mouseleave", autoPlay);
+
+  cardData.cardnocarrossel.forEach(card => {
+    const cardElement = document.createElement('div');
+    cardElement.classList.add('cardgeracao');
+    cardElement.innerHTML = `
+      <div class="card-imagemgeracao">
+        <div class="img"><img src="${card.foto}" alt="${card.nome}" draggable="false"></div>
+      </div>
+      <div class="card-contentgeracao">
+        <h2>${card.nome}</h2>
+        <p class="textgeracao">${card.informacoes}</p>
+      </div>
+      <div class="container-botaogeracao">
+        <a href="${card.link}" class="botaogeracao">
+          <h2>Saiba Mais</h2>
+        </a>
+      </div>
+    `;
+    carousel.appendChild(cardElement);
+  });
+
+  setCardPerView();
+  window.addEventListener("resize", setCardPerView);
+});
+
+12-
 
 # FAQ
 
