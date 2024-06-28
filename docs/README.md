@@ -1091,6 +1091,101 @@ document.addEventListener("DOMContentLoaded", verificarEstadoLogin);
 const btnMobile = document.getElementById("btn-mobile");
 btnMobile?.addEventListener("click", toggleMenu);
 
+4-Funções do Arquivo geradorderceitas.js
+
+    Função buscarReceita
+    Função irParaReceita
+
+Função buscarReceita
+
+Descrição: Busca uma receita com base nos ingredientes fornecidos pelo usuário.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Obtém os valores dos ingredientes (carboidrato, proteína, vegetal) dos campos de entrada HTML.
+    Faz uma requisição ao arquivo JSON localizado em http://localhost:3000/receitas.
+    Verifica se a chave receitas existe no objeto retornado e se é um array.
+    Encontra a receita que corresponde aos ingredientes fornecidos.
+    Exibe a receita encontrada na interface do usuário ou uma mensagem de erro se nenhuma receita for encontrada.
+    Armazena a receita encontrada no localStorage para uso posterior.
+
+Exemplo de Uso:
+
+buscarReceita();
+
+Código:
+
+async function buscarReceita() {
+  const carboidrato = document.getElementById('carboidrato').value.toLowerCase();
+  const proteina = document.getElementById('proteina').value.toLowerCase();
+  const vegetal = document.getElementById('vegetal').value.toLowerCase();
+
+  const url = 'http://localhost:3000/usuarios;
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    // Verificar o tipo de dado retornado
+    console.log('Tipo de dado retornado:', typeof data);
+
+    // Verificar se a chave "receitas" existe no objeto retornado
+    if (!data.receitas || !Array.isArray(data.receitas)) {
+      throw new Error('O JSON retornado não contém a chave "receitas" ou "receitas" não é um array.');
+    }
+
+    // Acessar o array de receitas
+    const receitas = data.receitas;
+
+    console.log('Receitas:', receitas);
+
+    // Encontrar a receita que corresponde aos ingredientes selecionados
+    const receitaEncontrada = receitas.find(receita => {
+      return receita.carboidrato.toLowerCase() === carboidrato &&
+             receita.proteina.toLowerCase() === proteina &&
+             receita.vegetal.toLowerCase() === vegetal;
+    });
+
+    console.log('Receita encontrada:', receitaEncontrada);
+
+    const resultadoDiv = document.getElementById('resultado');
+    if (receitaEncontrada) {
+      localStorage.setItem('receita', JSON.stringify(receitaEncontrada));
+
+      resultadoDiv.innerHTML = `
+        <h3>${receitaEncontrada.nome}</h3>
+        <div>
+          <button onclick="irParaReceita()" class="btn-ver-receita">Ver Receita</button>
+        </div>
+      `;
+    } else {
+      resultadoDiv.innerHTML = `<p>Nenhuma receita encontrada com os ingredientes selecionados.</p>`;
+    }
+  } catch (error) {
+    console.error('Erro ao buscar receita:', error);
+  }
+}
+
+Função irParaReceita
+
+Descrição: Redireciona o usuário para a página de visualização da receita.
+
+Parâmetros: Nenhum.
+
+Exemplo de Uso:
+
+irParaReceita();
+
+Código:
+
+function irParaReceita() {
+  window.location.href = '../perfil/receita-view.html';
+}
+
+5-
+
 # FAQ
 
 **1. Pergunta:** “Como as receitas são geradas?”
