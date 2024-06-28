@@ -578,8 +578,223 @@ Como aprendiz de culinária, eu gostaria de usar o aplicativo para encontrar rec
 }
 
 # Módulos e APIs
+-Funções do Arquivo login.js
 
-(módulos e APIs utilizados; escrever aqui depois)
+    Constante apiUrl
+    Função toggleMenu
+    Função displayMessage
+    Função loginUsuario
+    Função handleLogin
+    Função handleLogoff
+    Função verificarEstadoLogin
+    Eventos de Interface
+
+Constante apiUrl
+
+Descrição: URL da API JSONServer. Substitua pela URL correta da sua API com /usuarios no final.
+
+Código:
+
+const apiUrl = "http://localhost:3000/usuarios";
+
+Função toggleMenu
+
+Descrição: Alterna a visibilidade do menu de navegação.
+
+Parâmetros: Nenhum.
+
+Exemplo de Uso:
+
+toggleMenu();
+
+Código:
+
+function toggleMenu() {
+  const menu = document.getElementById("nav");
+  if (menu) {
+    menu.classList.toggle("active");
+  }
+}
+
+Função displayMessage
+
+Descrição: Exibe uma mensagem na tela dentro de um elemento HTML com o ID msg.
+
+Parâmetros:
+
+    mensagem (string): A mensagem a ser exibida.
+    isError (boolean, opcional): Define se a mensagem é de erro (true) ou sucesso (false). O padrão é true.
+
+Exemplo de Uso:
+
+displayMessage("Login bem-sucedido!", false);
+
+Código:
+
+function displayMessage(mensagem, isError = true) {
+  const msg = document.getElementById("msg");
+  if (msg) {
+    msg.innerHTML =
+      '<div class="' +
+      (isError ? "alert-error" : "alert-success") +
+      '">' +
+      mensagem +
+      "</div>";
+  }
+}
+
+Função loginUsuario
+
+Descrição: Verifica as credenciais de login do usuário na API JSONServer.
+
+Parâmetros:
+
+    email (string): O e-mail do usuário.
+    senha (string): A senha do usuário.
+    callback (function): Função de retorno que recebe dois parâmetros:
+        sucesso (boolean): Indica se o login foi bem-sucedido.
+        usuario (object): Objeto contendo os dados do usuário (se o login for bem-sucedido).
+
+Exemplo de Uso:
+
+loginUsuario("teste@exemplo.com", "senha123", (sucesso, usuario) => {
+  if (sucesso) {
+    console.log("Login bem-sucedido", usuario);
+  } else {
+    console.log("Login falhou");
+  }
+});
+
+Código:
+
+function loginUsuario(email, senha, callback) {
+  fetch(apiUrl)
+    .then((response) => response.json())
+    .then((usuarios) => {
+      const usuario = usuarios.find(
+        (user) => user.email === email && user.senha === senha
+      );
+      callback(usuario !== undefined, usuario);
+    })
+    .catch((error) => {
+      console.error("Erro ao verificar login via API JSONServer:", error);
+      callback(false);
+    });
+}
+
+Função handleLogin
+
+Descrição: Lida com o processo de login do usuário, verificando os campos de entrada, chamando a função de login e exibindo mensagens de acordo com o resultado.
+
+Parâmetros: Nenhum.
+
+Código:
+
+function handleLogin() {
+  const emailInput = document.getElementById("loginEmail");
+  const senhaInput = document.getElementById("loginSenha");
+
+  if (!emailInput || !senhaInput) {
+    displayMessage("Erro ao obter os elementos de entrada.", true);
+    return;
+  }
+
+  let email = emailInput.value.trim();
+  let senha = senhaInput.value.trim();
+
+  if (!email || !senha) {
+    displayMessage("Por favor, preencha todos os campos.", true);
+    return;
+  }
+
+  loginUsuario(email, senha, (sucesso, usuario) => {
+    if (sucesso) {
+      displayMessage("Login bem-sucedido!", false);
+      // Armazenar estado de login no localStorage
+      localStorage.setItem("usuarioLogado", JSON.stringify(usuario));
+      verificarEstadoLogin();
+      // Limpar os campos de email e senha
+      emailInput.value = "";
+      senhaInput.value = "";
+      window.location.href = "../main/index.html";
+    } else {
+      displayMessage("E-mail ou senha incorretos. Tente novamente.", true);
+      // Limpar os campos de email e senha
+      emailInput.value = "";
+      senhaInput.value = "";
+    }
+  });
+}
+
+Função handleLogoff
+
+Descrição: Lida com o processo de logoff do usuário, removendo o estado de login do localStorage e atualizando a interface.
+
+Parâmetros: Nenhum.
+
+Código:
+
+function handleLogoff() {
+  // Remover estado de login do localStorage
+  localStorage.removeItem("usuarioLogado");
+  verificarEstadoLogin();
+  displayMessage("Você saiu da sua conta.", false);
+}
+
+Função verificarEstadoLogin
+
+Descrição: Verifica o estado de login do usuário e atualiza a interface de acordo.
+
+Parâmetros: Nenhum.
+
+Código:
+
+function verificarEstadoLogin() {
+  const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+  const btnLoginHeader = document.getElementById("btnLoginHeader");
+  const userHeader = document.getElementById("userHeader");
+
+  if (!btnLoginHeader || !userHeader) {
+    console.error("Elementos do cabeçalho não encontrados.");
+    return;
+  }
+
+  if (usuarioLogado) {
+    btnLoginHeader.textContent = "Logoff";
+    btnLoginHeader.addEventListener("click", handleLogoff);
+    userHeader.textContent =
+      usuarioLogado.nome.length > 15
+        ? usuarioLogado.nome.substring(0, 15) + "..."
+        : usuarioLogado.nome;
+    userHeader.href = "#";
+    userHeader.addEventListener("click", () => {
+      window.location.href = "../perfil/perfil.html"; // Atualize para o caminho correto do perfil
+    });
+  } else {
+    btnLoginHeader.textContent = "Login";
+    btnLoginHeader.removeEventListener("click", handleLogoff);
+    userHeader.textContent = "Cadastre-se";
+    userHeader.href = "../cadastro/cadastro.html";
+  }
+}
+
+Eventos de Interface
+
+Descrição: Eventos relacionados à interface do usuário.
+
+Código:
+
+document
+  .getElementById("btnLogin")
+  ?.addEventListener("click", function (event) {
+    event.preventDefault();
+    handleLogin();
+  });
+  
+document.addEventListener("DOMContentLoaded", verificarEstadoLogin);
+
+const btnMobile = document.getElementById("btn-mobile");
+btnMobile?.addEventListener("click", toggleMenu);
 
 # FAQ
 
