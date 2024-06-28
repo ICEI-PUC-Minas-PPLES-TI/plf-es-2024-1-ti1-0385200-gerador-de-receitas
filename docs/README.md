@@ -1659,6 +1659,95 @@ function toggleHeart(button, receitaId) {
     });
 }
 
+8-Funções do Arquivo favoritos.js
+
+    Função carregarFavoritos
+
+
+Função carregarFavoritos
+
+Descrição: Carrega as receitas favoritas do usuário a partir do servidor e exibe na interface.
+
+Parâmetros:
+
+    userId (string): O ID do usuário.
+
+Funcionamento:
+
+    Faz uma requisição ao servidor para obter os dados do usuário.
+    Verifica se o usuário tem receitas favoritas.
+    Para cada receita favorita, faz uma requisição ao servidor para obter os dados da receita.
+    Cria e exibe um card para cada receita na interface.
+    Exibe uma mensagem se o usuário não tiver nenhuma receita favorita.
+
+Código:
+
+function carregarFavoritos(userId) {
+  fetch(`${apiUrl}/${userId}`)
+    .then((response) => response.json())
+    .then((user) => {
+      const favoritos = user.favoritos || [];
+      const container = document.getElementById("cardsContainer");
+
+      if (favoritos.length === 0) {
+        displayMessage("Você ainda não tem nenhuma receita favorita.", false);
+        return;
+      }
+
+      favoritos.forEach((receitaId) => {
+        fetch(`http://localhost:3000/receitas/${receitaId}`)
+          .then((response) => response.json())
+          .then((receita) => {
+            const card = document.createElement("div");
+            card.classList.add("card-perfil");
+
+            const link = document.createElement("a");
+            link.href = `receita-view.html?id=${receita.id}`;
+            link.style.textDecoration = "none";
+            link.style.color = "inherit";
+
+            const contextoLike = document.createElement("div");
+            contextoLike.classList.add("contexto-like");
+
+            const titulo = document.createElement("h3");
+            titulo.textContent = receita.nome;
+
+            const botaoCoracao = document.createElement("button");
+            botaoCoracao.classList.add("botao-coracao");
+            botaoCoracao.innerHTML = `<i class="fas fa-heart"></i>`;
+            botaoCoracao.addEventListener("click", (event) => {
+              event.stopPropagation();
+              event.preventDefault();
+              toggleHeart(botaoCoracao, receita.id);
+            });
+
+            contextoLike.appendChild(titulo);
+            contextoLike.appendChild(botaoCoracao);
+
+            const descricao = document.createElement("p");
+            descricao.textContent =
+              receita["modo-de-preparo"].split(" ").slice(0, 20).join(" ") +
+              "...";
+
+            link.appendChild(contextoLike);
+            link.appendChild(descricao);
+            card.appendChild(link);
+            container.appendChild(card);
+          })
+          .catch((error) => {
+            console.error("Erro ao carregar receita:", error);
+            displayMessage("Erro ao carregar receita.", true);
+          });
+      });
+    })
+    .catch((error) => {
+      console.error("Erro ao carregar favoritos:", error);
+      displayMessage("Erro ao carregar favoritos.", true);
+    });
+}
+
+9-
+
 # FAQ
 
 **1. Pergunta:** “Como as receitas são geradas?”
