@@ -14,22 +14,24 @@ A documentação do projeto inclui as seguintes seções:
 
 O template para o site é estruturado e permite que a equipe evolua a documentação do projeto à medida que avance no desenvolvimento.
 
+---
+
 # Introdução
 
 Nosso projeto tem como objetivo principal auxiliar pessoas na arte da culinária, fornecendo orientações para cozinhar de maneira simples, fácil, prática e eficiente, mesmo com ingredientes limitados ou reaproveitando os que já estão disponíveis em casa. Além disso, buscamos ajudar aqueles que precisam economizar dinheiro na compra de ingredientes para a preparação de alimentos e reduzir o desperdício de alimentos no dia a dia.
 
 ## Informações Gerais
 
-- **Projeto:** KitchenCompanion
-- **Repositório GitHub:** [Gerador de Receitas](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas)
-- **Membros da equipe:**
+**Projeto:** KitchenCompanion
+**Repositório GitHub:** [Gerador de Receitas](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas)
+**Membros da equipe:**
 
-1. Thiago Branco de Oliveira
-2. Diogo Gouvêa Bastos Braga
-3. João Vitor Ferreira Jacinto
-4. João Gabriel Noleto de Figueiredo
-5. Miguel Augusto de Paula
-6. Matheus Neves Fortini Duarte
+- Thiago Branco de Oliveira
+- Diogo Gouvêa Bastos Braga
+- João Vitor Ferreira Jacinto
+- Miguel Augusto de Paula
+
+---
 
 # Contexto
 
@@ -63,75 +65,73 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 **Aprendizes de culinária**: Pessoas que estão aprendendo a cozinhar e querem experimentar novas receitas ou pessoas que querem elevar o nível e desafiar suas próprias habilidades culinárias podem usar nosso site para encontrar receitas adequadas ao seu nível de habilidade e aos ingredientes que têm disponíveis no momento.
 
+---
+
 # Concepção (Design Thinking)
 
 ## Processo de Design Thinking
 
-**1. Matriz CSD**
+**1. Matriz CSD (Certezas, Suposições, Dúvidas)**
 
 - **Certezas:** 
 
-1. O aplicativo será uma plataforma online que gera receitas com base nos ingredientes disponíveis para os usuários.
-2. O público-alvo inclui estudantes, profissionais, famílias, pessoas que vivem sozinhas, idosos, pessoas com restrições dietéticas e aprendizes de culinária.
-3. As pessoas têm acesso limitado a ingredientes.
-4. As pessoas querem receitas rápidas e simples.
-5. Muitas pessoas carecem de habilidades culinárias, resultando em gastos excessivos com serviços de entrega de alimentos.
+**1.** O aplicativo será uma plataforma online que gera receitas com base nos ingredientes disponíveis para os usuários.
+**2.** O público-alvo inclui estudantes, profissionais, famílias, pessoas que vivem sozinhas, idosos, pessoas com restrições dietéticas e aprendizes de culinária.
+**3.** As pessoas têm acesso limitado a ingredientes.
+**4.** As pessoas querem receitas rápidas e simples.
+**5.** Muitas pessoas carecem de habilidades culinárias, resultando em gastos excessivos com serviços de entrega de alimentos.
 
 - **Suposições:** 
 
-1. Os usuários terão algum conhecimento básico de culinária. 
-2. Os usuários estarão dispostos a experimentar novas receitas.
-3. As pessoas têm um orçamento específico para gastar com ingredientes.
-4. As pessoas têm uma quantidade específica de utensílios de cozinha em casa.
-5. As pessoas têm uma quantidade específica de tempo para cozinhar.
+**1.** Os usuários terão algum conhecimento básico de culinária. 
+**2.** Os usuários estarão dispostos a experimentar novas receitas.
+**3.** As pessoas têm um orçamento específico para gastar com ingredientes.
+**4.** As pessoas têm uma quantidade específica de utensílios de cozinha em casa.
+**5.** As pessoas têm uma quantidade específica de tempo para cozinhar.
 
 - **Dúvidas:** 
 
-1. Como os usuários interagirão com o aplicativo? 
-2. Quais recursos adicionais os usuários gostariam de ver no aplicativo?
-3. Eles não têm criatividade.
-4. Eles não sabem cozinhar muito bem.
+**1.** Como os usuários interagirão com o aplicativo? 
+**2.** Quais recursos adicionais os usuários gostariam de ver no aplicativo?
+**3.** Eles não têm criatividade.
+**4.** Eles não sabem cozinhar muito bem.
 
 **2. Mapa de Stakeholders**
 
 - **Usuários:** 
 
-1. Estudantes;
-2. Profissionais; 
-3. Famílias;
-4. Pessoas que vivem sozinhas;
-5. Idosos; 
-6. Pessoas com restrições dietéticas;
-7. Aprendizes de culinária.
+**1.** Estudantes;
+**2.** Profissionais; 
+**3.** Famílias;
+**4.** Pessoas que vivem sozinhas;
+**5.** Idosos; 
+**6.** Pessoas com restrições dietéticas;
+**7.** Aprendizes de culinária.
 
 - **Desenvolvedores:**
 
-1. Thiago Branco de Oliveira.
-2. Diogo Gouvêa Bastos Braga.
-3. João Vitor Ferreira Jacinto.
-4. João Gabriel Noleto de Figueiredo.
-5. Miguel Augusto de Paula.
-6. Matheus Neves Fortini Duarte.
+**1.** Thiago Branco de Oliveira.
+**2.** Diogo Gouvêa Bastos Braga.
+**3.** João Vitor Ferreira Jacinto.
+**4.** Miguel Augusto de Paula.
 
 - **Parceiros:** 
 
-1. Blogs de culinária e chefs online;
-2. Empresas de alimentos e bebidas;
-3. Nutricionistas e dietistas;
-4. Organizações sem fins lucrativos focadas em sustentabilidade alimentar.
+**1.** Blogs de culinária e chefs online;
+**2.** Empresas de alimentos e bebidas;
+**3.** Nutricionistas e dietistas;
+**4.** Organizações sem fins lucrativos focadas em sustentabilidade alimentar.
 
 **3. Diagrama de Personas**
 
-- Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personalidade, sonhos e objetivos com o aplicativo.
-  
-- (Detalhamento no próximo tópico: "**Especificações do Projeto/Personas**")
+- Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personalidade, sonhos e objetivos com o aplicativo. (Detalhamento no próximo tópico)
 
 **4. Mapa da Proposta de Valor**
 
 - **Proposta de Valor:** Uma plataforma online que gera receitas personalizadas com base nos ingredientes disponíveis para os usuários, promovendo economia, redução de desperdício e uma alimentação mais saudável.
 
 - **Benefícios para o Usuário:** Economia de dinheiro, redução do desperdício de alimentos, descoberta de novas receitas, melhoria das habilidades culinárias e qualidade de vida.
-  
+
 - **Valor para a Organização:** Os usuários fornecem feedback valioso que pode ser usado para melhorar o aplicativo. Eles também podem promover o aplicativo para outros, aumentando a base de usuários, entre outras coisas.
 
 **5. Mural de Possibilidades**
@@ -144,20 +144,22 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 - **Alta Prioridade:** 
 
-1. Desenvolvimento do gerador de receitas
-2. Funcionalidade de cadastro e login
-3. Visualização de receita em tela cheia.
+**1.** Desenvolvimento do gerador de receitas
+**2.** Funcionalidade de cadastro e login
+**3.** Visualização de receita em tela cheia.
 
 - **Média Prioridade:** 
 
-1. Funcionalidade de favoritar receitas
-2. Visualização de histórico de receitas.
+**1.** Funcionalidade de favoritar receitas
+**2.** Visualização de histórico de receitas.
 
 - **Baixa Prioridade:** 
 
-1. Lista de ingredientes recomendados para compra
-2. Integração com redes sociais
-3. Seção de comentários.
+**1.** Lista de ingredientes recomendados para compra
+**2.** Integração com redes sociais
+**3.** Seção de comentários.
+
+---
 
 # Especificações do Projeto
 
@@ -199,6 +201,7 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 - **Sonhos:** Aprender novas habilidades culinárias e preparar refeições saudáveis para seus netos
 - **Objetivos com o aplicativo:** Roberto é um idoso que gosta de cozinhar para sua família. Ele está procurando por receitas simples e nutritivas que são fáceis de preparar. Ele também está interessado em aprender sobre substituição de ingredientes para acomodar suas necessidades dietéticas específicas. Além disso, ele gostaria de planejar suas refeições semanais e criar uma lista de compras eficiente.
 
+---
 
 ## Histórias de Usuários
 
@@ -216,11 +219,13 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 **Como um aprendiz de culinária**, eu gostaria de usar o aplicativo para encontrar receitas adequadas ao meu nível de habilidade e aos ingredientes que tenho disponíveis no momento, para que eu possa experimentar novas receitas e desafiar minhas próprias habilidades culinárias.
 
+---
+
 ## Requisitos
 
 **Requisitos Funcionais:**
 
-- O usuário deve ser capaz de acessar uma receita gerada por I.A.
+- O usuário deve ser capaz de acessar uma receita gerada por um banco de dados.
 - O sistema deve permitir que o usuário se cadastre e faça login.
 - O usuário deve ser capaz de visualizar a receita em tela cheia.
 - O sistema deve permitir que o usuário favorite as receitas.
@@ -232,9 +237,11 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 - O sistema deve ser compatível com os navegadores Chrome e Mozilla.
 - O sistema deve ser desenvolvido usando HTML, CSS e JS.
-- O sistema deve utilizar a API do chatgpt.
+- O sistema deve utilizar o JSON Server para acessar o banco de dados.
 - O design do sistema deve ser responsivo, adaptando-se a diferentes tamanhos de tela.
 - O sistema deve ser capaz de gerar receitas com base nos ingredientes disponíveis/selecionados pelo usuário.
+
+---
 
 # Projeto de Interface
 
@@ -250,24 +257,90 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 ![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164224207/16668b51-e58a-4761-a1a3-54e1bf090296)
 
+---
+
 # Metodologia
 
 ## Ferramentas
 
 - **Figma:** Utilizado para a criação do User Flow, Wireframe e Protótipo.
 - **Github:** Empregado para o rastreamento da documentação e do progresso do projeto.
+- **Visual Studio Code:** Utilizado para a criação dos códigos HTML, CSS, JS e estrutura JSON em LocalStorage/SessionStorage e Document Object Model (DOM).
+- **Replit:** Utilizado para a criação do JSON Server e estrutura geral JSON.
+- **Vercel:** Utilizado para a hospedagem do site.
 
 ## Gestão do Projeto
 
 - **Microsoft To-Do:** Utilizado para o rastreamento e a divisão de tarefas/papéis. Para criar um fluxo de trabalho efetivo, foi necessário fazer o acompanhamento das tarefas com este aplicativo fácil de usar. Nele, foi possível atribuir tarefas aos membros do grupo e, quando cada um terminava seu afazer, marcava como concluído. Uma solução simples e efetiva.
+- **Discord:** Utilizado para reuniões semanais, correção dos códigos e implementações de algumas funcionalidades do site. Por meio de ligações, a plataforma permite a vizualização da tela de outros dispositivos em tempo real, facilitando a identificação e correção de problemas durante o desenvolvimentro dos códigos de cada parte das páginas do site, consequentemente auxiliando e sanando as dificuldades dos membros do time em relação a determinados assuntos durante o projeto.
+- **WhatsApp:** Utilizado apenas para avisos e comunicados de caráter urgente e relevante para todos os membros do time. O aplicativo provou ser eficaz ao garantir que todos os membros se mantenham atualizados de forma rápida e eficiente.
 
 ## Controle de Versão
 
 **Atribuição de Tarefas na Sprint 1:**
 
 - **Thiago Branco de Oliveira:** Encarregado da criação do userflow, protótipo, wireframes, repositório e parte do design thinking.
-- **Diogo Gouvêa Bastos Braga:** Responsável pela criação da apresentação em PowerPoint do grupo.
-- **João Vitor Ferreira Jacinto:** Encarregado da criação das histórias de usuário e do aprimoramento da documentação.
-- **João Gabriel Noleto de Figueiredo:** Responsável pela criação da lista de tarefas no Microsoft To-do e pela documentação; também contribuiu para a criação do mapa de stakeholders e parte do design thinking.
-- **Miguel Augusto de Paula:** Contribuiu com auxílio na documentação.
-- **Matheus Neves Fortini Duarte:** Auxiliou na documentação, na criação do mapa de stakeholders e na parte do design thinking.
+- **Diogo Gouvêa Bastos Braga:** Responsável pela criação da apresentação em PowerPoint do grupo a respeito da introdução e apresentação do projeto.
+- **João Vitor Ferreira Jacinto:** Encarregado da criação das histórias de usuário, aprimoramento da documentação e criação da lista de tarefas no Microsoft To-do.
+- **Miguel Augusto de Paula:** Contribuiu com auxílio na documentação, na criação do mapa de stakeholders e parte do design thinking.
+
+**Atribuição de Tarefas na Sprint 2:**
+
+- **Thiago Branco de Oliveira:** Encarregado da criação das páginas de Cadastro e Login do site.
+- **Diogo Gouvêa Bastos Braga:** Responsável pela criação de alguns elementos específicos da Página Principal do site.
+- **João Vitor Ferreira Jacinto:** Encarregado da criação das páginas de Visualização de Receitas do site e primeira tentativa de implementação do Gerador de Receitas em uma página do site.
+- **Miguel Augusto de Paula:** Contribuiu com a criação de alguns elementos específicos da Página Principal do site.
+
+**Atribuição de Tarefas na Sprint 3:**
+
+- **Thiago Branco de Oliveira:** Encarregado da criação da página de Perfil do Usuário e alguns elementos presentes na mesma Página de Perfil do Usuário.
+- **Diogo Gouvêa Bastos Braga:** Responsável pela implementação da funcionalidade de Favoritar uma Receita e Visualização do Histórico de Receitas na Página de Perfil do Usuário.
+- **João Vitor Ferreira Jacinto:** Encarregado da criação de uma nova página para uma nova versão da implementação do Gerador de Receitas do site e correção de alguns elemnentos da Página Principal do site.
+- **Miguel Augusto de Paula:** Criação da página de Notícias e Anúncios do site.
+
+**Atribuição de Tarefas na Sprint 4:**
+
+- **Thiago Branco de Oliveira:** Encarregado pela integração das páginas por meio dos servidores JSON, e contribuiu com a revisão da documentação.
+- **Diogo Gouvêa Bastos Braga:** Responsável pela atualização da documentação e criação da apresentação em PowerPoint do grupo a respeito da conclusão do projeto.
+- **João Vitor Ferreira Jacinto:** Encarregado pela integração das páginas por meio dos códigos HTML, CSS e JS, e contribuiu com a revisão da documentação.
+- **Miguel Augusto de Paula:** Contribuiu com auxílio na documentação e criação da apresentação em PowerPoint do grupo.
+
+---
+
+# Solução
+
+## Video do Projeto
+
+(vídeo de apresentação do problema que a equipe está tratando e a proposta de solução; colocar aqui depois)
+
+## Funcionalidades
+
+(funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução; apaga essa linha depois)
+
+**Funcionalidade 1 -** escrever aqui
+**Estrutura de Dados:** escrever aqui
+**Instruções de acesso e uso:** 
+
+- escrever aqui
+- escrever aqui
+- escrever aqui
+
+(colocar imagem aqui se tiver)
+
+## Estruturas de Dados
+
+(descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON; apaga essa linha depois)
+
+(colocar imagem aqui)
+
+# Módulos e APIs
+
+(módulos e APIs utilizados; escrever aqui depois)
+
+# FAQ
+
+(perguntas e respostas comuns associadas ao projeto; escrever aqui depois)
+
+# Referências Bibliográficas
+
+(referências bibliográficas utilizadas no projeto; escrever aqui depois)
