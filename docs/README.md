@@ -442,23 +442,23 @@ Seção de comentários
 
 # FAQ
 
-**Pergunta:** “Como as receitas são geradas?”
-**Resposta:** Utilizando o banco de dados original do KitchenCompanion.
+- **Pergunta:** “Como as receitas são geradas?”
+- **Resposta:** Utilizando o banco de dados original do KitchenCompanion.
 
-**Pergunta:** “Como gerar a receita?”
-**Resposta:** Acesse a página inicial e clique em "Gerar uma receita" no menu superior. Depois, escolha, com base nos seus ingredientes disponíveis, uma proteína, um carboidrato e um vegetal. Então, clique em "Gerar receita" e será possível visualizar o nome e o modo de preparo em uma página exclusiva para isso.
+- **Pergunta:** “Como gerar a receita?”
+- **Resposta:** Acesse a página inicial e clique em "Gerar uma receita" no menu superior. Depois, escolha, com base nos seus ingredientes disponíveis, uma proteína, um carboidrato e um vegetal. Então, clique em "Gerar receita" e será possível visualizar o nome e o modo de preparo em uma página exclusiva para isso.
 
-**Pergunta:** “Posso me cadastrar na página?”
-**Resposta:** Sim, além disso, cadastrar-se na página oferece uma experiência mais rica, pois aumenta a possibilidade de interações com as receitas do usuário.
+- **Pergunta:** “Posso me cadastrar na página?”
+- **Resposta:** Sim, além disso, cadastrar-se na página oferece uma experiência mais rica, pois aumenta a possibilidade de interações com as receitas do usuário.
 
-**Pergunta:** “Após ter feito o login, posso editar meus dados?”
-**Resposta:** Sim, após fazer o login, é possível editar seus dados na página de perfil do usuário, em "Configurações". Dessa forma, é possível alterar o nome, e-mail e senha cadastrados.
+- **Pergunta:** “Após ter feito o login, posso editar meus dados?”
+- **Resposta:** Sim, após fazer o login, é possível editar seus dados na página de perfil do usuário, em "Configurações". Dessa forma, é possível alterar o nome, e-mail e senha cadastrados.
 
-**Pergunta:** “As receitas que gerei ficam salvas em algum lugar?”
-**Resposta:** Sim, se o usuário estiver cadastrado na página, ao gerar uma receita e clicar em "Visualizar", as receitas ficam salvas na parte de "Histórico".
+- **Pergunta:** “As receitas que gerei ficam salvas em algum lugar?”
+- **Resposta:** Sim, se o usuário estiver cadastrado na página, ao gerar uma receita e clicar em "Visualizar", as receitas ficam salvas na parte de "Histórico".
 
-**Pergunta:** “Existe uma maneira de guardar as receitas?”
-**Resposta:** Sim, é possível favoritar uma receita para acessá-la mais rapidamente quando necessário. Estas receitas ficam salvas na página de "Favoritos" no perfil do usuário.
+- **Pergunta:** “Existe uma maneira de guardar as receitas?”
+- **Resposta:** Sim, é possível favoritar uma receita para acessá-la mais rapidamente quando necessário. Estas receitas ficam salvas na página de "Favoritos" no perfil do usuário.
 
 # Referências Bibliográficas
 
