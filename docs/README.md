@@ -1660,9 +1660,63 @@ function toggleHeart(button, receitaId) {
 }
 
 8-Funções do Arquivo favoritos.js
+Sumário
 
+    Função Anônima para DOMContentLoaded
     Função carregarFavoritos
 
+Função Anônima para DOMContentLoaded
+
+Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Verifica se o usuário está logado e atualiza a interface de acordo.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Obtém os dados do usuário logado do localStorage.
+    Atualiza a interface para exibir uma saudação personalizada se o usuário estiver logado.
+    Exibe opções de login e cadastro se o usuário não estiver logado.
+    Adiciona listeners para botões de logout e redirecionamento.
+    Chama a função carregarFavoritos para carregar as receitas favoritas do usuário.
+
+Código:
+
+document.addEventListener("DOMContentLoaded", () => {
+  const user = JSON.parse(localStorage.getItem("usuarioLogado"));
+
+  const userGreeting = document.getElementById("userGreeting");
+  const logoutButton = document.getElementById("logoutButton");
+
+  if (!user) {
+    displayMessage("Você precisa estar logado para ver seus favoritos.", true);
+    userGreeting.innerHTML = `
+        <div class="retangulo-cadastro">
+          <a href="../login/login.html">Login</a>
+        </div>
+        <div class="retangulo-cadastro">
+          <a href="../cadastro/cadastro.html">Cadastre-se</a>
+        </div>
+      `;
+    return;
+  } else {
+    userGreeting.innerHTML = `
+        <div class="retangulo-cadastro retangulo-cadastro-off">
+          <span style="color: var(--gelo); cursor: pointer;" id="nomeUsuario">Olá, ${user.nome}</span>
+        </div>
+      `;
+
+    logoutButton.addEventListener("click", () => {
+      localStorage.removeItem("usuarioLogado");
+      location.href = "../login/login.html";
+    });
+
+    document.getElementById("nomeUsuario").addEventListener("click", () => {
+      window.location.href = "perfil.html";
+    });
+
+    carregarFavoritos(user.id);
+  }
+});
 
 Função carregarFavoritos
 
@@ -1688,7 +1742,6 @@ function carregarFavoritos(userId) {
     .then((user) => {
       const favoritos = user.favoritos || [];
       const container = document.getElementById("cardsContainer");
-      }
 
       if (favoritos.length === 0) {
         displayMessage("Você ainda não tem nenhuma receita favorita.", false);
@@ -1745,6 +1798,7 @@ function carregarFavoritos(userId) {
       console.error("Erro ao carregar favoritos:", error);
       displayMessage("Erro ao carregar favoritos.", true);
     });
+}
 
 9-Funções do Arquivo receita-view.js
 
