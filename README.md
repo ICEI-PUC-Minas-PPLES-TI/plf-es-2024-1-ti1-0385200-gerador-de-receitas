@@ -7,9 +7,7 @@
 * Thiago Branco de Oliveira
 * Diogo Gouvêa Bastos Braga
 * João Vitor Ferreira Jacinto
-* João Gabriel Noleto de Figueiredo
 * Miguel Augusto de Paula
-* Matheus Neves Fortini Duarte
 
 ## Professores responsáveis
 
