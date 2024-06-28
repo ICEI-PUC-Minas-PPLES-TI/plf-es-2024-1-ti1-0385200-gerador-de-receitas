@@ -77,62 +77,91 @@ Aprendizes de culinária: Pessoas que estão aprendendo a cozinhar e querem expe
 
 **1. Matriz CSD (Certezas, Suposições, Dúvidas)**
 
-(![Matriz de Alinhamento](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/119761586/50f53889-6c11-4c6c-9f97-38ab5733bfc5))
+![Matriz de Alinhamento](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/119761586/50f53889-6c11-4c6c-9f97-38ab5733bfc5)
 
 **Certezas:**
 
-- O aplicativo será uma plataforma online que gera receitas com base nos ingredientes disponíveis para os usuários.
-- O público-alvo inclui estudantes, profissionais, famílias, pessoas que vivem sozinhas, idosos, pessoas com restrições dietéticas e aprendizes de culinária.
-- As pessoas têm acesso limitado a ingredientes.
-- As pessoas querem receitas rápidas e simples.
-- Muitas pessoas carecem de habilidades culinárias, resultando em gastos excessivos com serviços de entrega de alimentos.
+1. O aplicativo será uma plataforma online que gera receitas com base nos ingredientes disponíveis para os usuários. 
+
+2. O público-alvo inclui estudantes, profissionais, famílias, pessoas que vivem sozinhas, idosos, pessoas com restrições dietéticas e aprendizes de culinária.
+
+3. As pessoas têm acesso limitado a ingredientes.
+
+4. As pessoas querem receitas rápidas e simples. 
+
+5. Muitas pessoas carecem de habilidades culinárias, resultando em gastos excessivos com serviços de entrega de alimentos.
+
 
 **Suposições:**
 
-- Os usuários terão algum conhecimento básico de culinária.
-- Os usuários estarão dispostos a experimentar novas receitas.
-- As pessoas têm um orçamento específico para gastar com ingredientes.
-- As pessoas têm uma quantidade específica de utensílios de cozinha em casa.
-- As pessoas têm uma quantidade específica de tempo para cozinhar.
+1. Os usuários terão algum conhecimento básico de culinária.
+
+2. Os usuários estarão dispostos a experimentar novas receitas.
+
+3. As pessoas têm um orçamento específico para gastar com ingredientes. 
+
+4. As pessoas têm uma quantidade específica de utensílios de cozinha em casa. 
+
+5. As pessoas têm uma quantidade específica de tempo para cozinhar. 
 
 **Dúvidas:**
 
-- Como os usuários interagirão com o aplicativo?
-- Quais recursos adicionais os usuários gostariam de ver no aplicativo?
-- Eles não têm criatividade.
-- Eles não sabem cozinhar muito bem.
+1. Como os usuários vão interagir com o aplicativo?
+
+2. Quais recursos adicionais os usuários gostariam de ver no aplicativo?
+
+3. Eles não têm criatividade.
+
+4. Eles não sabem cozinhar muito bem. 
 
 **2. Mapa de Stakeholders**
 
+![Stakeholders](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/119761586/99b2c94a-d483-450e-aa1c-966bdce72e8e)
+
 **Usuários:**
 
-- Estudantes
-- Profissionais
-- Famílias
-- Pessoas que vivem sozinhas
-- Idosos
-- Pessoas com restrições dietéticas
-- Aprendizes de culinária
+1. Estudantes;
+
+2. Profissionais;
+
+3. Famílias; 
+
+4. Pessoas que vivem sozinhas; 
+
+5. Idosos;
+
+6. Pessoas com restrições dietéticas; 
+
+7. Aprendizes de culinária.
+
+**Parceiros:**
+
+1. Blogs de culinária e chefs online;
+
+2. Empresas de alimentos e bebidas; 
+
+3. Nutricionistas e dietistas; 
+
+4. Organizações sem fins lucrativos focadas em sustentabilidade alimentar. 
+
 
 **Desenvolvedores:**
 
 - Thiago Branco de Oliveira
+  
 - Diogo Gouvêa Bastos Braga
+
 - João Vitor Ferreira Jacinto
+
 - Miguel Augusto de Paula
-
-**Parceiros:**
-
-- Blogs de culinária e chefs online
-- Empresas de alimentos e bebidas
-- Nutricionistas e dietistas
-- Organizações sem fins lucrativos focadas em sustentabilidade alimentar
 
 **3. Diagrama de Personas**
 
 Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personalidade, sonhos e objetivos com o aplicativo. (Detalhamento no próximo tópico)
 
 **4. Mapa da Proposta de Valor**
+
+![Proposta de Valor](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/119761586/2a5979f9-dbef-4204-aa71-c35706c65ddb)
 
 - **Proposta de Valor:** Uma plataforma online que gera receitas personalizadas com base nos ingredientes disponíveis para os usuários, promovendo economia, redução de desperdício e uma alimentação mais saudável.
 
