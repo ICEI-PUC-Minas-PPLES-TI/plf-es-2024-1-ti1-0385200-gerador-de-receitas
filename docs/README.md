@@ -2737,7 +2737,58 @@ carousel.addEventListener('mouseleave', () => {
   startAutoplay();
 });
 
-14-
+14-Funções do Arquivo mainlogin.js
+
+    Função Anônima para DOMContentLoaded
+
+Função Anônima para DOMContentLoaded
+
+Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Verifica se o usuário está logado e atualiza a interface de acordo.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Obtém os dados do usuário logado do localStorage.
+    Atualiza a interface para exibir uma saudação personalizada e um botão de logout se o usuário estiver logado.
+    Exibe opções de login e cadastro se o usuário não estiver logado.
+    Adiciona listeners aos elementos de saudação e logout para redirecionar ou deslogar o usuário.
+
+Código:
+
+document.addEventListener("DOMContentLoaded", () => {
+  const user = JSON.parse(localStorage.getItem("usuarioLogado"));
+  const userGreeting = document.getElementById("userGreeting");
+
+  if (user) {
+    userGreeting.innerHTML = `
+        <div class="retangulo-cadastro retangulo-cadastro-off">
+          <span style="color: var(--gelo); cursor: pointer;" id="nomeUsuario">Olá, ${user.nome}</span>
+        </div>
+        <div class="retangulo-cadastro retangulo-cadastro-off">
+          <a href="#" id="logoutButton">Logout</a>
+        </div>
+      `;
+
+    document.getElementById("nomeUsuario").addEventListener("click", () => {
+      window.location.href = "../perfil/perfil.html";
+    });
+
+    document.getElementById("logoutButton").addEventListener("click", () => {
+      localStorage.removeItem("usuarioLogado");
+      location.href = "../login/login.html";
+    });
+  } else {
+    userGreeting.innerHTML = `
+        <div class="retangulo-cadastro retangulo-cadastro-off">
+          <a href="../login/login.html">Login</a>
+        </div>
+        <div class="retangulo-cadastro retangulo-cadastro-off">
+          <a href="../cadastro/cadastro.html">Cadastre-se</a>
+        </div>
+      `;
+  }
+});
 
 # FAQ
 
