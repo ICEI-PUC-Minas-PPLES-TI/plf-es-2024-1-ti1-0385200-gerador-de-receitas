@@ -53,7 +53,7 @@ A criação do nosso projeto "KitchenCompanion" baseia-se na crescente necessida
 
 Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de forma eficiente e econômica é universal. No entanto, identificamos alguns grupos específicos que podem se beneficiar particularmente da nossa plataforma. Para cada um desses grupos, apresentamos brevemente as razões pelas quais nossa plataforma pode ser especialmente útil para eles:
 
-**Estudantes:** Muitos estudantes, principalmente universitários ou aqueles que já estão estagiando e não possuem muito tempo, ou "não param em casa", vivem com um orçamento “apertado” e podem não ter muita experiência em cozinhar.
+**Estudantes:** Muitos estudantes, principalmente universitários ou aqueles que já estão estagiando e não possuem muito tempo, ou "não param em casa", vivem com um orçamento "apertado" e podem não ter muita experiência em cozinhar.
 
 **Profissionais:** Não muito diferente dos estudantes, profissionais que trabalham em tempo integral podem ter pouca experiência e pouco tempo para planejar e preparar suas refeições.
 
@@ -63,7 +63,7 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 **Idosos:** Pessoas idosas podem ter necessidades dietéticas específicas ou podem ter dificuldade em preparar refeições mais complexas.
 
-**Pessoas com restrições dietéticas:** Pessoas com alergias alimentares, intolerâncias ou que seguem dietas específicas (como veganismo, vegetarianismo, dieta sem glúten, entre outras.) podem achar difícil encontrar receitas que atendam às suas necessidades.
+**Pessoas com restrições dietéticas:** Pessoas com alergias alimentares, intolerâncias ou que seguem dietas específicas (como veganismo, vegetarianismo, dieta sem glúten, entre outras) podem achar difícil encontrar receitas que atendam às suas necessidades.
 
 **Aprendizes de culinária:** Pessoas que estão aprendendo a cozinhar e querem experimentar novas receitas ou pessoas que querem elevar o nível e desafiar suas próprias habilidades culinárias podem usar nosso site para encontrar receitas adequadas ao seu nível de habilidade e aos ingredientes que têm disponíveis no momento.
 
