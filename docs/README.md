@@ -317,19 +317,124 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 (funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução; apaga essa linha depois)
 
-**Funcionalidade 1 -** escrever aqui
-**Estrutura de Dados:** escrever aqui
+**Funcionalidade 1 -** Cadastro
+**Estrutura de Dados:** JSON - usuarios (exemplo)
+
+"usuarios": [
+    {
+      "nome": "Simone Nogueira",
+      "email": "Sincere@april.biz",
+      "senha": "123654",
+      "historico": [67, 89, 90],
+      "favoritos": [89, 90],
+      "id": 1
+    }
+}
+
 **Instruções de acesso e uso:** 
 
-- escrever aqui
+- Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
+- Na tela de cadastro, você pode registrar um novo usuário para ter acesso às funcionalidades de perfil digitando seu nome, e-mail e senha. Com o cadastro bem-sucedido, você será redirecionado para a página principal.
+- Se tentar se cadastrar sem preencher todos os campos, você receberá uma mensagem de erro indicando que deve preencher todos os campos.
+- Se tentar se cadastrar com um e-mail já existente no banco de dados JSON, você também receberá uma mensagem de erro informando que o e-mail já foi cadastrado.
+
+()
+
+**Funcionalidade 2 -** Login
+**Estrutura de Dados:** JSON - usuarios (exemplo)
+
+"usuarios": [
+    {
+      "nome": "Sauron",
+      "email": "mail.com",
+      "senha": "123",
+      "historico": [12],
+      "favoritos": [],
+      "id": 5
+    }
+}
+
+**Instruções de acesso e uso:** 
+
+- Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
 - escrever aqui
 - escrever aqui
 
-(colocar imagem aqui se tiver)
+()
+
+**Funcionalidade 3 -** Editar Perfil do Usuário
+**Estrutura de Dados:** JSON - usuarios (exemplo)
+
+"usuarios": [
+    {
+      "nome": "Leon S. Kennedy",
+      "email": "leon@mail",
+      "senha": "1212",
+      "historico": [2, 4, 6],
+      "favoritos": [4, 6],
+      "id": 4
+    }
+}
+
+**Instruções de acesso e uso:** 
+
+- Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
+- escrever aqui
+- escrever aqui
+
+()
+
+**Funcionalidade 4 -** Vizualização da Receita
+**Estrutura de Dados:** JSON - receitas (exemplo)
+
+"receitas": [
+{
+      "nome": "Carne bovina com feijão e cenoura",
+      "proteina": "bovina",
+      "carboidrato": "feijao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com feijão e cenoura preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 17
+    }
+}
+
+**Instruções de acesso e uso:** 
+
+- Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
+- escrever aqui
+- escrever aqui
+
+()
+
+**Funcionalidade 5 -** Geração de Receita
+**Estrutura de Dados:** JSON - receitas (exemplo)
+
+"receitas:" [
+{
+      "nome": "Carne bovina com arroz e cebola",
+      "proteina": "bovina",
+      "carboidrato": "arroz",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com arroz e cebola preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 7
+    }
+}
+
+**Instruções de acesso e uso:** 
+
+- Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
+- escrever aqui
+- escrever aqui
+
+()
 
 ## Estruturas de Dados
 
-(descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON; apaga essa linha depois)
+Estrutura de Dados - usuarios
+Usado para Cadastro, Login e Editar Perfil do Usuário
+
+Estrutura de Dados - receitas
+Usado para Visualização de Receitas e Geração de Receitas
 
 (colocar imagem aqui)
 
