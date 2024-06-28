@@ -1184,7 +1184,204 @@ function irParaReceita() {
   window.location.href = '../perfil/receita-view.html';
 }
 
-5-
+5-Funções do Arquivo perfil.js
+
+    Função Anônima para DOMContentLoaded
+    Função verificarSenhaAtualEAtualizar
+    Função displayMessage
+
+Função Anônima para DOMContentLoaded
+
+Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Verifica se o usuário está logado e atualiza a interface de acordo.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Obtém os dados do usuário logado do localStorage.
+    Atualiza a interface para exibir uma saudação personalizada se o usuário estiver logado.
+    Exibe opções de login e cadastro se o usuário não estiver logado.
+    Adiciona listeners para botões de logout, atualização de perfil e redirecionamento.
+
+Código:
+
+document.addEventListener("DOMContentLoaded", () => {
+  const user = JSON.parse(localStorage.getItem("usuarioLogado"));
+
+  const userGreeting = document.getElementById("userGreeting");
+  const logoutButton = document.getElementById("logoutButton");
+
+  if (!user) {
+    // Exibe uma mensagem de erro se o usuário não estiver logado
+    displayMessage("Você precisa estar logado para editar seu perfil.", true);
+    // Exibe os botões de login e cadastro
+    if (userGreeting) {
+      userGreeting.innerHTML = `
+          <div class="retangulo-cadastro">
+            <a href="../login/login.html">Login</a>
+          </div>
+          <div class="retangulo-cadastro">
+            <a href="../cadastro/cadastro.html">Cadastre-se</a>
+          </div>
+        `;
+    }
+  } else {
+    // Exibe a saudação personalizada
+    if (userGreeting) {
+      userGreeting.innerHTML = `
+          <div class="retangulo-cadastro retangulo-cadastro-off">
+            <span style="color: var(--gelo); cursor: pointer;" id="nomeUsuario">Olá, ${user.nome}</span>
+          </div>
+        `;
+    }
+
+    // Listener para o botão de logout
+    if (logoutButton) {
+      logoutButton.addEventListener("click", () => {
+        localStorage.removeItem("usuarioLogado");
+        location.href = "../main/index.html";
+      });
+    }
+
+    document.getElementById("btnUpdate")?.addEventListener("click", (event) => {
+      event.preventDefault();
+      verificarSenhaAtualEAtualizar(user);
+    });
+
+    document.getElementById("nomeUsuario")?.addEventListener("click", () => {
+      window.location.href = "../main/index.html";
+    });
+  }
+});
+
+Função verificarSenhaAtualEAtualizar
+
+Descrição: Verifica a senha atual do usuário e atualiza os dados do perfil no servidor.
+
+Parâmetros:
+
+    user (object): Objeto contendo os dados do usuário logado.
+
+Funcionamento:
+
+    Obtém os valores dos campos de entrada para nome, e-mail, nova senha e senha atual.
+    Verifica se todos os campos estão preenchidos.
+    Faz uma requisição ao servidor para obter os dados do usuário.
+    Verifica se a senha atual está correta.
+    Atualiza os dados do usuário no servidor.
+    Exibe uma mensagem de sucesso ou erro conforme o resultado.
+
+Código:
+
+function verificarSenhaAtualEAtualizar(user) {
+  const nome = document.getElementById("inputNome").value.trim();
+  const email = document.getElementById("loginEmail").value.trim();
+  const novaSenha = document.getElementById("loginSenha").value.trim();
+  const senhaAtual = document.getElementById("currentSenha").value.trim();
+
+  if (!nome || !email || !novaSenha || !senhaAtual) {
+    displayMessage("Por favor, preencha todos os campos.", true);
+    return;
+  }
+
+  // Verifica a senha atual do usuário no servidor
+  fetch(`${apiUrl}?id=${user.id}`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Erro ao obter dados do usuário.");
+      }
+      return response.json();
+    })
+    .then((users) => {
+      if (users.length === 0) {
+        throw new Error("Usuário não encontrado.");
+      }
+
+      const data = users[0];
+      console.log("Dados do usuário obtidos:", data);
+
+      if (senhaAtual !== data.senha) {
+        throw new Error("Senha atual incorreta. Tente novamente.");
+      }
+
+      const usuarioAtualizado = {
+        nome: nome,
+        email: email,
+        senha: novaSenha,
+        historico: data.historico,
+        favoritos: data.favoritos,
+        id: user.id,
+      };
+
+      return fetch(`${apiUrl}/${user.id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(usuarioAtualizado),
+      });
+    })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Erro ao atualizar usuário no servidor.");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log("Usuário atualizado com sucesso:", data);
+      displayMessage("Dados atualizados com sucesso!", false);
+      localStorage.setItem("usuarioLogado", JSON.stringify(data));
+      // Recarregar a página após um pequeno atraso para exibir a mensagem de sucesso
+      setTimeout(() => {
+        location.reload();
+      }, 7000); // 7 segundos
+    })
+    .catch((error) => {
+      console.error("Erro ao atualizar usuário:", error);
+      displayMessage(error.message, true);
+    });
+}
+
+Função displayMessage
+
+Descrição: Exibe uma mensagem na tela dentro de um elemento HTML com o ID msg.
+
+Parâmetros:
+
+    mensagem (string): A mensagem a ser exibida.
+    isError (boolean, opcional): Define se a mensagem é de erro (true) ou sucesso (false). O padrão é true.
+
+Funcionamento:
+
+    Define o conteúdo do elemento msg com a mensagem fornecida.
+    Adiciona a classe show para exibir a mensagem.
+    Remove a classe show após 7 segundos para ocultar a mensagem.
+
+Exemplo de Uso:
+
+displayMessage("Dados atualizados com sucesso!", false);
+
+Código:
+
+function displayMessage(mensagem, isError = true) {
+  const msg = document.getElementById("msg");
+  if (msg) {
+    msg.innerHTML =
+      '<div class="' +
+      (isError ? "alert-error" : "alert-success") +
+      '">' +
+      mensagem +
+      "</div>";
+    // Adiciona uma classe para exibir a mensagem
+    msg.classList.add("show");
+    // Remove a classe após 7 segundos para ocultar a mensagem
+    setTimeout(() => {
+      msg.classList.remove("show");
+    }, 7000); // 7 segundos
+  }
+}
+
+6-
 
 # FAQ
 
