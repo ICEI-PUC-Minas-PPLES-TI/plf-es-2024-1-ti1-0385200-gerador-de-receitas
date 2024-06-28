@@ -317,8 +317,8 @@ Seção de comentários
 
 (funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução; apaga essa linha depois)
 
-**Funcionalidade 1 -** Cadastro
-**Estrutura de Dados:** JSON - usuarios (exemplo)
+- **Funcionalidade 1 -** Cadastro
+- **Estrutura de Dados:** JSON - usuarios (exemplo)
 
 "usuarios": [
     {
