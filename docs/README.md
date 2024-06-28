@@ -1688,6 +1688,7 @@ function carregarFavoritos(userId) {
     .then((user) => {
       const favoritos = user.favoritos || [];
       const container = document.getElementById("cardsContainer");
+      }
 
       if (favoritos.length === 0) {
         displayMessage("Você ainda não tem nenhuma receita favorita.", false);
@@ -1744,9 +1745,40 @@ function carregarFavoritos(userId) {
       console.error("Erro ao carregar favoritos:", error);
       displayMessage("Erro ao carregar favoritos.", true);
     });
-}
 
-9-
+9-Funções do Arquivo receita-view.js
+
+    Função Anônima para DOMContentLoaded
+
+Função Anônima para DOMContentLoaded
+
+Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Verifica se há uma receita selecionada no localStorage e atualiza a interface de acordo.
+
+Parâmetros: Nenhum.
+
+Funcionamento:
+
+    Obtém a receita selecionada do localStorage.
+    Se a receita estiver presente, atualiza o título da receita e o modo de preparo na interface.
+    Se a receita não estiver presente, exibe uma mensagem indicando que nenhuma receita foi encontrada.
+
+Código:
+
+document.addEventListener('DOMContentLoaded', () => {
+  const receitaSelecionada = JSON.parse(localStorage.getItem('receita'));
+
+  if (receitaSelecionada) {
+    document.getElementById('receitaTitulo').innerText = receitaSelecionada.nome;
+    document.getElementById('modoPreparo').innerHTML = `
+      <p><strong>Modo de Preparo:</strong></p>
+      <p>${receitaSelecionada["modo-de-preparo"]}</p>
+    `;
+  } else {
+    document.getElementById('msg').innerHTML = '<p>Nenhuma receita encontrada.</p>';
+  }
+});
+
+10-
 
 # FAQ
 
