@@ -79,26 +79,26 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 **Certezas:**
 
-**1.** O aplicativo será uma plataforma online que gera receitas com base nos ingredientes disponíveis para os usuários.
-**2.** O público-alvo inclui estudantes, profissionais, famílias, pessoas que vivem sozinhas, idosos, pessoas com restrições dietéticas e aprendizes de culinária.
-**3.** As pessoas têm acesso limitado a ingredientes.
-**4.** As pessoas querem receitas rápidas e simples.
-**5.** Muitas pessoas carecem de habilidades culinárias, resultando em gastos excessivos com serviços de entrega de alimentos.
+1. O aplicativo será uma plataforma online que gera receitas com base nos ingredientes disponíveis para os usuários.
+2. O público-alvo inclui estudantes, profissionais, famílias, pessoas que vivem sozinhas, idosos, pessoas com restrições dietéticas e aprendizes de culinária.
+3. As pessoas têm acesso limitado a ingredientes.
+4. As pessoas querem receitas rápidas e simples.
+5. Muitas pessoas carecem de habilidades culinárias, resultando em gastos excessivos com serviços de entrega de alimentos.
 
 **Suposições:**
 
-**1.** Os usuários terão algum conhecimento básico de culinária.
-**2.** Os usuários estarão dispostos a experimentar novas receitas.
-**3.** As pessoas têm um orçamento específico para gastar com ingredientes.
-**4.** As pessoas têm uma quantidade específica de utensílios de cozinha em casa.
-**5.** As pessoas têm uma quantidade específica de tempo para cozinhar.
+1. Os usuários terão algum conhecimento básico de culinária.
+2. Os usuários estarão dispostos a experimentar novas receitas.
+3. As pessoas têm um orçamento específico para gastar com ingredientes.
+4. As pessoas têm uma quantidade específica de utensílios de cozinha em casa.
+5. As pessoas têm uma quantidade específica de tempo para cozinhar.
 
 **Dúvidas:**
 
-**1.** Como os usuários interagirão com o aplicativo?
-**2.** Quais recursos adicionais os usuários gostariam de ver no aplicativo?
-**3.** Eles não têm criatividade.
-**4.** Eles não sabem cozinhar muito bem.
+1. Como os usuários interagirão com o aplicativo?
+2. Quais recursos adicionais os usuários gostariam de ver no aplicativo?
+3. Eles não têm criatividade.
+4. Eles não sabem cozinhar muito bem.
 
 ---
 
@@ -108,13 +108,13 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 **Usuários:**
 
-**1.** Estudantes
-**2.** Profissionais
-**3.** Famílias
-**4.** Pessoas que vivem sozinhas
-**5.** Idosos
-**6.** Pessoas com restrições dietéticas
-**7.** Aprendizes de culinária
+1. Estudantes
+2. Profissionais
+3. Famílias
+4. Pessoas que vivem sozinhas
+5. Idosos
+6. Pessoas com restrições dietéticas
+7. Aprendizes de culinária
 
 **Desenvolvedores:**
 
@@ -125,10 +125,10 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 **Parceiros:**
 
-**1.** Blogs de culinária e chefs online
-**2.** Empresas de alimentos e bebidas
-**3.** Nutricionistas e dietistas
-**4.** Organizações sem fins lucrativos focadas em sustentabilidade alimentar
+1. Blogs de culinária e chefs online
+2. Empresas de alimentos e bebidas
+3. Nutricionistas e dietistas
+4. Organizações sem fins lucrativos focadas em sustentabilidade alimentar
 
 ---
 
