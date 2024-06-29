@@ -530,8 +530,10 @@ Como aprendiz de culinária, eu gostaria de usar o aplicativo para encontrar rec
 - **Instruções de acesso e uso:** 
 
 - Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
-- escrever aqui
-- escrever aqui
+- Nessa tela é possível consultar o catálogo de receitas cadastrado no json, selecionando 1 ingrediente de cada tipo entre proteínas, carboidratos e vegetais.
+- O usuário tem acesso a funcionalidade mesmo não estando logado ou possuindo cadastro.
+- Ao consultar uma receita com sucesso, o usuário recebe a confirmação e pode clicar no botão para exibir a tela que mostra a receita detalhada.
+- Se não conseguir encontrar uma receita especificada ao clicar o botão, o usuário recebe uma mensagem o avisando.
 
 ![gerar receita](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/c2f0acec-513e-41b2-a7f1-f58eb730ea7a)
 
@@ -553,6 +555,7 @@ Como aprendiz de culinária, eu gostaria de usar o aplicativo para encontrar rec
 
 - Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
 - Vindo da página de geração de receitas, de histórico ou favoritos, essa página exibe as informações detalhadas de modo de preparo de uma receita.
+- Se acontecer algum erro ao obter informações do json de receitas, uma mensagem de erro é exibida.
   
 ![visualizar receita](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/74a998e1-8ce9-4d65-943c-b4cdc0c657fe)
 
