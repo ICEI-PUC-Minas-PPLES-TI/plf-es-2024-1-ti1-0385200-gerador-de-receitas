@@ -425,7 +425,7 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 - Se tentar se cadastrar sem preencher todos os campos, você receberá uma mensagem de erro indicando que deve preencher todos os campos.
 - Se tentar se cadastrar com um e-mail já existente no banco de dados JSON, você também receberá uma mensagem de erro informando que o e-mail já foi cadastrado.
 
-- Exemplo abaixo:
+**Exemplo abaixo:**
 
 ![telacadastro](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/e2a6648b-91bd-43d5-8e08-d53e5aa39f51)
 
@@ -457,7 +457,7 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 - O usuário também receberá uma mensagem de erro ao tentar logar deixando algum campo em branco no formulário de login.
 - Aos professores: Também podem optar por usar um usuário pré-cadastrado para testes, como o mencionado acima (Login: Sauron, Senha: 123) para realizar mais testes.
 
-- Exemplo abaixo:
+**Exemplo abaixo:**
 
 ![telalogin](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/63849534-76eb-4ae5-af37-4fbce0d30232)
 
@@ -490,7 +490,7 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 - Ao fazer logoff, o usuário será redirecionado para a página principal.
 - Aos professores: Também podem optar por usar um usuário pré-cadastrado para testes, como o mencionado acima (Login: leon@mail, Senha: 1212) para realizar mais testes. Caso algum erro inesperado ocorra, basta fazer logoff e logar novamente.
 
-- Exemplo abaixo:
+**Exemplo abaixo:**
 
 ![telaeditarperfil](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/c80050ab-b1af-4202-98cd-c1a8fd15f2ea)
 
@@ -523,7 +523,7 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 - Ao fazer logoff, o usuário será redirecionado para a página principal.
 - Aos professores: Também podem optar por usar um usuário pré-cadastrado para testes, como o mencionado acima (Login: leon@mail, Senha: 1212) para realizar mais testes. Caso algum erro inesperado ocorra, basta fazer logoff e logar novamente.
 
-- Exemplo abaixo:
+**Exemplo abaixo:**
 
 ![historico](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/e14ea461-090f-4c8a-bcb9-82d5e199dfbd)
 
@@ -557,7 +557,7 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 - Ao fazer logoff, o usuário será redirecionado para a página principal.
 - Aos professores: Também podem optar por usar um usuário pré-cadastrado para testes, como o mencionado acima (Login: leon@mail, Senha: 1212) para realizar mais testes. Caso algum erro inesperado ocorra, basta fazer logoff e logar novamente.
 
-- Exemplo abaixo:
+**Exemplo abaixo:**
 
 ![favorito](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/fa2ab15b-2767-4b2b-8de8-7ffcb9286a43)
 
@@ -588,7 +588,7 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 - Ao consultar uma receita com sucesso, o usuário recebe a confirmação e pode clicar no botão para exibir a tela que mostra a receita detalhada.
 - Se o sistema não conseguir encontrar uma receita especificada ao clicar no botão, o usuário receberá uma mensagem informando.
 
-- Exemplo abaixo:
+**Exemplo abaixo:**
 
 ![gerar receita](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/c2f0acec-513e-41b2-a7f1-f58eb730ea7a)
 
@@ -617,7 +617,7 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 - Vindo da página de geração de receitas, de histórico ou de favoritos, esta página exibe as informações detalhadas sobre o modo de preparo de uma receita.
 - Se ocorrer algum erro ao obter informações do JSON de receitas, uma mensagem de erro será exibida.
 
-- Exemplo abaixo:
+**Exemplo abaixo:**
   
 ![visualizar receita](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/74a998e1-8ce9-4d65-943c-b4cdc0c657fe)
 
