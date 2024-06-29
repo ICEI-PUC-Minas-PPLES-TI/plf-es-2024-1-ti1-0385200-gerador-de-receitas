@@ -349,13 +349,13 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 ## Gestão do Projeto
 
-- **Microsoft To-Do:** Utilizado para o rastreamento e a divisão de tarefas/papéis. Para criar um fluxo de trabalho efetivo, foi necessário fazer o acompanhamento das tarefas com este aplicativo fácil de usar. Nele, foi possível atribuir tarefas aos membros do grupo e, quando cada um terminava seu afazer, marcava como concluído. Uma solução simples e efetiva.
-
-![To-Do](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/119761586/0b035ce0-5421-48e2-910a-d961dc778969)
-
 - **Discord:** Utilizado para reuniões semanais, correção dos códigos e implementações de algumas funcionalidades do site. Por meio de ligações, a plataforma permite a vizualização da tela de outros dispositivos em tempo real, facilitando a identificação e correção de problemas durante o desenvolvimentro dos códigos de cada parte das páginas do site, consequentemente auxiliando e sanando as dificuldades dos membros do time em relação a determinados assuntos durante o projeto.
 
 - **WhatsApp:** Utilizado apenas para avisos e comunicados de caráter urgente e relevante para todos os membros do time. O aplicativo provou ser eficaz ao garantir que todos os membros se mantenham atualizados de forma rápida e eficiente.
+
+- **Microsoft To-Do:** Utilizado para o rastreamento e a divisão de tarefas/papéis. Para criar um fluxo de trabalho efetivo, foi necessário fazer o acompanhamento das tarefas com este aplicativo fácil de usar. Nele, foi possível atribuir tarefas aos membros do grupo e, quando cada um terminava seu afazer, marcava como concluído. Uma solução simples e efetiva.
+
+![To-Do](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/119761586/0b035ce0-5421-48e2-910a-d961dc778969)
 
 ---
 
@@ -368,6 +368,8 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 - **João Vitor Ferreira Jacinto:** Encarregado da criação das histórias de usuário, aprimoramento da documentação e criação da lista de tarefas no Microsoft To-do.
 - **Miguel Augusto de Paula:** Contribuiu com auxílio na documentação, na criação do mapa de stakeholders e parte do design thinking.
 
+---
+
 **Atribuição de Tarefas na Sprint 2:**
 
 - **Thiago Branco de Oliveira:** Encarregado da criação das páginas de Cadastro e Login do site.
@@ -375,12 +377,16 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 - **João Vitor Ferreira Jacinto:** Encarregado da criação das páginas de Visualização de Receitas do site e primeira tentativa de implementação do Gerador de Receitas em uma página do site.
 - **Miguel Augusto de Paula:** Contribuiu com a criação de alguns elementos específicos da Página Principal do site.
 
+---
+
 **Atribuição de Tarefas na Sprint 3:**
 
 - **Thiago Branco de Oliveira:** Encarregado da criação da página de Perfil do Usuário e alguns elementos presentes na mesma Página de Perfil do Usuário.
 - **Diogo Gouvêa Bastos Braga:** Responsável pela implementação da funcionalidade de Favoritar uma Receita e Visualização do Histórico de Receitas na Página de Perfil do Usuário.
 - **João Vitor Ferreira Jacinto:** Encarregado da criação de uma nova página para uma nova versão da implementação do Gerador de Receitas do site e correção de alguns elemnentos da Página Principal do site.
 - **Miguel Augusto de Paula:** Criação da página de Notícias e Anúncios do site.
+
+---
 
 **Atribuição de Tarefas na Sprint 4:**
 
