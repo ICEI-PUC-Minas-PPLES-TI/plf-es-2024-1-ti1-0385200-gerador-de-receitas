@@ -736,7 +736,9 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 **Exemplo de uso:**
 
+```properties
 displayMessage("Usuário cadastrado com sucesso!", false);
+```
 
 **Código:**
 
@@ -1686,7 +1688,7 @@ function verificarSenhaAtualEAtualizar(user) {
 
 ---
 
-**Função:** 
+**5.3. Função:** 
 
 - displayMessage
 
@@ -1763,7 +1765,7 @@ let isLiked = false;
 
 ---
 
-**Função:**
+**6.1. Função:**
 
 - toggleHeart
 
@@ -1815,7 +1817,7 @@ function toggleHeart(button) {
 
 ---
 
-**Função:** 
+**7.1. Função:** 
 
 - Anônima para DOMContentLoaded
 
@@ -1878,7 +1880,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ---
 
-**Função:** 
+**7.2. Função:** 
 
 - displayMessage
 
@@ -1893,7 +1895,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 **Exemplo de uso:**
 
+```properties
 displayMessage("Erro ao carregar histórico de receitas.", true);
+```
 
 **Código:**
 
@@ -1911,7 +1915,7 @@ function displayMessage(mensagem, isError = true) {
 
 ---
 
-**Função:** 
+**7.3. Função:** 
 
 - carregarHistorico
 
@@ -2005,7 +2009,7 @@ function carregarHistorico(userId) {
 
 ---
 
-**Função:**
+**7.4. Função:**
 
 - toggleHeart
 
@@ -2084,7 +2088,7 @@ function toggleHeart(button, receitaId) {
 
 ---
 
-**Função:** 
+**8.1. Função:** 
 
 - Anônima para DOMContentLoaded
 
@@ -2147,7 +2151,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ---
 
-**Função:** 
+**8.2. Função:** 
 
 - carregarFavoritos
 
@@ -2279,7 +2283,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ## 10 - Funções do Arquivo slides.js
 
-**Função:**
+**Funções:**
 
 - Anônima para DOMContentLoaded
 - createSlideElements
@@ -2288,7 +2292,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ---
 
-**Função:**
+**10.1. Função:**
 
 - Anônima para DOMContentLoaded
 
@@ -2386,7 +2390,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 ---
 
-**Função:**
+**10.2. Função:**
 
 - createSlideElements
 
@@ -2432,7 +2436,7 @@ function createSlideElements() {
 
 ---
 
-**Função:**
+**10.3. Função:**
 
 - updateTitleAndDescription
 
@@ -2461,7 +2465,7 @@ function updateTitleAndDescription() {
 
 ---
 
-**Função:**
+**10.4. Função:**
 
 - moveSlide
 
@@ -2664,7 +2668,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ---
 
-**Função:**
+**12.1. Função:**
 
 - setCardPerView
 
@@ -2692,7 +2696,7 @@ const setCardPerView = () => {
 
 ---
 
-**Função:**
+**12.2. Função:**
 
 - cloneCards
 
@@ -2733,7 +2737,7 @@ const cloneCards = () => {
 
 ---
 
-**Função:**
+**12.3. Função:**
 
 - dragStart
 
@@ -2764,7 +2768,7 @@ const dragStart = (e) => {
 
 ---
 
-**Função:**
+**12.4. Função:**
 
 - dragging
 
@@ -2794,7 +2798,7 @@ const dragging = (e) => {
 
 ---
 
-**Função:**
+**12.5. Função:**
 
 - dragStop
 
@@ -2822,7 +2826,7 @@ const dragStop = () => {
 
 ---
 
-**Função:**
+**12.6. Função:**
 
 - infiniteScroll
 
@@ -2861,7 +2865,7 @@ const infiniteScroll = () => {
 
 ---
 
-**Função:**
+**12.7. Função:**
 
 - autoPlay
 
@@ -2934,7 +2938,7 @@ window.addEventListener('resize', setCardPerView);
 
 ---
 
-**Função:**
+**13.1. Função:**
 
 - Anônima para DOMContentLoaded
 
@@ -3109,7 +3113,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 ---
 
-**Função:**
+**13.2. Função:**
 
 - moveSlides
 
@@ -3137,7 +3141,7 @@ const moveSlides = () => {
 
 ---
 
-**Função:**
+**13.3. Função:**
 
 - nextSlide
 
@@ -3169,7 +3173,7 @@ const nextSlide = () => {
 
 ---
 
-**Função:**
+**13.4. Função:**
 
 - prevSlide
 
@@ -3201,7 +3205,7 @@ const prevSlide = () => {
 
 ---
 
-**Função:**
+**13.5. Função:**
 
 - startAutoplay
 
@@ -3230,7 +3234,7 @@ const startAutoplay = () => {
 
 ---
 
-**Função:**
+**13.6. Função:**
 
 - pauseAutoplay
 
