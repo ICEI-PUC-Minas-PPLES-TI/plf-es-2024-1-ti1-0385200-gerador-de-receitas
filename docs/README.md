@@ -762,7 +762,7 @@ function displayMessage(mensagem, isError = true) {
 
 ---
 
-**1.2. Função** 
+**1.2. Função:** 
 
 - emailJaCadastrado
 
@@ -1598,7 +1598,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ---
 
-**5.2. Função** 
+**5.2. Função:** 
 
 - verificarSenhaAtualEAtualizar
 
