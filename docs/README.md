@@ -503,8 +503,13 @@ Como aprendiz de culinária, eu gostaria de usar o aplicativo para encontrar rec
 - **Instruções de acesso e uso:** 
 
 - Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
-- escrever aqui
-- escrever aqui
+- Nessa tela é possivel visualizar suas receitas que foram previamente favoritadas no histórico de um usuário logado.
+- Ao clicar em um card de receita favorita, o usuário será redirecionado para a página que exibe as infomações detalhadas da receita.
+- O usuário pode remover um card de receita dos seus favoritos ao desmarcar o botão de coração.
+- Se o usuário não tiver nenhuma receita favorita, uma mensagem o avisando será exibida nessa tela.
+- Se acontecer algum erro ao obter informações do json, uma mensagem de erro será exibida.
+- Ao dar logoff o usuário é redirecionado para a main.
+- Aos professores: Também podem optar por usar um usuário pré-cadastrado para testes, como o mencionado acima (Login: leon@mail, Senha:1212) para realizar mais testes. Caso algum erro inesperado aconteça, basta dar logoff e logar novamente.
 
 ![favorito](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/fa2ab15b-2767-4b2b-8de8-7ffcb9286a43)
 
@@ -547,8 +552,7 @@ Como aprendiz de culinária, eu gostaria de usar o aplicativo para encontrar rec
 - **Instruções de acesso e uso:** 
 
 - Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
-- escrever aqui
-- escrever aqui
+- Vindo da página de geração de receitas, de histórico ou favoritos, essa página exibe as informações detalhadas de modo de preparo de uma receita.
   
 ![visualizar receita](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/74a998e1-8ce9-4d65-943c-b4cdc0c657fe)
 
