@@ -416,6 +416,7 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 - **Funcionalidade 2 -** Login
 - **Estrutura de Dados:** JSON - usuarios (exemplo)
 
+```properties
 "usuarios": [
     {
       "nome": "Sauron",
@@ -426,6 +427,7 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
       "id": 5
     }
 }
+```
 
 - **Instruções de acesso e uso:** 
 
