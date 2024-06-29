@@ -47,13 +47,19 @@ O projeto tem como objetivo principal auxiliar pessoas na arte da culinária, fo
 
 Muitas pessoas frequentemente enfrentam dificuldades ao cozinhar com poucos ingredientes ou ao encontrar maneiras de reutilizar os ingredientes ou alimentos que já possuem, resultando em desperdício e gastos desnecessários. Essa preocupação com os gastos tornou-se comum, pois muitos buscam economizar nas despesas com alimentos, mas raramente conseguem. Isso ocorre porque grande parte da população não possui o conhecimento necessário para preparar refeições simples, práticas, rápidas e básicas, ou não sabe por onde ou como aprender novas receitas. Assim, muitas vezes acabam recorrendo a aplicativos e serviços de entrega de comida (delivery), resultando em gastos desnecessários e prejudicando a própria saúde aos poucos, uma vez que a maioria dos deliveries não oferece comidas muito saudáveis. E, mesmo quando oferecem, não é tão comum que as pessoas peçam comidas que sejam realmente saudáveis. A mesma situação ocorre quando vão às compras; muitas vezes as pessoas gastam muito dinheiro desnecessariamente com alimentos que não são saudáveis e que normalmente não precisam ser preparados para serem consumidos. Quanto ao desperdício de alimentos, além de ser, infelizmente, algo comum, também se tornou um problema sério, conforme apontado por uma pesquisa da Organização das Nações Unidas (ONU) em 2021. Esse tipo de descarte é o terceiro maior emissor de CO2 no mundo, contribuindo com aproximadamente 10% das emissões globais de gases de efeito estufa. Portanto, o desperdício de alimentos também é uma questão ambiental crucial, e nosso projeto busca mitigar todos esses problemas com base em uma solução de software.
 
+---
+
 ## Objetivo
 
 Nosso projeto visa criar uma plataforma online (app/site web) que possa sugerir e gerar receitas com base nos ingredientes disponíveis para os usuários, auxiliando-os na preparação de pratos práticos, simples, básicos, rápidos e, o mais importante: saborosos e saudáveis. Além disso, a plataforma também oferecerá dicas extras sobre economia na cozinha, substituição de ingredientes, conservação de alimentos, reutilização saudável de alimentos, planejamento de refeições e muito mais. Dessa forma, não apenas ajudaremos os usuários a economizar dinheiro e reduzir o desperdício, mas também promoveremos uma maior conscientização ambiental, responsabilidade e uma melhor qualidade de vida através de uma alimentação mais saudável.
 
+---
+
 ## Justificativa
 
 A criação do nosso projeto "KitchenCompanion" baseia-se na crescente necessidade de conscientização e responsabilidade sobre a economia doméstica/alimentar, sustentabilidade e a falta de habilidades culinárias por parte da maioria das pessoas. Com base no aumento dos preços dos alimentos e a preocupação crescente com o impacto ambiental gerado pelo desperdício de alimentos, torna-se cada vez mais importante encontrar maneiras de maximizar o uso dos ingredientes disponíveis para preparar as refeições e minimizar o desperdício e os gastos. Além disso, como já mencionado, muitas pessoas têm dificuldade em encontrar receitas que possam ser feitas com ingredientes simples (ou baratos) que já possuem (ou não) em casa. Portanto, nossa plataforma tem o intuito de resolver esses problemas, fornecendo aos usuários soluções vantajosas e receitas personalizadas com base nos ingredientes que já possuem (ou que sejam acessíveis), além de dicas sobre como economizar dinheiro e reduzir o desperdício na cozinha. Também buscamos fomentar uma cultura de culinária sustentável e acessível, onde todos possam desfrutar de refeições saudáveis e saborosas sem comprometer o orçamento ou o meio ambiente.
+
+---
 
 ## Público-alvo
 
@@ -295,7 +301,6 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 - O usuário deve ser capaz de visualizar suas receitas favoritas. 
 
-
 **Requisitos Não-Funcionais:**
 
 - O sistema deve ser compatível com os navegadores Chrome e Mozilla. 
@@ -318,6 +323,8 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 ![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164224207/ba138624-f90c-4fbd-b757-7cf35426847b)
 
+---
+
 ## Wireframes
 
 [Wireframe](https://www.figma.com/file/ZNHwYf0uQvqoMS3YTv3oi0/Kitchen-Companion?type=design&node-id=0%3A1&mode=design&t=wkK34SY5DbemPRkl-1)
@@ -338,6 +345,8 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 - **Replit:** Utilizado para a criação do JSON Server e estrutura geral JSON.
 
+---
+
 ## Gestão do Projeto
 
 - **Microsoft To-Do:** Utilizado para o rastreamento e a divisão de tarefas/papéis. Para criar um fluxo de trabalho efetivo, foi necessário fazer o acompanhamento das tarefas com este aplicativo fácil de usar. Nele, foi possível atribuir tarefas aos membros do grupo e, quando cada um terminava seu afazer, marcava como concluído. Uma solução simples e efetiva.
@@ -347,6 +356,8 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 - **Discord:** Utilizado para reuniões semanais, correção dos códigos e implementações de algumas funcionalidades do site. Por meio de ligações, a plataforma permite a vizualização da tela de outros dispositivos em tempo real, facilitando a identificação e correção de problemas durante o desenvolvimentro dos códigos de cada parte das páginas do site, consequentemente auxiliando e sanando as dificuldades dos membros do time em relação a determinados assuntos durante o projeto.
 
 - **WhatsApp:** Utilizado apenas para avisos e comunicados de caráter urgente e relevante para todos os membros do time. O aplicativo provou ser eficaz ao garantir que todos os membros se mantenham atualizados de forma rápida e eficiente.
+
+---
 
 ## Controle de Versão
 
