@@ -401,9 +401,9 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 ## Funcionalidades
 
-**Funcionalidade 1 -** Cadastro
-**Estrutura de Dados:** JSON - usuarios.
-- Exemplo abaixo:
+- **Funcionalidade 1: Cadastro**
+- **Estrutura de Dados: JSON - usuarios**
+**Exemplo abaixo:**
 
 ```properties
 "usuarios": [
