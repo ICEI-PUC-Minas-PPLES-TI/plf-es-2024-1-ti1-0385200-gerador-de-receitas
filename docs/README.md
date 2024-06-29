@@ -533,7 +533,7 @@ Como aprendiz de culinária, eu gostaria de usar o aplicativo para encontrar rec
 - Nessa tela é possível consultar o catálogo de receitas cadastrado no json, selecionando 1 ingrediente de cada tipo entre proteínas, carboidratos e vegetais.
 - O usuário tem acesso a funcionalidade mesmo não estando logado ou possuindo cadastro.
 - Ao consultar uma receita com sucesso, o usuário recebe a confirmação e pode clicar no botão para exibir a tela que mostra a receita detalhada.
-- Se não conseguir encontrar uma receita especificada ao clicar o botão, o usuário recebe uma mensagem o avisando.
+- Se o sistema não conseguir encontrar uma receita especificada ao clicar o botão, o usuário recebe uma mensagem o avisando.
 
 ![gerar receita](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/c2f0acec-513e-41b2-a7f1-f58eb730ea7a)
 
