@@ -378,6 +378,15 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 - **João Vitor Ferreira Jacinto:** Encarregado pela integração das páginas por meio dos códigos HTML, CSS e JS, e contribuiu com a revisão da documentação.
 - **Miguel Augusto de Paula:** Contribuiu com auxílio na documentação e criação da apresentação em PowerPoint do grupo.
 
+
+# Quadro de Tarefas
+
+* Atribuição de Tarefas na Sprint 1:
+
+| **Thiago Branco de Oliveira**       | **Diogo Gouvêa Bastos Braga**         | **João Vitor Ferreira Jacinto** | **Miguel Augusto de Paula** | 
+| ---             | ---              | ---            | ---               | ---                                  |---          |
+| Encarregado da criação do userflow, protótipo, wireframes, repositório e parte do design thinking | Responsável pela criação da apresentação em PowerPoint do grupo a respeito da introdução e apresentação do projeto |  Encarregado da criação das histórias de usuário, aprimoramento da documentação e criação da lista de tarefas no Microsoft To-do | Contribuiu com auxílio na documentação, na criação do mapa de stakeholders e parte do design thinking | 
+
 ---
 
 # Solução
