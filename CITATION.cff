@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
 title: Kitchen Companion - Catálogo de Receitas
@@ -26,32 +25,3 @@ repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-03
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2024-06-30
-=======
-cff-version: 1.0.1
-message: Please cite this software using these metadata.
-title: Kitchen Companion - Catálogo de Receitas
-authors:
-  - family-names: Branco de Oliveira
-    given-names: Thiago
-  - family-names: Gouvêa Bastos Braga
-    given-names: Diogo
-  - family-names: Ferreira Jacinto
-    given-names: João Vitor
-  - family-names: Augusto de Paula
-    given-names: Miguel
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: Soares de Andrade
-    given-names: Michelle Hanne
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: Barbosa da Fonseca
-    given-names: Gabriel
-keywords:
-  - Receitas
-  - Cozinhar
-repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas
-license: CC-BY-4.0
-version: 1.0.0
-date-released: 2024-06-30
->>>>>>> 576e4073eb686b7caee5801aac8f95491eb4d605
