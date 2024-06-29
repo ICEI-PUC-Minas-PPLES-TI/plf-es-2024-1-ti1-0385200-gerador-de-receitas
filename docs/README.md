@@ -403,11 +403,11 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 **Funcionalidade 1:**
 
-- Cadastro
+- Cadastro.
   
 **Estrutura de Dados:**
 
- - JSON - usuarios
+ - JSON - usuarios.
    
 **Exemplo abaixo:**
 
@@ -437,9 +437,15 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 ---
 
-**Funcionalidade 2 -** Login
-**Estrutura de Dados:** JSON - usuarios.
-- Exemplo abaixo:
+**Funcionalidade 2:**
+
+- Login.
+  
+**Estrutura de Dados:**
+
+- JSON - usuarios.
+  
+**Exemplo abaixo:**
 
 ```properties
 "usuarios": [
@@ -469,9 +475,15 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 ---
 
-**Funcionalidade 3 -** Editar Perfil do Usuário
-**Estrutura de Dados:** JSON - usuarios.
-- Exemplo abaixo:
+**Funcionalidade 3:** 
+
+- Editar Perfil do Usuário.
+  
+**Estrutura de Dados:**
+
+- JSON - usuarios.
+  
+**Exemplo abaixo:**
 
 ```properties
 "usuarios": [
@@ -502,9 +514,15 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 ---
 
-**Funcionalidade 4 -** Vizualização do histórico da Receita
-**Estrutura de Dados:** JSON - receitas.
-- Exemplo abaixo:
+**Funcionalidade 4:** 
+
+- Vizualização do histórico da Receita.
+  
+**Estrutura de Dados:**
+
+- JSON - receitas.
+  
+**Exemplo abaixo:**
 
 ```properties
 "receitas": [
@@ -535,9 +553,15 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 ---
 
-**Funcionalidade 5 -** Vizualização de favoritos da Receita
-**Estrutura de Dados:** JSON - receitas.
-- Exemplo abaixo:
+**Funcionalidade 5:** 
+
+- Vizualização de favoritos da Receita.
+- 
+**Estrutura de Dados:**
+
+- JSON - receitas.
+  
+**Exemplo abaixo:**
 
 ```properties
 "receitas": [
@@ -569,9 +593,15 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 ---
 
-**Funcionalidade 6 -** Geração de Receita
-**Estrutura de Dados:** JSON - receitas.
-- Exemplo abaixo:
+**Funcionalidade 6:** 
+
+- Geração de Receita
+  
+**Estrutura de Dados:**
+
+- JSON - receitas.
+  
+**Exemplo abaixo:**
 
 ```properties
 "receitas:" [
@@ -600,9 +630,15 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 ---
 
-**Funcionalidade 7 -** Vizualização da Receita
-**Estrutura de Dados:** JSON - receitas.
-- Exemplo abaixo:
+**Funcionalidade 7:** 
+
+- Vizualização da Receita
+  
+**Estrutura de Dados:**
+
+- JSON - receitas.
+  
+**Exemplo abaixo:**
 
 ```properties
 "receitas": [
@@ -2883,6 +2919,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+---
+
 # FAQ
 
 **1. Pergunta:** “Como as receitas são geradas?”
@@ -2902,6 +2940,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 **6. Pergunta:** “Existe uma maneira de guardar as receitas?”
 - **Resposta:** Sim, é possível favoritar uma receita para acessá-la mais rapidamente quando necessário. Estas receitas ficam salvas na página de "Favoritos" no perfil do usuário.
+
+---
 
 # Referências Bibliográficas
 
