@@ -707,31 +707,40 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 # Módulos e APIs
 
-1-Funções do Arquivo app.js
+## 1 - Funções do Arquivo app.js
 
-    Função displayMessage
-    Função emailJaCadastrado
-    Função createUser
-    Função cadastrarUsuario
-    Função atualizarInterfaceUsuario
-    Função logoffUsuario
-    Eventos de Interface
+**Funções:** 
 
-Função displayMessage
+- displayMessage
+- emailJaCadastrado
+- createUser
+- cadastrarUsuario
+- atualizarInterfaceUsuario
+- logoffUsuario
+- Eventos de Interface
 
-Descrição: Exibe uma mensagem na tela dentro de um elemento HTML com o ID msg.
+---
 
-Parâmetros:
+**1.1. Função:** 
 
-    mensagem (string): A mensagem a ser exibida.
-    isError (boolean, opcional): Define se a mensagem é de erro (true) ou sucesso (false). O padrão é true.
+- displayMessage
 
-Exemplo de Uso:
+**Descrição:**
+
+- Exibe uma mensagem na tela dentro de um elemento HTML com o ID msg.
+
+**Parâmetros:**
+
+- mensagem (string): A mensagem a ser exibida.
+- isError (boolean, opcional): Define se a mensagem é de erro (true) ou sucesso (false). O padrão é true.
+
+**Exemplo de uso:**
 
 displayMessage("Usuário cadastrado com sucesso!", false);
 
-Código:
+**Código:**
 
+```properties
 function displayMessage(mensagem, isError = true) {
   const msg = document.getElementById("msg");
   msg.innerHTML =
@@ -741,27 +750,36 @@ function displayMessage(mensagem, isError = true) {
     mensagem +
     "</div>";
 }
+```
 
-Função emailJaCadastrado
+---
 
-Descrição: Verifica se um e-mail já está cadastrado no servidor.
+**1.2. Função** 
 
-Parâmetros:
+- emailJaCadastrado
 
-    email (string): O e-mail a ser verificado.
-    callback (function): Função de retorno que recebe um booleano indicando se o e-mail já está cadastrado.
+**Descrição:**
 
-Exemplo de Uso:
+- Verifica se um e-mail já está cadastrado no servidor.
 
+**Parâmetros:**
 
+- email (string): O e-mail a ser verificado.
+- callback (function): Função de retorno que recebe um booleano indicando se o e-mail já está cadastrado.
+
+**Exemplo de uso:**
+
+```properties
 emailJaCadastrado("teste@exemplo.com", function(jaCadastrado) {
   if (jaCadastrado) {
     // Lógica para e-mail já cadastrado
   }
 });
+```
 
-Código:
+**Código:**
 
+```properties
 function emailJaCadastrado(email, callback) {
   fetch("http://localhost:3000/usuarios?email=" + encodeURIComponent(email))
     .then((response) => response.json())
@@ -773,27 +791,36 @@ function emailJaCadastrado(email, callback) {
       callback(false);
     });
 }
+```
 
-Função createUser
+---
 
-Descrição: Cadastra um novo usuário no servidor.
+**1.3. Função:**
 
-Parâmetros:
+- createUser
 
-    usuario (object): Objeto contendo os dados do usuário a ser cadastrado.
-    callback (function): Função de retorno que recebe um objeto com a resposta da operação de cadastro.
+**Descrição:** 
 
-Exemplo de Uso:
+- Cadastra um novo usuário no servidor.
 
+**Parâmetros:**
 
+- usuario (object): Objeto contendo os dados do usuário a ser cadastrado.
+- callback (function): Função de retorno que recebe um objeto com a resposta da operação de cadastro.
+
+**Exemplo de uso:**
+
+```properties
 createUser({ nome: "João", email: "joao@exemplo.com", senha: "123456" }, function(response) {
   if (response.success) {
     // Lógica para cadastro bem-sucedido
   }
 });
+```
 
-Código:
+**Código:**
 
+```properties
 function createUser(usuario, callback) {
   fetch("http://localhost:3000/usuarios", {
     method: "POST",
@@ -811,13 +838,21 @@ function createUser(usuario, callback) {
       callback({ success: false, message: error.message });
     });
 }
+```
 
-Função cadastrarUsuario
+---
 
-Descrição: Função principal para realizar o cadastro de um usuário.
+**1.4. Função:**
 
-Código:
+- cadastrarUsuario
 
+**Descrição:**
+
+- Função principal para realizar o cadastro de um usuário.
+
+**Código:**
+
+```properties
 function cadastrarUsuario() {
   // Obtem os valores dos campos do formulário
   let nome = document.getElementById("inputNome").value.trim();
@@ -870,13 +905,21 @@ function cadastrarUsuario() {
     }
   });
 }
+```
 
-Função atualizarInterfaceUsuario
+---
 
-Descrição: Atualiza a interface do usuário logado.
+**1.5. Função:**
 
-Código:
+- atualizarInterfaceUsuario
 
+**Descrição:** 
+
+- Atualiza a interface do usuário logado.
+
+**Código:**
+
+```properties
 function atualizarInterfaceUsuario() {
   const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
   const usuarioNome = document.getElementById("usuarioNome");
@@ -892,24 +935,38 @@ function atualizarInterfaceUsuario() {
     logoff.style.display = "none";
   }
 }
+```
 
-Função logoffUsuario
+---
 
-Descrição: Desloga o usuário, removendo seus dados do localStorage.
+**1.6. Função:**
 
-Código:
+- logoffUsuario
 
+**Descrição:** 
+
+- Desloga o usuário, removendo seus dados do localStorage.
+
+**Código:**
+
+```properties
 function logoffUsuario() {
   localStorage.removeItem("usuarioLogado");
   atualizarInterfaceUsuario();
 }
+```
 
-Eventos de Interface
+---
 
-Descrição: Eventos relacionados à interface do usuário.
+## Eventos de Interface
 
-Código:
+**Descrição:** 
 
+- Eventos relacionados à interface do usuário.
+
+**Código:**
+
+```properties
 // Adiciona o evento de clique ao botão de cadastro
 document
   .getElementById("btnCadastrar")
@@ -922,22 +979,34 @@ document
 document.addEventListener("DOMContentLoaded", function () {
   atualizarInterfaceUsuario();
 });
+```
 
+---
 
+## 2 - Funções do Arquivo api.js
 
-2-Funções do Arquivo api.js
+**Funções:** 
 
-    Função fetchReceitas
-    Função saveHistorico
+- fetchReceitas
+- saveHistorico
 
-Função fetchReceitas
+---
 
-Descrição: Busca as receitas do servidor.
+**2.1. Função:** 
 
-Retorno: Retorna uma promessa que resolve para os dados das receitas em formato JSON.
+- fetchReceitas
+  
+**Descrição:** 
 
-Exemplo de Uso:
+- Busca as receitas do servidor.
 
+**Retorno:**
+
+- Retorna uma promessa que resolve para os dados das receitas em formato JSON.
+
+**Exemplo de uso:**
+
+```properties
 fetchReceitas()
   .then(receitas => {
     console.log(receitas);
@@ -945,9 +1014,11 @@ fetchReceitas()
   .catch(error => {
     console.error("Erro:", error);
   });
+```
 
-Código:
+**Código:**
 
+```properties
 async function fetchReceitas() {
   const response = await fetch("http://localhost:3000/receitas");
   if (!response.ok) {
@@ -955,18 +1026,26 @@ async function fetchReceitas() {
   }
   return response.json();
 }
+```
 
-Função saveHistorico
+---
 
-Descrição: Salva o histórico de receitas visualizadas de um usuário no servidor.
+**2.2. Função:**
 
-Parâmetros:
+- saveHistorico
 
-    usuarioId (string): O ID do usuário.
-    receitaId (string): O ID da receita a ser adicionada ao histórico do usuário.
+**Descrição:** 
 
-Exemplo de Uso:
+- Salva o histórico de receitas visualizadas de um usuário no servidor.
 
+**Parâmetros:**
+
+- usuarioId (string): O ID do usuário.
+- receitaId (string): O ID da receita a ser adicionada ao histórico do usuário.
+
+**Exemplo de uso:**
+
+```properties
 saveHistorico("usuario123", "receita456")
   .then(() => {
     console.log("Histórico salvo com sucesso");
@@ -974,9 +1053,11 @@ saveHistorico("usuario123", "receita456")
   .catch(error => {
     console.error("Erro:", error);
   });
+```
 
-Código:
+**Código:**
 
+```properties
 async function saveHistorico(usuarioId, receitaId) {
   const response = await fetch(`http://localhost:3000/usuarios/${usuarioId}`);
   if (!response.ok) {
@@ -999,62 +1080,97 @@ async function saveHistorico(usuarioId, receitaId) {
     throw new Error("Erro ao salvar histórico");
   }
 }
+```
 
+---
 
+## 3 - Funções do Arquivo login.js
 
-3-Funções do Arquivo login.js
+**Constante:** 
 
-    Constante apiUrl
-    Função toggleMenu
-    Função displayMessage
-    Função loginUsuario
-    Função handleLogin
-    Função handleLogoff
-    Função verificarEstadoLogin
-    Eventos de Interface
+- apiUrl
 
-Constante apiUrl
+**Funções:** 
 
-Descrição: URL da API JSONServer. Substitua pela URL correta da sua API com /usuarios no final.
+- toggleMenu
+- displayMessage
+- loginUsuario
+- handleLogin
+- handleLogoff
+- verificarEstadoLogin
+- Eventos de Interface
 
-Código:
+---
 
+**Constante:**
+
+- apiUrl
+
+**Descrição:**
+
+- URL da API JSONServer. Substitua pela URL correta da sua API com /usuarios no final.
+
+**Código:**
+
+```properties
 const apiUrl = "http://localhost:3000/usuarios";
+```
 
-Função toggleMenu
+---
 
-Descrição: Alterna a visibilidade do menu de navegação.
+**3.1. Função:** 
 
-Parâmetros: Nenhum.
+- toggleMenu
 
-Exemplo de Uso:
+**Descrição:** 
 
+- Alterna a visibilidade do menu de navegação.
+
+**Parâmetros:** 
+
+- Nenhum.
+
+**Exemplo de uso:**
+
+```properties
 toggleMenu();
+```
 
-Código:
+**Código:**
 
+```properties
 function toggleMenu() {
   const menu = document.getElementById("nav");
   if (menu) {
     menu.classList.toggle("active");
   }
 }
+```
 
-Função displayMessage
+---
 
-Descrição: Exibe uma mensagem na tela dentro de um elemento HTML com o ID msg.
+**3.2. Função:** 
 
-Parâmetros:
+- displayMessage
 
-    mensagem (string): A mensagem a ser exibida.
-    isError (boolean, opcional): Define se a mensagem é de erro (true) ou sucesso (false). O padrão é true.
+**Descrição:** 
 
-Exemplo de Uso:
+- Exibe uma mensagem na tela dentro de um elemento HTML com o ID msg.
 
+**Parâmetros:**
+
+- mensagem (string): A mensagem a ser exibida.
+- isError (boolean, opcional): Define se a mensagem é de erro (true) ou sucesso (false). O padrão é true.
+
+**Exemplo de uso:**
+
+```properties
 displayMessage("Login bem-sucedido!", false);
+```
 
-Código:
+**Código:**
 
+```properties
 function displayMessage(mensagem, isError = true) {
   const msg = document.getElementById("msg");
   if (msg) {
@@ -1066,21 +1182,29 @@ function displayMessage(mensagem, isError = true) {
       "</div>";
   }
 }
+```
 
-Função loginUsuario
+---
 
-Descrição: Verifica as credenciais de login do usuário na API JSONServer.
+**3.3. Função:** 
 
-Parâmetros:
+- loginUsuario
 
-    email (string): O e-mail do usuário.
-    senha (string): A senha do usuário.
-    callback (function): Função de retorno que recebe dois parâmetros:
-        sucesso (boolean): Indica se o login foi bem-sucedido.
-        usuario (object): Objeto contendo os dados do usuário (se o login for bem-sucedido).
+**Descrição:**
 
-Exemplo de Uso:
+- Verifica as credenciais de login do usuário na API JSONServer.
 
+**Parâmetros:**
+
+- email (string): O e-mail do usuário.
+- senha (string): A senha do usuário.
+- callback (function): Função de retorno que recebe dois parâmetros:
+- sucesso (boolean): Indica se o login foi bem-sucedido.
+- usuario (object): Objeto contendo os dados do usuário (se o login for bem-sucedido).
+
+**Exemplo de uso:**
+
+```properties
 loginUsuario("teste@exemplo.com", "senha123", (sucesso, usuario) => {
   if (sucesso) {
     console.log("Login bem-sucedido", usuario);
@@ -1088,9 +1212,11 @@ loginUsuario("teste@exemplo.com", "senha123", (sucesso, usuario) => {
     console.log("Login falhou");
   }
 });
+```
 
-Código:
+**Código:**
 
+```properties
 function loginUsuario(email, senha, callback) {
   fetch(apiUrl)
     .then((response) => response.json())
@@ -1105,15 +1231,25 @@ function loginUsuario(email, senha, callback) {
       callback(false);
     });
 }
+```
 
-Função handleLogin
+---
 
-Descrição: Lida com o processo de login do usuário, verificando os campos de entrada, chamando a função de login e exibindo mensagens de acordo com o resultado.
+**3.4. Função:** 
 
-Parâmetros: Nenhum.
+- handleLogin
 
-Código:
+**Descrição:** 
 
+- Lida com o processo de login do usuário, verificando os campos de entrada, chamando a função de login e exibindo mensagens de acordo com o resultado.
+
+**Parâmetros:** 
+
+- Nenhum.
+
+**Código:**
+
+```properties
 function handleLogin() {
   const emailInput = document.getElementById("loginEmail");
   const senhaInput = document.getElementById("loginSenha");
@@ -1149,30 +1285,50 @@ function handleLogin() {
     }
   });
 }
+```
 
-Função handleLogoff
+---
 
-Descrição: Lida com o processo de logoff do usuário, removendo o estado de login do localStorage e atualizando a interface.
+**3.5. Função:** 
 
-Parâmetros: Nenhum.
+- handleLogoff
 
-Código:
+**Descrição:** 
 
+- Lida com o processo de logoff do usuário, removendo o estado de login do localStorage e atualizando a interface.
+
+**Parâmetros:** 
+
+- Nenhum.
+
+**Código:**
+
+```properties
 function handleLogoff() {
   // Remover estado de login do localStorage
   localStorage.removeItem("usuarioLogado");
   verificarEstadoLogin();
   displayMessage("Você saiu da sua conta.", false);
 }
+```
 
-Função verificarEstadoLogin
+---
 
-Descrição: Verifica o estado de login do usuário e atualiza a interface de acordo.
+**3.6. Função:** 
 
-Parâmetros: Nenhum.
+- verificarEstadoLogin
 
-Código:
+**Descrição:** 
 
+- Verifica o estado de login do usuário e atualiza a interface de acordo.
+
+**Parâmetros:** 
+
+- Nenhum.
+
+**Código:**
+
+```properties
 function verificarEstadoLogin() {
   const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
   const btnLoginHeader = document.getElementById("btnLoginHeader");
@@ -1201,13 +1357,19 @@ function verificarEstadoLogin() {
     userHeader.href = "../cadastro/cadastro.html";
   }
 }
+```
 
-Eventos de Interface
+---
 
-Descrição: Eventos relacionados à interface do usuário.
+## Eventos de Interface
 
-Código:
+**Descrição:** 
 
+- Eventos relacionados à interface do usuário.
+
+**Código:**
+
+```properties
 document
   .getElementById("btnLogin")
   ?.addEventListener("click", function (event) {
@@ -1219,33 +1381,49 @@ document.addEventListener("DOMContentLoaded", verificarEstadoLogin);
 
 const btnMobile = document.getElementById("btn-mobile");
 btnMobile?.addEventListener("click", toggleMenu);
+```
 
-4-Funções do Arquivo geradorderceitas.js
+---
 
-    Função buscarReceita
-    Função irParaReceita
+## 4 - Funções do Arquivo geradorderceitas.js
 
-Função buscarReceita
+**Funções:** 
 
-Descrição: Busca uma receita com base nos ingredientes fornecidos pelo usuário.
+- buscarReceita
+- irParaReceita
 
-Parâmetros: Nenhum.
+---
 
-Funcionamento:
+**4.1. Função:** 
 
-    Obtém os valores dos ingredientes (carboidrato, proteína, vegetal) dos campos de entrada HTML.
-    Faz uma requisição ao arquivo JSON localizado em http://localhost:3000/receitas.
-    Verifica se a chave receitas existe no objeto retornado e se é um array.
-    Encontra a receita que corresponde aos ingredientes fornecidos.
-    Exibe a receita encontrada na interface do usuário ou uma mensagem de erro se nenhuma receita for encontrada.
-    Armazena a receita encontrada no localStorage para uso posterior.
+- buscarReceita
 
-Exemplo de Uso:
+**Descrição:** 
 
+- Busca uma receita com base nos ingredientes fornecidos pelo usuário.
+
+**Parâmetros:** 
+
+- Nenhum.
+
+**Funcionamento:**
+
+- Obtém os valores dos ingredientes (carboidrato, proteína, vegetal) dos campos de entrada HTML.
+- Faz uma requisição ao arquivo JSON localizado em http://localhost:3000/receitas.
+- Verifica se a chave receitas existe no objeto retornado e se é um array.
+- Encontra a receita que corresponde aos ingredientes fornecidos.
+- Exibe a receita encontrada na interface do usuário ou uma mensagem de erro se nenhuma receita for encontrada.
+- Armazena a receita encontrada no localStorage para uso posterior.
+
+**Exemplo de uso:**
+
+```properties
 buscarReceita();
+```
 
-Código:
+**Código:**
 
+```properties
 async function buscarReceita() {
   const carboidrato = document.getElementById('carboidrato').value.toLowerCase();
   const proteina = document.getElementById('proteina').value.toLowerCase();
@@ -1296,44 +1474,70 @@ async function buscarReceita() {
     console.error('Erro ao buscar receita:', error);
   }
 }
+```
 
-Função irParaReceita
+---
 
-Descrição: Redireciona o usuário para a página de visualização da receita.
+**4.2. Função:** 
 
-Parâmetros: Nenhum.
+- irParaReceita
 
-Exemplo de Uso:
+**Descrição:** 
 
+- Redireciona o usuário para a página de visualização da receita.
+
+**Parâmetros:** 
+
+- Nenhum.
+
+**Exemplo de uso:**
+
+```properties
 irParaReceita();
+```
 
-Código:
+**Código:**
 
+```properties
 function irParaReceita() {
   window.location.href = '../perfil/receita-view.html';
 }
+```
 
-5-Funções do Arquivo perfil.js
+---
 
-    Função Anônima para DOMContentLoaded
-    Função verificarSenhaAtualEAtualizar
-    Função displayMessage
+## 5 - Funções do Arquivo perfil.js
 
-Função Anônima para DOMContentLoaded
+**Funções:** 
 
-Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Verifica se o usuário está logado e atualiza a interface de acordo.
+- Anônima para DOMContentLoaded
+- verificarSenhaAtualEAtualizar
+- displayMessage
 
-Parâmetros: Nenhum.
+---
 
-Funcionamento:
+**5.1. Função:** 
 
-    Obtém os dados do usuário logado do localStorage.
-    Atualiza a interface para exibir uma saudação personalizada se o usuário estiver logado.
-    Exibe opções de login e cadastro se o usuário não estiver logado.
-    Adiciona listeners para botões de logout, atualização de perfil e redirecionamento.
+- Anônima para DOMContentLoaded
+  
+**Descrição:** 
 
-Código:
+- Esta função é executada quando o evento DOMContentLoaded é disparado. Verifica se o usuário está logado e atualiza a interface de acordo.
 
+**Parâmetros:**
+
+- Nenhum.
+
+**Funcionamento:**
+
+- Obtém os dados do usuário logado do localStorage.
+- Atualiza a interface para exibir uma saudação personalizada se o usuário estiver logado.
+- Exibe opções de login e cadastro se o usuário não estiver logado.
+- Adiciona listeners para botões de logout, atualização de perfil e redirecionamento.
+
+**Código:**
+
+```properties
 document.addEventListener("DOMContentLoaded", () => {
   const user = JSON.parse(localStorage.getItem("usuarioLogado"));
 
@@ -1382,26 +1586,34 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+```
 
-Função verificarSenhaAtualEAtualizar
+---
 
-Descrição: Verifica a senha atual do usuário e atualiza os dados do perfil no servidor.
+**5.2. Função** 
 
-Parâmetros:
+- verificarSenhaAtualEAtualizar
 
-    user (object): Objeto contendo os dados do usuário logado.
+**Descrição:** 
 
-Funcionamento:
+- Verifica a senha atual do usuário e atualiza os dados do perfil no servidor.
 
-    Obtém os valores dos campos de entrada para nome, e-mail, nova senha e senha atual.
-    Verifica se todos os campos estão preenchidos.
-    Faz uma requisição ao servidor para obter os dados do usuário.
-    Verifica se a senha atual está correta.
-    Atualiza os dados do usuário no servidor.
-    Exibe uma mensagem de sucesso ou erro conforme o resultado.
+**Parâmetros:**
 
-Código:
+- user (object): Objeto contendo os dados do usuário logado.
 
+**Funcionamento:**
+
+- Obtém os valores dos campos de entrada para nome, e-mail, nova senha e senha atual.
+- Verifica se todos os campos estão preenchidos.
+- Faz uma requisição ao servidor para obter os dados do usuário.
+- Verifica se a senha atual está correta.
+- Atualiza os dados do usuário no servidor.
+- Exibe uma mensagem de sucesso ou erro conforme o resultado.
+
+**Código:**
+
+```properties
 function verificarSenhaAtualEAtualizar(user) {
   const nome = document.getElementById("inputNome").value.trim();
   const email = document.getElementById("loginEmail").value.trim();
@@ -1470,28 +1682,38 @@ function verificarSenhaAtualEAtualizar(user) {
       displayMessage(error.message, true);
     });
 }
+```
 
-Função displayMessage
+---
 
-Descrição: Exibe uma mensagem na tela dentro de um elemento HTML com o ID msg.
+**Função:** 
 
-Parâmetros:
+- displayMessage
 
-    mensagem (string): A mensagem a ser exibida.
-    isError (boolean, opcional): Define se a mensagem é de erro (true) ou sucesso (false). O padrão é true.
+**Descrição:** 
 
-Funcionamento:
+- Exibe uma mensagem na tela dentro de um elemento HTML com o ID msg.
 
-    Define o conteúdo do elemento msg com a mensagem fornecida.
-    Adiciona a classe show para exibir a mensagem.
-    Remove a classe show após 7 segundos para ocultar a mensagem.
+**Parâmetros:**
 
-Exemplo de Uso:
+- mensagem (string): A mensagem a ser exibida.
+- isError (boolean, opcional): Define se a mensagem é de erro (true) ou sucesso (false). O padrão é true.
 
+**Funcionamento:**
+
+- Define o conteúdo do elemento msg com a mensagem fornecida.
+- Adiciona a classe show para exibir a mensagem.
+- Remove a classe show após 7 segundos para ocultar a mensagem.
+
+**Exemplo de uso:**
+
+```properties
 displayMessage("Dados atualizados com sucesso!", false);
+```
 
-Código:
+**Código:**
 
+```properties
 function displayMessage(mensagem, isError = true) {
   const msg = document.getElementById("msg");
   if (msg) {
@@ -1509,75 +1731,113 @@ function displayMessage(mensagem, isError = true) {
     }, 7000); // 7 segundos
   }
 }
+```
 
-6-Funções do Arquivo coracao.js
+---
 
-    Variável isLiked
-    Função toggleHeart
+## 6 - Funções do Arquivo coracao.js
 
-Variável isLiked
+**Variável:** 
 
-Descrição: Variável booleana que indica se o item foi curtido (liked) ou não. Inicialmente definida como false.
+- isLiked
 
-Código:
+**Função:**
 
+- toggleHeart
+
+---
+
+**Variável:** 
+
+- isLiked
+
+**Descrição:**
+
+- Variável booleana que indica se o item foi curtido (liked) ou não. Inicialmente definida como false.
+
+**Código:**
+
+```properties
 let isLiked = false;
+```
 
-Função toggleHeart
+---
 
-Descrição: Alterna o estado de curtido (liked) de um item ao clicar no botão de coração, mudando a aparência do ícone.
+**Função:**
 
-Parâmetros:
+- toggleHeart
 
-    button (HTMLElement): O botão de coração que foi clicado.
+**Descrição:** 
 
-Funcionamento:
+- Alterna o estado de curtido (liked) de um item ao clicar no botão de coração, mudando a aparência do ícone.
 
-    Alterna o valor da variável isLiked.
-    Seleciona o ícone de coração dentro do botão.
-    Alterna a classe fas do ícone de coração para indicar se está curtido ou não.
-    Muda a cor do ícone de coração.
+**Parâmetros:**
 
-Exemplo de Uso:
+- button (HTMLElement): O botão de coração que foi clicado.
 
+**Funcionamento:**
+
+- Alterna o valor da variável isLiked.
+- Seleciona o ícone de coração dentro do botão.
+- Alterna a classe fas do ícone de coração para indicar se está curtido ou não.
+- Muda a cor do ícone de coração.
+
+**Exemplo de uso:**
+
+```properties
 const heartButton = document.getElementById('heartButton');
 heartButton.addEventListener('click', () => {
   toggleHeart(heartButton);
 });
+```
 
-Código:
+**Código:**
 
-
+```properties
 function toggleHeart(button) {
   isLiked = !isLiked;
   const heartIcon = button.querySelector('i');
   heartIcon.classList.toggle('fas');
   heartIcon.style.color = isLiked ? 'var(--vermelho)' : 'var(--vermelho)';
 }
+```
 
-7-Funções do Arquivo historico.js
+---
 
-    Função Anônima para DOMContentLoaded
-    Função displayMessage
-    Função carregarHistorico
-    Função toggleHeart
+## 7 - Funções do Arquivo historico.js
 
-Função Anônima para DOMContentLoaded
+**Função:** 
 
-Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Verifica se o usuário está logado e atualiza a interface de acordo.
+- Anônima para DOMContentLoaded
+- displayMessage
+- carregarHistorico
+- toggleHeart
 
-Parâmetros: Nenhum.
+---
 
-Funcionamento:
+**Função:** 
 
-    Obtém os dados do usuário logado do localStorage.
-    Atualiza a interface para exibir uma saudação personalizada se o usuário estiver logado.
-    Exibe opções de login e cadastro se o usuário não estiver logado.
-    Adiciona listeners para botões de logout e redirecionamento.
-    Chama a função carregarHistorico para carregar o histórico de receitas do usuário.
+- Anônima para DOMContentLoaded
 
-Código:
+**Descrição:** 
 
+- Esta função é executada quando o evento DOMContentLoaded é disparado. Verifica se o usuário está logado e atualiza a interface de acordo.
+
+**Parâmetros:**
+
+- Nenhum.
+
+**Funcionamento:**
+
+- Obtém os dados do usuário logado do localStorage.
+- Atualiza a interface para exibir uma saudação personalizada se o usuário estiver logado.
+- Exibe opções de login e cadastro se o usuário não estiver logado.
+- Adiciona listeners para botões de logout e redirecionamento.
+- Chama a função carregarHistorico para carregar o histórico de receitas do usuário.
+
+**Código:**
+
+```properties
 document.addEventListener("DOMContentLoaded", () => {
   const user = JSON.parse(localStorage.getItem("usuarioLogado"));
 
@@ -1614,22 +1874,30 @@ document.addEventListener("DOMContentLoaded", () => {
     carregarHistorico(user.id);
   }
 });
+```
 
-Função displayMessage
+---
 
-Descrição: Exibe uma mensagem na tela dentro de um elemento HTML com o ID msg.
+**Função:** 
 
-Parâmetros:
+- displayMessage
 
-    mensagem (string): A mensagem a ser exibida.
-    isError (boolean, opcional): Define se a mensagem é de erro (true) ou sucesso (false). O padrão é true.
+**Descrição:** 
 
-Exemplo de Uso:
+- Exibe uma mensagem na tela dentro de um elemento HTML com o ID msg.
+
+**Parâmetros:**
+
+- mensagem (string): A mensagem a ser exibida.
+- isError (boolean, opcional): Define se a mensagem é de erro (true) ou sucesso (false). O padrão é true.
+
+**Exemplo de uso:**
 
 displayMessage("Erro ao carregar histórico de receitas.", true);
 
-Código:
+**Código:**
 
+```properties
 function displayMessage(mensagem, isError = true) {
   const msg = document.getElementById("msg");
   msg.innerHTML =
@@ -1639,25 +1907,33 @@ function displayMessage(mensagem, isError = true) {
     mensagem +
     "</div>";
 }
+```
 
-Função carregarHistorico
+---
 
-Descrição: Carrega o histórico de receitas do usuário a partir do servidor e exibe na interface.
+**Função:** 
 
-Parâmetros:
+- carregarHistorico
 
-    userId (string): O ID do usuário.
+**Descrição:**
 
-Funcionamento:
+- Carrega o histórico de receitas do usuário a partir do servidor e exibe na interface.
 
-    Faz uma requisição ao servidor para obter os dados do usuário.
-    Verifica se o usuário tem um histórico de receitas.
-    Para cada receita no histórico, faz uma requisição ao servidor para obter os dados da receita.
-    Cria e exibe um card para cada receita na interface.
-    Exibe uma mensagem se o usuário não tiver nenhum histórico de receitas.
+**Parâmetros:**
 
-Código:
+- userId (string): O ID do usuário.
 
+**Funcionamento:**
+
+- Faz uma requisição ao servidor para obter os dados do usuário.
+- Verifica se o usuário tem um histórico de receitas.
+- Para cada receita no histórico, faz uma requisição ao servidor para obter os dados da receita.
+- Cria e exibe um card para cada receita na interface.
+- Exibe uma mensagem se o usuário não tiver nenhum histórico de receitas.
+
+**Código:**
+
+```properties
 function carregarHistorico(userId) {
   fetch(`${apiUrl}/${userId}`)
     .then((response) => response.json())
@@ -1725,26 +2001,34 @@ function carregarHistorico(userId) {
       displayMessage("Erro ao carregar histórico de receitas.", true);
     });
 }
+```
 
-Função toggleHeart
+---
 
-Descrição: Alterna o estado de favorito de uma receita para o usuário logado.
+**Função:**
 
-Parâmetros:
+- toggleHeart
 
-    button (HTMLElement): O botão de coração que foi clicado.
-    receitaId (string): O ID da receita.
+**Descrição:**
 
-Funcionamento:
+- Alterna o estado de favorito de uma receita para o usuário logado.
 
-    Verifica se o usuário está logado.
-    Alterna o estado do ícone de coração (favorito/não favorito).
-    Atualiza a lista de favoritos do usuário.
-    Envia a atualização para o servidor.
-    Atualiza os dados do usuário no localStorage.
+**Parâmetros:**
 
-Código:
+- button (HTMLElement): O botão de coração que foi clicado.
+- receitaId (string): O ID da receita.
 
+**Funcionamento:**
+
+- Verifica se o usuário está logado.
+- Alterna o estado do ícone de coração (favorito/não favorito).
+- Atualiza a lista de favoritos do usuário.
+- Envia a atualização para o servidor.
+- Atualiza os dados do usuário no localStorage.
+
+**Código:**
+
+```properties
 function toggleHeart(button, receitaId) {
   const user = JSON.parse(localStorage.getItem("usuarioLogado"));
 
@@ -1787,29 +2071,42 @@ function toggleHeart(button, receitaId) {
       displayMessage("Erro ao atualizar favoritos.", true);
     });
 }
+```
 
-8-Funções do Arquivo favoritos.js
-Sumário
+---
 
-    Função Anônima para DOMContentLoaded
-    Função carregarFavoritos
+## 8 - Funções do Arquivo favoritos.js
 
-Função Anônima para DOMContentLoaded
+**Função:**
 
-Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Verifica se o usuário está logado e atualiza a interface de acordo.
+- Anônima para DOMContentLoaded
+- carregarFavoritos
 
-Parâmetros: Nenhum.
+---
 
-Funcionamento:
+**Função:** 
 
-    Obtém os dados do usuário logado do localStorage.
-    Atualiza a interface para exibir uma saudação personalizada se o usuário estiver logado.
-    Exibe opções de login e cadastro se o usuário não estiver logado.
-    Adiciona listeners para botões de logout e redirecionamento.
-    Chama a função carregarFavoritos para carregar as receitas favoritas do usuário.
+- Anônima para DOMContentLoaded
 
-Código:
+**Descrição:**
 
+- Esta função é executada quando o evento DOMContentLoaded é disparado. Verifica se o usuário está logado e atualiza a interface de acordo.
+
+**Parâmetros:**
+
+- Nenhum.
+
+**Funcionamento:**
+
+- Obtém os dados do usuário logado do localStorage.
+- Atualiza a interface para exibir uma saudação personalizada se o usuário estiver logado.
+- Exibe opções de login e cadastro se o usuário não estiver logado.
+- Adiciona listeners para botões de logout e redirecionamento.
+- Chama a função carregarFavoritos para carregar as receitas favoritas do usuário.
+
+**Código:**
+
+```properties
 document.addEventListener("DOMContentLoaded", () => {
   const user = JSON.parse(localStorage.getItem("usuarioLogado"));
 
@@ -1846,25 +2143,33 @@ document.addEventListener("DOMContentLoaded", () => {
     carregarFavoritos(user.id);
   }
 });
+```
 
-Função carregarFavoritos
+---
 
-Descrição: Carrega as receitas favoritas do usuário a partir do servidor e exibe na interface.
+**Função:** 
 
-Parâmetros:
+- carregarFavoritos
 
-    userId (string): O ID do usuário.
+**Descrição:** 
 
-Funcionamento:
+- Carrega as receitas favoritas do usuário a partir do servidor e exibe na interface.
 
-    Faz uma requisição ao servidor para obter os dados do usuário.
-    Verifica se o usuário tem receitas favoritas.
-    Para cada receita favorita, faz uma requisição ao servidor para obter os dados da receita.
-    Cria e exibe um card para cada receita na interface.
-    Exibe uma mensagem se o usuário não tiver nenhuma receita favorita.
+**Parâmetros:**
 
-Código:
+- userId (string): O ID do usuário.
 
+**Funcionamento:**
+
+- Faz uma requisição ao servidor para obter os dados do usuário.
+- Verifica se o usuário tem receitas favoritas.
+- Para cada receita favorita, faz uma requisição ao servidor para obter os dados da receita.
+- Cria e exibe um card para cada receita na interface.
+- Exibe uma mensagem se o usuário não tiver nenhuma receita favorita.
+
+**Código:**
+
+```properties
 function carregarFavoritos(userId) {
   fetch(`${apiUrl}/${userId}`)
     .then((response) => response.json())
@@ -1928,25 +2233,33 @@ function carregarFavoritos(userId) {
       displayMessage("Erro ao carregar favoritos.", true);
     });
 }
+```
 
-9-Funções do Arquivo receita-view.js
+---
 
-    Função Anônima para DOMContentLoaded
+## 9 - Funções do Arquivo receita-view.js
 
-Função Anônima para DOMContentLoaded
+**Função:** 
 
-Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Verifica se há uma receita selecionada no localStorage e atualiza a interface de acordo.
+- Anônima para DOMContentLoaded
 
-Parâmetros: Nenhum.
+**Descrição:**
 
-Funcionamento:
+- Esta função é executada quando o evento DOMContentLoaded é disparado. Verifica se há uma receita selecionada no localStorage e atualiza a interface de acordo.
 
-    Obtém a receita selecionada do localStorage.
-    Se a receita estiver presente, atualiza o título da receita e o modo de preparo na interface.
-    Se a receita não estiver presente, exibe uma mensagem indicando que nenhuma receita foi encontrada.
+**Parâmetros:**
 
-Código:
+- Nenhum.
 
+**Funcionamento:**
+
+- Obtém a receita selecionada do localStorage.
+- Se a receita estiver presente, atualiza o título da receita e o modo de preparo na interface.
+- Se a receita não estiver presente, exibe uma mensagem indicando que nenhuma receita foi encontrada.
+
+**Código:**
+
+```properties
 document.addEventListener('DOMContentLoaded', () => {
   const receitaSelecionada = JSON.parse(localStorage.getItem('receita'));
 
@@ -1960,30 +2273,44 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('msg').innerHTML = '<p>Nenhuma receita encontrada.</p>';
   }
 });
+```
 
-10-Funções do Arquivo slides.js
+---
 
-    Função Anônima para DOMContentLoaded
-    Função createSlideElements
-    Função updateTitleAndDescription
-    Função moveSlide
+## 10 - Funções do Arquivo slides.js
 
-Função Anônima para DOMContentLoaded
+**Função:**
 
-Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Inicializa o carrossel de slides, cria os elementos dos slides, define os títulos e descrições, e adiciona listeners aos botões de navegação do carrossel.
+- Anônima para DOMContentLoaded
+- createSlideElements
+- updateTitleAndDescription
+- moveSlide
 
-Parâmetros: Nenhum.
+---
 
-Funcionamento:
+**Função:**
 
-    Seleciona os elementos do carrossel e define os dados dos slides.
-    Inicializa o índice do slide atual.
-    Cria os elementos dos slides chamando createSlideElements.
-    Atualiza o título e a descrição chamando updateTitleAndDescription.
-    Adiciona listeners aos botões de navegação para mover os slides chamando moveSlide.
+- Anônima para DOMContentLoaded
 
-Código:
+**Descrição:**
 
+- Esta função é executada quando o evento DOMContentLoaded é disparado. Inicializa o carrossel de slides, cria os elementos dos slides, define os títulos e descrições, e adiciona listeners aos botões de navegação do carrossel.
+
+**Parâmetros:**
+
+- Nenhum.
+
+**Funcionamento:**
+
+- Seleciona os elementos do carrossel e define os dados dos slides.
+- Inicializa o índice do slide atual.
+- Cria os elementos dos slides chamando createSlideElements.
+- Atualiza o título e a descrição chamando updateTitleAndDescription.
+- Adiciona listeners aos botões de navegação para mover os slides chamando moveSlide.
+
+**Código:**
+
+```properties
 document.addEventListener('DOMContentLoaded', function () {
   const carouselContent = document.querySelector('.carousel-content');
   const carouselTitle = document.getElementById('carousel-title');
@@ -2055,23 +2382,33 @@ document.addEventListener('DOMContentLoaded', function () {
     updateTitleAndDescription();
   }
 });
+```
 
-Função createSlideElements
+---
 
-Descrição: Cria os elementos dos slides e os adiciona ao contêiner do carrossel.
+**Função:**
 
-Parâmetros: Nenhum.
+- createSlideElements
 
-Funcionamento:
+**Descrição:**
 
-    Itera sobre os dados dos slides (slidesData.slides).
-    Cria um elemento div para cada slide e adiciona a classe carousel-imagem.
-    Cria um elemento img para a imagem do slide e define seus atributos src e alt.
-    Se o slide tiver um link, adiciona um listener de clique à imagem para redirecionar para o link.
-    Adiciona a imagem ao elemento do slide e o slide ao contêiner do carrossel.
+- Cria os elementos dos slides e os adiciona ao contêiner do carrossel.
 
-Código:
+**Parâmetros:**
 
+- Nenhum.
+
+**Funcionamento:**
+
+- Itera sobre os dados dos slides (slidesData.slides).
+- Cria um elemento div para cada slide e adiciona a classe carousel-imagem.
+- Cria um elemento img para a imagem do slide e define seus atributos src e alt.
+- Se o slide tiver um link, adiciona um listener de clique à imagem para redirecionar para o link.
+- Adiciona a imagem ao elemento do slide e o slide ao contêiner do carrossel.
+
+**Código:**
+
+```properties
 function createSlideElements() {
   slidesData.slides.forEach((slide, index) => {
     const slideElement = document.createElement('div');
@@ -2091,70 +2428,96 @@ function createSlideElements() {
     carouselContent.appendChild(slideElement);
   });
 }
+```
 
-Função updateTitleAndDescription
+---
 
-Descrição: Atualiza o título e a descrição do slide atual na interface.
+**Função:**
 
-Parâmetros: Nenhum.
+- updateTitleAndDescription
 
-Funcionamento:
+**Descrição:**
 
-    Obtém o slide atual usando currentSlideIndex.
-    Define o texto do título (carouselTitle) e da descrição (carouselDescription) com os dados do slide atual.
+- Atualiza o título e a descrição do slide atual na interface.
 
-Código:
+**Parâmetros:**
 
+- Nenhum.
+
+**Funcionamento:**
+
+- Obtém o slide atual usando currentSlideIndex.
+- Define o texto do título (carouselTitle) e da descrição (carouselDescription) com os dados do slide atual.
+
+**Código:**
+
+```properties
 function updateTitleAndDescription() {
   const currentSlide = slidesData.slides[currentSlideIndex];
   carouselTitle.textContent = currentSlide.nome;
   carouselDescription.textContent = currentSlide.informacoes;
 }
+```
 
-Função moveSlide
+---
 
-Descrição: Move o carrossel para o slide anterior ou próximo, dependendo da direção fornecida.
+**Função:**
 
-Parâmetros:
+- moveSlide
 
-    direction (number): Direção do movimento do slide. Valores possíveis: -1 (anterior) e 1 (próximo).
+**Descrição:**
 
-Funcionamento:
+- Move o carrossel para o slide anterior ou próximo, dependendo da direção fornecida.
 
-    Calcula o novo índice do slide atual com base na direção e no número total de slides.
-    Define o deslocamento (offset) para mover o carrossel.
-    Atualiza a transformação CSS do contêiner do carrossel para mover os slides.
-    Atualiza o título e a descrição chamando updateTitleAndDescription.
+**Parâmetros:**
 
-Código:
+- direction (number): Direção do movimento do slide. Valores possíveis: -1 (anterior) e 1 (próximo).
 
+**Funcionamento:**
+
+- Calcula o novo índice do slide atual com base na direção e no número total de slides.
+- Define o deslocamento (offset) para mover o carrossel.
+- Atualiza a transformação CSS do contêiner do carrossel para mover os slides.
+- Atualiza o título e a descrição chamando updateTitleAndDescription.
+
+**Código:**
+
+```properties
 function moveSlide(direction) {
   currentSlideIndex = (currentSlideIndex + direction + slidesData.slides.length) % slidesData.slides.length;
   const offset = -currentSlideIndex * 100;
   carouselContent.style.transform = `translateX(${offset}%)`;
   updateTitleAndDescription();
 }
+```
 
-11-Funções do Arquivo cardslider.js
+---
 
-    Função Anônima para DOMContentLoaded
+## 11 - Funções do Arquivo cardslider.js
 
-Função Anônima para DOMContentLoaded
+**Função:**
 
-Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Inicializa o carrossel de cartões, define o número de cartões visíveis por vez, clona os cartões para um efeito de rolagem infinita, e adiciona eventos de arrastar e soltar.
+- Anônima para DOMContentLoaded
 
-Parâmetros: Nenhum.
+**Descrição:**
 
-Funcionamento:
+- Esta função é executada quando o evento DOMContentLoaded é disparado. Inicializa o carrossel de cartões, define o número de cartões visíveis por vez, clona os cartões para um efeito de rolagem infinita, e adiciona eventos de arrastar e soltar.
 
-    Define os dados dos cartões.
-    Inicializa o carrossel com os cartões fornecidos.
-    Adiciona eventos de arrastar e soltar ao carrossel.
-    Adiciona eventos de clique aos botões de navegação.
-    Adiciona o comportamento de rolagem infinita e autoplay.
+**Parâmetros:**
 
-Código:
+- Nenhum.
 
+**Funcionamento:**
+
+- Define os dados dos cartões.
+- Inicializa o carrossel com os cartões fornecidos.
+- Adiciona eventos de arrastar e soltar ao carrossel.
+- Adiciona eventos de clique aos botões de navegação.
+- Adiciona o comportamento de rolagem infinita e autoplay.
+
+**Código:**
+
+```properties
 document.addEventListener("DOMContentLoaded", function () {
   const cardData = {
     "cardnocarrossel": [
@@ -2283,49 +2646,73 @@ document.addEventListener("DOMContentLoaded", function () {
   setCardPerView();
   window.addEventListener("resize", setCardPerView);
 });
+```
 
-12-Funções do Arquivo logicacardslider.js
+---
 
-    Função setCardPerView
-    Função cloneCards
-    Função dragStart
-    Função dragging
-    Função dragStop
-    Função infiniteScroll
-    Função autoPlay
+## 12 - Funções do Arquivo logicacardslider.js
 
-Função setCardPerView
+**Função:**
 
-Descrição: Define o número de cartões visíveis por vez no carrossel e clona os cartões para criar o efeito de rolagem infinita.
+- setCardPerView
+- cloneCards
+- dragStart
+- dragging
+- dragStop
+- infiniteScroll
+- autoPlay
 
-Parâmetros: Nenhum.
+---
 
-Funcionamento:
+**Função:**
 
-    Calcula o número de cartões visíveis com base na largura do carrossel e na largura de um cartão.
-    Chama a função cloneCards para clonar os cartões e criar o efeito de rolagem infinita.
+- setCardPerView
 
-Código:
+**Descrição:** 
 
+- Define o número de cartões visíveis por vez no carrossel e clona os cartões para criar o efeito de rolagem infinita.
+
+**Parâmetros:**
+
+- Nenhum.
+
+**Funcionamento:**
+
+- Calcula o número de cartões visíveis com base na largura do carrossel e na largura de um cartão.
+- Chama a função cloneCards para clonar os cartões e criar o efeito de rolagem infinita.
+
+**Código:**
+
+```properties
 const setCardPerView = () => {
   cardPerView = Math.round(carousel.offsetWidth / carousel.querySelector(".cardgeracao").offsetWidth);
   cloneCards();
 };
+```
 
-Função cloneCards
+---
 
-Descrição: Clona os cartões no carrossel para criar um efeito de rolagem infinita.
+**Função:**
 
-Parâmetros: Nenhum.
+- cloneCards
 
-Funcionamento:
+**Descrição:**
 
-    Clona todos os cartões atuais e os adiciona ao final do carrossel.
-    Clona os últimos cartões e os adiciona ao início do carrossel.
-    Define a posição inicial do carrossel para o início dos cartões clonados.
+- Clona os cartões no carrossel para criar um efeito de rolagem infinita.
 
-Código:
+**Parâmetros:**
 
+- Nenhum.
+
+**Funcionamento:**
+
+- Clona todos os cartões atuais e os adiciona ao final do carrossel.
+- Clona os últimos cartões e os adiciona ao início do carrossel.
+- Define a posição inicial do carrossel para o início dos cartões clonados.
+
+**Código:**
+
+```properties
 const cloneCards = () => {
   const carouselChildren = [...carousel.children];
   carousel.innerHTML = ''; 
@@ -2342,22 +2729,30 @@ const cloneCards = () => {
   carousel.scrollLeft = carousel.offsetWidth;
   carousel.classList.remove("no-transition");
 };
+```
 
-Função dragStart
+---
 
-Descrição: Inicia o arrasto do carrossel.
+**Função:**
 
-Parâmetros:
+- dragStart
 
-    e (Event): Evento de mouse ou toque.
+**Descrição:**
 
-Funcionamento:
+- Inicia o arrasto do carrossel.
 
-    Define o estado de arrasto como verdadeiro.
-    Armazena a posição inicial do arrasto e a posição de rolagem do carrossel.
+**Parâmetros:**
 
-Código:
+- e (Event): Evento de mouse ou toque.
 
+**Funcionamento:**
+
+- Define o estado de arrasto como verdadeiro.
+- Armazena a posição inicial do arrasto e a posição de rolagem do carrossel.
+
+**Código:**
+
+```properties
 const dragStart = (e) => {
   isDragging = true;
   carousel.classList.add("dragging");
@@ -2365,62 +2760,90 @@ const dragStart = (e) => {
   startX = e.pageX || e.touches[0].pageX;
   startScrollLeft = carousel.scrollLeft;
 };
+```
 
-Função dragging
+---
 
-Descrição: Executa o arrasto do carrossel.
+**Função:**
 
-Parâmetros:
+- dragging
 
-    e (Event): Evento de mouse ou toque.
+**Descrição:**
 
-Funcionamento:
+- Executa o arrasto do carrossel.
 
-    Calcula a nova posição de rolagem do carrossel com base no movimento do mouse ou toque.
-    Atualiza a posição de rolagem do carrossel.
+**Parâmetros:**
 
-Código:
+- e (Event): Evento de mouse ou toque.
 
+**Funcionamento:**
+
+- Calcula a nova posição de rolagem do carrossel com base no movimento do mouse ou toque.
+- Atualiza a posição de rolagem do carrossel.
+
+**Código:**
+
+```properties
 const dragging = (e) => {
   if (!isDragging) return; 
 
   const x = e.pageX || e.touches[0].pageX;
   carousel.scrollLeft = startScrollLeft - (x - startX);
 };
+```
 
-Função dragStop
+---
 
-Descrição: Finaliza o arrasto do carrossel.
+**Função:**
 
-Parâmetros: Nenhum.
+- dragStop
 
-Funcionamento:
+**Descrição:**
 
-    Define o estado de arrasto como falso.
-    Remove a classe de arrasto do carrossel.
+- Finaliza o arrasto do carrossel.
 
-Código:
+**Parâmetros:**
 
+- Nenhum.
+
+**Funcionamento:**
+
+- Define o estado de arrasto como falso.
+- Remove a classe de arrasto do carrossel.
+
+**Código:**
+
+```properties
 const dragStop = () => {
   isDragging = false;
   carousel.classList.remove("dragging");
 };
+```
 
-Função infiniteScroll
+---
 
-Descrição: Cria um efeito de rolagem infinita no carrossel.
+**Função:**
 
-Parâmetros: Nenhum.
+- infiniteScroll
 
-Funcionamento:
+**Descrição:**
 
-    Verifica se o carrossel está na posição inicial ou final.
-    Se estiver na posição inicial, move para o final dos cartões clonados.
-    Se estiver na posição final, move para o início dos cartões clonados.
-    Reinicia o autoplay se não estiver em modo de arrasto.
+- Cria um efeito de rolagem infinita no carrossel.
 
-Código:
+**Parâmetros:**
 
+- Nenhum.
+
+**Funcionamento:**
+
+- Verifica se o carrossel está na posição inicial ou final.
+- Se estiver na posição inicial, move para o final dos cartões clonados.
+- Se estiver na posição final, move para o início dos cartões clonados.
+- Reinicia o autoplay se não estiver em modo de arrasto.
+
+**Código:**
+
+```properties
 const infiniteScroll = () => {
   if (carousel.scrollLeft === 0) {
     carousel.classList.add("no-transition");
@@ -2434,31 +2857,47 @@ const infiniteScroll = () => {
   clearTimeout(timeoutId);
   if (!wrapper.matches(":hover")) autoPlay();
 };
+```
 
-Função autoPlay
+---
 
-Descrição: Define o autoplay do carrossel para rolar automaticamente a cada 2,5 segundos.
+**Função:**
 
-Parâmetros: Nenhum.
+- autoPlay
 
-Funcionamento:
+**Descrição:**
 
-    Verifica se o autoplay está habilitado e a largura da janela.
-    Define um timeout para rolar o carrossel após 2,5 segundos.
+- Define o autoplay do carrossel para rolar automaticamente a cada 2,5 segundos.
 
-Código:
+**Parâmetros:**
 
+- Nenhum.
+
+**Funcionamento:**
+
+- Verifica se o autoplay está habilitado e a largura da janela.
+- Define um timeout para rolar o carrossel após 2,5 segundos.
+
+**Código:**
+
+```properties
 const autoPlay = () => {
   if (window.innerWidth < 800 || !isAutoPlay) return;
   timeoutId = setTimeout(() => carousel.scrollLeft += carousel.querySelector(".cardgeracao").offsetWidth, 2500);
 };
+```
 
-Eventos de Arrasto e Rolagem
+---
 
-Descrição: Adiciona eventos de arrasto, toque, e rolagem infinita ao carrossel.
+## Eventos de Arrasto e Rolagem
 
-Código:
+**Descrição:**
 
+- Adiciona eventos de arrasto, toque, e rolagem infinita ao carrossel.
+
+**Código:**
+
+```properties
 javascript
 
 carousel.addEventListener("mousedown", dragStart);
@@ -2475,36 +2914,50 @@ wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
 window.addEventListener('resize', setCardPerView);
+```
 
-13-Funções do Arquivo logicaslides.js
+---
 
-    Função Anônima para DOMContentLoaded
-    Função moveSlides
-    Função nextSlide
-    Função prevSlide
-    Função startAutoplay
-    Função pauseAutoplay
-    Eventos de Navegação
-    Eventos de Arrasto
-    Eventos de Autoplay
+## 13 - Funções do Arquivo logicaslides.js
 
-Função Anônima para DOMContentLoaded
+**Função:**
 
-Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Inicializa o carrossel de slides, define os eventos de navegação, arrasto e autoplay.
+- Anônima para DOMContentLoaded
+- moveSlides
+- nextSlide
+- prevSlide
+- startAutoplay
+- pauseAutoplay
+- Eventos de Navegação
+- Eventos de Arrasto
+- Eventos de Autoplay
 
-Parâmetros: Nenhum.
+---
 
-Funcionamento:
+**Função:**
 
-    Seleciona os elementos do carrossel e define variáveis para controle do carrossel.
-    Define as funções para mover os slides, iniciar e pausar o autoplay.
-    Adiciona eventos de clique nos botões de navegação.
-    Adiciona eventos de teclado para navegação.
-    Adiciona eventos de arrasto e toque para navegação.
-    Inicia o autoplay ao carregar a página.
+- Anônima para DOMContentLoaded
 
-Código:
+**Descrição:**
 
+- Esta função é executada quando o evento DOMContentLoaded é disparado. Inicializa o carrossel de slides, define os eventos de navegação, arrasto e autoplay.
+
+**Parâmetros:**
+
+- Nenhum.
+
+**Funcionamento:**
+
+- Seleciona os elementos do carrossel e define variáveis para controle do carrossel.
+- Define as funções para mover os slides, iniciar e pausar o autoplay.
+- Adiciona eventos de clique nos botões de navegação.
+- Adiciona eventos de teclado para navegação.
+- Adiciona eventos de arrasto e toque para navegação.
+- Inicia o autoplay ao carregar a página.
+
+**Código:**
+
+```properties
 document.addEventListener('DOMContentLoaded', function () {
   const carousel = document.querySelector('.carousel');
   const carouselContent = document.querySelector('.carousel-content');
@@ -2652,38 +3105,58 @@ document.addEventListener('DOMContentLoaded', function () {
     startAutoplay();
   });
 });
+```
 
-Função moveSlides
+---
 
-Descrição: Move os slides no carrossel com uma transição suave.
+**Função:**
 
-Parâmetros: Nenhum.
+- moveSlides
 
-Funcionamento:
+**Descrição:**
 
-    Define a transição CSS do conteúdo do carrossel.
-    Transforma a posição do conteúdo do carrossel com base no índice do slide atual.
+- Move os slides no carrossel com uma transição suave.
 
-Código:
+**Parâmetros:**
 
+- Nenhum.
+
+**Funcionamento:**
+
+- Define a transição CSS do conteúdo do carrossel.
+- Transforma a posição do conteúdo do carrossel com base no índice do slide atual.
+
+**Código:**
+
+```properties
 const moveSlides = () => {
   carouselContent.style.transition = 'transform 0.5s ease';
   carouselContent.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 };
+```
 
-Função nextSlide
+---
 
-Descrição: Move para o próximo slide no carrossel.
+**Função:**
 
-Parâmetros: Nenhum.
+- nextSlide
 
-Funcionamento:
+**Descrição:**
 
-    Incrementa o índice do slide atual ou redefine para 0 se estiver no último slide.
-    Chama moveSlides para mover os slides.
+- Move para o próximo slide no carrossel.
 
-Código:
+**Parâmetros:**
 
+- Nenhum.
+
+**Funcionamento:**
+
+- Incrementa o índice do slide atual ou redefine para 0 se estiver no último slide.
+- Chama moveSlides para mover os slides.
+
+**Código:**
+
+```properties
 const nextSlide = () => {
   if (currentIndex === totalSlides - 1) {
     currentIndex = 0; 
@@ -2692,20 +3165,30 @@ const nextSlide = () => {
   }
   moveSlides();
 };
+```
 
-Função prevSlide
+---
 
-Descrição: Move para o slide anterior no carrossel.
+**Função:**
 
-Parâmetros: Nenhum.
+- prevSlide
 
-Funcionamento:
+**Descrição:**
 
-    Decrementa o índice do slide atual ou redefine para o último slide se estiver no primeiro.
-    Chama moveSlides para mover os slides.
+- Move para o slide anterior no carrossel.
 
-Código:
+**Parâmetros:**
 
+- Nenhum.
+
+**Funcionamento:**
+
+- Decrementa o índice do slide atual ou redefine para o último slide se estiver no primeiro.
+- Chama moveSlides para mover os slides.
+
+**Código:**
+
+```properties
 const prevSlide = () => {
   if (currentIndex === 0) {
     currentIndex = totalSlides - 1;
@@ -2714,50 +3197,76 @@ const prevSlide = () => {
   }
   moveSlides();
 };
+```
 
-Função startAutoplay
+---
 
-Descrição: Inicia o autoplay do carrossel para mover automaticamente os slides a cada 2,5 segundos.
+**Função:**
 
-Parâmetros: Nenhum.
+- startAutoplay
 
-Funcionamento:
+**Descrição:**
 
-    Verifica se o autoplay não está ativo.
-    Define um intervalo para chamar nextSlide a cada 2,5 segundos.
+- Inicia o autoplay do carrossel para mover automaticamente os slides a cada 2,5 segundos.
 
-Código:
+**Parâmetros:**
 
+- Nenhum.
+
+**Funcionamento:**
+
+- Verifica se o autoplay não está ativo.
+- Define um intervalo para chamar nextSlide a cada 2,5 segundos.
+
+**Código:**
+
+```properties
 const startAutoplay = () => {
   if (!autoplayInterval) {
     autoplayInterval = setInterval(nextSlide, 2500);
   }
 };
+```
 
-Função pauseAutoplay
+---
 
-Descrição: Pausa o autoplay do carrossel.
+**Função:**
 
-Parâmetros: Nenhum.
+- pauseAutoplay
 
-Funcionamento:
+**Descrição:**
 
-    Limpa o intervalo do autoplay.
-    Redefine a variável do intervalo do autoplay para null.
+- Pausa o autoplay do carrossel.
 
-Código:
+**Parâmetros:**
 
+- Nenhum.
+
+**Funcionamento:**
+
+- Limpa o intervalo do autoplay.
+- Redefine a variável do intervalo do autoplay para null.
+
+**Código:**
+
+```properties
 const pauseAutoplay = () => {
   clearInterval(autoplayInterval);
   autoplayInterval = null;
 };
+```
 
-Eventos de Navegação
+---
 
-Descrição: Adiciona eventos de clique nos botões de navegação e de teclado para mover os slides.
+## Eventos de Navegação
 
-Código:
+**Descrição:**
 
+- Adiciona eventos de clique nos botões de navegação e de teclado para mover os slides.
+
+**Código:**
+
+```properties
 nextButton.addEventListener('click', () => {
   nextSlide();
   pauseAutoplay();
@@ -2781,13 +3290,19 @@ document.addEventListener('keydown', (e) => {
     startAutoplay(); 
   }
 });
+```
 
-Eventos de Arrasto
+---
 
-Descrição: Adiciona eventos de arrasto e toque para navegação no carrossel.
+## Eventos de Arrasto
 
-Código:
+**Descrição:**
 
+- Adiciona eventos de arrasto e toque para navegação no carrossel.
+
+**Código:**
+
+```properties
 carousel.addEventListener('mousedown', (e) => {
   isDragging = true;
   startDragX = e.clientX;
@@ -2851,13 +3366,19 @@ carousel.addEventListener('touchend', () => {
   isDragging = false;
   startAutoplay(); 
 });
+```
 
-Eventos de Autoplay
+---
 
-Descrição: Adiciona eventos para iniciar e pausar o autoplay ao passar o mouse sobre o carrossel.
+## Eventos de Autoplay
 
-Código:
+**Descrição:**
 
+- Adiciona eventos para iniciar e pausar o autoplay ao passar o mouse sobre o carrossel.
+
+**Código:**
+
+```properties
 carousel.addEventListener('mouseenter', () => {
   pauseAutoplay();
 });
@@ -2865,26 +3386,34 @@ carousel.addEventListener('mouseenter', () => {
 carousel.addEventListener('mouseleave', () => {
   startAutoplay();
 });
+```
 
-14-Funções do Arquivo mainlogin.js
+---
 
-    Função Anônima para DOMContentLoaded
+## 14 - Funções do Arquivo mainlogin.js
 
-Função Anônima para DOMContentLoaded
+**Função:**
 
-Descrição: Esta função é executada quando o evento DOMContentLoaded é disparado. Verifica se o usuário está logado e atualiza a interface de acordo.
+- Anônima para DOMContentLoaded
 
-Parâmetros: Nenhum.
+**Descrição:**
 
-Funcionamento:
+- Esta função é executada quando o evento DOMContentLoaded é disparado. Verifica se o usuário está logado e atualiza a interface de acordo.
 
-    Obtém os dados do usuário logado do localStorage.
-    Atualiza a interface para exibir uma saudação personalizada e um botão de logout se o usuário estiver logado.
-    Exibe opções de login e cadastro se o usuário não estiver logado.
-    Adiciona listeners aos elementos de saudação e logout para redirecionar ou deslogar o usuário.
+**Parâmetros:**
 
-Código:
+- Nenhum.
 
+**Funcionamento:**
+
+- Obtém os dados do usuário logado do localStorage.
+- Atualiza a interface para exibir uma saudação personalizada e um botão de logout se o usuário estiver logado.
+- Exibe opções de login e cadastro se o usuário não estiver logado.
+- Adiciona listeners aos elementos de saudação e logout para redirecionar ou deslogar o usuário.
+
+**Código:**
+
+```properties
 document.addEventListener("DOMContentLoaded", () => {
   const user = JSON.parse(localStorage.getItem("usuarioLogado"));
   const userGreeting = document.getElementById("userGreeting");
@@ -2918,6 +3447,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
   }
 });
+```
 
 ---
 
