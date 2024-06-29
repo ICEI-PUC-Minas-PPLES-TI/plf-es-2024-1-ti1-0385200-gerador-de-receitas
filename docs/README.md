@@ -386,13 +386,15 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 (vídeo de apresentação do problema que a equipe está tratando e a proposta de solução; colocar aqui depois)
 
+---
+
 ## Funcionalidades
 
-(funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução; apaga essa linha depois)
-
 - **Funcionalidade 1 -** Cadastro
-- **Estrutura de Dados:** JSON - usuarios (exemplo)
+- **Estrutura de Dados:** JSON - usuarios.
+- Exemplos abaixo:
 
+```properties
 "usuarios": [
     {
       "nome": "Simone Nogueira",
@@ -403,18 +405,22 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
       "id": 1
     }
 }
+```
 
 - **Instruções de acesso e uso:** 
 
-- Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
+- Lembre-se! Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
 - Na tela de cadastro, você pode registrar um novo usuário para ter acesso às funcionalidades de perfil digitando seu nome, e-mail e senha. Com o cadastro bem-sucedido, você será redirecionado para a página principal.
 - Se tentar se cadastrar sem preencher todos os campos, você receberá uma mensagem de erro indicando que deve preencher todos os campos.
 - Se tentar se cadastrar com um e-mail já existente no banco de dados JSON, você também receberá uma mensagem de erro informando que o e-mail já foi cadastrado.
 
 ![telacadastro](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/e2a6648b-91bd-43d5-8e08-d53e5aa39f51)
 
+---
+
 - **Funcionalidade 2 -** Login
-- **Estrutura de Dados:** JSON - usuarios (exemplo)
+- **Estrutura de Dados:** JSON - usuarios.
+- Exemplos abaixo:
 
 ```properties
 "usuarios": [
@@ -431,18 +437,22 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 - **Instruções de acesso e uso:** 
 
-- Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
-- Na tela de login o usuário pode digitar um email e senha previamente cadastrados na tela de cadastro para ter acesso às demais funcionalidades de perfil. Ao obter um login bem sucedido ele será direcionado para a main page.
-- Se o login não for bem sucedido por motivos de senha ou email errados, o usuário recebe uma mensagem o avisando sobre o ocorrido.
-- Se acontecer algum problema com acesso ao json server, o usuário também receberá uma mensagem de erro respectiva.
-- O usuário também recebe mensagem de erro ao tentar logar deixando algum campo em branco no form de login.
-- Aos professores: Também podem optar por usar um usuário pré-cadastrado para testes, como o mencionado acima (Login: Sauron, Senha:123) para realizar mais testes.
+- Lembre-se! Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
+- Na tela de login, o usuário pode digitar um e-mail e senha previamente cadastrados na tela de cadastro para ter acesso às demais funcionalidades de perfil. Ao obter um login bem-sucedido, ele será direcionado para a página principal.
+- Se o login não for bem-sucedido devido a senha ou e-mail incorretos, o usuário receberá uma mensagem informando sobre o ocorrido.
+- Se houver algum problema com o acesso ao JSON server, o usuário também receberá uma mensagem de erro respectiva.
+- O usuário também receberá uma mensagem de erro ao tentar logar deixando algum campo em branco no formulário de login.
+- Aos professores: Também podem optar por usar um usuário pré-cadastrado para testes, como o mencionado acima (Login: Sauron, Senha: 123) para realizar mais testes.
 
 ![telalogin](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/63849534-76eb-4ae5-af37-4fbce0d30232)
 
-- **Funcionalidade 3 -** Editar Perfil do Usuário
-- **Estrutura de Dados:** JSON - usuarios (exemplo)
+---
 
+- **Funcionalidade 3 -** Editar Perfil do Usuário
+- **Estrutura de Dados:** JSON - usuarios.
+- Exemplos abaixo:
+
+```properties
 "usuarios": [
     {
       "nome": "Leon S. Kennedy",
@@ -453,22 +463,27 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
       "id": 4
     }
 }
+```
 
 - **Instruções de acesso e uso:** 
 
-- Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
-- Aqui o usuário pode editar seu perfil, mundando seu nome, seu email ou sua senha, contanto que digite sua senha anterior. Caso tenha sucesso, suas informações serão modificadas com sucesso e atualizadas no banco de dados json.
-- Caso o usuário digite sua senha anterior errada, ele terá sua requisição de mudança negada e receberá uma mensagem acusando senha errada e as informações permanecem inalteradas no json.
-- Caso o usuário deixe de preencher algum campo do form, ele receberá um aviso para que preencha todos os campos.
-- Caso alguma falha no acesso ao json aconteça, uma mensagem erro específica de erro ao carregar informações será exibida.
-- Ao dar logoff o usuário é redirecionado para a main.
-- Aos professores: Também podem optar por usar um usuário pré-cadastrado para testes, como o mencionado acima (Login: leon@mail, Senha:1212) para realizar mais testes. Caso algum erro inesperado aconteça, basta dar logoff e logar novamente.
+- Lembre-se! Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
+- Aqui, o usuário pode editar seu perfil, mudando seu nome, e-mail ou senha, contanto que digite sua senha anterior. Caso tenha sucesso, suas informações serão modificadas e atualizadas no banco de dados JSON.
+- Caso o usuário digite sua senha anterior incorretamente, sua requisição de mudança será negada e ele receberá uma mensagem informando que a senha está errada, e as informações permanecerão inalteradas no JSON.
+- Caso o usuário deixe de preencher algum campo do formulário, ele receberá um aviso para que preencha todos os campos.
+- Caso ocorra alguma falha no acesso ao JSON, uma mensagem específica de erro ao carregar informações será exibida.
+- Ao fazer logoff, o usuário será redirecionado para a página principal.
+- Aos professores: Também podem optar por usar um usuário pré-cadastrado para testes, como o mencionado acima (Login: leon@mail, Senha: 1212) para realizar mais testes. Caso algum erro inesperado ocorra, basta fazer logoff e logar novamente.
 
 ![telaeditarperfil](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/c80050ab-b1af-4202-98cd-c1a8fd15f2ea)
 
-- **Funcionalidade 4 -** Vizualização do histórico da Receita
-- **Estrutura de Dados:** JSON - receitas (exemplo)
+---
 
+- **Funcionalidade 4 -** Vizualização do histórico da Receita
+- **Estrutura de Dados:** JSON - receitas.
+- Exemplos abaixo:
+
+```properties
 "receitas": [
 {
       "nome": "Carne bovina com feijão e cenoura",
@@ -479,22 +494,27 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
       "id": 17
     }
 }
+```
 
 - **Instruções de acesso e uso:** 
 
-- Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
+- Lembre-se! Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
 - O usuário pode acessar receitas previamente geradas na aba de histórico. Ao clicar em um card de receita, será levado para a tela que exibe a receita completa.
-- O usuário pode clicar no botão de coração para mandar uma receita para sua aba de favoritos.
-- Se o usuário não tiver gerado nenhuma receita ainda, receberá uma mensagem o avisando sobre.
-- Uma mensagem de erro é mostrada se acontecer algo errado ao solicitar as informações do json.
-- Ao dar logoff o usuário é redirecionado para a main.
-- Aos professores: Também podem optar por usar um usuário pré-cadastrado para testes, como o mencionado acima (Login: leon@mail, Senha:1212) para realizar mais testes. Caso algum erro inesperado aconteça, basta dar logoff e logar novamente.
+- O usuário pode clicar no botão de coração para enviar uma receita para sua aba de favoritos.
+- Se o usuário ainda não tiver gerado nenhuma receita, receberá uma mensagem informando sobre isso.
+- Uma mensagem de erro será exibida se ocorrer algum problema ao solicitar as informações do JSON.
+- Ao fazer logoff, o usuário será redirecionado para a página principal.
+- Aos professores: Também podem optar por usar um usuário pré-cadastrado para testes, como o mencionado acima (Login: leon@mail, Senha: 1212) para realizar mais testes. Caso algum erro inesperado ocorra, basta fazer logoff e logar novamente.
 
 ![historico](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/e14ea461-090f-4c8a-bcb9-82d5e199dfbd)
 
-- **Funcionalidade 5 -** Vizualização de favoritos da Receita
-- **Estrutura de Dados:** JSON - receitas (exemplo)
+---
 
+- **Funcionalidade 5 -** Vizualização de favoritos da Receita
+- **Estrutura de Dados:** JSON - receitas.
+- Exemplos abaixo:
+
+```properties
 "receitas": [
 {
       "nome": "Carne bovina com feijão e cenoura",
@@ -505,23 +525,28 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
       "id": 17
     }
 }
+```
 
 - **Instruções de acesso e uso:** 
 
-- Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
-- Nessa tela é possivel visualizar suas receitas que foram previamente favoritadas no histórico de um usuário logado.
-- Ao clicar em um card de receita favorita, o usuário será redirecionado para a página que exibe as infomações detalhadas da receita.
+- Lembre-se! Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
+- Nesta tela, é possível visualizar suas receitas que foram previamente favoritedas no histórico de um usuário logado.
+- Ao clicar em um card de receita favorita, o usuário será redirecionado para a página que exibe as informações detalhadas da receita.
 - O usuário pode remover um card de receita dos seus favoritos ao desmarcar o botão de coração.
-- Se o usuário não tiver nenhuma receita favorita, uma mensagem o avisando será exibida nessa tela.
-- Se acontecer algum erro ao obter informações do json, uma mensagem de erro será exibida.
-- Ao dar logoff o usuário é redirecionado para a main.
-- Aos professores: Também podem optar por usar um usuário pré-cadastrado para testes, como o mencionado acima (Login: leon@mail, Senha:1212) para realizar mais testes. Caso algum erro inesperado aconteça, basta dar logoff e logar novamente.
+- Se o usuário não tiver nenhuma receita favorita, uma mensagem informando será exibida nesta tela.
+- Se ocorrer algum erro ao obter informações do JSON, uma mensagem de erro será exibida.
+- Ao fazer logoff, o usuário será redirecionado para a página principal.
+- Aos professores: Também podem optar por usar um usuário pré-cadastrado para testes, como o mencionado acima (Login: leon@mail, Senha: 1212) para realizar mais testes. Caso algum erro inesperado ocorra, basta fazer logoff e logar novamente.
 
 ![favorito](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/fa2ab15b-2767-4b2b-8de8-7ffcb9286a43)
 
-- **Funcionalidade 6 -** Geração de Receita
-- **Estrutura de Dados:** JSON - receitas (exemplo)
+---
 
+- **Funcionalidade 6 -** Geração de Receita
+- **Estrutura de Dados:** JSON - receitas.
+- Exemplos abaixo:
+
+```properties
 "receitas:" [
 {
       "nome": "Carne bovina com arroz e cebola",
@@ -532,20 +557,25 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
       "id": 7
     }
 }
+```
 
 - **Instruções de acesso e uso:** 
 
-- Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
-- Nessa tela é possível consultar o catálogo de receitas cadastrado no json, selecionando 1 ingrediente de cada tipo entre proteínas, carboidratos e vegetais.
-- O usuário tem acesso a funcionalidade mesmo não estando logado ou possuindo cadastro.
+- Lembre-se! Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
+- Nesta tela, é possível consultar o catálogo de receitas cadastradas no JSON, selecionando 1 ingrediente de cada tipo entre proteínas, carboidratos e vegetais.
+- O usuário tem acesso à funcionalidade mesmo sem estar logado ou possuir cadastro.
 - Ao consultar uma receita com sucesso, o usuário recebe a confirmação e pode clicar no botão para exibir a tela que mostra a receita detalhada.
-- Se o sistema não conseguir encontrar uma receita especificada ao clicar o botão, o usuário recebe uma mensagem o avisando.
+- Se o sistema não conseguir encontrar uma receita especificada ao clicar no botão, o usuário receberá uma mensagem informando.
 
 ![gerar receita](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/c2f0acec-513e-41b2-a7f1-f58eb730ea7a)
 
-- **Funcionalidade 7 -** Vizualização da Receita
-- **Estrutura de Dados:** JSON - receitas (exemplo)
+---
 
+- **Funcionalidade 7 -** Vizualização da Receita
+- **Estrutura de Dados:** JSON - receitas.
+- Exemplos abaixo:
+
+```properties
 "receitas": [
 {
       "nome": "Carne bovina com feijão e cenoura",
@@ -556,20 +586,26 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
       "id": 17
     }
 }
+```
 
 - **Instruções de acesso e uso:** 
 
-- Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
-- Vindo da página de geração de receitas, de histórico ou favoritos, essa página exibe as informações detalhadas de modo de preparo de uma receita.
-- Se acontecer algum erro ao obter informações do json de receitas, uma mensagem de erro é exibida.
+- Lembre-se! Baixe a pasta do projeto, abra no Visual Studio Code e execute o comando "npm run start" no terminal para iniciar o JSON Server. Abra com o plugin Live Server para ter acesso ao site.
+- Vindo da página de geração de receitas, de histórico ou de favoritos, esta página exibe as informações detalhadas sobre o modo de preparo de uma receita.
+- Se ocorrer algum erro ao obter informações do JSON de receitas, uma mensagem de erro será exibida.
   
 ![visualizar receita](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/74a998e1-8ce9-4d65-943c-b4cdc0c657fe)
+
+---
 
 ## Estruturas de Dados
 
 **Estrutura de Dados - usuarios** 
-- Usado para Cadastro, Login e Editar Perfil do Usuário
 
+- Usado para Cadastro, Login e Editar Perfil do Usuário.
+- Exemplos abaixo:
+
+```properties
 - "usuarios": [
     {
       "nome": "Sauron",
@@ -580,10 +616,14 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
       "id": 5
     }
 }
+```
 
-**Estrutura de Dados - receitas** 
-- Usado para Visualização de Receitas e Geração de Receitas
+**Estrutura de Dados - receitas**
 
+- Usado para Visualização de Receitas e Geração de Receitas.
+- Exemplos abaixo:
+
+```properties
 - "receitas:" [
 {
       "nome": "Carne bovina com arroz e cebola",
@@ -594,8 +634,12 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
       "id": 7
     }
 }
+```
+
+---
 
 # Módulos e APIs
+
 1-Funções do Arquivo app.js
 
     Função displayMessage
