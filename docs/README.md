@@ -140,7 +140,7 @@ Nosso público-alvo é amplo e diversificado, pois a necessidade de cozinhar de 
 
 **3. Diagrama de Personas**
 
-Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona tem um perfil detalhado que inclui idade, hobbies, trabalho, personalidade, sonhos e objetivos com o aplicativo. (Detalhamento no próximo tópico)
+- Já criamos algumas personas, incluindo Ana, Tony, Laura e Roberto. Cada persona tem um perfil detalhado que inclui idade, hobbies, trabalho, personalidade, sonhos e objetivos com o aplicativo. (Detalhamento no próximo tópico)
 
 ---
 
