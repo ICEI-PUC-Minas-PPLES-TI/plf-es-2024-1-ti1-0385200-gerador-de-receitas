@@ -570,7 +570,7 @@ Diversas branches para trabalhos específicos foram criadas no projeto, desde br
 **Funcionalidade 5:** 
 
 - Vizualização de favoritos da Receita.
-- 
+
 **Estrutura de Dados:**
 
 - JSON - receitas.
