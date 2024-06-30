@@ -357,6 +357,10 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 ![To-Do](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/119761586/0b035ce0-5421-48e2-910a-d961dc778969)
 
+---
+
+## Quadro de Tarefas
+
 **Atribuição de Tarefas na Sprint 1:**
 
 - **Thiago Branco de Oliveira:** Encarregado da criação do userflow, protótipo, wireframes, repositório e parte do design thinking.
@@ -395,7 +399,7 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 ## Controle de Versão
 
-Diversas branches para trabalhos específicos foram criadas no projeto, de branches voltadas para aprimoramento de uma funcionalidade específica, como a "News-V2", até branches de trabalho "solo" de membro do grupo, como a branch "braga" e a branch "Miguel-Augusto-de-Paula-Patch1". Para as mudanças de grande impacto, solicitações de pull eram sempre feitas anteriormente e com atenção e deliberação eram "commitadas" mudanças na main branch para prosseguir a evolução do produto. Alguns membros opataram por realizar commits usando a funcionalidade do GitHub de fazer o upload de arquivos diretamente pela página Web.
+Diversas branches para trabalhos específicos foram criadas no projeto, desde branches voltadas para o aprimoramento de uma funcionalidade específica, como a "News-V2", até branches de trabalho "solo" de membros do grupo, como a branch "braga" e a branch "Miguel-Augusto-de-Paula-Patch1". Para as mudanças de grande impacto, solicitações de pull eram sempre feitas previamente e, com atenção e deliberação, as mudanças eram "commitadas" na main branch para prosseguir com a evolução do produto. Alguns membros optaram por realizar commits usando a funcionalidade do GitHub de fazer o upload de arquivos diretamente pela página web.
 
 ---
 
