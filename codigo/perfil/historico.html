@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico</title>
+    <link rel="stylesheet" href="./historico.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="flex container" id="nav">
+                <div>
+                    <a href="../main/index.html">
+                        <img src="../login/logo.png" alt="logo do KitchenCompanion">
+                    </a>
+                </div>
+                <button id="btn-mobile">Menu
+                    <span id="hamburguer"></span>
+                </button>
+                <div class="header-botoes" id="menu">
+                    <div class="barra-de-pesquisa">
+                        <span><img src="../login/busca 1.png" alt=""></span>
+                        <input type="text" placeholder="Pesquise uma receita...">
+                    </div>
+                    <div class="botoes-nao-geracao" id="userGreeting">
+                        <!-- Conteúdo dinâmico baseado no estado de login -->
+                    </div>
+                    <div id="botao-geracao">
+                        <a href="../gerador-de-receitas/geradordereceitas.html">
+                            <button class="botao-header">Gerar Receita</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="grid">
+            <aside>
+                <ul>
+                    <li><a href="perfil.html">Configurações</a></li>
+                    <li class="selecionado"><a href="historico.html">Histórico</a></li>
+                    <li><a href="favoritos.html">Favoritas</a></li>
+                    <li><a href="#" id="logoutButton">Logout</a></li>
+                </ul>
+            </aside>
+            <div class="conteudo-principal">
+                <h1>Meu Perfil</h1>
+                <div class="caixa-main">
+                    <div class="conteudo-info">
+                        <h2>Histórico</h2>
+                        <div id="msg"></div> <!-- Adicionado para mensagens -->
+                        <div class="cards-container" id="cardsContainer">
+                            <!-- Os cards serão adicionados dinamicamente aqui -->
+                        </div>
+                    </div>
+                </div>
+                <div class="container-detalhe">
+                    <img src="../login/detalhe ~.png" alt="detalhe da página">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-info container">
+                <div class="footer-info1">
+                    <div class="footer-logo">
+                        <img src="../login/logobranco.png" alt="logo alternativo">
+                    </div>
+                    <a href="">Meu Perfil</a>
+                    <a href="">Gerar Receita</a>
+                </div>
+                <div class="footer-info2">
+                    <a href="">Quem Somos</a>
+                    <a href="">Termos de Uso</a>
+                    <a href="">Privacidade</a>
+                    <a href="">Contato</a>
+                </div>
+            </div>
+            <div class="footer-socials container">
+                <a href="" class="social-icone"><img src="../login/facebook-c1.png" alt="link para facebook"></a>
+                <a href="" class="social-icone"><img src="../login/instagram-c1.png" alt="link para instagram"></a>
+                <a href="" class="social-icone"><img src="../login/twitter-c1.png" alt="link para x"></a>
+            </div>
+            <p>Kitchen Companion ©. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="../login/login.js"></script>
+    <script src="./historico.js"></script>
+</body>
+
+</html>

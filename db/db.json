@@ -1,0 +1,1254 @@
+{
+  "usuarios": [
+    {
+      "nome": "Simone Nogueira",
+      "email": "Sincere@april.biz",
+      "senha": "123654",
+      "historico": [67, 89, 90],
+      "favoritos": [89, 90],
+      "id": 1
+    },
+    {
+      "nome": "Thiago Branco",
+      "email": "thiagobranco@puc.com",
+      "senha": "1234",
+      "historico": [76, 50, 34],
+      "favoritos": [50],
+      "id": 2
+    },
+    {
+      "nome": "Pepe",
+      "email": "pepe@mail",
+      "senha": "pepe",
+      "historico": [89, 10, 5],
+      "favoritos": [5, 89],
+      "id": 3
+    },
+    {
+      "nome": "Leon S. Kennedy",
+      "email": "leon@mail",
+      "senha": "1212",
+      "historico": [2, 4, 6],
+      "favoritos": [4, 6],
+      "id": 4
+    },
+    {
+      "nome": "Sauron",
+      "email": "mail.com",
+      "senha": "123",
+      "historico": [12],
+      "favoritos": [],
+      "id": 5
+    },
+    {
+      "nome": "Roderika",
+      "email": "email.com",
+      "senha": "12345",
+      "historico": [78, 45, 56],
+      "favoritos": [78, 45, 56],
+      "id": 6
+    },
+    {
+      "nome": "Thiago Branco",
+      "email": "thiagob@mail",
+      "senha": "1234567",
+      "historico": [3],
+      "favoritos": [3],
+      "id": 7
+    }
+  ],
+  "receitas": [
+    {
+      "nome": "Tofu com pão e cenoura",
+      "proteina": "tofu",
+      "carboidrato": "pao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho, gengibre e um pouco de mel. Aqueça uma frigideira com um fio de azeite e grelhe o tofu até que esteja dourado e crocante. Sirva com pão e cenoura preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 1
+    },
+    {
+      "nome": "Peixe com arroz e cebola",
+      "proteina": "peixe",
+      "carboidrato": "arroz",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com arroz e cebola preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 2
+    },
+    {
+      "nome": "Frango com arroz e alface",
+      "proteina": "frango",
+      "carboidrato": "arroz",
+      "vegetal": "alface",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com arroz e alface preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 3
+    },
+    {
+      "nome": "Peixe com feijão e batata",
+      "proteina": "peixe",
+      "carboidrato": "feijao",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com feijão e batata preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 4
+    },
+    {
+      "nome": "Ovo com pão e cenoura",
+      "proteina": "ovo",
+      "carboidrato": "pao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com pão e cenoura preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 5
+    },
+    {
+      "nome": "Ovo com feijão e alface",
+      "proteina": "ovo",
+      "carboidrato": "feijao",
+      "vegetal": "alface",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com feijão e alface preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 6
+    },
+    {
+      "nome": "Carne bovina com arroz e cebola",
+      "proteina": "bovina",
+      "carboidrato": "arroz",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com arroz e cebola preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 7
+    },
+    {
+      "nome": "Frango com pão e batata",
+      "proteina": "frango",
+      "carboidrato": "pao",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com pão e batata preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 8
+    },
+    {
+      "nome": "Tofu com arroz e batata",
+      "proteina": "tofu",
+      "carboidrato": "arroz",
+      "vegetal": "batata",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho, gengibre e um pouco de mel. Aqueça uma frigideira com um fio de azeite e grelhe o tofu até que esteja dourado e crocante. Sirva com arroz e batata preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 9
+    },
+    {
+      "nome": "Ovo com feijão e cebola",
+      "proteina": "ovo",
+      "carboidrato": "feijao",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com feijão e cebola preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 10
+    },
+    {
+      "nome": "Frango com feijão e brocolis",
+      "proteina": "frango",
+      "carboidrato": "feijao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com feijão e brócolis preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 11
+    },
+    {
+      "nome": "Peixe com arroz e batata",
+      "proteina": "peixe",
+      "carboidrato": "arroz",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com arroz e batata preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 12
+    },
+    {
+      "nome": "Ovo com arroz e batata",
+      "proteina": "ovo",
+      "carboidrato": "arroz",
+      "vegetal": "batata",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com arroz e batata preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 13
+    },
+    {
+      "nome": "Frango com pão e cebola",
+      "proteina": "frango",
+      "carboidrato": "pao",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com pão e cebola preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 14
+    },
+    {
+      "nome": "Carne bovina com feijão e batata",
+      "proteina": "bovina",
+      "carboidrato": "feijao",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com feijão e batata preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 15
+    },
+    {
+      "nome": "Tofu com arroz e brocolis",
+      "proteina": "tofu",
+      "carboidrato": "arroz",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho, gengibre e um pouco de mel. Aqueça uma frigideira com um fio de azeite e grelhe o tofu até que esteja dourado e crocante. Sirva com arroz e brócolis preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 16
+    },
+    {
+      "nome": "Carne bovina com feijão e cenoura",
+      "proteina": "bovina",
+      "carboidrato": "feijao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com feijão e cenoura preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 17
+    },
+    {
+      "nome": "Tofu com macarrão e cenoura",
+      "proteina": "tofu",
+      "carboidrato": "macarrao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho, gengibre e um pouco de mel. Aqueça uma frigideira com um fio de azeite e grelhe o tofu até que esteja dourado e crocante. Sirva com macarrão e cenoura preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 18
+    },
+    {
+      "nome": "Carne bovina com feijão e alface",
+      "proteina": "bovina",
+      "carboidrato": "feijao",
+      "vegetal": "alface",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com feijão e alface preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 19
+    },
+    {
+      "nome": "Frango com arroz e cebola",
+      "proteina": "frango",
+      "carboidrato": "arroz",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com arroz e cebola preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 20
+    },
+    {
+      "nome": "Frango com macarrão e alface",
+      "proteina": "frango",
+      "carboidrato": "macarrao",
+      "vegetal": "alface",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com macarrão e alface preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 21
+    },
+    {
+      "nome": "Tofu com macarrão e brocolis",
+      "proteina": "tofu",
+      "carboidrato": "macarrao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho, gengibre e um pouco de mel. Aqueça uma frigideira com um fio de azeite e grelhe o tofu até que esteja dourado e crocante. Sirva com macarrão e brócolis preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 22
+    },
+    {
+      "nome": "Carne bovina com feijão e brocolis",
+      "proteina": "bovina",
+      "carboidrato": "feijao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com feijão e brócolis preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 23
+    },
+    {
+      "nome": "Peixe com feijão e brocolis",
+      "proteina": "peixe",
+      "carboidrato": "feijao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com feijão e brócolis preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 24
+    },
+    {
+      "nome": "Carne bovina com arroz e cenoura",
+      "proteina": "bovina",
+      "carboidrato": "arroz",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com arroz e cenoura preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 25
+    },
+    {
+      "nome": "Peixe com macarrão e cenoura",
+      "proteina": "peixe",
+      "carboidrato": "macarrao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com macarrão e cenoura preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 26
+    },
+    {
+      "nome": "Tofu com arroz e cebola",
+      "proteina": "tofu",
+      "carboidrato": "arroz",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho, gengibre e um pouco de mel. Aqueça uma frigideira com um fio de azeite e grelhe o tofu até que esteja dourado e crocante. Sirva com arroz e cebola preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 27
+    },
+    {
+      "nome": "Carne bovina com macarrão e batata",
+      "proteina": "bovina",
+      "carboidrato": "macarrao",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com macarrão e batata preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 28
+    },
+    {
+      "nome": "Ovo com pão e brocolis",
+      "proteina": "ovo",
+      "carboidrato": "pao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com pão e brócolis preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 29
+    },
+    {
+      "nome": "Ovo com macarrão e brocolis",
+      "proteina": "ovo",
+      "carboidrato": "macarrao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com macarrão e brócolis preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 30
+    },
+    {
+      "nome": "Carne bovina com feijão e cebola",
+      "proteina": "bovina",
+      "carboidrato": "feijao",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com feijão e cebola preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 31
+    },
+    {
+      "nome": "Tofu com pão e brocolis",
+      "proteina": "tofu",
+      "carboidrato": "pao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho, gengibre e um pouco de mel. Aqueça uma frigideira com um fio de azeite e grelhe o tofu até que esteja dourado e crocante. Sirva com pão e brócolis preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 32
+    },
+    {
+      "nome": "Peixe com pão e batata",
+      "proteina": "peixe",
+      "carboidrato": "pao",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com pão e batata preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 33
+    },
+    {
+      "nome": "Frango com feijão e cebola",
+      "proteina": "frango",
+      "carboidrato": "feijao",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com feijão e cebola preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 34
+    },
+    {
+      "nome": "Carne bovina com arroz e brocolis",
+      "proteina": "bovina",
+      "carboidrato": "arroz",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com arroz e brócolis preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 35
+    },
+    {
+      "nome": "Frango com arroz e batata",
+      "proteina": "frango",
+      "carboidrato": "arroz",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com arroz e batata preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 36
+    },
+    {
+      "nome": "Ovo com macarrão e alface",
+      "proteina": "ovo",
+      "carboidrato": "macarrao",
+      "vegetal": "alface",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com macarrão e alface preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 37
+    },
+    {
+      "nome": "Tofu com arroz e alface",
+      "proteina": "tofu",
+      "carboidrato": "arroz",
+      "vegetal": "alface",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho, gengibre e um pouco de mel. Aqueça uma frigideira com um fio de azeite e grelhe o tofu até que esteja dourado e crocante. Sirva com arroz e alface preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 38
+    },
+    {
+      "nome": "Carne bovina com arroz e alface",
+      "proteina": "bovina",
+      "carboidrato": "arroz",
+      "vegetal": "alface",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com arroz e alface preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 39
+    },
+    {
+      "nome": "Peixe com arroz e brocolis",
+      "proteina": "peixe",
+      "carboidrato": "arroz",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com arroz e brócolis preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 40
+    },
+    {
+      "nome": "Ovo com macarrão e cebola",
+      "proteina": "ovo",
+      "carboidrato": "macarrao",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com macarrão e cebola preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 41
+    },
+    {
+      "nome": "Ovo com macarrão e batata",
+      "proteina": "ovo",
+      "carboidrato": "macarrao",
+      "vegetal": "batata",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com macarrão e batata preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 42
+    },
+    {
+      "nome": "Peixe com feijão e alface",
+      "proteina": "peixe",
+      "carboidrato": "feijao",
+      "vegetal": "alface",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com feijão e alface preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 43
+    },
+    {
+      "nome": "Carne bovina com pão e cenoura",
+      "proteina": "bovina",
+      "carboidrato": "pao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com pão e cenoura preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 44
+    },
+    {
+      "nome": "Carne bovina com macarrão e cenoura",
+      "proteina": "bovina",
+      "carboidrato": "macarrao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com macarrão e cenoura preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 45
+    },
+    {
+      "nome": "Peixe com arroz e batata",
+      "proteina": "peixe",
+      "carboidrato": "arroz",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com arroz e batata preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 46
+    },
+    {
+      "nome": "Carne bovina com feijão e brocolis",
+      "proteina": "bovina",
+      "carboidrato": "feijao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com feijão e brócolis preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 47
+    },
+    {
+      "nome": "Carne bovina com arroz e batata",
+      "proteina": "bovina",
+      "carboidrato": "arroz",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com arroz e batata preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 48
+    },
+    {
+      "nome": "Tofu com macarrão e cebola",
+      "proteina": "tofu",
+      "carboidrato": "macarrao",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho, gengibre e um pouco de mel. Aqueça uma frigideira com um fio de azeite e grelhe o tofu até que esteja dourado e crocante. Sirva com macarrão e cebola preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 49
+    },
+    {
+      "nome": "Frango com macarrão e batata",
+      "proteina": "frango",
+      "carboidrato": "macarrao",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com macarrão e batata preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 50
+    },
+    {
+      "nome": "Ovo com pão e cenoura",
+      "proteina": "ovo",
+      "carboidrato": "pao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com pão e cenoura preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 51
+    },
+    {
+      "nome": "Peixe com feijão e alface",
+      "proteina": "peixe",
+      "carboidrato": "feijao",
+      "vegetal": "alface",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com feijão e alface preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 52
+    },
+    {
+      "nome": "Carne bovina com macarrão e brocolis",
+      "proteina": "bovina",
+      "carboidrato": "macarrao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com macarrão e brócolis preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 53
+    },
+    {
+      "nome": "Tofu com feijão e alface",
+      "proteina": "tofu",
+      "carboidrato": "feijao",
+      "vegetal": "alface",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho, gengibre e um pouco de mel. Aqueça uma frigideira com um fio de azeite e grelhe o tofu até que esteja dourado e crocante. Sirva com feijão e alface preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 54
+    },
+    {
+      "nome": "Carne bovina com pão e brocolis",
+      "proteina": "bovina",
+      "carboidrato": "pao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com pão e brócolis preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 55
+    },
+    {
+      "nome": "Peixe com macarrão e batata",
+      "proteina": "peixe",
+      "carboidrato": "macarrao",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com macarrão e batata preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 56
+    },
+    {
+      "nome": "Ovo com arroz e brocolis",
+      "proteina": "ovo",
+      "carboidrato": "arroz",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com arroz e brócolis preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 57
+    },
+    {
+      "nome": "Carne bovina com feijão e cenoura",
+      "proteina": "bovina",
+      "carboidrato": "feijao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com feijão e cenoura preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 58
+    },
+    {
+      "nome": "Carne bovina com pão e batata",
+      "proteina": "bovina",
+      "carboidrato": "pao",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com pão e batata preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 59
+    },
+    {
+      "nome": "Ovo com arroz e cenoura",
+      "proteina": "ovo",
+      "carboidrato": "arroz",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com arroz e cenoura preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 60
+    },
+    {
+      "nome": "Frango com macarrão e cebola",
+      "proteina": "frango",
+      "carboidrato": "macarrao",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com macarrão e cebola preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 61
+    },
+    {
+      "nome": "Frango com arroz e cenoura",
+      "proteina": "frango",
+      "carboidrato": "arroz",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com arroz e cenoura preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 62
+    },
+    {
+      "nome": "Ovo com pão e cebola",
+      "proteina": "ovo",
+      "carboidrato": "pao",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com pão e cebola preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 63
+    },
+    {
+      "nome": "Carne bovina com arroz e cebola",
+      "proteina": "bovina",
+      "carboidrato": "arroz",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com arroz e cebola preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 64
+    },
+    {
+      "nome": "Tofu com arroz e cebola",
+      "proteina": "tofu",
+      "carboidrato": "arroz",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho, gengibre e um pouco de mel. Aqueça uma frigideira com um fio de azeite e grelhe o tofu até que esteja dourado e crocante. Sirva com arroz e cebola preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 65
+    },
+    {
+      "nome": "Carne bovina com pão e cebola",
+      "proteina": "bovina",
+      "carboidrato": "pao",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com pão e cebola preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 66
+    },
+    {
+      "nome": "Ovo com feijão e cenoura",
+      "proteina": "ovo",
+      "carboidrato": "feijao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com feijão e cenoura preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 67
+    },
+    {
+      "nome": "Frango com arroz e brocolis",
+      "proteina": "frango",
+      "carboidrato": "arroz",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com arroz e brócolis preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 68
+    },
+    {
+      "nome": "Carne bovina com arroz e alface",
+      "proteina": "bovina",
+      "carboidrato": "arroz",
+      "vegetal": "alface",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com arroz e alface preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 69
+    },
+    {
+      "nome": "Carne bovina com arroz e batata",
+      "proteina": "bovina",
+      "carboidrato": "arroz",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com arroz e batata preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 70
+    },
+    {
+      "nome": "Peixe com feijão e alface",
+      "proteina": "peixe",
+      "carboidrato": "feijao",
+      "vegetal": "alface",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com feijão e alface preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 71
+    },
+    {
+      "nome": "Peixe com pão e batata",
+      "proteina": "peixe",
+      "carboidrato": "pao",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com pão e batata preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 72
+    },
+    {
+      "nome": "Carne bovina com macarrão e brocolis",
+      "proteina": "bovina",
+      "carboidrato": "macarrao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com macarrão e brócolis preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 73
+    },
+    {
+      "nome": "Frango com feijão e alface",
+      "proteina": "frango",
+      "carboidrato": "feijao",
+      "vegetal": "alface",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com feijão e alface preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 74
+    },
+    {
+      "nome": "Tofu com feijão e brocolis",
+      "proteina": "tofu",
+      "carboidrato": "feijao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho, gengibre e um pouco de mel. Aqueça uma frigideira com um fio de azeite e grelhe o tofu até que esteja dourado e crocante. Sirva com feijão e brócolis preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 75
+    },
+    {
+      "nome": "Ovo com arroz e cebola",
+      "proteina": "ovo",
+      "carboidrato": "arroz",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com arroz e cebola preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 76
+    },
+    {
+      "nome": "Frango com macarrão e brocolis",
+      "proteina": "frango",
+      "carboidrato": "macarrao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com macarrão e brócolis preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 77
+    },
+    {
+      "nome": "Carne bovina com feijão e alface",
+      "proteina": "bovina",
+      "carboidrato": "feijao",
+      "vegetal": "alface",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com feijão e alface preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 78
+    },
+    {
+      "nome": "Tofu com arroz e cenoura",
+      "proteina": "tofu",
+      "carboidrato": "arroz",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho, gengibre e um pouco de mel. Aqueça uma frigideira com um fio de azeite e grelhe o tofu até que esteja dourado e crocante. Sirva com arroz e cenoura preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 79
+    },
+    {
+      "nome": "Peixe com feijão e batata",
+      "proteina": "peixe",
+      "carboidrato": "feijao",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com feijão e batata preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 80
+    },
+    {
+      "nome": "Carne bovina com feijão e brocolis",
+      "proteina": "bovina",
+      "carboidrato": "feijao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com feijão e brócolis preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 81
+    },
+    {
+      "nome": "Frango com feijão e cebola",
+      "proteina": "frango",
+      "carboidrato": "feijao",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com feijão e cebola preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 82
+    },
+    {
+      "nome": "Carne bovina com feijão e cebola",
+      "proteina": "bovina",
+      "carboidrato": "feijao",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com feijão e cebola preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 83
+    },
+    {
+      "nome": "Carne bovina com pão e cenoura",
+      "proteina": "bovina",
+      "carboidrato": "pao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com pão e cenoura preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 84
+    },
+    {
+      "nome": "Ovo com feijão e brocolis",
+      "proteina": "ovo",
+      "carboidrato": "feijao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com feijão e brócolis preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 85
+    },
+    {
+      "nome": "Ovo com arroz e brocolis",
+      "proteina": "ovo",
+      "carboidrato": "arroz",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com arroz e brócolis preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 86
+    },
+    {
+      "nome": "Peixe com feijão e batata",
+      "proteina": "peixe",
+      "carboidrato": "feijao",
+      "vegetal": "batata",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com feijão e batata preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 87
+    },
+    {
+      "nome": "Carne bovina com feijão e cebola",
+      "proteina": "bovina",
+      "carboidrato": "feijao",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com feijão e cebola preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 88
+    },
+    {
+      "nome": "Peixe com macarrão e cenoura",
+      "proteina": "peixe",
+      "carboidrato": "macarrao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com macarrão e cenoura preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 89
+    },
+    {
+      "nome": "Carne bovina com arroz e cenoura",
+      "proteina": "bovina",
+      "carboidrato": "arroz",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta, alho e um fio de azeite. Aqueça uma grelha ou frigideira em fogo alto e sele a carne dos dois lados. Reduza o fogo e cozinhe até o ponto desejado. Sirva com arroz e cenoura preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte as cenouras em rodelas. Cozinhe em água com sal até que estejam macias. Tempere com azeite e ervas frescas.",
+      "id": 90
+    },
+    {
+      "nome": "Frango com arroz e cebola",
+      "proteina": "frango",
+      "carboidrato": "arroz",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com arroz e cebola preparados da seguinte forma: Lave o arroz e cozinhe em água com sal até que toda a água seja absorvida e o arroz esteja macio. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 91
+    },
+    {
+      "nome": "Ovo com macarrão e brocolis",
+      "proteina": "ovo",
+      "carboidrato": "macarrao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com macarrão e brócolis preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 92
+    },
+    {
+      "nome": "Peixe com macarrão e brocolis",
+      "proteina": "peixe",
+      "carboidrato": "macarrao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com macarrão e brócolis preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 93
+    },
+    {
+      "nome": "Frango com macarrão e brocolis",
+      "proteina": "frango",
+      "carboidrato": "macarrao",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta, alho e suco de limão. Aqueça uma frigideira com um fio de azeite e cozinhe o frango até que esteja dourado e cozido por completo. Sirva com macarrão e brócolis preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Corte o brócolis em floretes e cozinhe em água com sal até que estejam macios. Tempere com azeite e alho.",
+      "id": 94
+    },
+    {
+      "nome": "Peixe com macarrão e alface",
+      "proteina": "peixe",
+      "carboidrato": "macarrao",
+      "vegetal": "alface",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta, limão e ervas frescas. Aqueça uma frigideira com um fio de azeite e grelhe o peixe por cerca de 3-4 minutos de cada lado ou até que esteja dourado e cozido por completo. Sirva com macarrão e alface preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 95
+    },
+    {
+      "nome": "Tofu com feijão e cebola",
+      "proteina": "tofu",
+      "carboidrato": "feijao",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho, gengibre e um pouco de mel. Aqueça uma frigideira com um fio de azeite e grelhe o tofu até que esteja dourado e crocante. Sirva com feijão e cebola preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 96
+    },
+    {
+      "nome": "Ovo com feijão e batata",
+      "proteina": "ovo",
+      "carboidrato": "feijao",
+      "vegetal": "batata",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com feijão e batata preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 97
+    },
+    {
+      "nome": "Ovo com macarrão e cebola",
+      "proteina": "ovo",
+      "carboidrato": "macarrao",
+      "vegetal": "cebola",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com macarrão e cebola preparados da seguinte forma: Cozinhe o macarrão em água salgada até ficar al dente. Escorra e misture com um fio de azeite ou molho de sua preferência. Descasque e corte a cebola em rodelas. Refogue em uma frigideira com azeite até que estejam caramelizadas.",
+      "id": 98
+    },
+    {
+      "nome": "Ovo com pão e batata",
+      "proteina": "ovo",
+      "carboidrato": "pao",
+      "vegetal": "batata",
+      "modo-de-preparo": "Bata os ovos com um pouco de sal e pimenta. Aqueça uma frigideira com um fio de azeite e despeje os ovos batidos. Cozinhe em fogo médio até que os ovos estejam firmes. Sirva com pão e batata preparados da seguinte forma: Corte o pão em fatias e torre levemente em uma frigideira com um fio de azeite até que esteja dourado e crocante. Descasque e corte as batatas em pedaços. Cozinhe em água com sal até que estejam macias. Escorra e tempere com manteiga, sal e salsinha.",
+      "id": 99
+    },
+    {
+      "nome": "Tofu com feijão e alface",
+      "proteina": "tofu",
+      "carboidrato": "feijao",
+      "vegetal": "alface",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho, gengibre e um pouco de mel. Aqueça uma frigideira com um fio de azeite e grelhe o tofu até que esteja dourado e crocante. Sirva com feijão e alface preparados da seguinte forma: Cozinhe o feijão em água com uma folha de louro até que esteja macio. Escorra e tempere com sal, alho refogado e azeite. Lave bem as folhas de alface e corte em pedaços. Tempere com azeite, vinagre, sal e pimenta.",
+      "id": 100
+    },
+    {
+      "nome": "Frango com batata-doce e espinafre",
+      "proteina": "frango",
+      "carboidrato": "batata-doce",
+      "vegetal": "espinafre",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta e limão. Cozinhe a batata-doce até ficar macia e corte em cubos. Em uma frigideira, aqueça um fio de azeite e grelhe o frango até estar bem dourado. Na mesma frigideira, refogue o espinafre com alho e sal. Sirva o frango com a batata-doce e o espinafre.",
+      "id": 101
+    },
+    {
+      "nome": "Quinoa com grão de bico e abóbora",
+      "proteina": "grao-de-bico",
+      "carboidrato": "quinoa",
+      "vegetal": "abobora",
+      "modo-de-preparo": "Cozinhe a quinoa conforme as instruções da embalagem. Cozinhe o grão de bico até ficar macio. Corte a abóbora em cubos, tempere com sal, pimenta e azeite, e asse até dourar. Misture a quinoa, o grão de bico e a abóbora, temperando com azeite, limão e ervas frescas.",
+      "id": 102
+    },
+    {
+      "nome": "Camarão com milho e pimentão",
+      "proteina": "camarao",
+      "carboidrato": "milho",
+      "vegetal": "pimentao",
+      "modo-de-preparo": "Tempere o camarão com sal, pimenta e alho. Cozinhe o milho até ficar macio e retire os grãos. Corte o pimentão em tiras finas. Aqueça uma frigideira com azeite e grelhe o camarão até estar rosado e cozido. Acrescente o milho e o pimentão e refogue rapidamente. Sirva quente.",
+      "id": 103
+    },
+    {
+      "nome": "Tempeh com lentilha e rúcula",
+      "proteina": "tempeh",
+      "carboidrato": "lentilha",
+      "vegetal": "rucula",
+      "modo-de-preparo": "Corte o tempeh em fatias e tempere com molho de soja, gengibre e mel. Cozinhe a lentilha até ficar macia e tempere com sal e azeite. Lave bem a rúcula e tempere com azeite, sal e limão. Grelhe o tempeh até dourar e sirva com a lentilha e a rúcula.",
+      "id": 104
+    },
+    {
+      "nome": "Tofu com quinoa e cogumelos",
+      "proteina": "tofu",
+      "carboidrato": "quinoa",
+      "vegetal": "cogumelos",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho e gengibre. Cozinhe a quinoa conforme as instruções da embalagem. Refogue os cogumelos com azeite e alho até estarem macios. Grelhe o tofu até dourar e sirva com a quinoa e os cogumelos.",
+      "id": 105
+    },
+    {
+      "nome": "Ovo com batata e cenoura",
+      "proteina": "ovo",
+      "carboidrato": "batata",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Cozinhe a batata e a cenoura até ficarem macias e corte em cubos. Cozinhe o ovo até o ponto desejado (cozido, pochê ou frito). Misture a batata e a cenoura com azeite, sal e ervas frescas. Sirva com o ovo por cima.",
+      "id": 106
+    },
+    {
+      "nome": "Seitan com mandioca e abobrinha",
+      "proteina": "seitan",
+      "carboidrato": "mandioca",
+      "vegetal": "abobrinha",
+      "modo-de-preparo": "Corte o seitan em fatias e tempere com molho de soja e especiarias. Cozinhe a mandioca até ficar macia e corte em pedaços. Refogue a abobrinha em rodelas com azeite e alho. Grelhe o seitan até dourar e sirva com a mandioca e a abobrinha.",
+      "id": 107
+    },
+    {
+      "nome": "Salmão com quinoa e couve",
+      "proteina": "salmao",
+      "carboidrato": "quinoa",
+      "vegetal": "couve",
+      "modo-de-preparo": "Tempere o salmão com sal, pimenta e limão. Cozinhe a quinoa conforme as instruções da embalagem. Refogue a couve com alho e azeite até ficar macia. Grelhe o salmão até o ponto desejado e sirva com a quinoa e a couve.",
+      "id": 108
+    },
+    {
+      "nome": "Porco com inhame e brócolis",
+      "proteina": "porco",
+      "carboidrato": "inhame",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere a carne de porco com sal, pimenta e alho. Cozinhe o inhame até ficar macio e corte em pedaços. Cozinhe o brócolis até ficar al dente. Grelhe a carne de porco até dourar e sirva com o inhame e o brócolis, temperando com azeite e ervas frescas.",
+      "id": 109
+    },
+    {
+      "nome": "Lentilha com cevada e pepino",
+      "proteina": "lentilha",
+      "carboidrato": "cevada",
+      "vegetal": "pepino",
+      "modo-de-preparo": "Cozinhe a lentilha até ficar macia e tempere com sal e azeite. Cozinhe a cevada conforme as instruções da embalagem. Corte o pepino em rodelas finas e tempere com sal, azeite e vinagre. Misture a lentilha com a cevada e sirva com o pepino.",
+      "id": 110
+    },
+    {
+      "nome": "Tempeh com arroz e abobrinha",
+      "proteina": "tempeh",
+      "carboidrato": "arroz",
+      "vegetal": "abobrinha",
+      "modo-de-preparo": "Corte o tempeh em fatias e tempere com molho de soja e gengibre. Cozinhe o arroz conforme as instruções da embalagem. Refogue a abobrinha com azeite e alho até dourar. Grelhe o tempeh até dourar e sirva com o arroz e a abobrinha.",
+      "id": 111
+    },
+    {
+      "nome": "Ovo com quinoa e brócolis",
+      "proteina": "ovo",
+      "carboidrato": "quinoa",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Cozinhe a quinoa conforme as instruções da embalagem. Cozinhe o brócolis até ficar al dente e tempere com sal e azeite. Cozinhe o ovo até o ponto desejado (cozido, pochê ou frito). Sirva a quinoa com o brócolis e o ovo.",
+      "id": 112
+    },
+    {
+      "nome": "Tofu com lentilha e cenoura",
+      "proteina": "tofu",
+      "carboidrato": "lentilha",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja e gengibre. Cozinhe a lentilha até ficar macia e tempere com sal e azeite. Cozinhe a cenoura até ficar macia e corte em cubos. Grelhe o tofu até dourar e sirva com a lentilha e a cenoura.",
+      "id": 113
+    },
+    {
+      "nome": "Frango com batata e couve",
+      "proteina": "frango",
+      "carboidrato": "batata",
+      "vegetal": "couve",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta e limão. Cozinhe a batata até ficar macia e corte em cubos. Refogue a couve com azeite e alho até ficar macia. Grelhe o frango até dourar e sirva com a batata e a couve.",
+      "id": 114
+    },
+    {
+      "nome": "Peixe com cevada e tomate",
+      "proteina": "peixe",
+      "carboidrato": "cevada",
+      "vegetal": "tomate",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta e limão. Cozinhe a cevada conforme as instruções da embalagem. Corte o tomate em rodelas e tempere com azeite, sal e orégano. Grelhe o peixe até o ponto desejado e sirva com a cevada e o tomate.",
+      "id": 115
+    },
+    {
+      "nome": "Bovina com arroz e espinafre",
+      "proteina": "bovina",
+      "carboidrato": "arroz",
+      "vegetal": "espinafre",
+      "modo-de-preparo": "Tempere a carne bovina com sal, pimenta e alho. Cozinhe o arroz conforme as instruções da embalagem. Refogue o espinafre com azeite e alho até murchar. Grelhe a carne bovina até dourar e sirva com o arroz e o espinafre.",
+      "id": 116
+    },
+    {
+      "nome": "Tofu com feijão e alface",
+      "proteina": "tofu",
+      "carboidrato": "feijao",
+      "vegetal": "alface",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja, alho e gengibre. Cozinhe o feijão até ficar macio e tempere com sal e azeite. Lave bem as folhas de alface e tempere com azeite, vinagre, sal e pimenta. Grelhe o tofu até dourar e sirva com o feijão e a alface.",
+      "id": 117
+    },
+    {
+      "nome": "Frango com macarrão e cenoura",
+      "proteina": "frango",
+      "carboidrato": "macarrao",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta e limão. Cozinhe o macarrão conforme as instruções da embalagem. Cozinhe a cenoura até ficar macia e corte em cubos. Grelhe o frango até dourar e sirva com o macarrão e a cenoura.",
+      "id": 118
+    },
+    {
+      "nome": "Peixe com batata e brócolis",
+      "proteina": "peixe",
+      "carboidrato": "batata",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta e limão. Cozinhe a batata até ficar macia e corte em cubos. Cozinhe o brócolis até ficar al dente e tempere com azeite, sal e alho. Grelhe o peixe até o ponto desejado e sirva com a batata e o brócolis.",
+      "id": 119
+    },
+    {
+      "nome": "Porco com inhame e tomate",
+      "proteina": "porco",
+      "carboidrato": "inhame",
+      "vegetal": "tomate",
+      "modo-de-preparo": "Tempere a carne de porco com sal, pimenta e alho. Cozinhe o inhame até ficar macio e corte em cubos. Corte o tomate em rodelas e tempere com azeite, sal e orégano. Grelhe a carne de porco até dourar e sirva com o inhame e o tomate.",
+      "id": 120
+    },
+    {
+      "nome": "Tempeh com arroz e pepino",
+      "proteina": "tempeh",
+      "carboidrato": "arroz",
+      "vegetal": "pepino",
+      "modo-de-preparo": "Corte o tempeh em fatias e tempere com molho de soja e gengibre. Cozinhe o arroz conforme as instruções da embalagem. Corte o pepino em rodelas finas e tempere com sal, azeite e vinagre. Grelhe o tempeh até dourar e sirva com o arroz e o pepino.",
+      "id": 121
+    },
+    {
+      "nome": "Tofu com cevada e abóbora",
+      "proteina": "tofu",
+      "carboidrato": "cevada",
+      "vegetal": "abobora",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja e gengibre. Cozinhe a cevada conforme as instruções da embalagem. Corte a abóbora em cubos, tempere com sal, pimenta e azeite, e asse até dourar. Grelhe o tofu até dourar e sirva com a cevada e a abóbora.",
+      "id": 122
+    },
+    {
+      "nome": "Frango com quinoa e espinafre",
+      "proteina": "frango",
+      "carboidrato": "quinoa",
+      "vegetal": "espinafre",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta e limão. Cozinhe a quinoa conforme as instruções da embalagem. Refogue o espinafre com azeite e alho até murchar. Grelhe o frango até dourar e sirva com a quinoa e o espinafre.",
+      "id": 123
+    },
+    {
+      "nome": "Peixe com macarrão e rúcula",
+      "proteina": "peixe",
+      "carboidrato": "macarrao",
+      "vegetal": "rucula",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta e limão. Cozinhe o macarrão conforme as instruções da embalagem. Lave bem a rúcula e tempere com azeite, sal e limão. Grelhe o peixe até o ponto desejado e sirva com o macarrão e a rúcula.",
+      "id": 124
+    },
+    {
+      "nome": "Tempeh com batata-doce e brócolis",
+      "proteina": "tempeh",
+      "carboidrato": "batata-doce",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Corte o tempeh em fatias e tempere com molho de soja e gengibre. Cozinhe a batata-doce até ficar macia e corte em cubos. Cozinhe o brócolis até ficar al dente e tempere com azeite, sal e alho. Grelhe o tempeh até dourar e sirva com a batata-doce e o brócolis.",
+      "id": 125
+    },
+    {
+      "nome": "Ovo com arroz e cenoura",
+      "proteina": "ovo",
+      "carboidrato": "arroz",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Cozinhe o arroz conforme as instruções da embalagem. Cozinhe a cenoura até ficar macia e corte em cubos. Cozinhe o ovo até o ponto desejado (cozido, pochê ou frito). Sirva o arroz com a cenoura e o ovo.",
+      "id": 126
+    },
+    {
+      "nome": "Frango com cevada e abobrinha",
+      "proteina": "frango",
+      "carboidrato": "cevada",
+      "vegetal": "abobrinha",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta e limão. Cozinhe a cevada conforme as instruções da embalagem. Refogue a abobrinha com azeite e alho até dourar. Grelhe o frango até dourar e sirva com a cevada e a abobrinha.",
+      "id": 127
+    },
+    {
+      "nome": "Peixe com quinoa e pepino",
+      "proteina": "peixe",
+      "carboidrato": "quinoa",
+      "vegetal": "pepino",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta e limão. Cozinhe a quinoa conforme as instruções da embalagem. Corte o pepino em rodelas finas e tempere com sal, azeite e vinagre. Grelhe o peixe até o ponto desejado e sirva com a quinoa e o pepino.",
+      "id": 128
+    },
+    {
+      "nome": "Tempeh com lentilha e espinafre",
+      "proteina": "tempeh",
+      "carboidrato": "lentilha",
+      "vegetal": "espinafre",
+      "modo-de-preparo": "Corte o tempeh em fatias e tempere com molho de soja e gengibre. Cozinhe a lentilha até ficar macia e tempere com sal e azeite. Refogue o espinafre com azeite e alho até murchar. Grelhe o tempeh até dourar e sirva com a lentilha e o espinafre.",
+      "id": 129
+    },
+    {
+      "nome": "Ovo com batata e rúcula",
+      "proteina": "ovo",
+      "carboidrato": "batata",
+      "vegetal": "rucula",
+      "modo-de-preparo": "Cozinhe a batata até ficar macia e corte em cubos. Cozinhe o ovo até o ponto desejado (cozido, pochê ou frito). Lave bem a rúcula e tempere com azeite, sal e limão. Sirva a batata com a rúcula e o ovo.",
+      "id": 130
+    },
+    {
+      "nome": "Frango com mandioca e pimentão",
+      "proteina": "frango",
+      "carboidrato": "mandioca",
+      "vegetal": "pimentao",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta e limão. Cozinhe a mandioca até ficar macia e corte em cubos. Corte o pimentão em tiras finas e refogue com azeite e alho. Grelhe o frango até dourar e sirva com a mandioca e o pimentão.",
+      "id": 131
+    },
+    {
+      "nome": "Peixe com batata-doce e abóbora",
+      "proteina": "peixe",
+      "carboidrato": "batata-doce",
+      "vegetal": "abobora",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta e limão. Cozinhe a batata-doce até ficar macia e corte em cubos. Corte a abóbora em cubos, tempere com sal, pimenta e azeite, e asse até dourar. Grelhe o peixe até o ponto desejado e sirva com a batata-doce e a abóbora.",
+      "id": 132
+    },
+    {
+      "nome": "Tempeh com cevada e cenoura",
+      "proteina": "tempeh",
+      "carboidrato": "cevada",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Corte o tempeh em fatias e tempere com molho de soja e gengibre. Cozinhe a cevada conforme as instruções da embalagem. Cozinhe a cenoura até ficar macia e corte em cubos. Grelhe o tempeh até dourar e sirva com a cevada e a cenoura.",
+      "id": 133
+    },
+    {
+      "nome": "Tofu com batata e brócolis",
+      "proteina": "tofu",
+      "carboidrato": "batata",
+      "vegetal": "brocolis",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja e alho. Cozinhe a batata até ficar macia e corte em cubos. Cozinhe o brócolis até ficar al dente e tempere com azeite, sal e alho. Grelhe o tofu até dourar e sirva com a batata e o brócolis.",
+      "id": 134
+    },
+    {
+      "nome": "Tempeh com quinoa e abóbora",
+      "proteina": "tempeh",
+      "carboidrato": "quinoa",
+      "vegetal": "abobora",
+      "modo-de-preparo": "Corte o tempeh em fatias e tempere com molho de soja e gengibre. Cozinhe a quinoa conforme as instruções da embalagem. Corte a abóbora em cubos, tempere com sal, pimenta e azeite, e asse até dourar. Grelhe o tempeh até dourar e sirva com a quinoa e a abóbora.",
+      "id": 135
+    },
+    {
+      "nome": "Frango com lentilha e pepino",
+      "proteina": "frango",
+      "carboidrato": "lentilha",
+      "vegetal": "pepino",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta e limão. Cozinhe a lentilha até ficar macia e tempere com sal e azeite. Corte o pepino em rodelas finas e tempere com sal, azeite e vinagre. Grelhe o frango até dourar e sirva com a lentilha e o pepino.",
+      "id": 136
+    },
+    {
+      "nome": "Peixe com inhame e abobrinha",
+      "proteina": "peixe",
+      "carboidrato": "inhame",
+      "vegetal": "abobrinha",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta e limão. Cozinhe o inhame até ficar macio e corte em cubos. Refogue a abobrinha com azeite e alho até dourar. Grelhe o peixe até o ponto desejado e sirva com o inhame e a abobrinha.",
+      "id": 137
+    },
+    {
+      "nome": "Tofu com mandioca e pimentão",
+      "proteina": "tofu",
+      "carboidrato": "mandioca",
+      "vegetal": "pimentao",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja e alho. Cozinhe a mandioca até ficar macia e corte em cubos. Corte o pimentão em tiras finas e refogue com azeite e alho. Grelhe o tofu até dourar e sirva com a mandioca e o pimentão.",
+      "id": 138
+    },
+    {
+      "nome": "Tempeh com cevada e rúcula",
+      "proteina": "tempeh",
+      "carboidrato": "cevada",
+      "vegetal": "rucula",
+      "modo-de-preparo": "Corte o tempeh em fatias e tempere com molho de soja e gengibre. Cozinhe a cevada conforme as instruções da embalagem. Lave bem a rúcula e tempere com azeite, sal e limão. Grelhe o tempeh até dourar e sirva com a cevada e a rúcula.",
+      "id": 139
+    },
+    {
+      "nome": "Frango com quinoa e tomate",
+      "proteina": "frango",
+      "carboidrato": "quinoa",
+      "vegetal": "tomate",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta e limão. Cozinhe a quinoa conforme as instruções da embalagem. Corte o tomate em rodelas e tempere com azeite, sal e orégano. Grelhe o frango até dourar e sirva com a quinoa e o tomate.",
+      "id": 140
+    },
+    {
+      "nome": "Peixe com macarrão e pimentão",
+      "proteina": "peixe",
+      "carboidrato": "macarrao",
+      "vegetal": "pimentao",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta e limão. Cozinhe o macarrão conforme as instruções da embalagem. Corte o pimentão em tiras finas e refogue com azeite e alho. Grelhe o peixe até o ponto desejado e sirva com o macarrão e o pimentão.",
+      "id": 141
+    },
+    {
+      "nome": "Ovo com arroz e espinafre",
+      "proteina": "ovo",
+      "carboidrato": "arroz",
+      "vegetal": "espinafre",
+      "modo-de-preparo": "Cozinhe o arroz conforme as instruções da embalagem. Refogue o espinafre com azeite e alho até murchar. Cozinhe o ovo até o ponto desejado (cozido, pochê ou frito). Sirva o arroz com o espinafre e o ovo.",
+      "id": 142
+    },
+    {
+      "nome": "Tempeh com lentilha e cenoura",
+      "proteina": "tempeh",
+      "carboidrato": "lentilha",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Corte o tempeh em fatias e tempere com molho de soja e gengibre. Cozinhe a lentilha até ficar macia e tempere com sal e azeite. Cozinhe a cenoura até ficar macia e corte em cubos. Grelhe o tempeh até dourar e sirva com a lentilha e a cenoura.",
+      "id": 143
+    },
+    {
+      "nome": "Frango com cevada e abóbora",
+      "proteina": "frango",
+      "carboidrato": "cevada",
+      "vegetal": "abobora",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta e limão. Cozinhe a cevada conforme as instruções da embalagem. Corte a abóbora em cubos, tempere com sal, pimenta e azeite, e asse até dourar. Grelhe o frango até dourar e sirva com a cevada e a abóbora.",
+      "id": 144
+    },
+    {
+      "nome": "Peixe com quinoa e rúcula",
+      "proteina": "peixe",
+      "carboidrato": "quinoa",
+      "vegetal": "rucula",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta e limão. Cozinhe a quinoa conforme as instruções da embalagem. Lave bem a rúcula e tempere com azeite, sal e limão. Grelhe o peixe até o ponto desejado e sirva com a quinoa e a rúcula.",
+      "id": 145
+    },
+    {
+      "nome": "Tofu com macarrão e tomate",
+      "proteina": "tofu",
+      "carboidrato": "macarrao",
+      "vegetal": "tomate",
+      "modo-de-preparo": "Corte o tofu em cubos e tempere com molho de soja e alho. Cozinhe o macarrão conforme as instruções da embalagem. Corte o tomate em rodelas e tempere com azeite, sal e orégano. Grelhe o tofu até dourar e sirva com o macarrão e o tomate.",
+      "id": 146
+    },
+    {
+      "nome": "Frango com inhame e espinafre",
+      "proteina": "frango",
+      "carboidrato": "inhame",
+      "vegetal": "espinafre",
+      "modo-de-preparo": "Tempere o frango com sal, pimenta e limão. Cozinhe o inhame até ficar macio e corte em cubos. Refogue o espinafre com azeite e alho até murchar. Grelhe o frango até dourar e sirva com o inhame e o espinafre.",
+      "id": 147
+    },
+    {
+      "nome": "Peixe com arroz e cenoura",
+      "proteina": "peixe",
+      "carboidrato": "arroz",
+      "vegetal": "cenoura",
+      "modo-de-preparo": "Tempere o peixe com sal, pimenta e limão. Cozinhe o arroz conforme as instruções da embalagem. Cozinhe a cenoura até ficar macia e corte em cubos. Grelhe o peixe até o ponto desejado e sirva com o arroz e a cenoura.",
+      "id": 148
+    },
+    {
+      "nome": "Tempeh com batata-doce e pimentão",
+      "proteina": "tempeh",
+      "carboidrato": "batata-doce",
+      "vegetal": "pimentao",
+      "modo-de-preparo": "Corte o tempeh em fatias e tempere com molho de soja e gengibre. Cozinhe a batata-doce até ficar macia e corte em cubos. Corte o pimentão em tiras finas e refogue com azeite e alho. Grelhe o tempeh até dourar e sirva com a batata-doce e o pimentão.",
+      "id": 149
+    }
+  ]
+}

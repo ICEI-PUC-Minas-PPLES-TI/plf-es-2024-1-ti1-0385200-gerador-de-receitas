@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- header da página (parte de cima da página) -->
+
+    <header>
+        <div class="header">
+            <div class="flex container" id="nav">
+                <div>
+                    <a href="index.html"> <img src="ASSETS/img/logo.png" alt="logo do KitchenCompanion"></a>
+                </div>
+                <div class="barra-de-pesquisa">
+                    <span><img src="ASSETS/img/busca 1.png" alt=""></span>
+                    <input type="text" placeholder="Pesquise uma receita...">
+                </div>
+                <div class="header-botoes" id="menu">
+                    <div class="botoes-nao-geracao" id="userGreeting">
+                        <!-- Conteúdo dinâmico baseado no estado de login -->
+                    </div>
+                    <a href="../gerador-de-receitas/geradordereceitas.html">
+                        <button class="botao-header">Gerar Receita</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sobre  -->
+
+    <main>
+        <!-- Carousel  -->
+        <h1 id="carousel-title" class="carousel-title"></h1>
+        <div class="border-bottomstart"></div>
+        <div class="conteudo-principal">
+            <div class="carousel">
+                <i id="carousel-left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel-content"></div>
+                <i id="carousel-right" class="fa-solid fa-angle-right"></i>
+            </div>
+            <p id="carousel-description" class="carousel-description"></p>
+        </div>
+
+        <div class="conteudo-principal">
+            <h1>Receitas recomendadas</h1>
+            <div class="border-bottom"></div>
+        </div>
+
+        <div class="geracaomain">
+            <img src="https://www.academiaassai.com.br/sites/default/files/styles/noticia_1020x640/public/como-fazer-bolo-de-milho-com-milho-em-lata.jpg?itok=r_pSSqSo" alt="Imagem de exemplo" class="geracaomain-image">
+            <div class="geracaomain-content">
+                <h2>Bolo de milho</h2>
+                <p>Aprenda como fazer bolo de milho cremoso e molhadinho e traga o gosto do campo para a cozinha. Além de bolo de milho simples, anote as receitas de bolo de milho com coco, leite condensado e outros ingredientes..</p>
+                <a href="https://www.tudogostoso.com.br/receita/143393-bolo-de-milho-de-lata-no-liquidificador.html" class="geracaomain-btn">Ver receita</a>
+
+            </div>
+        </div>
+        <div class="card-main-container">
+            <div class="card-main">
+                <img src="https://s2-receitas.glbimg.com/Ja8NZaG1ssHrb11KAkar6W45_5Q=/0x0:1200x675/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/k/B/Vq9PKJTU2bEDIEhBIz9g/coxinha-pratica.jpg" alt="Imagem de exemplo" class="card-main-image">
+                <div class="card-main-content">
+                    <h2>Coxinha com massa de batata</h2>
+                    <p>Se coxinha já é bom, imagina uma coxinha com massa de batata? Confira agora mesmo essa receita deliciosa e descubra uma nova maneira de preparar esse salgado delicioso!</p>
+                    <a href="https://www.tudogostoso.com.br/receita/103493-coxinha-com-massa-de-batata.html" class="card-main-btn">Ver receita</a>
+                </div>
+            </div>
+            <div class="card-main">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwkJM7EatL2UeXicApCmG-BkVH2maVHhzgYg&s" alt="Imagem de exemplo" class="card-main-image">
+                <div class="card-main-content">
+                    <h2>Macarrão ao forno com bacon e mussarela</h2>
+                    <p>Macarrão ao forno com bacon e mussarela é uma deliciosa receita que combina sabores ricos e texturas irresistíveis.</p>
+                    <a href="https://www.tudogostoso.com.br/receita/1046-macarrao-ao-forno-com-bacon-e-mussarela.html" class="card-main-btn">Ver receita</a>
+                </div>
+            </div>
+            <div class="card-main">
+                <img src="https://www.receitasnestle.com.br/sites/default/files/srh_recipes/f28e94636d75325c4a711e72b8ac9459.jpg" alt="Imagem de exemplo" class="card-main-image">
+                <div class="card-main-content">
+                    <h2>Torta de maçã</h2>
+                    <p>A torta de maçã é um clássico da culinária que combina uma crosta crocante com um recheio doce e suculento.</p>
+                    <a href="https://www.tudogostoso.com.br/receita/11648-torta-de-maca.html" class="card-main-btn">Ver receita</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel  -->
+        <div class="conteudo-principalgeracao">
+            <h1>Adicione à sua Dieta!</h1>
+            <div class="wrappergeracao">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carouselgeracao" id="carousel">
+                    <!-- Os cards serão adicionados dinamicamente aqui -->
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer da página (parte de baixo da página) -->
+    <footer>
+        <div class="footer">
+            <div class="footer-info container">
+                <div class="footer-info1">
+                    <div class="footer-logo">
+                        <img src="ASSETS/img/logobranco.png" alt="logo alternativo">
+                    </div>
+                    <a href="PAGES/perfil/perfil.html">Meu Perfil</a>
+                    <a href="PAGES/pag_ger_receita/geracao.html">Gerar Receita</a>
+                </div>
+                <div class="footer-info2">
+                    <a href="PAGES/sobre/aboutpage.html">Quem Somos</a>
+                    <a href="">Termos de Uso</a>
+                    <a href="">Privacidade</a>
+                    <a href="">Contato</a>
+                </div>
+            </div>
+            <div class="footer-socials container">
+                <a href="" class="fb-icone"><img src="ASSETS/img/facebook-c1.png" alt="link para facebook"></a>
+                <a href="" class="insta-logo"><img src="ASSETS/img/instagram-c1.png" alt="link para instagram"></a>
+                <a href="" class="x-icone"><img src="ASSETS/img/twitter-c1.png" alt="link para x"></a>
+            </div>
+            <p>Kitchen Companion ©. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="JS/slides.js"></script>
+    <script src="JS/cardslider.js"></script>
+    <script src="JS/logicacardslider.js"></script>
+    <script src="JS/logicaslides.js"></script>
+    <script src="JS/login.js"></script>
+    <script src="JS/mainlogin.js"></script>
+</body>
+
+</html>

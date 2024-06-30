@@ -1,12 +1,4 @@
-// URL da API JSONServer - Substitua pela URL correta da sua API
-const apiUrl =
-  "https://32dd9aa6-c33f-4c38-b8bc-feeaa6f8e2e1-00-a8zd99e1pw34.kirk.replit.dev/usuarios";
-
-function toggleMenu() {
-  const menu = document.getElementById("nav");
-  menu.classList.toggle("active");
-}
-
+// Função para exibir mensagens na tela
 function displayMessage(mensagem, isError = true) {
   const msg = document.getElementById("msg");
   msg.innerHTML =
@@ -17,8 +9,22 @@ function displayMessage(mensagem, isError = true) {
     "</div>";
 }
 
+// Função para verificar se o e-mail já está cadastrado
+function emailJaCadastrado(email, callback) {
+  fetch("http://localhost:3000/usuarios?email=" + encodeURIComponent(email))
+    .then((response) => response.json())
+    .then((data) => {
+      callback(data.length > 0);
+    })
+    .catch((error) => {
+      console.error("Erro ao verificar e-mail:", error);
+      callback(false);
+    });
+}
+
+// Função para cadastrar um novo usuário
 function createUser(usuario, callback) {
-  fetch(apiUrl, {
+  fetch("http://localhost:3000/usuarios", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -27,73 +33,15 @@ function createUser(usuario, callback) {
   })
     .then((response) => response.json())
     .then((data) => {
-      callback({ success: true, message: "Usuário cadastrado com sucesso!" });
+      callback({ success: true, data: data });
     })
     .catch((error) => {
-      console.error("Erro ao cadastrar usuário via API JSONServer:", error);
-      callback({ success: false, message: "Erro ao cadastrar usuário" });
+      console.error("Erro ao cadastrar usuário:", error);
+      callback({ success: false, message: error.message });
     });
 }
 
-function readUsers(processaDados) {
-  fetch(apiUrl)
-    .then((response) => response.json())
-    .then((data) => {
-      processaDados(data);
-    })
-    .catch((error) => {
-      console.error("Erro ao ler usuários via API JSONServer:", error);
-      displayMessage("Erro ao ler usuários");
-    });
-}
-
-function updateUser(id, usuario, callback) {
-  fetch(`${apiUrl}/${id}`, {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(usuario),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      callback({ success: true, message: "Usuário atualizado com sucesso!" });
-    })
-    .catch((error) => {
-      console.error("Erro ao atualizar usuário via API JSONServer:", error);
-      callback({ success: false, message: "Erro ao atualizar usuário" });
-    });
-}
-
-function deleteUser(id, callback) {
-  fetch(`${apiUrl}/${id}`, {
-    method: "DELETE",
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      callback({ success: true, message: "Usuário removido com sucesso!" });
-    })
-    .catch((error) => {
-      console.error("Erro ao remover usuário via API JSONServer:", error);
-      callback({ success: false, message: "Erro ao remover usuário" });
-    });
-}
-
-function emailJaCadastrado(email, callback) {
-  fetch(apiUrl)
-    .then((response) => response.json())
-    .then((usuarios) => {
-      const usuarioExistente = usuarios.find(
-        (usuario) => usuario.email === email
-      );
-      callback(usuarioExistente !== undefined);
-    })
-    .catch((error) => {
-      console.error("Erro ao verificar e-mail via API JSONServer:", error);
-      callback(false);
-    });
-}
-
+// Função principal para o cadastro do usuário
 function cadastrarUsuario() {
   // Obtem os valores dos campos do formulário
   let nome = document.getElementById("inputNome").value.trim();
@@ -119,13 +67,23 @@ function cadastrarUsuario() {
         nome: nome,
         email: email,
         senha: senha,
+        historico: [],
+        favoritos: [],
       };
 
       // Envia os dados para o servidor
       createUser(usuario, function (response) {
         if (response.success) {
+          // Salva o estado de logado no localStorage
+          localStorage.setItem(
+            "usuarioLogado",
+            JSON.stringify({ nome: usuario.nome, email: usuario.email })
+          );
           displayMessage("Usuário cadastrado com sucesso!", false);
           document.getElementById("form-cadastro").reset();
+          atualizarInterfaceUsuario();
+          // Redireciona para a página de perfil
+          window.location.href = "../main/index.html";
         } else {
           displayMessage(
             "Erro ao cadastrar usuário: " + response.message,
@@ -137,6 +95,30 @@ function cadastrarUsuario() {
   });
 }
 
+// Função para atualizar a interface do usuário logado
+function atualizarInterfaceUsuario() {
+  const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+  const usuarioNome = document.getElementById("usuarioNome");
+  const logoff = document.getElementById("logoff");
+
+  if (usuarioLogado) {
+    usuarioNome.innerText = usuarioLogado.nome;
+    usuarioNome.href = "javascript:void(0);";
+    logoff.style.display = "block";
+  } else {
+    usuarioNome.innerText = "Login";
+    usuarioNome.href = "../login/login.html";
+    logoff.style.display = "none";
+  }
+}
+
+// Função para deslogar o usuário
+function logoffUsuario() {
+  localStorage.removeItem("usuarioLogado");
+  atualizarInterfaceUsuario();
+}
+
+// Adiciona o evento de clique ao botão de cadastro
 document
   .getElementById("btnCadastrar")
   .addEventListener("click", function (event) {
@@ -144,6 +126,7 @@ document
     cadastrarUsuario();
   });
 
-const btnMobile = document.getElementById("btn-mobile");
-
-btnMobile.addEventListener("click", toggleMenu);
+// Atualiza a interface do usuário ao carregar a página
+document.addEventListener("DOMContentLoaded", function () {
+  atualizarInterfaceUsuario();
+});

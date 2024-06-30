@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita</title>
+    <link rel="stylesheet" href="../login/login.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="flex container" id="nav">
+                <div>
+                    <img src="../login/logo.png" alt="logo do KitchenCompanion">
+                </div>
+                <button id="btn-mobile">Menu
+                    <span id="hamburguer"></span>
+                </button>
+                <div class="header-botoes" id="menu">
+                    <div class="barra-de-pesquisa">
+                        <span><img src="../login/busca 1.png" alt=""></span>
+                        <input type="text" placeholder="Pesquise uma receita...">
+                    </div>
+                    <div class="botoes-nao-geracao" id="userGreeting">
+                        <!-- Conteúdo dinâmico baseado no estado de login -->
+                    </div>
+                    <div id="botao-geracao">
+                        <button class="botao-header">Gerar Receita</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="conteudo-principal">
+            <h1>Experimente esse sabor!</h1>
+            <div class="caixa-main conteudo-principal">
+                <div class="conteudo-info">
+                    <h2 id="receitaTitulo">Título da Receita</h2>
+                    <div id="msg"></div>
+                    <div id="modoPreparo" style="padding-bottom: 80px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-detalhe">
+            <img src="../login/detalhe ~.png" alt="detalhe da página">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-info container">
+                <div class="footer-info1">
+                    <div class="footer-logo">
+                        <img src="../login/logobranco.png" alt="logo alternativo">
+                    </div>
+                    <a href="">Meu Perfil</a>
+                    <a href="">Gerar Receita</a>
+                </div>
+                <div class="footer-info2">
+                    <a href="">Quem Somos</a>
+                    <a href="">Termos de Uso</a>
+                    <a href="">Privacidade</a>
+                    <a href="">Contato</a>
+                </div>
+            </div>
+            <div class="footer-socials container">
+                <a href="" class="social-icone"><img src="../login/facebook-c1.png" alt="link para facebook"></a>
+                <a href="" class="social-icone"><img src="../login/instagram-c1.png" alt="link para instagram"></a>
+                <a href="" class="social-icone"><img src="../login/twitter-c1.png" alt="link para x"></a>
+            </div>
+            <p>Kitchen Companion ©. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="login.js"></script>
+    <script src="receita-view.js"></script>
+</body>
+</html>

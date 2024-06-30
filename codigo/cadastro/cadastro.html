@@ -13,7 +13,9 @@
         <div class="header">
             <div class="flex container" id="nav">
                 <div>
-                    <img src="../login/logo.png" alt="logo do KitchenCompanion">
+                    <a href="../main/index.html">
+                        <img src="../login/logo.png" alt="logo do KitchenCompanion">
+                    </a>
                 </div>
                 <button id="btn-mobile">Menu
                     <span id="hamburguer"></span>
@@ -25,14 +27,16 @@
                     </div>
                     <div class="botoes-nao-geracao">
                         <div class="retangulo-cadastro retangulo-cadastro-off">
-                            <a href="../login/login.html">Login</a>
+                            <a id="usuarioNome" href="../login/login.html">Login</a>
                         </div>
                         <div class="retangulo-cadastro">
-                            <a href="./cadastro.html">Cadastre-se</a>
+                            <a id="logoff" href="javascript:void(0);" onclick="logoffUsuario()">Logoff</a>
                         </div>
                     </div>
                     <div id="botao-geracao">
-                        <button class="botao-header">Gerar Receita</button>
+                        <a href="../gerador-de-receitas/geradordereceitas.html">
+                            <button class="botao-header">Gerar Receita</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -56,7 +60,6 @@
                             <button type="button" class="botao" id="btnCadastrar">Cadastrar</button>
                         </div>
                     </form>
-
                 </div>
             </div>
         </div>
@@ -92,54 +95,6 @@
     </footer>
 
     <script src="./app.js"></script>
-    <script>
-        function displayMessage(mensagem, isError = true) {
-            const msg = document.getElementById("msg");
-            msg.innerHTML = '<div class="' + (isError ? 'alert-error' : 'alert-success') + '">' + mensagem + "</div>";
-        }
-
-        function cadastrarUsuario() {
-            // Obtem os valores dos campos do formulário
-            let nome = document.getElementById('inputNome').value.trim();
-            let email = document.getElementById('inputEmail').value.trim();
-            let senha = document.getElementById('inputSenha').value.trim();
-
-            // Verifica se todos os campos estão preenchidos
-            if (!nome || !email || !senha) {
-                displayMessage("Por favor, preencha todos os campos.", true);
-                return;
-            }
-
-            // Verifica se o e-mail já está cadastrado
-            emailJaCadastrado(email, (jaCadastrado) => {
-                if (jaCadastrado) {
-                    displayMessage("E-mail já cadastrado. Por favor, use outro e-mail.", true);
-                } else {
-                    // Cria um objeto com os dados do usuário
-                    let usuario = {
-                        nome: nome,
-                        email: email,
-                        senha: senha
-                    };
-
-                    // Envia os dados para o servidor
-                    createUser(usuario, function (response) {
-                        if (response.success) {
-                            displayMessage("Usuário cadastrado com sucesso!", false);
-                            document.getElementById('form-cadastro').reset();
-                        } else {
-                            displayMessage("Erro ao cadastrar usuário: " + response.message, true);
-                        }
-                    });
-                }
-            });
-        }
-
-        document.getElementById('btnCadastrar').addEventListener('click', function (event) {
-            event.preventDefault();
-            cadastrarUsuario();
-        });
-    </script>
 </body>
 
 </html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="../../CSS/login.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="flex container" id="nav">
+                <div>
+                    <a href="../../index.html"><img src="../../ASSETS/img/logo.png" alt="logo do KitchenCompanion"></a>
+                </div>
+                <button id="btn-mobile">Menu
+                    <span id="hamburguer"></span>
+                </button>
+                <div class="header-botoes" id="menu">
+                    <div class="barra-de-pesquisa">
+                        <span><img src="../../ASSETS/img/busca 1.png" alt=""></span>
+                        <input type="text" placeholder="Pesquise uma receita...">
+                    </div>
+                    <div class="botoes-nao-geracao">
+                        <div class="retangulo-cadastro retangulo-cadastro-off">
+                            <a href="../sessao/login.html">Login</a>
+                        </div>
+                        <div class="retangulo-cadastro retangulo-cadastro-off">
+                            <a href="../sessao/cadastro.html">Cadastre-se</a>
+                        </div>
+                    </div>
+                    <div id="botao-geracao">
+                        <button class="botao-header">Gerar Receita</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="conteudo-principal">
+            <h1>Cadastre-se</h1>
+            <div class="caixa-main conteudo-principal">
+                <div class="conteudo-info">
+                    <h2>Suas informações de Cadastro</h2>
+                    <div id="msg"></div> <!-- Adicionado para mensagens -->
+                    <form id="form-cadastro">
+                        <p>Nome completo</p>
+                        <input type="text" placeholder="Seu nome completo" id="inputNome" class="main-form" required>
+                        <p>E-mail</p>
+                        <input type="email" placeholder="Seu email" id="inputEmail" class="main-form" required>
+                        <p>Senha</p>
+                        <input type="password" placeholder="Sua senha" id="inputSenha" class="main-form" required>
+                        <div class="container-botao">
+                            <button type="button" class="botao" id="btnCadastrar">Cadastrar</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-detalhe">
+            <img src="../../ASSETS/img/detalhe ~.png" alt="detalhe da página">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-info container">
+                <div class="footer-info1">
+                    <div class="footer-logo">
+                        <img src="../../ASSETS/img/logobranco.png" alt="logo alternativo">
+                    </div>
+                    <a href="../perfil/perfil.html">Meu Perfil</a>
+                    <a href="../pag_ger_receita/geracao.html">Gerar Receita</a>
+                </div>
+                <div class="footer-info2">
+                    <a href="../sobre/aboutpage.html">Quem Somos</a>
+                    <a href="">Termos de Uso</a>
+                    <a href="">Privacidade</a>
+                    <a href="">Contato</a>
+                </div>
+            </div>
+            <div class="footer-socials container">
+                <a href="" class="social-icone"><img src="../../ASSETS/img/facebook-c1.png" alt="link para facebook"></a>
+                <a href="" class="social-icone"><img src="../../ASSETS/img/instagram-c1.png" alt="link para instagram"></a>
+                <a href="" class="social-icone"><img src="../../ASSETS/img/twitter-c1.png" alt="link para x"></a>
+            </div>
+            <p>Kitchen Companion ©. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../JS/cadastro.js"></script>
+    <script>
+        function displayMessage(mensagem, isError = true) {
+            const msg = document.getElementById("msg");
+            msg.innerHTML = '<div class="' + (isError ? 'alert-error' : 'alert-success') + '">' + mensagem + "</div>";
+        }
+
+        function cadastrarUsuario() {
+            // Obtem os valores dos campos do formulário
+            let nome = document.getElementById('inputNome').value.trim();
+            let email = document.getElementById('inputEmail').value.trim();
+            let senha = document.getElementById('inputSenha').value.trim();
+
+            // Verifica se todos os campos estão preenchidos
+            if (!nome || !email || !senha) {
+                displayMessage("Por favor, preencha todos os campos.", true);
+                return;
+            }
+
+            // Verifica se o e-mail já está cadastrado
+            emailJaCadastrado(email, (jaCadastrado) => {
+                if (jaCadastrado) {
+                    displayMessage("E-mail já cadastrado. Por favor, use outro e-mail.", true);
+                } else {
+                    // Cria um objeto com os dados do usuário
+                    let usuario = {
+                        nome: nome,
+                        email: email,
+                        senha: senha
+                    };
+
+                    // Envia os dados para o servidor
+                    createUser(usuario, function (response) {
+                        if (response.success) {
+                            displayMessage("Usuário cadastrado com sucesso!", false);
+                            document.getElementById('form-cadastro').reset();
+                        } else {
+                            displayMessage("Erro ao cadastrar usuário: " + response.message, true);
+                        }
+                    });
+                }
+            });
+        }
+
+        document.getElementById('btnCadastrar').addEventListener('click', function (event) {
+            event.preventDefault();
+            cadastrarUsuario();
+        });
+    </script>
+</body>
+
+</html>

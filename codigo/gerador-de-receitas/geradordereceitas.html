@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar Receitas</title>
+    <link rel="stylesheet" href="geradordereceitas.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="flex container" id="nav">
+                <div>
+                    <a href="../main/index.html">
+                        <img src="../login/logo.png" alt="logo do KitchenCompanion">
+                    </a>
+                </div>
+                <button id="btn-mobile">Menu
+                    <span id="hamburguer"></span>
+                </button>
+                <div class="header-botoes" id="menu">
+                    <div class="barra-de-pesquisa">
+                        <span><img src="../login/busca 1.png" alt=""></span>
+                        <input type="text" placeholder="Pesquise uma receita...">
+                    </div>
+                    <div class="botoes-nao-geracao" id="userGreeting">
+                        <!-- Conteúdo dinâmico baseado no estado de login -->
+                    </div>
+                    <div id="botao-geracao">
+                        <button class="botao-header">Gerar Receita</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="conteudo-principal container">
+            <h1>Selecione os Ingredientes</h1>
+            <form id="recipeForm" class="caixa-main">
+                <div>
+                    <label for="carboidrato">Carboidrato:</label>
+                    <select id="carboidrato" class="custom-select">
+                        <option value="">Selecione</option>
+                        <option value="arroz">Arroz</option>
+                        <option value="feijao">Feijão</option>
+                        <option value="macarrao">Macarrão</option>
+                        <option value="pao">Pão</option>
+                        <option value="batata">Batata</option>
+                        <option value="batata-doce">Batata-doce</option>
+                        <option value="mandioca">Mandioca</option>
+                        <option value="inhame">Inhame</option>
+                        <option value="quinoa">Quinoa</option>
+                        <option value="milho">Milho</option>
+                        <option value="aveia">Aveia</option>
+                        <option value="lentilha">Lentilha</option>
+                        <option value="cevada">Cevada</option>
+                        <option value="pao-integral">Pão Integral</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="proteina">Proteína:</label>
+                    <select id="proteina" class="custom-select">
+                        <option value="">Selecione</option>
+                        <option value="frango">Frango</option>
+                        <option value="bovina">Bovina</option>
+                        <option value="peixe">Peixe</option>
+                        <option value="ovo">Ovo</option>
+                        <option value="tofu">Tofu</option>
+                        <option value="porco">Porco</option>
+                        <option value="camarao">Camarão</option>
+                        <option value="salmão">Salmão</option>
+                        <option value="atum">Atum</option>
+                        <option value="quinoa">Quinoa</option>
+                        <option value="grao-de-bico">Grão de Bico</option>
+                        <option value="ervilha">Ervilha</option>
+                        <option value="seitan">Seitan</option>
+                        <option value="tempeh">Tempeh</option>
+                        <option value="lentilha">Lentilha</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="vegetal">Vegetal:</label>
+                    <select id="vegetal" class="custom-select">
+                        <option value="">Selecione</option>
+                        <option value="alface">Alface</option>
+                        <option value="cenoura">Cenoura</option>
+                        <option value="brocolis">Brócolis</option>
+                        <option value="cebola">Cebola</option>
+                        <option value="batata">Batata</option>
+                        <option value="tomate">Tomate</option>
+                        <option value="espinafre">Espinafre</option>
+                        <option value="pimentao">Pimentão</option>
+                        <option value="abobrinha">Abobrinha</option>
+                        <option value="couve">Couve</option>
+                        <option value="abobora">Abóbora</option>
+                        <option value="beterraba">Beterraba</option>
+                        <option value="pepino">Pepino</option>
+                        <option value="ervilha">Ervilha</option>
+                        <option value="rucula">Rúcula</option>
+                        <option value="cogumelo">Cogumelo</option>
+                    </select>
+                </div>
+                <button type="button" class="btn_submit" onclick="buscarReceita()">Buscar Receita</button>
+            </form>
+
+            <h2>Receita Encontrada:</h2>
+            <div id="resultado" class="caixa-main"></div>
+            <div class="espaco-colorido"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-info container">
+                <div class="footer-info1">
+                    <div class="footer-logo">
+                        <img src="../login/logobranco.png" alt="logo alternativo">
+                    </div>
+                    <a href="">Meu Perfil</a>
+                    <a href="">Gerar Receita</a>
+                </div>
+                <div class="footer-info2">
+                    <a href="">Quem Somos</a>
+                    <a href="">Termos de Uso</a>
+                    <a href="">Privacidade</a>
+                    <a href="">Contato</a>
+                </div>
+            </div>
+            <div class="footer-socials container">
+                <a href="" class="social-icone"><img src="../login/facebook-c1.png" alt="link para facebook"></a>
+                <a href="" class="social-icone"><img src="../login/instagram-c1.png" alt="link para instagram"></a>
+                <a href="" class="social-icone"><img src="../login/twitter-c1.png" alt="link para twitter"></a>
+            </div>
+            <p>Kitchen Companion ©. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="geradordereceitas.js"></script>
+</body>
+
+</html>
