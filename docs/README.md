@@ -367,7 +367,7 @@ Diversas branches para trabalhos específicos foram criadas no projeto, desde br
 
 ---
 
-## Quadro de Tarefas
+## Tarefas
 
 **Atribuição de Tarefas na Sprint 1:**
 
