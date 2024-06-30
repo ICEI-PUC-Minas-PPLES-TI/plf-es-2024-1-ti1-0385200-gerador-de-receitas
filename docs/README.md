@@ -3521,5 +3521,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 # Referências Bibliográficas
 
-(referências bibliográficas utilizadas no projeto; escrever aqui depois)
+- w3schools: https://www.w3schools.com/
+- jQuery: https://jquery.com/
+- MDN Web Docs: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
+- Bootsrap: https://getbootstrap.com/
 
