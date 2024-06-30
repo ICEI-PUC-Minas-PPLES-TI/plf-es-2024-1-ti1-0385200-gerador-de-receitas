@@ -417,7 +417,7 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 ## Video do Projeto
 
-(vídeo de apresentação do problema que a equipe está tratando e a proposta de solução; colocar aqui depois)
+([vídeo de divulgação](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/164263649/7d930de9-88b0-4952-99a6-7edcdb59c2f7))
 
 ---
 
