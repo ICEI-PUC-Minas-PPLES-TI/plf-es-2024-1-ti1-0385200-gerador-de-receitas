@@ -371,11 +371,13 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 - **Microsoft To-Do:** Utilizado para o rastreamento e a divisão de tarefas/papéis. Para criar um fluxo de trabalho efetivo, foi necessário fazer o acompanhamento das tarefas com este aplicativo fácil de usar. Nele, foi possível atribuir tarefas aos membros do grupo e, quando cada um terminava seu afazer, marcava como concluído. Uma solução simples e efetiva.
 
+**Exemplo abaixo:**
+
 ![To-Do](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/119761586/0b035ce0-5421-48e2-910a-d961dc778969)
 
 ---
 
-## Controle de Versão
+## Tarefas 
 
 **Atribuição de Tarefas na Sprint 1:**
 
@@ -410,6 +412,12 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 - **Diogo Gouvêa Bastos Braga:** Responsável pela atualização da documentação e criação da apresentação em PowerPoint do grupo a respeito da conclusão do projeto.
 - **João Vitor Ferreira Jacinto:** Encarregado pela integração das páginas por meio dos códigos HTML, CSS e JS, e contribuiu com a revisão da documentação.
 - **Miguel Augusto de Paula:** Contribuiu com auxílio na documentação e criação da apresentação em PowerPoint do grupo.
+
+---
+
+## Controle de Versão
+
+Diversas branches para trabalhos específicos foram criadas no projeto, desde branches voltadas para o aprimoramento de uma funcionalidade específica, como a "News-V2", até branches de trabalho "solo" de membros do grupo, como a branch "braga" e a branch "Miguel-Augusto-de-Paula-Patch1". Para as mudanças de grande impacto, solicitações de pull eram sempre feitas previamente e, com atenção e deliberação, as mudanças eram "commitadas" na main branch para prosseguir com a evolução do produto. Alguns membros optaram por realizar commits usando a funcionalidade do GitHub de fazer o upload de arquivos diretamente pela página web.
 
 ---
 
