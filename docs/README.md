@@ -3485,6 +3485,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ---
 
+## Imagens:
+
+- Freepik - https://br.freepik.com/
+  
+---
+
+## Fontes e Icones:
+
+- Fontawesome - https://fontawesome.com/
+  
+---
+
 # FAQ
 
 **1. Pergunta:** “Como as receitas são geradas?”
