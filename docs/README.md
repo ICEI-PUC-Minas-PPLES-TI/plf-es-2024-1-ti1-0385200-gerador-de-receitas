@@ -355,6 +355,8 @@ Cada persona tem um perfil detalhado que inclui idade, hobby, trabalho, personal
 
 - **Microsoft To-Do:** Utilizado para o rastreamento e a divisão de tarefas/papéis. Para criar um fluxo de trabalho efetivo, foi necessário fazer o acompanhamento das tarefas com este aplicativo fácil de usar. Nele, foi possível atribuir tarefas aos membros do grupo e, quando cada um terminava seu afazer, marcava como concluído. Uma solução simples e efetiva.
 
+**Exemplo abaixo:**
+
 ![To-Do](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-gerador-de-receitas/assets/119761586/0b035ce0-5421-48e2-910a-d961dc778969)
 
 ---
